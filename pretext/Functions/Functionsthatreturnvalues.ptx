@@ -5,7 +5,7 @@
             job. For example, if you want to find the absolute value of a number, you have
             to indicate what the number is. Python has a built-in function for computing
             the absolute value:</p>
-  <program xml:id="ch04_4" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p1" interactive="activecode" language="python">
     <input>
 print(abs(5))
 
@@ -13,17 +13,11 @@ print(abs(-5))
     </input>
   </program>
   <p>In this example, the arguments to the <c>abs</c> function are 5 and -5.</p>
-  <p>Some functions take more than one argument. For example the math module contains a function
-            called
-    <c>pow</c> which takes two arguments, the base and the exponent.</p>
-  <!--Inside the function,-->
-  <!--the values that are passed get assigned to variables called **parameters**.-->
-  <program xml:id="ch04_5" interactive="activecode" language="python">
+  <p>Some functions take more than one argument. For example the range function that we saw with <c>for</c> loops.</p>
+  <program xml:id="ch8_sec2_p2" interactive="activecode" language="python">
     <input>
-import math
-print(math.pow(2, 3))
-
-print(math.pow(7, 4))
+     print(list(range(4, 8)))
+     print(list(range(1, 10)))
     </input>
   </program>
   <note>
@@ -31,7 +25,7 @@ print(math.pow(7, 4))
   </note>
   <p>Another built-in function that takes more than one argument is <c>max</c>.
   </p>
-  <program xml:id="ch04_6" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p3" interactive="activecode" language="python">
     <input>
 print(max(7, 11))
 print(max(4, 1, 17, 2, 12))
@@ -43,12 +37,12 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
             return the maximum value sent. The arguments can be either simple values or
             expressions. In the last example, 503 is returned, since it is larger than 33,
             125, and 1.  Note that <c>max</c> also works on lists of values.</p>
-  <p>Furthermore, functions like <c>range</c>,    <c>int</c>,    <c>abs</c> all return values that
+  <p>Furthermore, functions like <c>int</c> and <c>abs</c> all return values that
             can be used to build more complex expressions.</p>
-  <p xml:id="functions_index_1">So an important difference between these functions and one like <c>drawSquare</c> is that
-    <c>drawSquare</c> was not executed because we wanted it to compute a value &#x2014; on the contrary,
-            we wrote <c>drawSquare</c> because we wanted it to execute a sequence of steps that caused
-            the turtle to draw a specific shape.</p>
+  <p xml:id="functions_index_1">So an important difference between these functions and one like <c>printRange</c> is that
+    <c>printRange</c> was not executed because we wanted it to compute a value &#x2014; on the contrary,
+            we wrote <c>printRange</c> because we wanted it to execute a sequence of steps that caused
+            the list's range to print.</p>
   <p>Functions that return values are sometimes called <term>fruitful functions</term>.
             In many other languages, a chunk that doesn't return a value is called a <term>procedure</term>,
             but we will stick here with the Python way of also calling it a function, or if we want
@@ -61,7 +55,7 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
             as a parameter and return the result of squaring that number.  Here is the
             black-box diagram with the Python code following.</p>
   <image source="Functions/Figures/squarefun.png" width="50%"/>
-  <program xml:id="ch04_square" interactive="activecode" language="python">
+  <program xml:id="ch8_sec2_p4" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -99,7 +93,7 @@ print("The result of", toSquare, "squared is", result)
                 we will see later where it makes sense to have a return statement even when other statements
                 follow, and the further statements are <em>not</em> executed.</p>
   </note>
-  <program xml:id="ch04_clsquare" interactive="codelens" language="python">
+  <program xml:id="ch8_sec2_c1" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -136,7 +130,7 @@ print("The result of", toSquare, "squared is", squareResult)
             programmers.  As you step through this example, pay very close attention to the return
             value in the local variables listing.  Then look at what is printed when the
             function returns.</p>
-  <program xml:id="ch04_clsquare_bad" interactive="codelens" language="python">
+  <program xml:id="ch8_sec2_c2" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x
@@ -154,7 +148,7 @@ print("The result of", toSquare, "squared is", squareResult)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question5_2_1">
+  <exercise label="ch8_sec2_q1">
     <statement>
       <p>What is wrong with the following function definition:</p>
       <program language="python">
@@ -170,37 +164,37 @@ def addEm(x, y, z):
         <statement>
           <p>You should never use a print statement in a function definition.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Although you should not mistake print for return, you may include print statements inside your functions.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>You should not have any statements in a function after the return statement.  Once the function gets to the return statement it will immediately stop executing the function.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is a very common mistake so be sure to watch out for it when you write your code!
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>You must calculate the value of x+y+z before you return it.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Python will automatically calculate the value x+y+z and then return it in the statement as it is written
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>A function cannot return a number.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Functions can return any legal data, including (but not limited to) numbers, strings, turtles, etc.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_2_2">
+  <exercise label="ch8_sec2_q2">
     <statement>
       <p>What will the following function return?</p>
       <program language="python">
@@ -215,25 +209,25 @@ def addEm(x, y, z):
         <statement>
           <p>None</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     We have accidentally used print where we mean return.  Therefore, the function will return the value None by default.  This is a VERY COMMON mistake so watch out!  This mistake is also particularly difficult to find because when you run the function the output looks the same.  It is not until you try to assign its value to a variable that you can notice a difference.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>The value of x + y + z</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Careful!  This is a very common mistake.  Here we have printed the value x+y+z but we have not returned it.  To return a value we MUST use the return keyword.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>The string 'x + y + z'</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     x+y+z calculates a number (assuming x+y+z are numbers) which represents the sum of the values x, y and z.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

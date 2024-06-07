@@ -25,7 +25,7 @@ else:
             statement ends. Even if more than one condition is true, only the first true
             branch executes.</p>
   <p>Here is the same program using <c>elif</c>.</p>
-  <program xml:id="sel4" interactive="activecode" language="python">
+  <program xml:id="ch5_sec5_p1" interactive="activecode" language="python">
     <input>
 x = 10
 y = 10
@@ -40,7 +40,7 @@ else:
   </program>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_06_02" interactive="activecode" language="python">
+    <program xml:id="scratch_07" interactive="activecode" language="python">
       <input>
 
 
@@ -50,7 +50,7 @@ else:
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_7_1">
+  <exercise label="ch5_sec5_q1">
     <statement>
       <p>Which of I, II, and III below gives the same result as the following nested if?</p>
       <program language="python">
@@ -108,82 +108,41 @@ else:
         <statement>
           <p>I only</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     You can not use a Boolean expression after an else.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>II only</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, II will give the same result.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>III only</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     No, III will not give the same result.  The first if statement will be true, but the second will be false, so the else part will execute.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>II and III</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     No, Although II is correct III will not give the same result.  Try it.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>I, II, and III</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     No, in I you can not have a Boolean expression after an else.
-                </p></feedback>
-      </choice>
-    </choices>
-  </exercise>
-  <exercise label="test_question6_7_2">
-    <statement>
-      <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
-      <program language="python">
-        <input>
-if x &lt; y and x &lt; z:
-    print("a")
-elif y &lt; x and y &lt; z:
-    print("b")
-else:
-    print("c")
-</input>
-      </program>
-    </statement>
-    <choices>
-      <choice>
-        <statement>
-          <p>a</p>
-        </statement>
-        <feedback><p>
-                    While the value in x is less than the value in y (3 is less than 5) it is not less than the value in z (3 is not less than 2).
-                </p></feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>b</p>
-        </statement>
-        <feedback><p>
-                    The value in y is not less than the value in x (5 is not less than 3).
-                </p></feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>c</p>
-        </statement>
-        <feedback><p>
-                    Since the first two Boolean expressions are false the else will be executed.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

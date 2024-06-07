@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="selection_omitting-the-else-clause-unary-selection">
-  <title>Omitting the else Clause: Unary Selection</title>
-  <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>
+  <title>Omitting the <title_reference>else</title_reference> Clause: Unary Selection</title>
+  <!--<video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>-->
   <sidebar>
     <title>Flowchart of an <term>if</term> with no <term>else</term></title>
     <image source="Selection/Figures/flowchart_if_only.png" width="50%"/>
@@ -10,7 +10,7 @@
             This creates what is sometimes called <term>unary selection</term>.
             In this case, when the condition evaluates to <c>True</c>, the statements are
             executed.  Otherwise the flow of execution continues to the statement after the body of the <c>if</c>.</p>
-  <program xml:id="ch05_unaryselection" interactive="activecode" language="python">
+  <program xml:id="ch5_sec3_p1" interactive="activecode" language="python">
     <input>
 x = 10
 if x &lt; 0:
@@ -22,7 +22,7 @@ print("This is always printed")
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question6_5_1">
+  <exercise label="ch5_sec3_q1">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
@@ -48,37 +48,37 @@ The negative number -10 is not valid here</pre>
         <statement>
           <p>Output a</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Because -10 is less than 0, Python will execute the body of the if-statement here.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Output b</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Python executes the body of the if-block as well as the statement that follows the if-block.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Output c</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>It will cause an error because every if must have an else clause.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question6_5_2">
+  <exercise label="ch5_sec3_q2">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">
@@ -98,17 +98,17 @@ else:
         <statement>
           <p>No</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Every else-block must have exactly one corresponding if-block.  If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Yes</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This will cause an error because the second else-block is not attached to a corresponding if-block.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

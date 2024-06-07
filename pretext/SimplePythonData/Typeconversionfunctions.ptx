@@ -3,13 +3,13 @@
   <title>Type conversion functions</title>
   <p>Sometimes it is necessary to convert values from one type to another.  Python provides
             a few simple functions that will allow us to do that.  The functions <c>int</c>, <c>float</c> and <c>str</c>
-            will (attempt to) convert their arguments into types int, float and str
+            will (attempt to) convert their arguments into types <title_reference>int</title_reference>, <title_reference>float</title_reference> and <title_reference>str</title_reference>
             respectively.  We call these <term>type conversion</term> functions.</p>
   <p>The <c>int</c> function can take a floating point number or a string, and turn it
             into an int. For floating point numbers, it <em>discards</em> the decimal portion of
             the number - a process we call <em>truncation towards zero</em> on the number line.
             Let us see this in action:</p>
-  <program xml:id="ch02_20" interactive="activecode" language="python">
+  <program xml:id="ch2_sec3_p1" interactive="activecode" language="python">
     <input>
 print(3.14, int(3.14))
 print(3.9999, int(3.9999))       # This doesn't round to the closest int!
@@ -26,15 +26,15 @@ print(int("23bottles"))
             <c>bottles</c> and rerun the program.  You should see the integer <c>23</c>.</p>
   <p>The type converter <c>float</c> can turn an integer, a float, or a syntactically
             legal string into a float.</p>
-  <program xml:id="ch02_21" interactive="activecode" language="python">
+  <program xml:id="ch2_sec3_p2" interactive="activecode" language="python">
     <input>
 print(float("123.45"))
 print(type(float("123.45")))
         </input>
   </program>
   <p>The type converter <c>str</c> turns its argument into a string.  Remember that when we print a string, the
-            quotes are removed.  However, if we print the type, we can see that it is definitely str.</p>
-  <program xml:id="ch02_22" interactive="activecode" language="python">
+            quotes are removed.  However, if we print the type, we can see that it is definitely <title_reference>str</title_reference>.</p>
+  <program xml:id="ch2_sec3_p3" interactive="activecode" language="python">
     <input>
 print(str(17))
 print(str(123.45))
@@ -44,7 +44,7 @@ print(type(str(123.45)))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_2_1">
+  <exercise label="ch2_sec3_q1">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
@@ -58,33 +58,33 @@ print( int(53.785) )
         <statement>
           <p>Nothing is printed. It generates a runtime error.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The statement is valid Python code.  It calls the int function on 53.785 and then prints the value that is returned.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>53</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The int function truncates all values after the decimal and prints the integer value.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>54</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     When converting to an integer, the int function does not round.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>53.785</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The int function removes the fractional part of 53.785 and returns an integer, which is then printed.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

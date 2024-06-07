@@ -15,7 +15,7 @@ message * "Hello"
   <p>Interestingly, the <c>+</c> operator does work with strings, but for strings, the
             <c>+</c> operator represents <term>concatenation</term>, not addition.  Concatenation means
             joining the two operands by linking them end-to-end. For example:</p>
-  <program xml:id="ch08_add" interactive="activecode" language="python">
+  <program xml:id="ch3_sec3_p1" interactive="activecode" language="python">
     <input>
 fruit = "banana"
 bakedGood = " nut bread"
@@ -28,7 +28,7 @@ print(fruit + bakedGood)
   <p>The <c>*</c> operator also works on strings.  It performs repetition. For example,
             <c>'Fun'*3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the
             other has to be an integer.</p>
-  <program xml:id="ch08_mult" interactive="activecode" language="python">
+  <program xml:id="ch3_sec3_p2" interactive="activecode" language="python">
     <input>
 print("Go" * 6)
 
@@ -49,7 +49,7 @@ print((name + "Go") * 3)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_1_1">
+  <exercise label="ch3_sec3_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -65,37 +65,37 @@ print(s + t)
         <statement>
           <p>python rocks</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Concatenation does not automatically add a space.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>python</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The expression s+t is evaluated first, then the resulting string is printed.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>pythonrocks</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, the two strings are glued end to end.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot add two strings together.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The + operator has different meanings depending on the operands, in this case, two strings.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_1_2">
+  <exercise label="ch3_sec3_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -111,33 +111,33 @@ print(s+excl*3)
         <statement>
           <p>python!!!</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, repetition has precedence over concatenation
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>python!python!python!</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Repetition is done first.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>pythonpythonpython!</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The repetition operator is working on the excl variable.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot perform concatenation and repetition at the same time.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The + and * operator are defined for strings as well as numbers.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

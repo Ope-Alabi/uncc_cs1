@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_variables">
   <title>Variables</title>
-  <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto"/>
+  <!--<video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto"/>-->
   <p>One of the most powerful features of a programming language is the ability to
             manipulate <term>variables</term>. A variable is a name that refers to a value.</p>
   <p>
@@ -41,7 +41,7 @@ pi = 3.14159
   <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
-  <program xml:id="ch02_9" interactive="activecode" language="python">
+  <program xml:id="ch2_sec4_p1" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
 n = 17
@@ -54,12 +54,12 @@ print(pi)
   </program>
   <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
-  <program xml:id="ch02_9_cl" interactive="codelens" language="python">
+  <program xml:id="ch2_sec4_c1" interactive="activecode" language="python">
     <input>
           message = "What's up, Doc?"
           n = 17
           pi = 3.14159
-
+          
           print(message)
           print(n)
           print(pi)
@@ -70,7 +70,7 @@ print(pi)
             created.</p>
   <p>Variables also have
             types; again, we can ask the interpreter what they are.</p>
-  <program xml:id="ch02_10" interactive="activecode" language="python">
+  <program xml:id="ch2_sec4_p2" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
 n = 17
@@ -87,14 +87,14 @@ print(type(pi))
             over time, just like the scoreboard at a football game.  You can assign a value
             to a variable, and later assign a different value to the same variable.</p>
   <note>
-    <p>This is different from math. In math, if you give x the value 3, it
+    <p>This is different from math. In math, if you give <title_reference>x</title_reference> the value 3, it
                 cannot change to refer to a different value half-way through your
                 calculations!</p>
   </note>
   <p>To see this, read and then run the following program.
-            You'll notice we change the value of day three times, and on the third
+            You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
             assignment we even give it a value that is of a different type.</p>
-  <program xml:id="ch02_11" interactive="codelens" language="python">
+  <program xml:id="ch2_sec4_p3" interactive="activecode" language="python">
     <input>
           day = "Thursday"
           print(day)
@@ -110,7 +110,7 @@ print(type(pi))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_3_2">
+  <exercise label="ch2_sec4_q1">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -127,33 +127,33 @@ print(day)
         <statement>
           <p>Nothing is printed. A runtime error occurs.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     It is legal to change the type of data that a variable holds in Python.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Thursday</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is the first value assigned to the variable day, but the next statements reassign that variable to new values.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>32.5</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>19</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The variable day will contain the last value assigned to it when it is printed.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

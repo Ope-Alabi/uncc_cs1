@@ -8,7 +8,7 @@
   <p>It is also the case that the positions are named from right to left using negative numbers where -1 is the rightmost
             index and so on.
             Note that the character at index 6 (or -8) is the blank character.</p>
-  <program xml:id="chp08_index1" interactive="activecode" language="python">
+  <program xml:id="ch3_sec4_p1" interactive="activecode" language="python">
     <input>
 school = "Luther College"
 m = school[2]
@@ -34,7 +34,7 @@ print(lastchar)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question8_2_1">
+  <exercise label="ch3_sec4_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -49,37 +49,37 @@ print(s[3])
         <statement>
           <p>t</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Index locations do not start with 1, they start with 0.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>h</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, index locations start with 0.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>c</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     s[-3] would return c, counting from right to left.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use the [ ] operator with a string.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     [ ] is the index operator
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question8_2_2">
+  <exercise label="ch3_sec4_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -94,33 +94,33 @@ print(s[2] + s[-5])
         <statement>
           <p>tr</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, indexing operator has precedence over concatenation.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>ps</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     p is at location 0, not 2.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>nn</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     n is at location 5, not 2.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use the [ ] operator with the + operator.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     [ ] operator returns a string that can be concatenated with another string.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

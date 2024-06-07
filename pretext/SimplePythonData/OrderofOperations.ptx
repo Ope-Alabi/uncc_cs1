@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_order-of-operations">
   <title>Order of Operations</title>
-  <video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="auto"/>
+  <!--<video xml:id="precedencevid" youtube="Ezve3QJv6Aw" width="auto"/>-->
   <p>When more than one operator appears in an expression, the order of evaluation
             depends on the <term>rules of precedence</term>. Python follows the same precedence
             rules for its mathematical operators that mathematics does.</p>
@@ -42,10 +42,10 @@
   <!--the left-to-right rule applies.)-->
   <note>
     <p>An exception to the left-to-right
-                left-associative rule is the exponentiation operator **. A useful hint
+                left-associative rule is the exponentiation operator <title_reference>**</title_reference>. A useful hint
                 is to always use parentheses to force exactly the order you want when
                 exponentiation is involved:</p>
-    <program xml:id="ch02_23" interactive="activecode" language="python">
+    <program xml:id="ch2_sec9_p1" interactive="activecode" language="python">
       <input>
 print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
 print((2 ** 3) ** 2)   # use parentheses to force the order you want!
@@ -59,13 +59,13 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question2_8_1">
+  <exercise label="ch2_sec9_q1">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">
         <input>
 16 - 2 * 5 // 3 + 1
-</input>
+		</input>
       </program>
     </statement>
     <choices>
@@ -73,37 +73,37 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
         <statement>
           <p>14</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Using parentheses, the expression is evaluated as (2*5) first, then (10 // 3), then (16-3), and then (13+1).
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>24</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Remember that * has precedence over -.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>3</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Remember that // has precedence over -.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>13.667</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Remember that // does integer division.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question2_8_2">
+  <exercise label="ch2_sec9_q2">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">
@@ -117,33 +117,33 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
         <statement>
           <p>768</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Exponentiation has precedence over multiplication, but its precedence goes from right to left!  So 2 ** 3 is 8, 2 ** 8 is 256 and 256 * 3 is 768.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>128</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Exponentiation (**) is processed right to left, so take 2 ** 3 first.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>12</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     There are two exponentiations.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>256</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Remember to multiply by 3.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
