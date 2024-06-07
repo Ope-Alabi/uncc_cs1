@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<section xml:id="complex-logic_intro">
+  <title>Complex Logic Introduction</title>
+  <p>Believe it or not, in the past seven weeks we've covered nearly all of the fundamental constructs within programming. 
+  While there is certainly much more to learn and discover, virtually any programming language you will see in the future offers some form
+  of branching, looping, and function definition. That is not to say we have mastered these topics yet. This week of class and this chapter
+  focuses on revisiting these fundamental topics and deepening our mastery of them.</p>
+</section>

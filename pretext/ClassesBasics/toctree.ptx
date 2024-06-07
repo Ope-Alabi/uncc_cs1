@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <title>Classes and Objects - the Basics</title>
@@ -13,3 +14,19 @@
 <xi:include href="./Glossary.ptx"/>
 <xi:include href="./Exercises.ptx"/>
 </chapter>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+4<title>Classes and Objects - the Basics</title>
+4<xi:include href="./Objectorientedprogramming.ptx"/>
+4<xi:include href="./Achangeofperspective.ptx"/>
+4<xi:include href="./ObjectsRevisited.ptx"/>
+4<xi:include href="./UserDefinedClasses.ptx"/>
+4<xi:include href="./ImprovingourConstructor.ptx"/>
+4<xi:include href="./AddingOtherMethodstoourClass.ptx"/>
+4<xi:include href="./ObjectsasArgumentsandParameters.ptx"/>
+4<xi:include href="./ConvertinganObjecttoaString.ptx"/>
+4<xi:include href="./InstancesasReturnValues.ptx"/>
+4<xi:include href="./Glossary.ptx"/>
+</chapter>
+>>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

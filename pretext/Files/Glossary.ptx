@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 <section xml:id="files_glossary">
   <title>Glossary</title>
@@ -41,3 +42,68 @@
     </gi>
   </glossary>
 </section>
+=======
+<?xml version="1.0"?>
+<section xml:id="files_glossary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>open</title>
+      <p>You must open a file before you can read its contents.</p>
+    </gi>
+    <gi>
+      <title>close</title>
+      <p>When you are done with a file, you should close it.</p>
+    </gi>
+    <gi>
+      <title>read</title>
+      <p>Will read the entire contents of a file as a string.  This is often used in an assignment statement
+                            so that a variable can reference the contents of the file.</p>
+    </gi>
+    <gi>
+      <title>readline</title>
+      <p>Will read a single line from the file, up to and including the first instance of the newline character.</p>
+    </gi>
+    <gi>
+      <title>readlines</title>
+      <p>Will read the entire contents of a file into a list where each line of the file is a string and is an element in the list.</p>
+    </gi>
+    <gi>
+      <title>write</title>
+      <p>Will add characters to the end of a file that has been opened for writing.</p>
+    </gi>
+	<gi>
+      <title>csv</title>
+      <p>An optional Python module that provides useful functions for interacting with data in the <term>Comma Separated Value</term> format.</p>
+    </gi>
+	<gi>
+      <title>Comma Separated Value</title>
+      <p>A format that text files can have. Promises that the file contains alphanumeric values separate by single commas and organized into one row of data per line.</p>
+    </gi>
+	<gi>
+      <title>reader</title>
+      <p>A function part of the csv module that creates an object for traversing csv file data.</p>
+    </gi>
+	<gi>
+      <title>writerow</title>
+      <p>A function part of the csv module that takes a list of data, formats it in the appropriate csv format, and writes it to a data file.</p>
+    </gi>
+	<gi>
+      <title>writerows</title>
+      <p>A function part of the csv module. Similar to writerow, but can write multiple rows of data at once if given a list of lists.</p>
+    </gi>
+    <gi>
+      <title>absolute file path</title>
+      <p>The name of a file that includes a path to the file from the <em>root</em>
+                            directory of a file system. An <em>absolute file path</em> always starts
+                            with a <c>/</c>.</p>
+    </gi>
+    <gi>
+      <title>relative file path</title>
+      <p>The name of a file that includes a path to the file from the current
+                            working directory of a program. An <em>relative file path</em> never starts
+                            with a <c>/</c>.</p>
+    </gi>
+  </glossary>
+</section>
+>>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

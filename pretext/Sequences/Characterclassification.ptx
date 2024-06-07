@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<section xml:id="strings_character-classification">
+  <title>Character classification</title>
+  <p>It is often helpful to examine a character and test whether it is upper- or
+            lowercase, or whether it is a character or a digit. The <c>string</c> module
+            provides several constants that are useful for these purposes. One of these,
+            <c>string.digits</c> is equivalent to <q>0123456789</q>.  It can be used to check if a character
+            is a digit using the <c>in</c> operator.</p>
+  <p>The string <c>string.ascii_lowercase</c> contains all of the ascii letters that the system
+            considers to be lowercase. Similarly, <c>string.ascii_uppercase</c> contains all of the
+            uppercase letters. <c>string.punctuation</c> comprises all the characters considered
+            to be punctuation. Run the following:</p>
+  <blockquote>
+    <program xml:id="ch3_sec10_p1" interactive="activecode" language="python">
+      <input>
+import string
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.digits)
+print(string.punctuation)
+        </input>
+    </program>
+  </blockquote>
+  <p>For more information consult the <c>string</c> module documentation (see <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>).</p>
+<note>
+<term>More About ASCII</term>
+<p>ASCII is abbreviated from American Standard Code for Information Interchange. As computers store data in numeric values, for each character (words, punctuations, etc) a specific number is assigned to represent it. This process is called character encoding. In order to exchange informations between different computers, a set of standards were needed, from which ASCII was born. </p>
+<p>ASCII contains 128 characters, where each character is assigned with a specific number. For instance uppercase alphabet starts from A = 65, while lowercase alphabet starts from a = 97 and continues as b=98, c=99, so on. Due to its limited size, this standard is replaced by Unicode which contains thousands of characters, however still useful to understand and work on encoding. </p>
+
+</note>
+
+
+
+
+<note>
+    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
+    <program xml:id="scratch_04" interactive="activecode" language="python">
+      <input>
+
+
+        </input>
+    </program>
+  </note>
+</section>
