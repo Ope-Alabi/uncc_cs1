@@ -37,6 +37,26 @@ Building with PreTeXt
 
 Note: The pretext sources are in the pretext folder, we will keep the _sources folder until we are 100% sure that the book has been converted correctly and as thoroughly as possible.
 
+Building with Docker
+--------------------
+
+You can build and run the container at the same time with this line ::
+    
+    docker run -it --rm --name pretext-1212 --network=host $(docker build -q .)
+
+Alternatively, you can just build with ::
+
+    docker build .
+
+This will show building progress.
+Removing ``-q --disable-pip-version-check --root-user-action=ignore`` from line 11 of ``Dockerfile`` will show pip installing progress.
+
+Then running the container can be done with ::
+
+    docker run -it --rm --name pretext-1212 --network=host <image id>
+
+The built page will be accessible at ``http://localhost:8128/output/html/``.
+
 Building for Production on a Runestone Server
 ---------------------------------------------
 
