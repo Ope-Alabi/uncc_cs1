@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <title>Lists</title>
@@ -34,25 +33,3 @@
 <xi:include href="./Glossary.ptx"/>
 <xi:include href="./Exercises.ptx"/>
 </chapter>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Lists</title>
-4<xi:include href="./intro-Lists.ptx"/>
-4<xi:include href="./ListValues.ptx"/>
-4<xi:include href="./ListLength.ptx"/>
-4<xi:include href="./AccessingElements.ptx"/>
-4<xi:include href="./ConcatenationandRepetition.ptx"/>
-4<xi:include href="./ListSlices.ptx"/>
-4<xi:include href="./CloningLists.ptx"/>
-4<xi:include href="./ListsareMutable.ptx"/>
-4<xi:include href="./ListDeletion.ptx"/>
-4<xi:include href="./ListMethods.ptx"/>
-4<xi:include href="./AppendversusConcatenate.ptx"/>
-4<xi:include href="./StringsandLists.ptx"/>
-4<xi:include href="./listTypeConversionFunction.ptx"/>
-4<xi:include href="./None.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./video-lists.ptx"/>
-</chapter>
->>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

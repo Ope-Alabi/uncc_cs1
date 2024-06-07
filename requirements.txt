@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 # <!-- Managed automatically by PreTeXt authoring tools -->
 pretext == 2.4.1
-=======
-pretext == 1.6.0
->>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0"?>
 <section xml:id="classes-basics_a-change-of-perspective">
   <title>A change of perspective</title>
@@ -26,26 +25,3 @@
             themselves.  OOP allows us to accurately mirror this when we
             organize our programs.</p>
 </section>
-=======
-<?xml version="1.0"?>
-<section xml:id="classes-basics_a-change-of-perspective">
-  <title>A change of perspective</title>
-  <p>Throughout the earlier chapters, we wrote functions and called them using a syntax such as <c>printRange(lst)</c>.  This suggests that the
-            function is the active agent. It says something like, <i>"Hey, printRange!  
-            Here's a list for you to use to print with."</i></p>
-  <p>In object-oriented programming, the objects are considered the active agents. This change in perspective is sometimes considered to be a more "polite" way 
-            to write programming instructions.  However, it may not initially
-            be obvious that it is useful. It turns out that often times shifting responsibility from
-            the functions onto the objects makes it possible to write more versatile
-            functions and makes it easier to maintain and reuse code.</p>
-  <p>The most important advantage of the object-oriented style is that it
-            fits our mental chunking and real-life experience more accurately.
-            In real life our <c>cook</c> method is part of our microwave oven &#x2014; we don't
-            have a <c>cook</c> function sitting in the corner of the kitchen, into which
-            we pass the microwave!  Similarly, we use the cellphone's own methods
-            to send an sms, or to change its state to silent.  The functionality
-            of real-world objects tends to be tightly bound up inside the objects
-            themselves.  OOP allows us to accurately mirror this when we
-            organize our programs.</p>
-</section>
->>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

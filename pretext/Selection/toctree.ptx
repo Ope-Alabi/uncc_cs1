@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <title>Selection</title>
@@ -13,23 +12,3 @@
 <xi:include href="./Glossary.ptx"/>
 <xi:include href="./Exercises.ptx"/>
 </chapter>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Branching</title>
-4<xi:include href="./BooleanValuesandBooleanExpressions.ptx"/>
-4<xi:include href="./ConditionalExecutionBinarySelection.ptx"/>
-4<xi:include href="./OmittingtheelseClauseUnarySelection.ptx"/>
-4<xi:include href="./Nestedconditionals.ptx"/>
-4<xi:include href="./Chainedconditionals.ptx"/>
-4<xi:include href="./Theinandnotinoperators.ptx"/>
-4<xi:include href="./ListMembership.ptx"/>
-4<xi:include href="./StringComparison.ptx"/>
-4<xi:include href="./video-branching.ptx"/>
-4<xi:include href="./Logicaloperators.ptx"/>
-4<xi:include href="./PrecedenceofOperators.ptx"/>
-4<xi:include href="./Pseudocode.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./video-logic.ptx"/>
-</chapter>
->>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

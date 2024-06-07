@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <title>Functions</title>
@@ -16,21 +15,3 @@
 <xi:include href="./Glossary.ptx"/>
 <xi:include href="./Exercises.ptx"/>
 </chapter>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Functions</title>
-4<xi:include href="./functions.ptx"/>
-4<xi:include href="./Functionsthatreturnvalues.ptx"/>
-4<xi:include href="./Variablesandparametersarelocal.ptx"/>
-4<xi:include href="./TheAccumulatorPattern.ptx"/>
-4<xi:include href="./Functionscancallotherfunctions.ptx"/>
-4<xi:include href="./Composition.ptx"/>
-4<xi:include href="./FlowofExecutionSummary.ptx"/>
-4<xi:include href="./mainfunction.ptx"/>
-4<xi:include href="./UnitTesting.ptx"/>
-4<xi:include href="./BooleanFunctions.ptx"/>
-4<xi:include href="./ProgramDevelopment.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-</chapter>
->>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f

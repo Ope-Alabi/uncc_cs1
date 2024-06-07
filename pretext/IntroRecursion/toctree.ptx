@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 <title>Recursion</title>
@@ -12,16 +11,3 @@
 <xi:include href="./ProgrammingExercises.ptx"/>
 <xi:include href="./Exercises.ptx"/>
 </chapter>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Recursion</title>
-4<xi:include href="./WhatIsRecursion.ptx"/>
-4<xi:include href="./CalculatingtheSumofaListofNumbers.ptx"/>
-4<xi:include href="./TheThreeLawsofRecursion.ptx"/>
-4<xi:include href="./ConvertinganIntegertoaStringinAnyBase.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-<!--4<xi:include href="./ProgrammingExercises.ptx"/>-->
-4<xi:include href="./video-recursion.ptx"/>
-</chapter>
->>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f
