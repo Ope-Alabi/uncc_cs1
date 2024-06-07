@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 <section xml:id="strings_string-methods">
   <title>String Methods</title>
@@ -524,3 +525,206 @@ print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
     </exercise>
   </subsection>
 </section>
+=======
+<?xml version="1.0"?>
+<section xml:id="strings_string-methods">
+  <title>String Methods</title>
+  <p>We previously used a few functions like <c>print()</c> and <c>len()</c> where we place the variable inside the parentheses such as <c>len(my_str)</c>. On the other hand, a <b>method</b> is a function that is attached to a specific Python object. 
+    To access this function, we write the object, then a dot <c>.</c>, and then the name of the method.   The "dot notation" is the way we connect the name of an object to the name of a method
+    it can perform. For example, we can write <c>my_str.upper()</c> when we want the string <c>my_str</c> to perform the <c>upper()</c> method to create an upper-case version of itself.</p>
+
+
+  <p>Remember that strings are <term> immutable</term>. Therefore, all string methods give us a new string and must be assigned to a new variable. The original string is unchanged.</p>
+
+  <program xml:id="ch3_sec5_p1" interactive="activecode" language="python">
+    <input>
+my_str = "Hello, World"
+my_str.upper()
+print(my_str) # my_str is unchanged! 
+print(my_str.upper()) #Gives us the new string, we can print it or assign it to a variable
+my_new_str = my_str.upper()
+print(my_new_str)
+  </input>
+  </program>
+  <p>In this example, <c>upper</c> is a method that can be invoked on any string object
+            to create a new string in which all the
+            characters are in uppercase. </p>
+  <p>In addition to <c>upper</c>, the following table provides some useful string methods.</p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>
+                            Method
+                        </cell>
+        <cell>
+                            Parameters
+                        </cell>
+        <cell>
+                            Description
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            upper
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string in all uppercase
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            lower
+                        </cell>
+        <cell>
+                            none
+                        </cell>
+        <cell>
+                            Returns a string in all lowercase
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            count
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Returns the number of occurrences of item
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            replace
+                        </cell>
+        <cell>
+                            old, new
+                        </cell>
+        <cell>
+                            Replaces all occurrences of old substring with new
+                        </cell>
+      </row>
+      <row>
+        <cell>
+                            index
+                        </cell>
+        <cell>
+                            item
+                        </cell>
+        <cell>
+                            Returns the leftmost index where the substring item is found, or error if not found
+                        </cell>
+      </row>
+    </tabular>
+  </table>
+  <p>You should experiment with these
+            methods so that you understand what they do.  Note once again that the methods that return strings do <em>not</em>
+            change the original. </p>
+  <program xml:id="ch3_sec5_p2" interactive="activecode" language="python">
+    <input>
+ss = "Hello, World"
+
+els = ss.count("l")
+print(els)
+
+news = ss.replace("o", "***")
+print(news)
+
+food = "banana Bread"
+print(food.lower())
+print(food.index("e"))
+print(food.index("na")) #finds the index of the first occurence of "na"
+print(food.index("b")) 
+print(food.index("B")) #remember that python is case sensitive! 
+        </input>
+  </program>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise label="ch3_sec5_q1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+s = "python rocks"
+print(s.count("o") + s.count("p"))
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>0</p>
+        </statement>
+        <feedback>
+                    There are definitely o and p characters.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>
+                    There are 2 o characters but what about p?
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>3</p>
+        </statement>
+        <feedback>
+                    Yes, add the number of o characters and the number of p characters.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="ch3_sec5_q2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+s = "python rocks"
+print(s[1] * s.index("n"))
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>yyyyy</p>
+        </statement>
+        <feedback>
+                    Yes, s[1] is y and the index of n is 5, so 5 y characters.  It is important to realize that the index method has precedence over the repetition operator.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>55555</p>
+        </statement>
+        <feedback>
+                    Close.  5 is not repeated, it is the number of times to repeat.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>n</p>
+        </statement>
+        <feedback>
+                    This expression uses the index of n
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot combine all those things together.</p>
+        </statement>
+        <feedback>
+                    This is fine, the repetition operator used the result of indexing and the index method.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>
+>>>>>>> stem/master

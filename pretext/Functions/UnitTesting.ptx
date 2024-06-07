@@ -1,107 +1,108 @@
 <?xml version="1.0"?>
 <section xml:id="functions_unit-testing">
   <title>Unit Testing</title>
-  <subsection>
-    <title>Introduction</title>
-  <p>A <term>test case</term> expresses requirements for a program, in a way that can be checked automatically. Specifically, a test
-            asserts something about the state of the program at a particular point in its execution. A <term>unit test</term> is an automatic
-            procedure used to validate that individual units of code are working properly. A function is one form of a unit.
-            A collection of these unit tests is called a <term>test suite</term>.</p>
+  <introduction>
+	  <p>A <term>test case</term> expresses requirements for a program, in a way that can be checked automatically. Specifically, a test
+				asserts something about the state of the program at a particular point in its execution. A <term>unit test</term> is an automatic
+				procedure used to validate that individual units of code are working properly. A function is one form of a unit.
+				A collection of these unit tests is called a <term>test suite</term>.</p>
+  </introduction>
   <p>We have previously suggested that it's a good idea to first write down comments about what your code is supposed to do,
-            before actually writing the code. It is an even better idea to write down some test cases before writing a program.</p>
+			before actually writing the code. It is an even better idea to write down some test cases before writing a program.</p>
   <p>There are several reasons why it's a good habit to write test cases.</p>
   <p>
-    <ul>
-      <li>
-        <p>Before we write code, we have in mind what it <em>should</em> do, but those thoughts may be a little vague. Writing down test cases forces us to be more concrete about what should happen.</p>
-      </li>
-      <li>
-        <p>As we write the code, the test cases can provide automated feedback. You've actually been the beneficiary of such automated feedback via test cases throughout this book in some of the activecode windows and almost all of the exercises. We wrote the code for those test cases but kept it hidden, so as not to confuse you and also to avoid giving away the answers. You can get some of the same benefit from writing your own test cases.</p>
-      </li>
-      <li>
-        <p>In larger software projects, the set of test cases can be run every time a change is made to the code base. <term>Unit tests</term> check that small bits of code are correctly implemented.</p>
-      </li>
-    </ul>
+	<ul>
+	  <li>
+		<p>Before we write code, we have in mind what it <em>should</em> do, but those thoughts may be a little vague. Writing down test cases forces us to be more concrete about what should happen.</p>
+	  </li>
+	  <li>
+		<p>As we write the code, the test cases can provide automated feedback. You've actually been the beneficiary of such automated feedback via test cases throughout this book in some of the activecode windows and almost all of the exercises. We wrote the code for those test cases but kept it hidden, so as not to confuse you and also to avoid giving away the answers. You can get some of the same benefit from writing your own test cases.</p>
+	  </li>
+	  <li>
+		<p>In larger software projects, the set of test cases can be run every time a change is made to the code base. <term>Unit tests</term> check that small bits of code are correctly implemented.</p>
+	  </li>
+	</ul>
   </p>
-  <p>One way to implement unit tests in Python is with <c>assert</c>.</p>
+  <p>You have been following this pattern in the class so far, even if it is unconsciously. The test cases we give for each assessment can be thought of as unit tests. 
+  We give these to you when the assessment is assigned because it is so helpful to have while you are writing code.</p>
+  <p>One way to implement unit tests in Python, the same way our test cases do it, is with <c>assert</c>.</p>
   <p>
-    <ul>
-      <li>
-        <p>Following the word assert there will be a python expression.</p>
-      </li>
-      <li>
-        <p>If that expression evaluates to the Boolean <c>False</c>, then the interpreter will raise a runtime error.</p>
-      </li>
-      <li>
-        <p>If the expression evaluates to <c>True</c>, then nothing happens and the execution goes on to the next line of code.</p>
-      </li>
-    </ul>
+	<ul>
+	  <li>
+		<p>Following the word assert there will be a python expression.</p>
+	  </li>
+	  <li>
+		<p>If that expression evaluates to the Boolean <c>False</c>, then the interpreter will raise a runtime error.</p>
+	  </li>
+	  <li>
+		<p>If the expression evaluates to <c>True</c>, then nothing happens and the execution goes on to the next line of code.</p>
+	  </li>
+	</ul>
   </p>
   <p>Take a look at the way assert is used in the following code.</p>
-  <program xml:id="ch04_ut2" interactive="activecode" language="python">
-    <input>
+  <program xml:id="ch8_sec9_p1" interactive="activecode" language="python">
+	<input>
 assert type(9//5) == int
 assert type(9.0//5) == int
-        </input>
+		</input>
   </program>
   <p>In the code above, we explicitly state some natural assumptions about how truncated division might work in python.
-            It turns out that the second asumption is wrong: <c>9.0//5</c> produces <c>2.0</c>, a floating point value!</p>
+			It turns out that the second asumption is wrong: <c>9.0//5</c> produces <c>2.0</c>, a floating point value!</p>
   <p>The python interpreter does not enforce restrictions about the data types of objects that can be bound to particular
-            variables; however, type checking could alert us that something has gone wrong in our program execution. If we are
-            assuming at that <c>x</c> is a list, but it's actually an integer, then at some point later in the program execution,
-            there will probably be an error. We can add <c>assert</c> statements that will cause an error to be flagged sooner rather
-            than later, which might make it a lot easier to debug.</p>
+			variables; however, type checking could alert us that something has gone wrong in our program execution. If we are
+			assuming at that <c>x</c> is a list, but it's actually an integer, then at some point later in the program execution,
+			there will probably be an error. We can add <c>assert</c> statements that will cause an error to be flagged sooner rather
+			than later, which might make it a lot easier to debug.</p>
   <p>
-    <term>Check your understanding</term>
+	<term>Check your understanding</term>
   </p>
-  <exercise label="assertch6_3_1">
-    <statement>
-      <p>When <c>assert x==y</c> is executed and x and y have the same values, what will happen?</p>
-    </statement>
-    <choices>
-      <choice>
-        <statement>
-          <p>A runtime error will occur</p>
-        </statement>
-        <feedback><p>
-                    The expression ``x==y`` evaluates to ``True``
-                </p></feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>A message is printed out saying that the test failed.</p>
-        </statement>
-        <feedback><p>
-                    The expression ``x==y`` evaluates to ``True``
-                </p></feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>x will get the value that y currently has</p>
-        </statement>
-        <feedback><p>
-                    ``x==y`` is a Boolean expression, not an assignment statement
-                </p></feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>Nothing will happen</p>
-        </statement>
-        <feedback><p>
-                    The expression ``x==y`` evaluates to ``True``
-                </p></feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>A message is printed out saying that the test passed.</p>
-        </statement>
-        <feedback><p>
-                    When an assertion test passes, no message is printed.
-                </p></feedback>
-      </choice>
-    </choices>
+  <exercise label="ch8_sec9_q1">
+	<statement>
+	  <p>When <c>assert x==y</c> is executed and x and y have the same values, what will happen?</p>
+	</statement>
+	<choices>
+	  <choice>
+		<statement>
+		  <p>A runtime error will occur</p>
+		</statement>
+		<feedback>
+					The expression ``x==y`` evaluates to ``True``
+				</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>A message is printed out saying that the test failed.</p>
+		</statement>
+		<feedback>
+					The expression ``x==y`` evaluates to ``True``
+				</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>x will get the value that y currently has</p>
+		</statement>
+		<feedback>
+					``x==y`` is a Boolean expression, not an assignment statement
+				</feedback>
+	  </choice>
+	  <choice correct="yes">
+		<statement>
+		  <p>Nothing will happen</p>
+		</statement>
+		<feedback>
+					The expression ``x==y`` evaluates to ``True``
+				</feedback>
+	  </choice>
+	  <choice>
+		<statement>
+		  <p>A message is printed out saying that the test passed.</p>
+		</statement>
+		<feedback>
+					When an assertion test passes, no message is printed.
+				</feedback>
+	  </choice>
+	</choices>
   </exercise>
-</subsection>
   <subsection xml:id="functions_assert-with-for-loops">
     <title><c>assert</c> with <c>for</c> loops</title>
     <p>Why would you ever want to write a line of code that can never compute anything useful for you, but sometimes causes
@@ -117,7 +118,7 @@ assert type(9.0//5) == int
     <p>In the code below, <c>lst</c> is bound to a list object. In python, not all the elements of a list have to be of the
                 same type. We can check that they all have the same type and get an error if they are not. Notice that with <c>lst2</c>,
                 one of the assertions fails.</p>
-    <program xml:id="ch04_ut3" interactive="activecode" language="python">
+    <program xml:id="ch8_sec9_p2" interactive="activecode" language="python">
       <input>
 lst = ['a', 'b', 'c']
 first_type = type(lst[0])
@@ -136,7 +137,7 @@ for item in lst2:
     <p>Testing whether a function returns the correct value is the easiest test case to define. You simply check whether the
                 result of invoking the function on a particular input produces the particular output that you expect. Take a look at
                 the following code.</p>
-    <program xml:id="ch04_ut1" interactive="activecode" language="python">
+    <program xml:id="ch8_sec9_p3" interactive="activecode" language="python">
       <input>
 def square(x):
 #raise x to the second power
@@ -149,7 +150,7 @@ assert square(3) == 9
                 principle, a function might work properly on all the inputs that are tested in the test cases, but still not work
                 properly on some other inputs. That's where the art of defining test cases comes in: you try to find specific inputs that
                 are representative of all the important kinds of inputs that might ever be passed to the function.</p>
-    <exercise label="question19_1_3">
+    <exercise label="ch8_sec9_q2">
       <statement>
         <p>For the hangman game, this &#x2018;blanked' function takes a word and some letters that have been guessed, and returns a version
                 of the word with _ for all the letters that haven't been guessed. Which of the following is the correct way to write
@@ -160,25 +161,25 @@ assert square(3) == 9
           <statement>
             <p>assert blanked('under', 'du', 'u_d__') == True</p>
           </statement>
-          <feedback><p>
+          <feedback>
                     blanked only takes two inputs; this provides three inputs to the blanked function
-                </p></feedback>
+                </feedback>
         </choice>
         <choice>
           <statement>
             <p>assert blanked('under', 'u_d__') == 'du'</p>
           </statement>
-          <feedback><p>
+          <feedback>
                     The second argument to the blanked function should be the letters that have been guessed, not the blanked version of the word
-                </p></feedback>
+                </feedback>
         </choice>
         <choice correct="yes">
           <statement>
             <p>assert blanked('under', 'du') == 'u_d__'</p>
           </statement>
-          <feedback><p>
+          <feedback>
                     This checks whether the value returned from the blanked function is 'u_d__'.
-                </p></feedback>
+                </feedback>
         </choice>
       </choices>
     </exercise>

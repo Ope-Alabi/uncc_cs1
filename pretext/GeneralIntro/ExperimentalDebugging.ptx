@@ -28,7 +28,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_9_1">
+  <exercise label="ch1_sec10_q1">
     <statement>
       <p>The difference between programming and debugging is:</p>
     </statement>
@@ -37,33 +37,33 @@
         <statement>
           <p>programming is the process of writing and gradually debugging a program until it does what you want.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Programming is the writing of the source code and debugging is the process of finding and correcting all the errors within the program until it is correct.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>programming is creative and debugging is routine.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Programming can be creative, but it also follows a process and debugging can involve creativity in how you find the errors.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>programming is fun and debugging is work.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Some people think that debugging is actually more fun than programming (they usually become good software testers).  Debugging is much like solving puzzles, which some people think is fun!
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>there is no difference between them.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     You cannot debug without first having a program, meaning that someone had to do the programming first.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

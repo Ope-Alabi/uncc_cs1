@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_the-random-module">
-  <title>The random module</title>
+  <title>The <title_reference>random</title_reference> module</title>
   <p>We often want to use <term>random numbers</term> in programs.  Here are a few typical uses:</p>
   <p>
     <ul>
@@ -24,7 +24,7 @@
   </p>
   <p>Python provides a module <c>random</c> that helps with tasks like this.  You can
             take a look at it in the documentation.  Here are the key things we can do with it.</p>
-  <program xml:id="chmodule_rand" interactive="activecode" language="python">
+  <program xml:id="ch9_sec3_p1" interactive="activecode" language="python">
     <input>
 import random
 
@@ -50,7 +50,7 @@ print(diceThrow)
             the range [0.0, 5.0).  Once more, these are uniformly distributed numbers &#x2014; numbers
             close to 0 are just as likely to occur as numbers close to 0.5, or numbers close to 1.0.
             If you continue to press the run button you will see random values between 0.0 and up to but not including 5.0.</p>
-  <program xml:id="chmodule_rand2" interactive="activecode" language="python">
+  <program xml:id="ch9_sec3_p2" interactive="activecode" language="python">
     <input>
 import random
 
@@ -67,7 +67,7 @@ print(result)
             of the attributes of the generator) will be updated.  The good news is that each time you run your program, the seed value
             is likely to be different meaning that even though the random numbers are being created algorithmically, you will likely
             get random behavior each time you execute.</p>
-  <note>
+  <!--<note>
     <title>Lab</title>
     <p>
       <ul>
@@ -76,11 +76,11 @@ print(result)
         </li>
       </ul>
     </p>
-  </note>
+  </note>-->
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question4_4_1">
+  <exercise label="ch9_sec3_q1">
     <statement>
       <p>Which of the following is the correct way to reference the value pi within the math module.   Assume you have already imported the math module.</p>
     </statement>
@@ -89,37 +89,37 @@ print(result)
         <statement>
           <p>math.pi</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     To invoke or reference something contained in a module you use the dot (.) notation.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>math(pi)</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is the syntax for calling a function, not referencing an item in a module.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>pi.math</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The module name must come first when accessing values and functions with a module.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>math-&gt;pi</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The -&gt; notation is not used in Python.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_4_2">
+  <exercise label="ch9_sec3_q2">
     <statement>
       <p>Which module would you most likely use if you were writing a function to simulate rolling dice?</p>
     </statement>
@@ -128,37 +128,37 @@ print(result)
         <statement>
           <p>the math module</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     While you might want to use the math module for other numerical computations in your program, it does not contain functions that are likely to help you simulate a dice roll.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>the random module</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     You would likely call the function random.randrange.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>the turtle module</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The turtle module, while producing interesting graphics, is unlikely to help you here.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>the game module</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Python does not have a game module.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_4_3">
+  <exercise label="ch9_sec3_q3">
     <statement>
       <p>The correct code to generate a random number between 1 and 100 (inclusive) is:</p>
     </statement>
@@ -167,37 +167,37 @@ print(result)
         <statement>
           <p>prob = random.randrange(1, 101)</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This will generate a number between 1 and 101, but does not include 101.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(1, 100)</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This will generate a number between 1 and 100, but does not include 100.  The highest value generated will be 99.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(0, 101)</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This will generate a number between 0 and 100.  The lowest value generated is 0.  The highest value generated will be 100.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>prob = random.randrange(0, 100)</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This will generate a number between 0 and 100, but does not include 100.  The lowest value generated is 0 and the highest value generated will be 99.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question4_4_4">
+  <exercise label="ch9_sec3_q4">
     <statement>
       <p>One reason that lotteries don't use computers to generate random numbers is:</p>
     </statement>
@@ -206,39 +206,39 @@ print(result)
         <statement>
           <p>There is no computer on the stage for the drawing.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     They could easily put one there.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Because computers don't really generate random numbers, they generate pseudo-random numbers.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Computers generate random numbers using a deterministic algorithm.  This means that if anyone ever found out the algorithm they could accurately predict the next value to be generated and would always win the lottery.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>They would just generate the same numbers over and over again.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This might happen if the same seed value was used over and over again, but they could make sure this was not the case.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>The computer can't tell what values were already selected, so it might generate all 5's instead of 5 unique numbers.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     While a programmer would need to ensure the computer did not select the same number more than once, it is easy to ensure this.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_04" interactive="activecode" language="python">
+    <program xml:id="scratch_14" interactive="activecode" language="python">
       <input>
 
 

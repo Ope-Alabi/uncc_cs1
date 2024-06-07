@@ -5,7 +5,7 @@
             variable on the left hand side of the assignment operator. It is called local because this variable only
             exists inside the function and you cannot use it outside. For example,
             consider again the <c>square</c> function:</p>
-  <program xml:id="bad_local" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c1" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x
@@ -39,7 +39,7 @@
   <p>On the other hand, it is legal for a function to access a global variable.  However, this is considered
     <term>bad form</term> by nearly all programmers and should be avoided.  Look at the following,
             nonsensical variation of the square function.</p>
-  <program xml:id="badsquare_1" interactive="activecode" language="python">
+  <program xml:id="ch8_sec3_p1" interactive="activecode" language="python">
     <input>
 def badsquare(x):
     y = x ** power
@@ -62,7 +62,7 @@ print(result)
   <p>There is another variation on this theme of local versus global variables.  Assignment statements in the local function cannot
             change variables defined outside the function, without further (discouraged) special syntax.  Consider the following
             codelens example:</p>
-  <program xml:id="cl_powerof_bad" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c2" interactive="activecode" language="python">
     <input>
           def powerof(x, p):
               power = p   # Another dumb mistake
@@ -96,7 +96,7 @@ print(result)
             formal parameter will cause a change to the value of the variable that was
             used as the actual parameter, especially when the two share the same name.
             But this example demonstrates that that is clearly not how Python operates.</p>
-  <program xml:id="cl_change_parm" interactive="codelens" language="python">
+  <program xml:id="ch8_sec3_c3" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x
@@ -111,7 +111,7 @@ print(result)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question5_3_1">
+  <exercise label="ch8_sec3_q1">
     <statement>
       <p>What is a variable's scope?</p>
     </statement>
@@ -120,29 +120,29 @@ print(result)
         <statement>
           <p>Its value</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Value is the contents of the variable.  Scope concerns where the variable is "known".
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>The range of statements in the code where a variable can be accessed.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The range in which a variable can be accessed is it's scope. For example if a variable is defined in a function, then the scope of the variable is that function.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Its name</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The name of a variable is just an identifier or alias.  Scope concerns where the variable is "known".
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_3_2">
+  <exercise label="ch8_sec3_q2">
     <statement>
       <p>What is a local variable?</p>
     </statement>
@@ -151,29 +151,29 @@ print(result)
         <statement>
           <p>A temporary variable that is only used inside a function</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, a local variable is a temporary variable that is only known (only exists) in the function it is defined in.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>The same as a parameter</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     While parameters may be considered local variables, functions may also define and use additional local variables.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>Another name for any variable</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Variables that are used outside a function are not local, but rather global variables.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question5_3_3">
+  <exercise label="ch8_sec3_q3">
     <statement>
       <p>Can you use the same name for a local variable as a global variable?</p>
     </statement>
@@ -182,25 +182,25 @@ print(result)
         <statement>
           <p>Yes, and there is no reason not to.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     While there is no problem as far as Python is concerned, it is generally considered bad style because of the potential for the programmer to get confused.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Yes, but it is considered bad form.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     it is generally considered bad style because of the potential for the programmer to get confused.  If you must use global variables (also generally bad form) make sure they have unique names.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>No, it will cause an error.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Python manages global and local scope separately and has clear rules for how to handle variables with the same name in different scopes, so this will not cause a Python error.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>

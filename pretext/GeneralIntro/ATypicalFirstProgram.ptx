@@ -13,7 +13,7 @@ print("Hello, World!")
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
   <p>Here is the example in activecode.  Give it a try!</p>
-  <program xml:id="ch01_2" interactive="activecode" language="python">
+  <program xml:id="ch1_sec11_p1" interactive="activecode" language="python">
     <input>
 print("Hello, World!")
         </input>
@@ -26,7 +26,7 @@ print("Hello, World!")
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_11_1">
+  <exercise label="ch1_sec11_q1">
     <statement>
       <p>The print function:</p>
     </statement>
@@ -35,33 +35,33 @@ print("Hello, World!")
         <statement>
           <p>sends information to the printer to be printed on paper.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Within the Python programming language, the print function has nothing to do with the printer.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>displays a value on the screen.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, the print function is used to display the value of the thing being printed.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>tells the computer to put the information in print, rather than cursive, format.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The format of the information is called its font and has nothing to do with the print function.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>tells the computer to speak the information.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     That would be a different function.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

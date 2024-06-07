@@ -10,7 +10,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_7_1">
+  <exercise label="ch1_sec8_q1">
     <statement>
       <p>Which of the following is a run-time error?</p>
     </statement>
@@ -19,29 +19,29 @@
         <statement>
           <p>Attempting to divide by 0.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Python cannot reliably tell if you are trying to divide by 0 until it is executing your program (e.g., you might be asking the user for a value and then dividing by that value - you cannot know what value the user will enter before you run the program).
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Forgetting a colon at the end of a statement where one is required.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is a problem with the formal structure of the program.  Python knows where colons are required and can detect when one is missing simply by looking at the code without running it.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Forgetting to divide by 100 when printing a percentage amount.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This will produce the wrong answer, but Python will not consider it an error at all.  The programmer is the one who understands that the answer produced is wrong.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_7_2">
+  <exercise label="ch1_sec8_q2">
     <statement>
       <p>Who or what typically finds runtime errors?</p>
     </statement>
@@ -50,33 +50,33 @@
         <statement>
           <p>The programmer.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Programmers rarely find all the runtime errors, there is a computer program that will do it for us.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>The interpreter.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     If an instruction is illegal to perform at that point in the execution, the interpreter will stop with a message describing the exception.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>The computer.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Well, sort of.  But it is a special thing in the computer that does it.  The stand alone computer without this additional piece can not do it.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>The teacher / instructor.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Your teacher and instructor may be able to find most of your runtime errors, but only because they have experience looking at code and possibly writing code.  With experience runtime errors are easier to find.  But we also have an automated way of finding these types of errors.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

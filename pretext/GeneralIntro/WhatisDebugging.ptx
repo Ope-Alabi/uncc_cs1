@@ -12,7 +12,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_5_1">
+  <exercise label="ch1_sec6_q1">
     <statement>
       <p>Debugging is:</p>
     </statement>
@@ -21,33 +21,33 @@
         <statement>
           <p>tracking down programming errors and correcting them.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>removing all the bugs from your house.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Maybe, but that is not what we are talking about in this context.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>finding all the bugs in the program.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>fixing the bugs in the program.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

@@ -7,7 +7,7 @@
             the index. Remember that the indices start at 0.  Any integer expression can be used
             as an index and as with strings, negative index values will locate items from the right instead
             of from the left.</p>
-  <program xml:id="chp09_02" interactive="activecode" language="python">
+  <program xml:id="ch4_sec4_p1" interactive="activecode" language="python">
     <input>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
@@ -19,7 +19,7 @@ print(numbers[len(numbers) - 1])
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question9_3_1">
+  <exercise label="ch4_sec4_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -34,29 +34,29 @@ print(alist[5])
         <statement>
           <p>[ ]</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The empty list is at index 4.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>3.14</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, 3.14 is at index 5 since we start counting at 0 and sublists count as one item.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     False is at index 6.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_3_2">
+  <exercise label="ch4_sec4_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -71,29 +71,29 @@ print(alist[2].upper())
         <statement>
           <p>Error, you cannot use the upper method on a list.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     alist[2] is the string cat so the upper method is legal
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>2</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     2 is the index.  We want the item at that index.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>CAT</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, the string cat is upper cased to become CAT.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question9_3_3">
+  <exercise label="ch4_sec4_q3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -108,33 +108,33 @@ print(alist[2][0])
         <statement>
           <p>56</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Indexes start with 0, not 1.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>c</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Yes, the first character of the string at index 2 is c
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>cat</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     cat is the item at index 2 but then we index into it further.
-                </p></feedback>
+                </feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot have two index values unless you are using slicing.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Using more than one index is fine.  You read it from left to right.
-                </p></feedback>
+                </feedback>
       </choice>
     </choices>
   </exercise>

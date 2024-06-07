@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_executing-python-in-this-book">
   <title>Executing Python in this Book</title>
-  <video xml:id="codelensvid" youtube="LZ7H1X8ar9E" width="auto"/>
+
   <p>This book provides two special ways to execute Python programs.  Both techniques are designed to assist you as you
             learn the Python programming language.  They will help you increase your understanding of how Python programs work.</p>
   <p>First, you can write, modify, and execute programs using a unique <term>activecode</term> interpreter that allows you to execute Python code right
             in the text itself (right from the web browser).  Although this is certainly not the way real programs are written, it provides an excellent
             environment for learning a programming language like Python since you can experiment with the language as you are reading.</p>
-  <program xml:id="ch01_1" interactive="activecode" language="python">
+  <program xml:id="ch1_sec4_p1" interactive="activecode" language="python">
     <input>
 print("My first program adds two numbers, 2 and 3:")
 print(2 + 3)
@@ -53,7 +53,7 @@ print(2 + 3)
             In codelens you can see and control the step by step progress.
             Note that the red arrow always points to the next line of code that is going to be executed.
             The light green arrow points to the line that was just executed.</p>
-  <program label="firstexample" interactive="codelens" language="python">
+  <program xml:id="ch1_sec4_c1" interactive="activecode" language="python">
     <input>
           print("My first program adds two numbers, 2 and 3:")
           print(2 + 3)
@@ -65,7 +65,7 @@ print(2 + 3)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="question1_3_1">
+  <exercise label="ch1_sec4_q1">
     <statement>
       <p>The activecode interpreter allows you to (select all that apply):</p>
     </statement>
@@ -74,37 +74,37 @@ print(2 + 3)
         <statement>
           <p>save programs and reload saved programs.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     You can (and should) save the contents of the activecode window.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>type in Python source code.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     You are not limited to running the examples that are already there.  Try   adding to them and creating your own.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>execute Python code right in the text itself within the web browser.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     The activecode interpreter will allow you type Python code into the textbox and then you can see it execute as the interpreter interprets and executes the source code.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>receive a yes/no answer about whether your code is correct or not.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
-  <exercise label="question1_3_2">
+  <exercise label="ch1_sec4_q2">
     <statement>
       <p>Codelens allows you to (select all that apply):</p>
     </statement>
@@ -113,33 +113,33 @@ print(2 + 3)
         <statement>
           <p>measure the speed of a program's execution.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>control the step by step execution of a program.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     By using codelens, you can control the execution of a program step by step.  You can even go backwards!
-        </p></feedback>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>write and execute your own Python code.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     Codelens works only for the pre-programmed examples.
-        </p></feedback>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>execute the Python code that is in codelens.</p>
         </statement>
-        <feedback><p>
+        <feedback>
                     By stepping forward through the Python code in codelens, you are executing the Python program.
-        </p></feedback>
+        </feedback>
       </choice>
     </choices>
   </exercise>
