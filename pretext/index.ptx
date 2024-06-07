@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 <meta content="An interactive version of the How to Think Like a Computer Scientist book" name="description">
     </meta>
+=======
+<?xml version="1.0"?>
+<meta content="Computer Science for STEM" name="description">
+    </meta>
+>>>>>>> 6b21168b0c3243abea66db80c0bd38b03afc202f
