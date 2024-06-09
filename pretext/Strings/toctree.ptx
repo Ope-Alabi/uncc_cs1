@@ -13,5 +13,6 @@
 4<xi:include href="./Characterclassification.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./StringMethods_optional.ptx"/>
+4<xi:include href="./Exercises.ptx"/>
 
 </chapter>

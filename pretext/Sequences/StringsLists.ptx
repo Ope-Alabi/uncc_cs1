@@ -1,0 +1,72 @@
+<section xml:id="StringsLists">
+    <title>Strings and Lists</title>
+    <p>
+        Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out. Our definition was simple: a string is simply some characters inside quotes. In this chapter we explore strings in much more detail.
+    </p>
+    <p>
+        Additionally, we explore lists and tuples, which are very much like strings but can hold different types.
+    </p>
+
+    <subsection xml:id="subsec-Strings">
+        <title>Strings</title>
+        <video xml:id="string-vid" youtube="T435lvYXE_w" width="auto"/>
+        <p>
+            Strings can be defined as sequential collections of characters. This means that the individual characters that make up a string are in a particular order from left to right.
+        </p>
+        <p>
+            A string that contains no characters, often referred to as the <term>empty string</term>, is still considered to be a string. It is simply a sequence of zero characters and is represented by ‘’ or “” (two single or two double quotes with nothing in between).
+        </p>
+    </subsection>
+
+    <subsection xml:id="subsec-Lists">
+        <title>Lists</title>
+        <video xml:id="list-vid" youtube="mrwSbE5MDn0" width="auto"/>
+
+        <p>
+            A <term>list</term> is a sequential collection of Python data values, where each value is identified by an index. The values that make up a list are called its <term>elements</term>. Lists are similar to strings, which are ordered collections of characters, except that the elements of a list can have any type and for any one list, the items can be of different types.
+        </p>
+        <p>
+            There are several ways to create a new list.  The simplest is to enclose the elements in square brackets ( <c>[</c> and <c>]</c>).
+        </p>
+
+        <program language="python">
+            <input>
+                [10, 20, 30, 40]
+                ["spam", "bungee", "swallow"]
+            </input>
+        </program>
+        <p>The first example is a list of four integers. The second is a list of three strings. As we said above, the elements of a list don't have to be the same type.  The following list contains a string, a float, an integer, and another list.</p>
+        <program language="python">
+            <input>
+                ["hello", 2.0, 5, [10, 20]]
+            </input>
+        </program>
+
+        <p>A list within another list is said to be <term>nested</term> and the inner list is often called a <term>sublist</term>. Finally, there is a special list that contains no elements. It is called the empty list and is denoted <c>[]</c>.</p>
+        
+    </subsection>
+
+    <p xml:id="lists_accessing_elements" names="accessing-elements">
+        <term>Check your understanding</term>
+    </p>
+      <exercise label="question5_2_1">
+        <statement>
+          <p>A list is only allowed to contain integer items.</p>
+        </statement>
+        <choices>
+          <choice correct="yes">
+            <statement>
+              <p>False</p>
+            </statement>
+            <feedback> Yes, unlike strings, lists can consist of any type of Python data. </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>True</p>
+            </statement>
+            <feedback> Lists are heterogeneous, meaning they can have different types of data. </feedback>
+          </choice>
+        </choices>
+      </exercise>
+</section>
+

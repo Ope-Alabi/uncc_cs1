@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+    4<title>Sequences</title>
+    4<xi:include href="./intro_sequences.ptx"/>
+    4<xi:include href="./StringsLists.ptx"/>
+    4<xi:include href="./SequenceIndexing.ptx"/>
+    4<xi:include href="./creation_vs_indexing.ptx"/>
+    4<xi:include href="./SequenceLength.ptx"/>
+    4<xi:include href="./slice_operator.ptx"/>
+    4<xi:include href="./concatenation_and_repetition.ptx"/>
+
+
+</chapter>

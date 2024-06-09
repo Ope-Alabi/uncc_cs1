@@ -16,6 +16,7 @@
         <xi:include href="./Strings/toctree.ptx"/>
         <xi:include href="./Lists/toctree.ptx"/>
         <xi:include href="./Selection/toctree.ptx"/>
+        <xi:include href="./Sequences/toctree.ptx"/>
         <xi:include href="./Debugging/toctree.ptx"/>
         <xi:include href="./Iteration/toctree.ptx"/>
         <xi:include href="./Functions/toctree.ptx"/>
