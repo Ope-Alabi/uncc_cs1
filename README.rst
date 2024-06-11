@@ -55,6 +55,12 @@ Then running the container can be done with ::
 
     docker run -it --rm --name pretext-1212 --network=host <image id>
 
+For development, the container can be run without rebuilding for each change with the following: ::
+
+    docker run -it --rm --name pretext-1212 --network=host -v "$PWD"/pretext:/app/pretext[:z] -w /app <image id>
+
+Note that this does involve restarting the container for each change.
+
 The built page will be accessible at ``http://localhost:8128/output/html/``.
 
 Building for Production on a Runestone Server
