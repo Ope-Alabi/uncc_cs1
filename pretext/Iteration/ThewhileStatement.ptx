@@ -19,7 +19,7 @@
 
   <p>
     <li>
-      <p><b>count</b> is a normal variable here, but since it is governing the <c>while</c> loop it is also called the <term>loop variable</term>.</p>
+      <p><c>count</c> is a normal variable here, but since it is governing the <c>while</c> loop it is also called the <term>loop variable</term>.</p>
     </li>
     <li>
       <p>Line 2 here is the <term>loop condition</term>. It must always be a boolean expression that will evaluate to <c>False</c> or <c>True</c>.</p>
@@ -63,7 +63,7 @@
             source of amusement for computer scientists is the observation that the
             directions written on the back of the shampoo bottle (lather, rinse, repeat) create an infinite loop.</p>
 
-  <p>We can use the <c>while</c> loop to create any type of iteration we wish, making it more general-purpose than the <c>for</c> loop we'll learn next week.  
+  <p>We can use the <c>while</c> loop to create any type of iteration we wish, making it more general-purpose than the <c>for</c> loop we'll in a later section.
   For example, let us consider a program that adds all numbers from <c>1</c> to <c>n</c>. To do this, we will create a variable called <c>aNumber</c> and initialize it to 
   1, the first number in the summation.  Every iteration will add <c>aNumber</c> to the running total until all the values have been used.
   In order to control the iteration, we must create a boolean expression that evaluates to <c>True</c> as long as we want to keep adding values to our 
@@ -86,22 +86,7 @@
 
   <p>You can almost read the <c>while</c> statement as if it were in natural language. It means,
             while <c>aNumber</c> is less than or equal to <c>aBound</c>, continue executing the body of the loop. Within
-            the body, each time, update <c>theSum</c> using the accumulator pattern and increment <c>aNumber</c>. After the body of the loop, we go back up to the condition of the <c>while</c> and reevaluate it.  When <c>aNumber</c> becomes greater than <c>aBound</c>, the condition fails and flow of control continues to the <c>return</c> statement.</p>
-  
-  <!--<p>The same program in codelens will allow you to observe the flow of execution.</p>
-  
-  <program xml:id="ch7_sec2_p3" interactive="activecode" language="python">
-    <input>
-      """ Return the sum of 1+2+3 ... n """
-      aBound = int(input("Please give a number n: "))
-      theSum  = 0
-      aNumber = 1
-      while aNumber &lt;= aBound:
-          theSum = theSum + aNumber
-          aNumber = aNumber + 1
-      print(theSum)
-    </input>
-  </program>-->
+            the body, each time, update <c>theSum</c> using the accumulator pattern and increment <c>aNumber</c>. After the body of the loop, we go back up to the condition of the <c>while</c> and reevaluate it.  When <c>aNumber</c> becomes greater than <c>aBound</c>, the condition fails and flow of control continues past the loop.</p>
 
   <p>In the case shown above, we can prove that the loop terminates because we
             know that the value of <c>aBound</c> is finite, and we can see that the value of <c>aNumber</c>

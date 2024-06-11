@@ -5,7 +5,7 @@
             We can now possibly skip a portion of code, or choose to repeat it an indefinite number of times.</p>
   <p>The flowchart below provides the general sequence of steps that govern execution of a while loop.</p>
   <image source="MoreAboutIteration/Figures/while_flow.png" width="300px%"/>
-  <p>A codelens demonstration is a good way to help you visualize exactly how the flow of control
+  <p>A CodeLens demonstration is a good way to help you visualize exactly how the flow of control
             works with the while loop.  Try stepping forward and backward through the program by pressing
             the buttons.  You can see the value of <c>count</c> change as the loop iterates through the values from 10 to 0.</p>
   <program xml:id="ch7_sec3_c1" interactive="activecode" language="python">

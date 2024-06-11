@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_the-3n-1-sequence">
   <title>The 3n + 1 Sequence</title>
-  <p>As another example of iteration with <c>while</c>, let's look at a sequence that has fascinated mathematicians for many years.
+  <p>As another example of iteration with <c>while</c>, let's look at a sequence that has fascinated mathematicians for many years: 
+    the <url href="https://en.wikipedia.org/wiki/Collatz_conjecture">Collatz Conjecture</url>.
             The rule  for creating the sequence is to start from
             some positive integer, call it <c>n</c>, and to generate
             the next term of the sequence from <c>n</c>, either by halving <c>n</c>,
@@ -10,7 +11,7 @@
   <p>This Python code captures that algorithm.  Try running this program several times supplying different values for n.</p>
   <program xml:id="ch7_sec7_p1" interactive="activecode" language="python">
     <input>
-      n = 3
+      n = 3                   # try changing me
 
       """ Print the 3n+1 sequence from n, terminating when it reaches 1."""
       while n != 1:
@@ -19,13 +20,13 @@
           n = n // 2
         else:                 # n is odd
           n = n * 3 + 1
-      print(n)                  # the last print is 1
+      print(n)                # the last print is 1
     </input>
   </program>
   <p>The condition for this loop is <c>n != 1</c>.  The loop will continue running until
             <c>n == 1</c> (which will make the condition false).</p>
   <p>Each time through the loop, the program prints the value of <c>n</c> and then
-            checks whether it is even or odd using the remainder operator. If it is even, the value of <c>n</c> is divided
+            checks whether it is even or odd using the modulus (remainder) operator. If it is even, the value of <c>n</c> is divided
             by 2 using integer division. If it is odd, the value is replaced by <c>n * 3 + 1</c>.
             Try some other examples.</p>
   <p>Since <c>n</c> sometimes increases and sometimes decreases, there is no obvious
@@ -47,6 +48,7 @@
   <p>You'll notice that if you don't stop when you reach one, the sequence gets into
             its own loop:  1, 4, 2, 1, 4, 2, 1, 4, and so on.  One possibility is that there might
             be other cycles that we just haven't found.</p>
+
   <!--<note>
     <title>Choosing between <c>for</c> and <c>while</c></title>
     <p>Use a <c>for</c> loop if you know the maximum number of times that you'll
@@ -63,12 +65,13 @@
   <!--There are also some great visualization tools becoming available to help you-->
   <!--trace and understand small fragments of Python code.  The one we recommend is at-->
   <!--http://netserv.ict.ru.ac.za/python3_viz-->
+
   <p xml:id="iteration_index-0">
     <term>Check your understanding</term>
   </p>
   <exercise label="ch7_sec7_q1">
     <statement>
-      <p>Consider the code that prints the 3n+1 sequence in ActiveCode box 6.  Will the while loop in this code always terminate for any positive integer value of n?</p>
+      <p>Consider the code that prints the <c>3n + 1</c> sequence in the ActiveCode box above.  Will the while loop in this code always terminate for any positive integer value of <c>n</c>?</p>
     </statement>
     <choices>
       <choice>
@@ -76,24 +79,24 @@
           <p>Yes.</p>
         </statement>
         <feedback>
-                    The 3n+1 sequence has not been proven to terminate for all values of n.
-                </feedback>
+          The <c>3n + 1</c> sequence has not been proven to terminate for all values of <c>n</c>.
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>No.</p>
         </statement>
         <feedback>
-                    It has not been disproven that the 3n+1 sequence will terminate for all values of n.  In other words, there might be some value for n such that this sequence does not terminate. We just have not found it yet.
-                </feedback>
+          It has not been disproven that the <c>3n + 1</c> sequence will terminate for all values of <c>n</c>.  In other words, there might be some value for <c>n</c> such that this sequence does not terminate. We just have not found it yet.
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>No one knows.</p>
         </statement>
         <feedback>
-                    That this sequence terminates for all values of n has not been proven or disproven so no one knows whether the while loop will always terminate or not.
-                </feedback>
+          That this sequence terminates for all values of <c>n</c> has not been proven or disproven so no one knows whether the while loop will always terminate or not.
+        </feedback>
       </choice>
     </choices>
   </exercise>

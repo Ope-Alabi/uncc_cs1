@@ -137,7 +137,7 @@
           if response == 'Y' or response == 'N':
             valid_input = True
           else:
-            response = input('Please enter Y for yes or N for no. \n' + message)
+            response = input('Please enter Y for yes or N for no. ') 
         if response == 'Y':
             print('Great! They are very healthy.')
         else:

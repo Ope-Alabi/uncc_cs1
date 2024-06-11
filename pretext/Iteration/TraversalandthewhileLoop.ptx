@@ -4,7 +4,7 @@
   <p>The <c>while</c> loop can also control the
             generation of index values used to navigate strings or lists.  The programmer is responsible for setting up the initial
             condition, making sure that the condition is correct, and making sure that something changes inside the
-            body to guarantee that the condition will eventually fail.</p>
+            body to guarantee that the condition will eventually fail or that there is a <c>break</c> present.</p>
   <program xml:id="ch7_sec5_p1" interactive="activecode" language="python">
     <input>
 fruit = "apple"
@@ -19,17 +19,7 @@ while position &lt; len(fruit):
             length of the string, the condition is false, and the body of the loop is not
             executed. The last character accessed is the one with the index
     <c>len(fruit)-1</c>, which is the last character in the string.</p>
-  <p>Here is the same example in codelens so that you can trace the values of the variables.</p>
-  <program xml:id="ch7_sec5_c1" interactive="activecode" language="python">
-    <input>
-fruit = "apple"
 
-position = 0
-while position &lt; len(fruit):
-    print(fruit[position])
-    position = position + 1
-    </input>
-  </program>
   <p>
     <term>Check your understanding</term>
   </p>
