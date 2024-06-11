@@ -1,15 +1,3 @@
-# #!/bin/bash
-# set -e
-
-# # Run the build command (if needed) and start the web server
-# pretext build web #&& exec pretext view web
-
-# # Start the web server
-# pretext view web --port 8128
-
-
-
-
 #!/bin/sh
 
 # Run the pretext build command
