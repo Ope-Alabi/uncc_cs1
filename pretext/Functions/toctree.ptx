@@ -17,4 +17,5 @@
 <xi:include href="./Therandommodule.ptx"/>
 <xi:include href="./Glossary.ptx"/>
 <xi:include href="./video-functions.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>
