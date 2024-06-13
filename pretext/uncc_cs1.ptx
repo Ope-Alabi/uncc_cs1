@@ -21,7 +21,7 @@
         <xi:include href="./Debugging/toctree.ptx"/>
         <xi:include href="./Iteration/toctree.ptx"/>
         <xi:include href="./Functions/toctree.ptx"/>
-        <xi:include href="./PythonModules/toctree.ptx"/>
+        <!-- <xi:include href="./PythonModules/toctree.ptx"/> -->
 		<xi:include href="./ComplexLogic/toctree.ptx"/>
         <xi:include href="./Files/toctree.ptx"/>
         <xi:include href="./IntroRecursion/toctree.ptx"/>
