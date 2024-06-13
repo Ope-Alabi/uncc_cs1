@@ -6,4 +6,33 @@
             concepts and ideas that are necessary.
             The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental
             building blocks of Python.</p>
+
+    <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>To understand Python's storage model</p></li>
+            <li><p>To solve problems using the 'accumulator pattern'</p></li>
+            <li><p>To understand operator precedence</p></li>
+            <li><p>To distinguish between expressions, values, and printed representations</p></li>
+            <li><p>To recognize and explain hard coding</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>Given some sample code identify variables that reference an object of a particular type</p></li>
+            <li><p>Given a variable of one type convert it to another</p></li>
+            <li><p>Simulate evaluation of an expression and assignment statement</p></li>
+            <li><p>Use reassignment to increment a variable (accumulator pattern)</p></li>
+            <li><p>Get input from a user and convert the input to the appropriate type</p></li>
+            <li><p>Identify the following types of values: strings, integers, floats, and functions</p></li>
+            <li><p>Recognize valid vs. invalid variable names</p></li>
+            <li><p>Write an assignment statement</p></li>
+            <li><p>Update a reference diagram after reassignment</p></li>
+        </ul>
+    </subsection>    
 </section>
