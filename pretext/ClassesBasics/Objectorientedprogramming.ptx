@@ -15,4 +15,27 @@
             Usually, each object definition corresponds to some object or concept in the real
             world and the functions that operate on that object correspond to the ways
             real-world objects interact.</p>
+
+  <subsection xml:id="subsec-Learning-Goals">
+      <title>Learning Goals</title>
+      <ul>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+      </ul> 
+      <!-- <subsubsection xml:id="subsub-sect">
+      <title>Test Title</title> 
+      </subsubsection> -->
+  </subsection>
+
+  <subsection xml:id="subsec-Objectives">
+      <title>Objectives</title>
+      <ul>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+      </ul>
+  </subsection>    
 </section>

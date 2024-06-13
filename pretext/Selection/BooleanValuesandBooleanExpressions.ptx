@@ -8,6 +8,29 @@
   <p>There are only two <term>boolean values</term>.  They are <c>True</c> and <c>False</c>.  Capitalization
             is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case
             sensitive).</p>
+
+
+        <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul>
+    </subsection>   
+    
   <program xml:id="ch5_sec1_p1" interactive="activecode" language="python">
     <input>
 print(True)
@@ -116,4 +139,8 @@ x &lt;= y               # x is less than or equal to y
       </choice>
     </choices>
   </exercise>
+
+ 
+
+
 </section>

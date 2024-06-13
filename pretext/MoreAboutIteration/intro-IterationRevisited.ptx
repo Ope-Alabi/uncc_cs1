@@ -10,4 +10,26 @@
             form of iteration in Python. In this chapter
             we are going to look at the <c>while</c> statement &#x2014; another way to have your
             program do iteration.</p>
+
+
+
+  <subsection xml:id="subsec-Learning-Goals">
+      <title>Learning Goals</title>
+      <ul>
+          <li><p>To understand indefinite iteration</p></li>
+          <li><p>To solve problems involving convergence</p></li>
+      </ul> 
+      <!-- <subsubsection xml:id="subsub-sect">
+      <title>Test Title</title> 
+      </subsubsection> -->
+  </subsection>
+
+  <subsection xml:id="subsec-Objectives">
+      <title>Objectives</title>
+      <ul>
+          <li><p>To apply the while loop for indefinite iteration</p></li>
+          <li><p>To be able to identify while loops that are likely to be infinite loops</p></li>
+      </ul>
+  </subsection>  
+
 </section>

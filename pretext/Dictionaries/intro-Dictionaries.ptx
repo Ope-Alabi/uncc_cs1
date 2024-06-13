@@ -10,6 +10,38 @@
             built-in <term>mapping type</term>. A map is an unordered, associative collection.  The association, or mapping,
             is from a <term>key</term>, which can be any immutable type,
             to a <term>value</term>, which can be any Python data object.</p>
+
+
+  <subsection xml:id="subsec-Learning-Goals">
+      <title>Learning Goals</title>
+      <ul>
+          <li><p>To introduce the idea of Key, Value pairs</p></li>
+          <li><p>To introduce the idea of an unordered sequence</p></li>
+          <li><p>To understand the use of parallel construction in lists</p></li>
+          <li><p>To understand the performance benefit and simplicity of a dictionary over parallel lists</p></li>
+          <li><p>To understand that dictionary iteration iterates over keys</p></li>
+      </ul> 
+      <!-- <subsubsection xml:id="subsub-sect">
+      <title>Test Title</title> 
+      </subsubsection> -->
+  </subsection>
+
+  <subsection xml:id="subsec-Objectives">
+      <title>Objectives</title>
+      <p>To correctly use the following: </p><br/>
+      <ul>
+          <li><p>The index operator to add a key,value pair to a dictionary</p></li>
+          <li><p>The del operator to remove an entry</p></li>
+          <li><p>index operator - retrieval by key</p></li>
+          <li><p>search - contains in / not in</p></li>
+          <li><p>items</p></li>
+          <li><p>keys</p></li>
+          <li><p>values</p></li>
+          <li><p>get - with a default value</p></li>
+      </ul>
+  </subsection>                
+
+      
   <p>As an example, we will create a dictionary to translate English words into
             Spanish. For this dictionary, the keys are strings and the values will also be strings.</p>
   <p>One way to create a dictionary is to start with the empty dictionary and add

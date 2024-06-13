@@ -17,4 +17,28 @@
   <p>On one level, you will be learning to program, a useful skill by itself. On
             another level, you will use programming as a means to an end. As we go along,
             that end will become clearer.</p>
+
+    <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>Introduce terminology used in computer science</p></li>
+            <li><p>Introduce the features of this book</p></li>
+            <li><p>Describe the purpose of programming languages</p></li>
+            <li><p>Distinguish between formal and natural languages</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>To be able to use the activecode component and multiple choice questions in textbook</p></li>
+            <li><p>To be able to use and interpret the Codelens component</p></li>
+            <li><p>To be able to describe what a comment is</p></li>
+        </ul>
+    </subsection>
+
+            
 </section>

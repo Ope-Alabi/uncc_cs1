@@ -8,4 +8,26 @@
             iteration is so common, Python provides several language features to make it
             easier. In this chapter we are going to look at two common forms of iteration: the <c>while</c> statement
             and the <c>for</c> statement.</p>
+
+    <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>To understand boolean expressions and logical operators</p></li>
+            <li><p>To understand conditional execution</p></li>
+            <li><p>To be able to write a boolean function</p></li>
+            <li><p>To know when to use binary, unary, chained and nested conditional statements</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>To properly evaluate a (compound) boolean expression</p></li>
+            <li><p>To use parenthesis to properly demonstrate operator precedence</p></li>
+            <li><p>To use conditional statements to properly branch code</p></li>
+        </ul>
+    </subsection>                
 </section>

@@ -3,4 +3,28 @@
   <title>Strings Revisited</title>
   <p>Throughout the first chapters of this book we have used strings to represent words or phrases that we
             wanted to print out.  Our definition was simple:  a string is simply some characters inside quotes.  In this chapter we explore strings in much more detail.</p>
+
+
+    <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul>
+    </subsection>            
 </section>
