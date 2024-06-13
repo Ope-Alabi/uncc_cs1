@@ -1,3 +1,8 @@
 # <!-- Managed automatically by PreTeXt authoring tools -->
 pretext == 2.4.1
 # pretext == 1.6.0
+
+### FOR AUTO BUILD AND VIEW ####
+# Install Gulp: npm install gulp gulp-shell gulp-watch --save-dev
+# Create a 'gulpfile.js' file
+# Run Gulp: npx gulp
