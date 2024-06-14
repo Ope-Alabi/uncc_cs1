@@ -53,4 +53,28 @@
       </row>
     </tabular>
   </table>
+
+
+  <subsection xml:id="subsec-Learning-Goals">
+      <title>Learning Goals</title>
+      <ul>
+          <li><p>To understand the structure of file systems</p></li>
+          <li><p>To understand opening files with different modes</p></li>
+          <li><p>To introduce files as another kind of sequence that one can iterate over</p></li>
+          <li><p>To introduce the read, transform, and write pattern</p></li>
+          <li><p>To introduce parallel assignment to two or three variables</p></li>
+      </ul> 
+      <!-- <subsubsection xml:id="subsub-sect">
+      <title>Test Title</title> 
+      </subsubsection> -->
+  </subsection>
+
+  <subsection xml:id="subsec-Objectives">
+      <title>Objectives</title>
+      <ul>
+          <li><p>Demonstrate that you can read a single value from each line in a file</p></li>
+          <li><p>Convert the line to the appropriate value</p></li>
+          <li><p>Read a line and convert it into multiple values using split and assignment to multiple variables</p></li>
+      </ul>
+  </subsection>    
 </section>

@@ -14,41 +14,26 @@
     <p>
         In this chapter we will examine operations that can be performed on sequences, such as picking out individual elements or subsequences (called slices) or computing their length. In addition, we’ll examine some special functions that are defined only for strings, and we’ll find out one importance difference between strings and lists, that lists can be changed (or mutated) while strings are immutable.
     </p>
-
+    
     <subsection xml:id="subsec-Learning-Goals">
         <title>Learning Goals</title>
         <ul>
-            <li>
-                <p>
-                    To understand different operations that can be performed on strings, lists, and tuples 
-                </p>
-            </li>
-            <li>
-                <p>
-                    To distinguish between different uses of [] in Python
-                </p>
-            </li>
-        </ul>
+            <li><p>To understand different operations that can be performed on strings, lists, and tuples </p></li>
+            <li><p>To distinguish between different uses of [] in Python</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
     </subsection>
 
     <subsection xml:id="subsec-Objectives">
         <title>Objectives</title>
         <ul>
-            <li>
-                <p>
-                    Predict the output of split and join operations 
-                </p>
-            </li>
-            <li>
-                <p>
-                    Read and write expressions that use slices
-                </p>
-            </li>
-            <li>
-                <p>
-                    Read and write expressions that use concatenation and repetition
-                </p>
-            </li>
+            <li><p>Predict the output of split and join operations </p></li>
+            <li><p>Read and write expressions that use slices</p></li>
+            <li><p>Read and write expressions that use concatenation and repetition</p></li>
         </ul>
     </subsection>
+
+
 </section>

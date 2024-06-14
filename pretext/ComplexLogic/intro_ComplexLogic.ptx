@@ -5,4 +5,28 @@
   While there is certainly much more to learn and discover, virtually any programming language you will see in the future offers some form
   of branching, looping, and function definition. That is not to say we have mastered these topics yet. This week of class and this chapter
   focuses on revisiting these fundamental topics and deepening our mastery of them.</p>
+
+
+  <subsection xml:id="subsec-Learning-Goals">
+      <title>Learning Goals</title>
+      <ul>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+      </ul> 
+      <!-- <subsubsection xml:id="subsub-sect">
+      <title>Test Title</title> 
+      </subsubsection> -->
+  </subsection>
+
+  <subsection xml:id="subsec-Objectives">
+      <title>Objectives</title>
+      <ul>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+          <li><p>Template Text</p></li>
+      </ul>
+  </subsection>    
 </section>

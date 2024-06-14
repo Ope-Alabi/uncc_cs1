@@ -7,6 +7,28 @@
             Python as part of the <term>standard library</term>. We have already used one of these briefly,
             the <c>math</c> module.  Recall that once we import the module, we can use things
             that are defined inside.</p>
+
+
+
+        <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>Understand that Python is extensible through modules</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>To import an entire module</p></li>
+            <li><p>To import a single function from a module</p></li>
+            <li><p>To import a module giving it an alias</p></li>
+        </ul>
+    </subsection>    
+    
   <program xml:id="ch9_sec1_p1" interactive="activecode" language="python">
     <input>
 import math            # allows us to use the math library
@@ -152,4 +174,5 @@ print(math.sqrt(100))         # prints the square root of 100
       </choice>
     </choices>
   </exercise>
+
 </section>

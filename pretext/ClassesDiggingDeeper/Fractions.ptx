@@ -41,4 +41,27 @@ print(myfraction.getDen())
             The figure below shows the state of <c>myfraction</c>.  We have also added a few simple accessor methods, <c>getNum</c> and <c>getDen</c>, that can return the
             state values for the fraction.</p>
   <image source="ClassesDiggingDeeper/Figures/fractionpic1.png" width="50%"/>
+
+    <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul>
+    </subsection>    
 </section>
