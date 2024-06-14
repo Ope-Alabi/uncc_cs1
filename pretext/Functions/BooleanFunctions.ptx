@@ -134,7 +134,7 @@ return x + y &lt; z
 	  </choice>
 	</choices>
   </exercise>
-  <subsection xml:id="functions_more-unit-testing">
+  <!-- <subsection xml:id="functions_more-unit-testing">
     <title>More Unit Testing</title>
     <p>When we write unit tests, we should also consider <term>output equivalence classes</term> that result in significantly different results.</p>
     <p>The <c>isDivisible</c> function can return either <c>True</c> or <c>False</c>. These two different outputs give us two equivalence classes. We then choose inputs that should give each of the different results. <term>It is important to have at least one test for each output equivalence class.</term>
@@ -160,5 +160,5 @@ if __name__ == "__main__":
 
 	</input>
 	</program>
-  </subsection>
+  </subsection> -->
 </section>
