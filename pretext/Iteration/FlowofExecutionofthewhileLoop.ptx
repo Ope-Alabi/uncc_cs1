@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_flow-of-execution-of-the-while-loop">
-  <title>Flow of Execution of the while Loop</title>
+  <title>Flow of Execution of the <c>while</c> Loop</title>
 
   <p>
     As before with <c>if</c>, loops allow us as programmers to manipulate the control flow of a Python program.

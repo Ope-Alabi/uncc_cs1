@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="while_video">
-  <title>Practice Video Lecture</title>
+  <title><c>while</c> Practice Video Lecture</title>
 
   <p>Follow along this video lecture for extra practice and review:</p>
   <video xml:id="while-vid" youtube="3roS4GybAhE" width="auto"/>

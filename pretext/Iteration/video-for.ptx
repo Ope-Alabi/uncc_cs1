@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="for_video">
-  <title>Practice Video Lecture</title>
+  <title><c>for</c> Practice Video Lecture</title>
+
   <p>Follow along this video lecture for extra practice and review:</p>
   <video xml:id="for-vid" youtube="KcViS-AIbJw" width="auto"/>
 
