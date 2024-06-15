@@ -4,7 +4,7 @@
   <p>It is also possible to use the <c>range</c> function to systematically generate the indices of the characters.  The <c>for</c> loop can then be used to iterate over these positions.
             These positions can be used together with the indexing operator to access the individual
             characters in the string.</p>
-  <p>Consider the following codelens example.</p>
+  <p>Consider the following ActiveCode example.</p>
   <program xml:id="ch7_sec12_p1" interactive="activecode" language="python">
     <input>
 fruit = "apple"
@@ -13,7 +13,7 @@ for idx in range(5):
     print(currentChar)
     </input>
   </program>
-  <p>The index positions in <q>apple</q> are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by <c>range(5)</c>.  The first time through the for loop, <c>idx</c> will be 0 and the <q>a</q> will be printed.  Then, <c>idx</c> will be reassigned to 1 and <q>p</q> will be displayed.  This will repeat for all the range values up to but not including 5.  Since <q>e</q> has index 4, this will be exactly right to show all
+  <p>The index positions in <q>apple</q> are 0, 1, 2, 3, and 4.  This is exactly the same sequence of integers returned by <c>range(5)</c>.  The first time through the <c>for</c> loop, <c>idx</c> will be 0 and the <q>a</q> will be printed.  Then, <c>idx</c> will be reassigned to 1 and <q>p</q> will be displayed.  This will repeat for all the range values up to but not including 5.  Since <q>e</q> has index 4, this will be exactly right to show all
             of the characters.</p>
   <p>In order to make the iteration more general, we can use the <c>len</c> function to provide the bound for <c>range</c>.  This is a very common pattern for traversing any sequence by position.        Make sure you understand why the range function behaves
             correctly when using <c>len</c> of the string as its parameter value.</p>
@@ -40,7 +40,7 @@ for idx in range(len(fruit)):
   </p>
   <exercise label="ch7_sec12_q1">
     <statement>
-      <p>How many times is the letter o printed by the following statements?</p>
+      <p>How many times is the letter "o" printed by the following statements?</p>
       <program language="python">
         <input>
 s = "python rocks"
