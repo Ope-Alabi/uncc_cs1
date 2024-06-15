@@ -5,21 +5,21 @@
   <video xml:id="for-vid" youtube="KcViS-AIbJw" width="auto"/>
 
   <p><term>Example 1:</term> Print values in the following list first using an <term>iteration by index</term> (incremental for loop), and then using <term>iteration by item</term> (for in).</p>
-  <program xml:id="ch6_sec15_p1" interactive="activecode" language="python">
+  <program xml:id="ch6_sec14_p1" interactive="activecode" language="python">
     <input>
       fruits = ["strawberry", "apple", "orange", "watermelon"]
     </input>
   </program>
 
   <p><term>Example 2:</term> Given a list of 1s, square each number's index (adjusted for 0) in the list. Print the list.</p>
-  <program xml:id="ch6_sec15_p2" interactive="activecode" language="python">
+  <program xml:id="ch6_sec14_p2" interactive="activecode" language="python">
     <input>
       series = [1, 1, 1, 1, 1, 1, 1, 1]
     </input>
   </program>
 
   <p><term>Example 3:</term> Rewrite the following code using a for loop instead of a while loop.</p>
-  <program xml:id="ch6_sec15_p3" interactive="activecode" language="python">
+  <program xml:id="ch6_sec14_p3" interactive="activecode" language="python">
     <input>
       chars = ['P', 'y', 't', 'h', 'o', 'n', '!']
       count = 0
@@ -34,7 +34,7 @@
   </program>
 
   <p><term>Example 4:</term> Rewrite the following code using a while loop instead of a for loop.</p>
-  <program xml:id="ch6_sec15_p4" interactive="activecode" language="python">
+  <program xml:id="ch6_sec14_p4" interactive="activecode" language="python">
     <input>
       for i in range(0, 9):
         print(i)
