@@ -2,9 +2,12 @@
 <section xml:id="files_alternative-file-reading-methods">
   <title>Alternative File Reading Methods</title>
   <p>Again, recall the contents of the ccdata.txt file.</p>
-  <DataFileNode line="19" runestone_options="{'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata2.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/AlternativeFileReadingMethods.rst">
-        </DataFileNode>
-  <p>In addition to the <c>for</c> loop, Python provides three methods to read data
+  <!-- <DataFileNode line="19" runestone_options="{'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata2.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/AlternativeFileReadingMethods.rst">
+        </DataFileNode> -->
+  <p>Once you have a file “object”, the thing returned by the open function, Python provides three methods to read data from that object.
+  The <code>read()</code>  The <code>read()</code> method returns the entire contents of the file as a single string or just some characters if you provide a number as an input parameter. The <code>readlines</code> method returns the entire contents of the entire file as a list of strings, where each item in the list is one line of the file. The <code>readline</code> method reads one line from the file and returns it as a string. The strings returned by <code>readlines</code> or <code>readline</code> will contain the newline character at the end. <xref ref="files_filemethods2a"/> summarizes these methods and the following session shows them in action.</p>
+  
+  <!-- <p>In addition to the <c>for</c> loop, Python provides three methods to read data
             from the input file. The <c>readline</c> method reads one line from the file and
             returns it as a string. The string returned by <c>readline</c> will contain the
             newline character at the end. This method returns the empty string when it
@@ -19,7 +22,7 @@
             the character immediately following the last character returned. In the case
             of <c>readline</c> this moves the marker to the first character of the next line
             in the file. In the case of <c>read</c> or <c>readlines</c> the marker is moved to
-            the end of the file.</p>
+            the end of the file.</p> -->
   <pre>&gt;&gt;&gt; infile = open("ccdata.txt", "r")
 &gt;&gt;&gt; aline = infile.readline()
 &gt;&gt;&gt; aline
@@ -119,7 +122,17 @@
       </row>
     </tabular>
   </table>
-  <p>Now let's look at another method of reading our file using a <c>while</c> loop.  This is important because many other programming languages do not support the <c>for</c> loop style for reading files but they do support the pattern we'll show you here.</p>
+  <p>In this course, we will generally either iterate through the lines returned by <c>readlines()</c> with a for loop, or use <c>read()</c> to get all of the contents as a single string.</p>
+  <p>In other programming languages, where they don’t have the convenient for loop method of going through the lines of the file one by one, they use a different pattern which requires a different kind of loop, the <c>while</c> loop. Fortunately, you don’t need to learn this other pattern, and we will put off consideration of <c>while</c> loops until later in this course. We don’t need them for handling data from files.</p>
+  
+  <note>A common error that novice programmers make is not realizing that all these ways of reading the file contents, <b>use up the file</b>. After you call readlines(), if you call it again you’ll get an empty list.</note>
+
+
+
+
+
+
+  <!-- <p>Now let's look at another method of reading our file using a <c>while</c> loop.  This is important because many other programming languages do not support the <c>for</c> loop style for reading files but they do support the pattern we'll show you here.</p>
   <program xml:id="ch11_sec5_p1" interactive="activecode" language="python">
     <input>
 infile = open("ccdata.txt", "r")
@@ -146,5 +159,5 @@ infile.close()
             So, the only way that a line of data from the
             file can be empty is if you are reading at the end of the file, and the <c>while</c> condition becomes <c>False</c>.</p>
   <p>Finally, notice that the last line of the body of the <c>while</c> loop performs another <c>readline</c>.  This statement will reassign the variable <c>line</c> to the next line of the file.  It represents the <title_reference>change of state</title_reference> that is necessary for the iteration to
-            function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.</p>
+            function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.</p> -->
 </section>
