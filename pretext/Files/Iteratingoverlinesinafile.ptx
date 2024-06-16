@@ -44,15 +44,20 @@
             the <c>split</c> method, we can break each line into a list containing all the fields of interest about climate
             change. We can then take the values corresponding to year, global average temperature, and global emmisions to
             construct a simple sentence.</p>
-  <program xml:id="ch11_sec4_p1" interactive="activecode" language="python">
+
+  <datafile source="/Users/oalabi1/Library/CloudStorage/OneDrive-UniversityofNorthCarolinaatCharlotte/Personal Projects/uncc_cs1/pretext/Files/olympics.txt" filename="olympics.txt"/>
+
+  <program xml:id="ch11_sec4_p1" interactive="activecode" language="python" datafile="olympics.txt">
     <input>
-ccfile = open("ccdata.txt", "r")
+olympicsfile = open("olympics.txt", "r")
 
-for aline in ccfile:
-    values = aline.split()
-    print('In', values[0], 'the average temp. was', values[1], '&#xB0;C and CO2 emmisions were', values[2], 'gigatons.')
+for aline in olympicsfile.readlines():
+    values = aline.split(",")
+    print(values[0], "is from", values[3], "and is on the roster for", values[4])
 
-ccfile.close()
+olympicsfile.close()
+
+
         </input>
   </program>
   <note>
