@@ -84,4 +84,77 @@
             like this: <c>open('../myData/data3.txt', 'r')</c>, or in an <em>absolute file path</em> like
     <c>open('/users/bmiller/myFiles/allProjects/myData/data3.txt', 'r')</c>.
   </p>
+
+  <p> <term>Check your understanding</term> </p>
+      <exercise label="question11_5_1">
+        <statement>
+          <p>Say you are in a directory called Project. In it, you have a file with your Python code. 
+          You would like to read in data from a file called “YearlyProjections.csv” which is in a folder called CompanyData, 
+          which is inside of Project. What is the best way to open the file in your Python program?</p>
+        </statement>
+        <choices>
+          <choice>
+            <statement>
+              <p>open("YearlyProjections.csv", "r")</p>
+            </statement>
+            <feedback> This would try to open a file inside of Project (but that is not where the file is.) </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>open("../CompanyData/YearlyProjections.csv", "r")</p>
+            </statement>
+            <feedback> This would go to the parent directory of Project and look for a subdirectory of that called CompanyData. But CompanyData is inside Project so it wouldn't be found. </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>open("CompanyData/YearlyProjections.csv", "r")</p>
+            </statement>
+            <feedback> Yes, this is how you can access the file! </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>open("Project/CompanyData/YearlyProjections.csv", "r")</p>
+            </statement>
+            <feedback> This would try to find a subdirectory Project of the current directory called Project. </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>open("../YearlyProjections.csv", "r")</p>
+            </statement>
+            <feedback> Remember that '..' will bring you up one level to the parent directory. This would try to open a csv file in the parent directory of Project (but that is not where the file is.) </feedback>
+          </choice>
+        </choices>
+      </exercise>
+
+      <exercise label="question11_5_2">
+        <statement>
+          <p>Which of the following paths are relative file paths?</p>
+        </statement>
+        <choices multiple-correct="yes">
+          <choice correct="yes">
+            <statement>
+              <p> "Stacy/Applications/README.txt"</p>
+            </statement>
+            <feedback> Yes, this is a relative file path. You can tell by the lack of "/" at the beginning of the path. </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p> "/Users/Raquel/Documents/graduation_plans.doc"</p>
+            </statement>
+            <feedback> This is an absolute file path. All absolute file paths start with "/". </feedback>
+          </choice>
+          <choice>
+            <statement>
+              <p>"/private/tmp/swtag.txt"</p>
+            </statement>
+            <feedback> This is an absolute file path. Not all absolute file paths contain "User"! Instead, check to see if the path starts with "/". </feedback>
+          </choice>
+          <choice correct="yes">
+            <statement>
+              <p>"ScienceData/ProjectFive/experiment_data.csv"</p>
+            </statement>
+            <feedback> Yes, this is a relative file path. You can tell by the lack of "/" at the beginning of the path. </feedback>
+          </choice>
+        </choices>
+      </exercise>
 </section>

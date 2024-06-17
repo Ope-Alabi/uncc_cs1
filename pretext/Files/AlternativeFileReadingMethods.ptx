@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="files_alternative-file-reading-methods">
   <title>Alternative File Reading Methods</title>
-  <p>Again, recall the contents of the ccdata.txt file.</p>
   <!-- <DataFileNode line="19" runestone_options="{'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata2.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/AlternativeFileReadingMethods.rst">
         </DataFileNode> -->
   <p>Once you have a file “object”, the thing returned by the open function, Python provides three methods to read data from that object.
@@ -23,7 +22,7 @@
             of <c>readline</c> this moves the marker to the first character of the next line
             in the file. In the case of <c>read</c> or <c>readlines</c> the marker is moved to
             the end of the file.</p> -->
-  <pre>&gt;&gt;&gt; infile = open("ccdata.txt", "r")
+  <!-- <pre>&gt;&gt;&gt; infile = open("ccdata.txt", "r")
 &gt;&gt;&gt; aline = infile.readline()
 &gt;&gt;&gt; aline
 '1850\-0.37\2.24E-7\n'
@@ -46,8 +45,8 @@
 1850  -0.37  2.24E-7
 1860  -0.34  3.94E-7
 1870  -0.28  6.6E-7
-1880  -0.24
-&gt;&gt;&gt;</pre>
+1880  -0.24 -->
+<!-- &gt;&gt;&gt;</pre> -->
   <table xml:id="files_filemethods2a">
     <tabular>
       <row header="yes">
