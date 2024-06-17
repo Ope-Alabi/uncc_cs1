@@ -14,6 +14,6 @@
 4<xi:include href="./Listsandforloops.ptx"/>
 4<xi:include href="./TraversalandtheforLoopByItem.ptx"/>
 4<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./video-for.ptx"/>
+4<xi:include href="./Glossary.ptx"/>
 </chapter>

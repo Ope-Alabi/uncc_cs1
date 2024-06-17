@@ -1,33 +1,34 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_intro">
-  <title>Iteration Introduction</title>
-  <p xml:id="iteration_index-1">Computers are often used to automate repetitive tasks. Repeating identical or
-            similar tasks without making errors is something that computers do well and
-            people do poorly.</p>
-  <p>Repeated execution of a sequence of statements is called <term>iteration</term>.  Because
-            iteration is so common, Python provides several language features to make it
-            easier. In this chapter we are going to look at two common forms of iteration: the <c>while</c> statement
-            and the <c>for</c> statement.</p>
+  <title>Introduction: Iteration</title>
 
-    <subsection xml:id="subsec-Learning-Goals">
-        <title>Learning Goals</title>
-        <ul>
-            <li><p>To understand boolean expressions and logical operators</p></li>
-            <li><p>To understand conditional execution</p></li>
-            <li><p>To be able to write a boolean function</p></li>
-            <li><p>To know when to use binary, unary, chained and nested conditional statements</p></li>
-        </ul> 
-        <!-- <subsubsection xml:id="subsub-sect">
-        <title>Test Title</title> 
-        </subsubsection> -->
-    </subsection>
+  <p xml:id="iteration_index-1">
+    Computers are often used to automate repetitive tasks.
+    Repeating identical or similar tasks without making errors is something that computers do well and people do poorly.
+  </p>
+  <p>
+    Repeated execution of a sequence of statements is called <term>iteration</term>.
+    Because iteration is so common, Python provides several language features to make easier.
+    In this chapter, we are going to look at two common forms of iteration: the <c>while</c> statement and the <c>for</c> statement.
+  </p>
 
-    <subsection xml:id="subsec-Objectives">
-        <title>Objectives</title>
-        <ul>
-            <li><p>To properly evaluate a (compound) boolean expression</p></li>
-            <li><p>To use parenthesis to properly demonstrate operator precedence</p></li>
-            <li><p>To use conditional statements to properly branch code</p></li>
-        </ul>
-    </subsection>                
+  <subsection xml:id="subsec-Learning-Goals">
+    <title>Learning Goals</title>
+    <ul>
+      <li><p>To understand iteration as a function of programming</p></li>
+      <li><p>To understand the flow of a program with iteration</p></li>
+      <li><p>To determine when to use a <c>while</c> loop and when to use a <c>for</c> loop</p></li>
+      <li><p>To identify the number of times a loop will iterate</p></li>
+    </ul>
+  </subsection>
+
+  <subsection xml:id="subsec-Objectives">
+    <title>Objectives</title>
+    <ul>
+      <li><p>Read and write loop statements</p></li>
+      <li><p>Identify the number of times a loop will iterate</p></li>
+      <li><p>Traverse sequences with loops</p></li>
+    </ul>
+  </subsection>
+
 </section>

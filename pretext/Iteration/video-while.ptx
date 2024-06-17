@@ -1,7 +1,47 @@
 <?xml version="1.0"?>
 <section xml:id="while_video">
-  <title>Practice Video Lecture</title>
-  <p>Week 5 Video Lecture:</p>
+  <title><c>while</c> Practice Video Lecture</title>
+
+  <p>Follow along this video lecture for extra practice and review:</p>
   <video xml:id="while-vid" youtube="3roS4GybAhE" width="auto"/>
+
+  <p><term>Example 1:</term> Write a program which takes user input as strings until the user inputs "done"; store all strings in a list and print the list out.</p>
+  <program xml:id="ch6_sec8_p1" interactive="activecode" language="python">
+    <input>
+    </input>
+  </program>
+
+  <p><term>Example 2:</term> Finish the block of code.</p>
+  <program xml:id="ch6_sec8_p2" interactive="activecode" language="python">
+    <input>
+      # sum up every number the user inputs until they input 999
+      nums = []
+
+      # add each user-inputted number to the nums list until the user inputs 999
+      while True:
+        num = int(input("Please enter a number (or 999 to stop): "))
+        if num == 999:
+          break
+        nums.append(num)
+
+      # sum up all the numbers in the list
+      num_sum = 0
+
+      # TODO code here
+
+      print(num_sum)
+    </input>
+  </program>
+
+  <p><term>Example 3:</term> Does this program ever end?</p>
+  <program xml:id="ch6_sec8_p3" interactive="activecode" language="python">
+    <input>
+      expenses = [7.89, 15.34, 35.34, 13.29, 28.00]
+
+      while len(expenses) > 0:
+        print(expenses[0])
+        expenses.remove(expenses[0])
+    </input>
+  </program>
 
 </section>

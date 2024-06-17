@@ -2,39 +2,44 @@
 <section xml:id="iteration_continue-break">
   <title><c>break</c> and <c>continue</c></title>
 
-  <p>In loops, we sometimes want to traverse <em>until</em> we reach a certain value.
-    We could make a loop condition with a boolean that is toggled as True once we
-    reach that value, but there's an easier way: the <term>break</term> statement.</p>
+  <p>
+    In loops, we sometimes want to traverse <em>until</em> we reach a certain value.
+    We could make a loop condition with a boolean that is toggled as True once we reach that value, but there's an easier way: the <term>break</term> statement.
+  </p>
 
-  <p>When a <c>break</c> statement is reached, the loop immediately ends and proceeds with the code after the loop.
-    <c>break</c> is only a valid statement inside of loops, such as the following:</p>
-  
+  <p>
+    When a <c>break</c> statement is reached, the loop immediately ends and proceeds with the code after the loop.
+    <c>break</c> is only a valid statement inside of loops, such as the following:
+  </p>
   <program xml:id="ch7_sec4_p1" interactive="activecode" language="python">
     <input>
-i = 0
-while i &lt; 10:
-  if i == 5:
-    break
-  print(i)
-  i += 1
-</input>
+      i = 0
+      while i &lt; 10:
+        if i == 5:
+          break
+        print(i)
+        i += 1
+    </input>
   </program>
 
-  <p>The <term>continue</term> statement is another keyword that we can use in loops.
-    When a <c>continue</c> statement is reached, the current iteration is stopped (similar to break),
-    however, the loop will <em>continue</em> running for all iterations after the current one.</p>
-
+  <p>
+    The <term>continue</term> statement is another keyword that we can use in loops.
+    When a <c>continue</c> statement is reached, the current iteration is stopped (similar to break), however, the loop will <em>continue</em> running for all iterations after the current one.
+  </p>
   <program xml:id="ch7_sec4_p2" interactive="activecode" language="python">
     <input>
-i = 0
-while i &lt; 10:
-  if i == 5:
-    continue
-  print(i)
-  i += 1
-</input>
+      i = 0
+      while i &lt; 10:
+        if i == 5:
+          continue
+        print(i)
+        i += 1
+    </input>
   </program>
 
-  <note>Notice the difference between the activecode example above for <c>break</c> and this example with <c>continue</c>.
-  Neither loop prints <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.</note>
+  <note>
+    Notice the difference between the ActiveCode example above for <c>break</c> and this example with <c>continue</c>.
+    Neither loop prints <c>5</c>, but in the loop with <c>continue</c>, it continues iterating after where <c>5</c> would have been.
+  </note>
+
 </section>
