@@ -1,66 +1,117 @@
 <?xml version="1.0"?>
 <section xml:id="files_reading-csv">
-  <title>Reading Files as <c>csv</c></title>
-  <p>The climate change data file we have used as an example in this chapter has a more specific designation than just a <c>.txt</c> file. Because the file 
-  consists of a series of values separated by commas, it can also be referred to as a <term>Comma Separate Value</term> file, or a <c>.csv</c>. Note that csv 
-  files are still just text files, but knowing it is also a csv tells us something valuable about the structure of the data it contains. This makes it 
-  easier to parse and interact with that data.</p>
-  <!--<DataFileNode line="19" runestone_options="{'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata2.csv', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850,-0.37,2.24E-7\n1860,-0.34,3.94E-7\n1870,-0.28,6.6E-7\n1880,-0.24,1.1\n1890,-0.42,1.72\n1900,-0.2,2.38\n1910,-0.49,3.34\n1920,-0.25,4.01\n1930,-0.14,4.53\n1940,0.01,5.5\n1950,-0.17,6.63\n1960,-0.05,10.5\n1970,-0.03,16\n1980,0.09,20.3\n1990,0.3,22.6\n2000,0.29,24.9\n2010,0.56,32.7\n2019,0.74,33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/AlternativeFileReadingMethods.rst">
-        </DataFileNode>-->
-  <p>To interact with text files as csv's, we need to import the Python <c>csv</c> module and use it to create <c>reader</c> or <c>writer</c> objects.
-  This section focuses on reading csv, so we should use a reader. The reason we are interested in doing this is because the reader will automatically detect and remove
-  the commas separating values for us. Essentially, the reader will split the data up into lists for us. This makes it simpler to navigate and interact with the data in the file.</p>
-  <p>Let's see an example of this working.</p>
-  <program xml:id="ch11_sec8_p1" interactive="activecode" language="python">
+  <title>Reading in data from a CSV File</title>
+  <p>We are able to read in CSV files the same way we have with other text files. Because of the standardized structure of the data, there is a common pattern for processing it. To practice this, we will be using data about olympic events.</p>
+
+  <p>Typically, CSV files will have a header as the first line, which contains column names. Then, each following row in the file will contain data that corresponds to the appropriate columns.</p>
+  
+  <p>All file methods that we have mentioned - <c>read</c>, <c>readline</c>, and <c>readlines</c>, and simply iterating over the file object itself - will work on CSV files. In our examples, we will iterate over the lines. Because the values on each line are separated with commas, we can use the <c>.split()</c> method to parse each line into a collection of separate value.</p>
+
+  <datafile label="olympics" filename="olympics.txt" rows="10" cols="6" editable="no" hide="yes"> 
+    <pre>
+      Name,Sex,Age,Team,Event,Medal
+      A Dijiang,M,24,China,Basketball,NA
+      A Lamusi,M,23,China,Judo,NA
+      Gunnar Nielsen Aaby,M,24,Denmark,Football,NA
+      Edgar Lindenau Aabye,M,34,Denmark/Sweden,Tug-Of-War,Gold
+      Christine Jacoba Aaftink,F,21,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,21,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,25,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,25,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,27,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,27,Netherlands,Speed Skating,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      "Cornelia ""Cor"" Aalten (-Strannood)",F,18,Netherlands,Athletics,NA
+      "Cornelia ""Cor"" Aalten (-Strannood)",F,18,Netherlands,Athletics,NA
+      Antti Sami Aalto,M,26,Finland,Ice Hockey,NA
+      "Einar Ferdinand ""Einari"" Aalto",M,26,Finland,Swimming,NA
+      Jorma Ilmari Aalto,M,22,Finland,Cross Country Skiing,NA
+      Jyri Tapani Aalto,M,31,Finland,Badminton,NA
+      Minna Maarit Aalto,F,30,Finland,Sailing,NA
+      Minna Maarit Aalto,F,34,Finland,Sailing,NA
+      Pirjo Hannele Aalto (Mattila-),F,32,Finland,Biathlon,NA
+      Arvo Ossian Aaltonen,M,22,Finland,Swimming,NA
+      Arvo Ossian Aaltonen,M,22,Finland,Swimming,NA
+      Arvo Ossian Aaltonen,M,30,Finland,Swimming,Bronze
+      Arvo Ossian Aaltonen,M,30,Finland,Swimming,Bronze
+      Arvo Ossian Aaltonen,M,34,Finland,Swimming,NA
+      Juhamatti Tapio Aaltonen,M,28,Finland,Ice Hockey,Bronze
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Bronze
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Gold
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Gold
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Gold
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,Bronze
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Timo Antero Aaltonen,M,31,Finland,Athletics,NA
+      Win Valdemar Aaltonen,M,54,Finland,Art Competitions,NA
+    </pre>
+  </datafile>
+
+  <program xml:id="ch11_sec10_p1" interactive="activecode" language="python" datafile="olympics.txt">
     <input>
-import csv
-with open("ccdata.csv", "r") as file:
-	csv_reader = csv.reader(file, delimiter=',')
-	for line in csv_reader:
-		print(line)
-		print(line[0]) # just years
+      fileconnection = open("olympics.txt", 'r')
+      lines = fileconnection.readlines()
+      header = lines[0]
+      field_names = header.strip().split(',')
+      print(field_names)
+      for row in lines[1:]:
+          vals = row.strip().split(',')
+          if vals[5] != "NA":
+              print("{}: {}; {}".format(
+                      vals[0],
+                      vals[4],
+                      vals[5]))
         </input>
   </program>
-  
-  <p>Note that the value assigned to for loop <c>line</c> variable is a list rather than a single string like we would get with a standard file object. This allows us to acces column 
-  data quickly with a single index value.</p>
-  
-  <p>The following table describes the two csv functions you are most likely to want to use.</p>
-  <table xml:id="files_csvmethods">
-    <tabular>
-      <row header="yes">
-        <cell>
-          <term>Method Name</term>
-        </cell>
-        <cell>
-          <term>Use</term>
-        </cell>
-        <cell>
-          <term>Explanation</term>
-        </cell>
-      </row>
-      <row>
-        <cell>
-          <c>reader</c>
-        </cell>
-        <cell>
-          <c>csv.reader(file_object)</c>
-        </cell>
-        <cell>
-                            Creates a csv reader object that automatically splits lines of data but can be looped through like a regular file object.
-                        </cell>
-      </row>
-      <row>
-        <cell>
-          <c>writer</c>
-        </cell>
-        <cell>
-          <c>csv.writer(file_object)</c>
-        </cell>
-        <cell>
-                            Creates a csv writer object that takes lists of strings and writes them to the provided file in the correct csv format.
-                        </cell>
-      </row>
-    </tabular>
-  </table>
+
+  <p>In the above code, we open the file, olympics.txt, which contains data on some olympians. The contents are similar to our previous olympics file, but include an extra column with information about medals they won.</p>
+
+  <p>We split the first row to get the field names. We split other rows to get values. Note that we specify to split on commas by passing that as a parameter. Also note that we first pass the row through the .strip() method to get rid of the trailing n.</p>
+
+  <p>Once we have parsed the lines into their separate values, we can use those values in the program. For example, in the code above, we select only those rows where the olympian won a medal, and we print out only three of the fields, in a different format.</p>
+
+  <p>Note that the trick of splitting the text for each row based on the presence of commas only works because commas are not used in any of the field values. Suppose that some of our events were more specific, and used commas. For example, “Swimming, 100M Freestyle”. How will a program processing a .csv file know when a comma is separating columns, and when it is just part of the text string giving a value within a column?</p>
+
+  <p>The CSV format is actually a little more general than we have described and has a couple of solutions for that problem. One alternative format uses a different column separator, such as | or a tab (\t). Sometimes, when a tab is used, the format is called tsv, for tab-separated values). If you get a file using a different separator, you can just call the <c>.split('|')</c> or <c>.split('\t')</c>.</p>
+
+  <p>The other advanced CSV format uses commas to separate but encloses all values in double quotes.</p>
+
+  <p>For example, the data file might look like:</p>
+
+  <program language="python">
+      <input>
+        "Name","Sex","Age","Team","Event","Medal"
+        "A Dijiang","M","24","China","Basketball","NA"
+        "Edgar Lindenau Aabye","M","34","Denmark/Sweden","Tug-Of-War","Gold"
+        "Christine Jacoba Aaftink","F","21","Netherlands","Speed Skating, 1500M","NA"
+      </input>
+  </program>
+
+  <p>If you are reading a .csv file that has enclosed all values in double quotes, it’s actually a pretty tricky programming problem to split the text for one row into a list of values. You won’t want to try to do it directly. Instead, you should use python’s built-in csv module. However, there’s a bit of a learning curve for that, and we find that students gain a better understanding of reading CSV format by first learning to read the simple, unquoted format and split lines on commas.</p>
+
 </section>

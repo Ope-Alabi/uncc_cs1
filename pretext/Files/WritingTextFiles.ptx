@@ -36,7 +36,8 @@
 
   <p>The complete program is shown below.</p>
 
-  <program xml:id="ch11_sec8_p2" interactive="activecode" language="python">
+ 
+  <program xml:id="ch11_sec8_p2" interactive="activecode" language="python" datafile="squared_numbers.txt">
     <input>
       filename = open("squared_numbers.txt", "r")
       outfile = open(filename, "w")
@@ -52,17 +53,23 @@
       infile.close()
 
 
-        </input>
+    </input>
   </program>
 
-  <!-- aline = outfile.readline()
-outfile.write("Year \tEmmision\n")
-while aline:
-    items = aline.split()
-    dataline = items[0] + '\t' + items[2]
-    outfile.write(dataline + '\n')
-    aline = infile.readline()
-
-infile.close()
-outfile.close() -->
+   <datafile label="squared_numbers" filename="squared_numbers.txt" editable="no" hide="yes"> 
+    <pre>
+        1
+        4
+        9
+        16
+        25
+        36
+        49
+        64
+        81
+        100
+        121
+        144
+    </pre>
+  </datafile>
 </section>
