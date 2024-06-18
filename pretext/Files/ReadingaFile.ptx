@@ -1,22 +1,84 @@
 <?xml version="1.0"?>
 <section xml:id="files_reading-a-file">
   <title>Reading a File</title>
-  <p>As an example, suppose we have a text file called <c>ccdata.txt</c> that contains
-            the following data representing statistics about climate change. Although it
-            would be possible to consider entering this data by hand each time it is used,
-            you can imagine that it would be time-consuming and error-prone to do this. In
-            addition, it is likely that there could be data from more sources and
-            other years. The format of the data file is as follows:</p>
-  <pre>Year, Global Average Temperature, Global Emmision of CO2</pre>
-  <DataFileNode line="27" runestone_options="{'subchapter': 'ReadingaFile', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.3.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/ReadingaFile.rst">
-        </DataFileNode>
-  <p>To open this file, we would call the <c>open</c> function. The variable,
-            <c>fileref</c>, now holds a reference to the file object returned by
-            <c>open</c>. When we are finished with the file, we can close it by using
-            the <c>close</c> method. After the file is closed any further attempts to
-            use <c>fileref</c> will result in an error.</p>
-  <pre>&gt;&gt;&gt;fileref = open("ccdata.txt", "r")
-&gt;&gt;&gt;
-&gt;&gt;&gt;fileref.close()
-&gt;&gt;&gt;</pre>
+  <p>As an example, suppose we have a text file called <c>olympics.txt</c> that contains the data representing about olympians across different years. The contents of the file are shown at the bottom of the page.</p>
+  <p>To open this file, we would call the open function. The variable, fileref, now holds a reference to the file object returned by <c>open</c>. When we are finished with the file, we can close it by using the <c>close</c> method. After the file is closed any further attempts to use <c>fileref</c> will result in an error.</p>
+  <datafile label="olympics" filename="olympics.txt" rows="10" cols="6" editable="no" hide="no"> 
+    <pre>
+      Name,Sex,Age,Team,Event,Medal
+      A Dijiang,M,24,China,Basketball,NA
+      A Lamusi,M,23,China,Judo,NA
+      Gunnar Nielsen Aaby,M,24,Denmark,Football,NA
+      Edgar Lindenau Aabye,M,34,Denmark/Sweden,Tug-Of-War,Gold
+      Christine Jacoba Aaftink,F,21,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,21,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,25,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,25,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,27,Netherlands,Speed Skating,NA
+      Christine Jacoba Aaftink,F,27,Netherlands,Speed Skating,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,31,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      Per Knut Aaland,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,31,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      John Aalberg,M,33,United States,Cross Country Skiing,NA
+      "Cornelia ""Cor"" Aalten (-Strannood)",F,18,Netherlands,Athletics,NA
+      "Cornelia ""Cor"" Aalten (-Strannood)",F,18,Netherlands,Athletics,NA
+      Antti Sami Aalto,M,26,Finland,Ice Hockey,NA
+      "Einar Ferdinand ""Einari"" Aalto",M,26,Finland,Swimming,NA
+      Jorma Ilmari Aalto,M,22,Finland,Cross Country Skiing,NA
+      Jyri Tapani Aalto,M,31,Finland,Badminton,NA
+      Minna Maarit Aalto,F,30,Finland,Sailing,NA
+      Minna Maarit Aalto,F,34,Finland,Sailing,NA
+      Pirjo Hannele Aalto (Mattila-),F,32,Finland,Biathlon,NA
+      Arvo Ossian Aaltonen,M,22,Finland,Swimming,NA
+      Arvo Ossian Aaltonen,M,22,Finland,Swimming,NA
+      Arvo Ossian Aaltonen,M,30,Finland,Swimming,Bronze
+      Arvo Ossian Aaltonen,M,30,Finland,Swimming,Bronze
+      Arvo Ossian Aaltonen,M,34,Finland,Swimming,NA
+      Juhamatti Tapio Aaltonen,M,28,Finland,Ice Hockey,Bronze
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Bronze
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Gold
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Gold
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,28,Finland,Gymnastics,Gold
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,Bronze
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Paavo Johannes Aaltonen,M,32,Finland,Gymnastics,NA
+      Timo Antero Aaltonen,M,31,Finland,Athletics,NA
+      Win Valdemar Aaltonen,M,54,Finland,Art Competitions,NA
+    </pre>
+  </datafile>
+
+  <program xml:id="ch11_sec2_p1" interactive="activecode" language="python" datafile="olympics.txt">
+    <input>
+      fileref = open("olympics.txt", "r")
+      print(fileref)
+      ## other code here that refers to variable fileref
+      fileref.close()
+
+    </input>
+  </program>
+
+  
+  <note>A common mistake is to get confused about whether you are providing a variable name or a string literal as an input to the open function. In the code above, “olympics.txt” is a string literal that should correspond to the name of a file on your computer. If you put something without quotes, like <c>open(x, "r")</c>, it will be treated as a variable name. In this example, x should be a variable that’s already been bound to a string value like “olympics.txt”.</note>
+
 </section>
