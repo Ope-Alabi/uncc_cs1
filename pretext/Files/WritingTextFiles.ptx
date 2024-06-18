@@ -20,6 +20,9 @@
             lines, break each line into its parts, choose the parts that we need, and then output them.  Eventually, the output will be written to a file.</p>
   <p>The program below solves part of the problem. Notice that it reads the data and creates a string consisting of the year of the climate change followed by the global emission. In this example, we simply print the lines as they are created.</p>
    -->
+
+     <!-- <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
+        </DataFileNode> -->
   <program xml:id="ch11_sec8_p1" interactive="activecode" language="python">
     <input>
       for number in range(1, 13):
@@ -33,7 +36,8 @@
 
   <p>The complete program is shown below.</p>
 
-  <program xml:id="ch11_sec8_p2" interactive="activecode" language="python">
+ 
+  <program xml:id="ch11_sec8_p2" interactive="activecode" language="python" datafile="squared_numbers.txt">
     <input>
       filename = open("squared_numbers.txt", "r")
       outfile = open(filename, "w")
@@ -49,17 +53,23 @@
       infile.close()
 
 
-        </input>
+    </input>
   </program>
 
-  <!-- aline = outfile.readline()
-outfile.write("Year \tEmmision\n")
-while aline:
-    items = aline.split()
-    dataline = items[0] + '\t' + items[2]
-    outfile.write(dataline + '\n')
-    aline = infile.readline()
-
-infile.close()
-outfile.close() -->
+   <datafile label="squared_numbers" filename="squared_numbers.txt" editable="no" hide="yes"> 
+    <pre>
+        1
+        4
+        9
+        16
+        25
+        36
+        49
+        64
+        81
+        100
+        121
+        144
+    </pre>
+  </datafile>
 </section>

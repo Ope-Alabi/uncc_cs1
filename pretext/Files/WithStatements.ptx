@@ -12,25 +12,32 @@
             ...
       </input>
     </program>
-  <p>When the program exits the with block, the context manager handles the common stuff that normally happens.  For example closing a file.  A simple example will clear up all of this abstract discussion of contexts.</p>
-  <!-- <DataFileNode line="20" runestone_options="{'subchapter': 'WithStatements', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'mydata.txt', 'qnumber': '', 'cols': 5, 'rows': 20, 'filecontent': '1 2 3\n4 5 6\n', 'hidden': '', 'edit': 'false', 'question_label': '11.7.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/WithStatements.rst">
-        </DataFileNode> -->
+  <p>When the program exits the with block, the context manager handles the common stuff that normally happens at the end, in our case closing a file. A simple example will clear up all of this abstract discussion of contexts. Here are the contents of a file called “mydata.txt”.</p>
 
-    <program xml:id="ch11_sec6_p1" interactive="activecode" language="python">
+  <datafile label="my_data" filename="mydata.txt" editable="no" hide="no"> 
+    <pre>
+      1 2 3
+      4 5 6
+    </pre>
+  </datafile>
+
+
+    <program xml:id="ch11_sec6_p1" interactive="activecode" codelens="no" language="python" datafile="mydata.txt">
     <input>
-      with open('mydata.txt') as md:
+      with open('mydata.txt' , 'r') as md:
           for line in md:
               print(line)
       # continue on with other code
 
         </input>
   </program>
-  <p>The first line of the <title_reference>with</title_reference> statement opens the file and assigns it to <title_reference>md</title_reference>  then we can iterate over the file in any of the usual ways. and when we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
+  <p>The first line of the <title_reference><em>with</em></title_reference> statement opens the file and assigns it to <c>md</c>. Then we can iterate over the file in any of the usual ways. When we are done we simply stop indenting and let Python take care of closing the file and cleaning up.</p>
+  
   <p>This is equivalent to code that specifically closes the file at the end, but neatly marks the set of code that can make use of the open file as an indented block, and ensures that the programmer won’t forget to include the <c>.close()</c> invocation.</p>
 
-  <program xml:id="ch11_sec6_p2" interactive="activecode" language="python">
+  <program xml:id="ch11_sec6_p2" interactive="activecode" codelens="no" language="python" datafile="mydata.txt">
     <input>
-      md = open('mydata.txt') as md:
+      md = open('mydata.txt', 'r')
       for line in md:
           print(line)
       md.close()
