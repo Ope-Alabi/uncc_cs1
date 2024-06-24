@@ -68,7 +68,7 @@ print(pi)
   <p>Now, as you step through the statements, you can see
             the variables and the values they reference as those references are
             created.</p>
-  <p>Variables also have
+  <!-- <p>Variables also have
             types; again, we can ask the interpreter what they are.</p>
   <program xml:id="ch2_sec4_p2" interactive="activecode" language="python">
     <input>
@@ -81,7 +81,7 @@ print(type(n))
 print(type(pi))
     </input>
   </program>
-  <p>The type of a variable is the type of the object it currently refers to.</p>
+  <p>The type of a variable is the type of the object it currently refers to.</p> -->
   <p>We use variables in a program to <q>remember</q> things, like the current score at
             the football game.  But variables are <em>variable</em>. This means they can change
             over time, just like the scoreboard at a football game.  You can assign a value
