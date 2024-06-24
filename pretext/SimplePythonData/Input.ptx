@@ -139,9 +139,7 @@ print(type(str(123.45)))
       
   </subsection>
 
-  <p>To modify our previous program, we will add an input statement to allow the user to enter the number of seconds.  Then
-            we will convert that string to an integer.  From there the process is the same as before.  To complete the example, we will
-            print some appropriate output.</p>
+  <p>Here is a program that turns a number of seconds into more human readable counts of hours, minutes, and seconds. A call to <c>input()</c> allows the user to enter the number of seconds. Then we convert that string to an integer. From there we use the division and modulus operators to compute the results.</p>
   <program xml:id="ch2_sec8_p12" interactive="activecode" language="python">
     <input>
 str_seconds = input("Please enter the number of seconds you wish to convert")

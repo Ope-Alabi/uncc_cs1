@@ -8,6 +8,7 @@
 4<xi:include href="./VariableNamesandKeywords.ptx"/>
 4<xi:include href="./StatementsandExpressions.ptx"/>
 4<xi:include href="./OperatorsandOperands.ptx"/>
+4<xi:include href="./Output.ptx"/>
 4<xi:include href="./Input.ptx"/>
 4<xi:include href="./OrderofOperations.ptx"/>
 4<xi:include href="./Reassignment.ptx"/>
