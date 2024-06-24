@@ -3,7 +3,7 @@
 4<title>Simple Python Data</title>
 4<xi:include href="./intro-VariablesExpressionsandStatements.ptx"/>
 4<xi:include href="./ValuesandDataTypes.ptx"/>
-4<xi:include href="./Typeconversionfunctions.ptx"/>
+<!-- 4<xi:include href="./Typeconversionfunctions.ptx"/> -->
 4<xi:include href="./Variables.ptx"/>
 4<xi:include href="./VariableNamesandKeywords.ptx"/>
 4<xi:include href="./StatementsandExpressions.ptx"/>
