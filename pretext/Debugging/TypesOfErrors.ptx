@@ -6,16 +6,16 @@
   <!-- syntax errors -->
   <!--               -->
   <subsection>
-    <title>Syntax errors</title>
+    <title>Syntax Errors</title>
     <p>
       Python can only execute a program if the program is syntactically correct; otherwise, the process fails and returns an error message.
       <term>Syntax</term> refers to the structure of a program and the rules about that structure.
-      For example, in English, a sentence must begin with a capital letter and end with a period.
+      For example, in English, a sentence must begin with a capital letter and end with punctuation.
       this sentence contains a <term>syntax error</term>.
       So does this one
     </p>
     <p>
-      For most readers, a few syntax errors are not a significant problem, which is why we can read the poetry of e. e. cummings without problems.
+      For most readers, a few syntax errors are not a significant problem, which is why we can read the poetry of E. E. Cummings without problems.
       Python is not so forgiving.
       If there is a single syntax error anywhere in your program, Python will display an error message and quit.
       You will not be able to complete the execution of your program.
@@ -97,6 +97,7 @@
     </p>
     <p>
       Runtime errors are rare in the simple programs you will see in the first few chapters, so it might be a while before you encounter one.
+      Often times, they are the result of a user providing bad input, or a file not being found on the computer's drive.
     </p>
 
     <p>
@@ -169,7 +170,7 @@
   <subsection>
     <title>Semantic Errors</title>
     <p>
-      The third type of error is the <term>semantic error</term>.
+      The third type of error is the <term>semantic error</term>, or <term>logic error</term>.
       If there is a semantic error in your program, it will run successfully in the sense that the computer will not generate any error messages.
       However, your program will not do the right thing.
       It will do something else.
@@ -180,6 +181,12 @@
       The meaning of the program (its semantics) is wrong.
       Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
     </p>
+
+    <blockquote>
+      <title>Do What I Say</title>
+      <p><q>Computers do what you tell them to do, not what you want them to do.</q></p>
+      <attribution>Anonymous</attribution>
+    </blockquote>
 
     <p>
       <term>Check your understanding</term>
