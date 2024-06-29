@@ -32,37 +32,4 @@
           <li><p>Given a piece of code find the ValueError, TypeError, SyntaxError, ParseError, and/or NameError</p></li>
       </ul>
   </subsection>
-
-  <p>
-    <term>Check your understanding</term>
-  </p>
-  <exercise label="ch4_sec1_p1">
-    <statement><p>Debugging is:</p></statement>
-    <choices>
-      <choice correct="yes">
-        <statement><p>tracking down programming errors and correcting them.</p></statement>
-        <feedback>
-          Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
-        </feedback>
-      </choice>
-      <choice>
-        <statement><p>removing all the bugs from your house.</p></statement>
-        <feedback>
-          Maybe, but that is not what we are talking about in this context.
-        </feedback>
-      </choice>
-      <choice>
-        <statement><p>finding all the bugs in the program.</p></statement>
-        <feedback>
-          This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
-        </feedback>
-      </choice>
-      <choice>
-        <statement><p>fixing the bugs in the program.</p></statement>
-        <feedback>
-          This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
-        </feedback>
-      </choice>
-    </choices>
-  </exercise>
 </section>

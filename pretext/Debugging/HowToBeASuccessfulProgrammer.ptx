@@ -1,7 +1,115 @@
 <?xml version="1.0"?>
 <section xml:id="debugging_how-to-be-a-successful-programmer">
   <title>How to be a Successful Programmer</title>
-  <p>One of the most important skills you need to acquire to complete this book successfully is the ability to debug your programs.  Debugging might be the most under-appreciated, and under-taught skill in introductory computer science.  For that reason we are including this <q>debugging interlude.</q>  Debugging is a skill that you need to master over time, and some of the tips and tricks are specific to different aspects of Python programming.</p>
-  <p>Programming is an odd thing in a way.  Here is why.  As programmers we spend 99% of our time trying to get our program to work.  We struggle, we stress, we spend hours deep in frustration trying to get our program to execute correctly.  Then when we do get it going we celebrate, hand it in, and move on to the next homework assignment or programming task.  But here is the secret, when you are successful, you are happy, your brain releases a bit of chemical that makes you feel good.  You need to organize your programming so that you have lots of little successess.  It turns out your brain doesn't care all that much if you have successfully written hello world, or a fast fourier transform (trust me its hard) you still get that little release that makes you happy.  When you are happy you want to go on and solve the next little problem.  Essentially I'm telling you once again, start small, get something small working, and then add to it.</p>
+  <p>
+    One of the most important skills you need to acquire to complete this book successfully is the ability to debug your programs.
+    Debugging might be the most under-appreciated and under-taught skill in introductory computer science.
+    Debugging is a skill that you need to master over time, and some of the tips and tricks are specific to different aspects of programming.
+  </p>
+  <p>
+    Programming is an odd thing in a way.
+    As programmers we spend 99% of our time trying to get our program to work.
+    We struggle, we stress, we spend hours deep in frustration trying to get our program to execute correctly.
+    Then when we do get it going, we celebrate, hand it in, and move on to the next homework assignment or programming task.
+    But here is the secret: when you are successful, you are happy; your brain releases a bit of chemical that makes you feel good.
+    You need to organize your programming so that you have lots of little successes.
+    It turns out your brain doesn't care all that much if you have successfully written <c>Hello, World!</c> or a 
+    <url href="https://en.wikipedia.org/wiki/Fast_Fourier_transform" visual="A Fast Fourier Transform (FFT) is an algorithm that computes the Discrete Fourier Transform (DFT) of a sequence, or its inverse (IDFT)">
+      fast fourier transform</url>, you still get that little release that makes you happy.
+    When you are happy, you want to go on and solve the next little problem.
+    Essentially, start small, get something small working, and then add to it.
+  </p>
 
+  <subsection>
+    <title>Experimental Debugging</title>
+    <p>
+      In some ways, debugging is like detective work.
+      You are confronted with clues, and you have to infer the processes and events that led to the results you see.
+    </p>
+    <p>
+      Debugging is also like an experimental science.
+      Once you have an idea of what is going wrong, you modify your program and try again.
+      If your hypothesis was correct, then you can predict the result of the modification, and you take a step closer to a working program.
+      If your hypothesis was wrong, you have to come up with a new one.
+      As Sherlock Holmes pointed out, <q>When you have eliminated the impossible, whatever remains, however improbable, must be the truth</q> (A. Conan Doyle, <em>The Sign of Four</em>).
+    </p>
+    <p>
+      For some people, programming and debugging are the same thing.
+      That is, programming is the process of gradually debugging a program until it does what you want.
+      The idea is that you should start with a program that does <em>something</em> and make small modifications, debugging them as you go, so that you always have a working program.
+    </p>
+    <p>
+      For example, <url href="https://en.wikipedia.org/wiki/Linux" visual="Linux is both an open-source Unix-like kernel and a generic name for a family of open-source Unix-like operating systems based on the Linux kernel, an operating system kernel first released on September 17, 1991, by Linus Torvalds.">Linux</url>
+      is an operating system kernel that contains millions of lines of code, but it started out as a simple program Linus Torvalds used to explore the 
+      <url href="https://en.wikipedia.org/wiki/I386" visual="The Intel 386, originally released as 80386 and later renamed i386, is a 32-bit microprocessor designed by Intel. The first pre-production samples of the 386 were released to select developers in 1985, while mass production commenced in 1986.">Intel 80386 chip</url>.
+      According to Larry Greenfield, one of Linus' earlier projects was a program that would switch between displaying AAAA and BBBB.
+      This later evolved to Linux (<em>The Linux Users' Guide</em> Beta Version 1).
+    </p>
+    <p>
+      Later chapters will make more suggestions about debugging and other programming practices.
+    </p>
+
+    <p>
+      <term>Check your understanding</term>
+    </p>
+    <exercise label="ch4_sec3_p1">
+      <statement><p>Debugging is:</p></statement>
+      <choices>
+        <choice correct="yes">
+          <statement><p>tracking down programming errors and correcting them.</p></statement>
+          <feedback>
+            Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
+          </feedback>
+        </choice>
+        <choice>
+          <statement><p>removing all the bugs from your house.</p></statement>
+          <feedback>
+            Maybe, but that is not what we are talking about in this context.
+          </feedback>
+        </choice>
+        <choice>
+          <statement><p>finding all the bugs in the program.</p></statement>
+          <feedback>
+            This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
+          </feedback>
+        </choice>
+        <choice>
+          <statement><p>fixing the bugs in the program.</p></statement>
+          <feedback>
+            This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+    <exercise label="ch4_sec3_p2">
+      <statement><p>The difference between programming and debugging is:</p></statement>
+      <choices>
+        <choice correct="yes">
+          <statement><p>programming is the process of writing and gradually debugging a program until it does what you want.</p></statement>
+          <feedback>
+              Programming is the writing of the source code and debugging is the process of finding and correcting all the errors within the program until it is correct.
+            </feedback>
+        </choice>
+        <choice>
+          <statement><p>programming is creative and debugging is routine.</p></statement>
+          <feedback>
+              Programming can be creative, but it also follows a process and debugging can involve creativity in how you find the errors.
+            </feedback>
+        </choice>
+        <choice>
+          <statement><p>programming is fun and debugging is work.</p></statement>
+          <feedback>
+            Some people think that debugging is actually more fun than programming (they usually become good software testers).
+            Debugging is much like solving puzzles, which some people think is fun!
+            </feedback>
+        </choice>
+        <choice>
+          <statement><p>there is no difference between them.</p></statement>
+          <feedback>
+            You cannot debug without first having a program, meaning that someone had to do the programming first.
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+  </subsection>
 </section>

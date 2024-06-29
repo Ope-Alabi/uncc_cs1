@@ -3,7 +3,6 @@
   <title>Debugging Interlude</title>
   <xi:include href="./intro-Debugging.ptx"/>
   <xi:include href="./TypesOfErrors.ptx"/>
-  <xi:include href="./ExperimentalDebugging.ptx"/>
   <xi:include href="./HowToBeASuccessfulProgrammer.ptx"/>
   <xi:include href="./HowtoAvoidDebugging.ptx"/>
   <xi:include href="./BeginningtipsforDebugging.ptx"/>
