@@ -2,9 +2,7 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
   <title>Debugging Interlude</title>
   <xi:include href="./intro-Debugging.ptx"/>
-  <xi:include href="./Syntaxerrors.ptx"/>
-  <xi:include href="./RuntimeErrors.ptx"/>
-  <xi:include href="./SemanticErrors.ptx"/>
+  <xi:include href="./TypesOfErrors.ptx"/>
   <xi:include href="./ExperimentalDebugging.ptx"/>
   <xi:include href="./HowToBeASuccessfulProgrammer.ptx"/>
   <xi:include href="./HowtoAvoidDebugging.ptx"/>
