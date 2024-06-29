@@ -5,18 +5,19 @@
     Programming is a complex process.
     Since it is done by human beings, errors may often occur.
     Programming errors are called <term>bugs</term> and the process of tracking them down and correcting them is called <term>debugging</term>.
-    Some claim that in 1945, a dead moth caused a problem on relay number 70, panel F, of one of the first computers at Harvard, and the term <term>bug</term> has remained in use since.
-    For more about this historic event, see <url href="http://en.wikipedia.org/wiki/File:H96566k.jpg" visual="http://en.wikipedia.org/wiki/File:H96566k.jpg">first bug</url>.
+    <!-- fun story, but technically false in saying that's where the term came from https://en.wikipedia.org/wiki/Bug_(engineering) -->
+    <!-- Some claim that in 1945, a dead moth caused a problem on relay number 70, panel F, of one of the first computers at Harvard, and the term <term>bug</term> has remained in use since. -->
+    <!-- For more about this historic event, see <url href="https://en.wikipedia.org/wiki/File:H96566k.jpg" visual="https://en.wikipedia.org/wiki/File:H96566k.jpg">first bug</url>. -->
   </p>
   <p>
     Three kinds of errors can occur in a program:
-    <url href="http://en.wikipedia.org/wiki/Syntax_error" visual="http://en.wikipedia.org/wiki/Syntax_error">syntax errors</url>,
-    <url href="http://en.wikipedia.org/wiki/Runtime_error" visual="http://en.wikipedia.org/wiki/Runtime_error">runtime errors</url>,
-    and <url href="http://en.wikipedia.org/wiki/Logic_error" visual="http://en.wikipedia.org/wiki/Logic_error">semantic errors</url>.
+    <url href="https://en.wikipedia.org/wiki/Syntax_error" visual="https://en.wikipedia.org/wiki/Syntax_error">syntax errors</url>,
+    <url href="https://en.wikipedia.org/wiki/Runtime_error" visual="https://en.wikipedia.org/wiki/Runtime_error">runtime errors</url>,
+    and <url href="https://en.wikipedia.org/wiki/Logic_error" visual="https://en.wikipedia.org/wiki/Logic_error">semantic errors</url>.
     It is useful to distinguish between them in order to track them down more quickly.
   </p>
 
-  <subsection xml:id="sec04-Learning-Goals">
+  <subsection xml:id="ch04-Learning-Goals">
       <title>Learning Goals</title>
       <ul>
           <li><p>To understand good programming strategies to avoid errors</p></li>
@@ -24,53 +25,43 @@
       </ul> 
   </subsection>
 
-  <subsection xml:id="sec04-Objectives">
+  <subsection xml:id="ch04-Objectives">
       <title>Objectives</title>
       <ul>
           <li><p>Given a piece of code identify the Syntax errors based on error messages</p></li>
-          <li><p>Given a piece of code find the (ValueError, TypeError, SyntaxError, ParseError, NameError)</p></li>
+          <li><p>Given a piece of code find the ValueError, TypeError, SyntaxError, ParseError, and/or NameError</p></li>
       </ul>
   </subsection>
 
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch1_sec6_q1">
-    <statement>
-      <p>Debugging is:</p>
-    </statement>
+  <exercise label="ch4_sec1_p1">
+    <statement><p>Debugging is:</p></statement>
     <choices>
       <choice correct="yes">
-        <statement>
-          <p>tracking down programming errors and correcting them.</p>
-        </statement>
+        <statement><p>tracking down programming errors and correcting them.</p></statement>
         <feedback>
-                    Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
-                </feedback>
+          Programming errors are called bugs and the process of finding and removing them from a program is called debugging.
+        </feedback>
       </choice>
       <choice>
-        <statement>
-          <p>removing all the bugs from your house.</p>
-        </statement>
+        <statement><p>removing all the bugs from your house.</p></statement>
         <feedback>
-                    Maybe, but that is not what we are talking about in this context.
-                </feedback>
+          Maybe, but that is not what we are talking about in this context.
+        </feedback>
       </choice>
       <choice>
-        <statement>
-          <p>finding all the bugs in the program.</p>
-        </statement>
+        <statement><p>finding all the bugs in the program.</p></statement>
         <feedback>
-                    This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
-                </feedback>
+          This is partially correct.  But, debugging is more than just finding the bugs.  What do you need to do once you find them?
+        </feedback>
       </choice>
       <choice>
-        <statement>
-          <p>fixing the bugs in the program.</p>
-        </statement>
+        <statement><p>fixing the bugs in the program.</p></statement>
         <feedback>
-                    This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
-                </feedback>
+          This is partially correct.  But, debugging is more than just fixing the bugs. What do you need to do before you can fix them?
+        </feedback>
       </choice>
     </choices>
   </exercise>
