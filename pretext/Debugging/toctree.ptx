@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Debugging Interlude</title>
-4<xi:include href="./intro-HowtobeaSuccessfulProgrammer.ptx"/>
-4<xi:include href="./HowtoAvoidDebugging.ptx"/>
-4<xi:include href="./BeginningtipsforDebugging.ptx"/>
-4<xi:include href="./KnowyourerrorMessages.ptx"/>
-4<xi:include href="./Summary.ptx"/>
+  <title>Debugging Interlude</title>
+  <xi:include href="./intro-Debugging.ptx"/>
+  <xi:include href="./Syntaxerrors.ptx"/>
+  <xi:include href="./RuntimeErrors.ptx"/>
+  <xi:include href="./SemanticErrors.ptx"/>
+  <xi:include href="./ExperimentalDebugging.ptx"/>
+  <xi:include href="./HowToBeASuccessfulProgrammer.ptx"/>
+  <xi:include href="./HowtoAvoidDebugging.ptx"/>
+  <xi:include href="./BeginningtipsforDebugging.ptx"/>
+  <xi:include href="./KnowyourerrorMessages.ptx"/>
+  <xi:include href="./Summary.ptx"/>
 </chapter>
