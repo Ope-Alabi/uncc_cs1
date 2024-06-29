@@ -3,31 +3,10 @@
   <title>Boolean Values and Boolean Expressions</title>
   <!--<video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="auto"/>-->
 
-  <p>The Python type for storing true and false values is called <c>bool</c>, named after the British mathematician, George Boole.
-    George Boole created <em>Boolean Algebra</em>, which is the basis of all modern computer arithmetic.</p>
   <p>There are only two <term>boolean values</term>.
     They are <c>True</c> and <c>False</c>.
     Capitalization is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case sensitive).</p>
-
-  <subsection xml:id="subsec-Learning-Goals">
-      <title>Learning Goals</title>
-      <ul>
-          <li><p>To understand boolean expressions and logical operators</p></li>
-          <li><p>To understand conditional execution</p></li>
-          <li><p>To be able to write a boolean function</p></li>
-          <li><p>To know when to use binary, unary, chained and nested conditional statements</p></li>
-      </ul> 
-  </subsection>
-
-  <subsection xml:id="subsec-Objectives">
-      <title>Objectives</title>
-      <ul>
-          <li><p>To properly evaluate a (compound) boolean expression</p></li>
-          <li><p>To use parenthesis to properly demonstrate operator precedence</p></li>
-          <li><p>To use conditional statements to properly branch code</p></li>
-      </ul>
-  </subsection>
-
+    
   <program xml:id="ch5_sec1_p1" interactive="activecode" language="python">
     <input>
 print(True)
@@ -96,14 +75,6 @@ x &lt;= y               # x is less than or equal to y
     <choices>
       <choice correct="yes">
         <statement>
-          <p>True</p>
-        </statement>
-        <feedback>
-                    True and False are both Boolean literals.
-                </feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
           <p>3 == 4</p>
         </statement>
         <feedback>
@@ -136,8 +107,4 @@ x &lt;= y               # x is less than or equal to y
       </choice>
     </choices>
   </exercise>
-
- 
-
-
 </section>
