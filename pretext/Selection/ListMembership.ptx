@@ -21,9 +21,6 @@ print("pear" in my_list) # prints False because "pear" is in a sublist
 print("g" in my_list) # prints False because "g" is not an member in my_list by itself
         </input>
   </program>
-
-
-
   <p>
     <term>Check your understanding</term>
   </p>

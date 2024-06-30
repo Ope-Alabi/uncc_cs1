@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Branching</title>
-4<xi:include href="./BooleanValuesandBooleanExpressions.ptx"/>
-4<xi:include href="./ConditionalExecutionBinarySelection.ptx"/>
-4<xi:include href="./OmittingtheelseClauseUnarySelection.ptx"/>
-4<xi:include href="./Nestedconditionals.ptx"/>
-4<xi:include href="./Chainedconditionals.ptx"/>
-4<xi:include href="./Theinandnotinoperators.ptx"/>
-4<xi:include href="./ListMembership.ptx"/>
-4<xi:include href="./StringComparison.ptx"/>
-4<xi:include href="./video-branching.ptx"/>
-4<xi:include href="./Logicaloperators.ptx"/>
-4<xi:include href="./PrecedenceofOperators.ptx"/>
-4<xi:include href="./Pseudocode.ptx"/>
-4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./video-logic.ptx"/>
+<title>Branching</title>
+<xi:include href="./introToBooleans.ptx"/>
+<xi:include href="./BooleanValuesandBooleanExpressions.ptx"/>
+<xi:include href="./ConditionalExecutionBinarySelection.ptx"/>
+<xi:include href="./OmittingtheelseClauseUnarySelection.ptx"/>
+<xi:include href="./Nestedconditionals.ptx"/>
+<xi:include href="./Chainedconditionals.ptx"/>
+<xi:include href="./Theinandnotinoperators.ptx"/>
+<!-- <xi:include href="./ListMembership.ptx"/> -->
+<xi:include href="./StringComparison.ptx"/>
+<!-- <xi:include href="./video-branching.ptx"/> -->
+<xi:include href="./Logicaloperators.ptx"/>
+<xi:include href="./PrecedenceofOperators.ptx"/>
+<!-- <xi:include href="./Pseudocode.ptx"/> -->
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./video-logic.ptx"/>
 </chapter>
