@@ -5,7 +5,6 @@
   <xi:include href="./TypesOfErrors.ptx"/>
   <xi:include href="./HowToBeASuccessfulProgrammer.ptx"/>
   <xi:include href="./HowtoAvoidDebugging.ptx"/>
-  <xi:include href="./BeginningtipsforDebugging.ptx"/>
   <xi:include href="./KnowyourerrorMessages.ptx"/>
   <xi:include href="./Summary.ptx"/>
 </chapter>

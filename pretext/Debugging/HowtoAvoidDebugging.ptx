@@ -198,8 +198,9 @@
   </program>
 
   <p>
-    Of course, even in this simple progression, there are other ways you could have gone astray.
-    We'll look at some of those and how you track them down in the next section.
+    Of course, even in this simple program, there are other ways you could have gone astray.
+    Like we did earlier, an easy way to check for correctness is through <c>print</c> statements.
+    Another is through error messages, though these don't show up in logic errors like the one shown in this example.
   </p>
 
 </section>
