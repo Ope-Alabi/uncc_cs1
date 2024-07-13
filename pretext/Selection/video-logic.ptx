@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="logic_video">
-  <title>Practice Video Lecture</title>
+  <title>Practice Video Lectures</title>
+  <p>Week 3 Video Lecture:</p>
+  <video xml:id="branching-vid" youtube="dxuHH894XKA" width="auto"/>
   <p>Week 4 Video Lecture:</p>
   <video xml:id="logic-vid" youtube="t_Ll9zsf8H8" width="auto"/>
 
