@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<section xml:id="functions_decomposition_and_composition">
+  <title>Functions Decomposition and Composition</title>
+
+  <subsection xml:id="functions_functions-can-call-other-functions">
+    <title>Decomposition</title>
+    <p>It is important to understand that each of the functions we write can be used
+        and called from other functions we write.  This is one of the most important
+        ways that computer scientists take a large problem and break it down into a
+        group of smaller problems. This process of breaking a problem into smaller
+        subproblems is called <term>functional decomposition</term>.
+</p>
+<p>Here's a simple example of functional decomposition using two functions. The
+        first function called <c>square</c> simply computes the square of a given number.
+        The second function called <c>sum_of_squares</c> makes use of square to compute
+        the sum of three numbers that have been squared.</p>
+<program xml:id="ch8_sec5_p1" interactive="activecode" language="python">
+<input>
+      def square(x):
+          y = x * x
+          return y
+      
+      def sum_of_squares(x, y, z):
+          a = square(x)
+          b = square(y)
+          c = square(z)
+      
+          return a + b + c
+      
+      a = -5
+      b = 2
+      c = 10
+      result = sum_of_squares(a, b, c)
+      print(result)
+</input>
+</program>
+<p>Even though this is a pretty simple idea, in practice this example
+        illustrates many very important Python concepts, including local and global
+        variables along with parameter passing.  Note that when you step through this
+        example, codelens bolds line 1 and line 5 as the functions are defined.  The
+        body of square is not executed until it is called from the <c>sum_of_squares</c>
+        function for the first time on line 6.  Also notice that when <c>square</c> is
+        called there are two groups of local variables, one for <c>square</c> and one
+        for <c>sum_of_squares</c>.  As you step through you will notice that <c>x</c>, and <c>y</c> are local variables in both functions and may even have
+        different values.  This illustrates that even though they are named the same,
+        they are in fact, very different.</p>
+
+<p>So far, it may not be clear why it is worth the trouble to create all of these
+        new functions. Actually, there are a lot of reasons, but this example
+        demonstrates two:</p>
+<p>
+<ol marker="1">
+  <li>
+    <p>Creating a new function gives you an opportunity to name a group of
+                statements. Functions can simplify a program by hiding a complex computation
+                behind a single command. The function (including its name) can capture your
+                mental chunking, or <em>abstraction</em>, of the problem.</p>
+  </li>
+  <li>
+    <p>Creating a new function can make a program smaller by eliminating repetitive
+                code.</p>
+  </li>
+  <li>
+    <p>Sometimes you can write functions that allow you to solve a specific
+                problem using a more general solution.</p>
+  </li>
+</ol>
+</p>
+
+  </subsection>
+
+  <subsection xml:id="functions_composition">
+    <title>Composition</title>
+        <p>As we have already seen, you can call one function from within another.
+                  This ability to build functions by using other functions is called <term>composition</term>.</p>
+        <p>As an example, we'll write a function that takes two points, the center of the
+                  circle and a point on the perimeter, and computes the area of the circle.</p>
+        <p>Assume that the center point is stored in the variables <c>xc</c> and <c>yc</c>, and
+                  the perimeter point is in <c>xp</c> and <c>yp</c>. The first step is to find the
+                  radius of the circle, which is the distance between the two points.
+                  Fortunately, we've just written a function, <c>distance</c>, that does just that,
+                  so now all we have to do is use it:</p>
+        <program language="python">
+          <input>
+      radius = distance(xc, yc, xp, yp)
+      </input>
+        </program>
+        <p>The second step is to find the area of a circle with that radius and return it.
+                  Again we will use one of our earlier functions:</p>
+        <program language="python">
+          <input>
+      result = area(radius)
+      return result
+      </input>
+        </program>
+        <p>Wrapping that up in a function, we get:</p>
+        <program xml:id="ch8_sec6_p1" interactive="activecode" language="python">
+          <input>
+      def distance(x1, y1, x2, y2):
+              dx = x2 - x1
+              dy = y2 - y1
+              dsquared = dx**2 + dy**2
+              result = dsquared**0.5
+              return result
+      
+      def area(radius):
+          b = 3.14159 * radius**2
+          return b
+      
+      def area2(xc, yc, xp, yp):
+          radius = distance(xc, yc, xp, yp)
+          result = area(radius)
+          return result
+      
+      print(area2(0,0,1,1))
+              </input>
+        </program>
+        <p>We called this function <c>area2</c> to distinguish it from the <c>area</c> function
+                  defined earlier. There can only be one function with a given name within a
+                  module.</p>
+        <p>Note that we could have written the composition without storing the intermediate results.</p>
+        <program language="python">
+          <input>
+      def area2(xc, yc, xp, yp):
+          return area(distance(xc, yc, xp, yp))
+      </input>
+        </program>
+    
+  </subsection>
+
+
+
+  </section>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<section xml:id="intro_sequences">
+    <title>Introduction: Functions</title>
+    <video xml:id="function_intro" youtube="4wKtB57J5J4" width="auto"/>
+    <p>In Python, a <term>function</term> is a named sequence of statements
+              that belong together.  Their primary purpose is to help us
+              organize programs into chunks that match how we think about
+              the solution to the problem.</p>
+    
+    <subsection xml:id="subsec-Learning-Goals">
+        <title>Learning Goals</title>
+        <ul>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+            <li><p>Template Text</p></li>
+        </ul> 
+        <!-- <subsubsection xml:id="subsub-sect">
+        <title>Test Title</title> 
+        </subsubsection> -->
+    </subsection>
+  
+    <subsection xml:id="subsec-Objectives">
+        <title>Objectives</title>
+        <ul>
+            <li><p>identify formal parameters and parameter values in a code sample</p></li>
+            <li><p>predict the return value of a function given sample parameter values</p></li>
+            <li><p>define functions with appropriate names for formal parameter</p></li>
+            <li><p>avoid the use of global variables in function definitions by creating formal parameters for all values that are needed</p></li>
+            <li><p>identify whether a function has any side effects</p></li>
+        </ul>
+    </subsection>    
+
+
+</section>

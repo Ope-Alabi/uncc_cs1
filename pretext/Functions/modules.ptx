@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_modules-and-getting-help">
   <title>Modules</title>
-  <!--<video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto"/>-->
+  <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto"/>
   <p>A <term>module</term> is a file containing Python definitions and statements intended
             for use in other Python programs. There are many Python modules that come with
             Python as part of the <term>standard library</term>. We have already used one of these briefly,
@@ -49,6 +49,23 @@ print(math.sqrt(100))         # prints the square root of 100
                 additional modules, you will need to also explore using a more robust development environment.</p>
   </note>
   <p>
+
+    <subsection xml:id="python-modules_more-about-using-modules">
+      <title>More About Using Modules</title>
+  
+  <p>Before we move on to exploring other modules, we should say a bit more about what modules are and how we
+    typically use them.  One of the most important things to realize about modules is the fact that they are data objects, just
+    like any other data in Python.  Module objects simply contain other Python elements.</p>
+
+  <p>The first thing we need to do when we wish to use a module is perform an <c>import</c>.  In the example above, the statement
+    <c>import math</c> creates a new name, <c>math</c>, and makes it refer to a `module object`.  This looks very much like
+    the reference diagrams we saw earlier for simple variables.</p>
+
+  <p>In order to use something contained in a module, we use the `dot` notation, providing the module name and the specific item joined together with a "dot".  For example, to use the <c>sqrt</c> function, we say <c>math.sqrt</c>.  You should read
+this as: "In the module math, access the Python element called sqrt".</p>
+    </subsection>
+
+
     <term>Check your understanding</term>
   </p>
   <exercise label="ch9_sec1_q1">

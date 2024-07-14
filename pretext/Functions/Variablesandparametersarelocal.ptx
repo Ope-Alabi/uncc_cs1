@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="functions_variables-and-parameters-are-local">
-  <title>Variables and Parameters are Local</title>
+  <title>Variables and Parameters Scope</title>
   <p>An assignment statement in a function creates a <term>local variable</term> for the
             variable on the left hand side of the assignment operator. It is called local because this variable only
             exists inside the function and you cannot use it outside. For example,
