@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<section xml:id="iteration_sequences-and-for-loops">
+  <title>Traversing Sequences with the <c>for</c> Loop</title>
+
+  <subsection xml:id="iteration_lists-and-for-loops">
+    <title>Traversing Lists with the <c>for</c> Loop</title>
+
+    <p>It is possible to perform <term>list traversal</term> using iteration by item as well as iteration by index.</p>
+
+  <program xml:id="ch6_sec10_p1" interactive="activecode" language="python">
+    <input>
+      fruits = ["apple", "orange", "banana", "cherry"]
+
+      for afruit in fruits:     # by item
+        print(afruit)
+    </input>
+  </program>
+  <p>It almost reads like natural language: For (every) fruit in (the list of) fruits, print (the name of the) fruit.</p>
+
+  
+  </subsection>
+
+  <subsection xml:id="iteration_traversal-and-the-for-loop-by-item">
+    <title>Traversing Strings with the <c>for</c> Loop: By Item</title>
+
+      
+        <p>
+          A lot of computations involve processing a collection one item at a time.
+          For strings, this means that we would like to process one character at a time.
+          Often, we start at the beginning, select each character in turn, do something to it, and continue until the end.
+          This pattern of processing is called a <term>traversal</term>.
+        </p>
+      
+        <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
+        <program xml:id="ch6_sec11_p1" interactive="activecode" language="python">
+          <input>
+            for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+              invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
+              print(invitation)
+          </input>
+        </program>
+      
+        <p>
+          Recall that the loop variable takes on each value in the sequence of names.
+          The body is performed once for each name.
+          The same was true for the sequence of integers created by the <c>range</c> function.
+        </p>
+        <program xml:id="ch6_sec11_p2" interactive="activecode" language="python">
+          <input>
+            for avalue in range(10):
+              print(avalue)
+          </input>
+        </program>
+      
+        <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
+        <program xml:id="ch6_sec11_p3" interactive="activecode" language="python">
+          <input>
+            for achar in "Go Spot Go":
+              print(achar)
+          </input>
+        </program>
+        <p>
+          The loop variable <c>achar</c> is automatically reassigned each character in the string <q>Go Spot Go</q>.
+          We will refer to this type of sequence iteration as <term>iteration by item</term>.
+          Note that it is only possible to process the characters one at a time from left to right.
+        </p>
+    
+  </subsection>
+  
+
+  <p><term>Check your understanding</term></p>
+  <exercise label="ch6_sec10_q1">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+          alist = [4, 2, 8, 6, 5]
+          blist = [ ]
+          for item in alist:
+            blist.append(item+5)
+          print(blist)
+        </input>
+      </program>
+    </statement>
+
+    <choices>
+      <choice>
+        <statement>
+          <p>[4, 2, 8, 6, 5]</p>
+        </statement>
+        <feedback>
+                    5 is added to each item before the append is peformed.
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>[4, 2, 8, 6, 5, 5]</p>
+        </statement>
+        <feedback>
+                    There are too many items in this list.  Only 5 append operations are performed.
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>[9, 7, 13, 11, 10]</p>
+        </statement>
+        <feedback>
+                    Yes, the for loop processes each item of the list.  5 is added before it is appended to blist.
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>Error, you cannot concatenate inside an append.</p>
+        </statement>
+        <feedback>
+                    5 is added to each item before the append is performed.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise label="ch6_sec11_q1">
+    <statement>
+      <p>How many times is the word HELLO printed by the following statements?</p>
+      <program language="python">
+        <input>
+          s = "python rocks"
+          for ch in s:
+            print("HELLO")
+        </input>
+      </program>
+    </statement>
+
+    <choices>
+      <choice>
+        <statement>
+          <p>10</p>
+        </statement>
+        <feedback>
+                    Iteration by item will process once for each item in the sequence.
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>11</p>
+        </statement>
+        <feedback>
+                    The blank is part of the sequence.
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>12</p>
+        </statement>
+        <feedback>
+                    Yes, there are 12 characters, including the blank.
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>Error, the for statement needs to use the range function.</p>
+        </statement>
+        <feedback>
+                    The for statement can iterate over a sequence item by item.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+  <exercise label="ch6_sec11_q2">
+    <statement>
+      <p>How many times is the word HELLO printed by the following statements?</p>
+      <program language="python">
+        <input>
+          s = "python rocks"
+          for ch in s[3:8]:
+            print("HELLO")
+        </input>
+      </program>
+    </statement>
+
+    <choices>
+      <choice>
+        <statement>
+          <p>4</p>
+        </statement>
+        <feedback>
+                    Slice returns a sequence that can be iterated over.
+        </feedback>
+      </choice>
+
+      <choice correct="yes">
+        <statement>
+          <p>5</p>
+        </statement>
+        <feedback>
+                    Yes, The blank is part of the sequence returned by slice
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>6</p>
+        </statement>
+        <feedback>
+                    Check the result of s[3:8].  It does not include the item at index 8.
+        </feedback>
+      </choice>
+
+      <choice>
+        <statement>
+          <p>Error, the for statement cannot use slice.</p>
+        </statement>
+        <feedback>
+                    Slice returns a sequence.
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+
+</section>

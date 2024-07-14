@@ -1,59 +1,103 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_traversal-and-the-for-loop-by-index">
-  <title>Traversing Strings with the <c>for</c> Loop: By Index</title>
+  <title>Traversing Sequences with the <c>for</c> Loop: By Index</title>
 
-  <p>
-    It is also possible to use the <c>range</c> function to systematically generate the indices of the characters.
-    The <c>for</c> loop can then be used to iterate over these positions.
-    These positions can be used together with the indexing operator to access the individual characters in the string.
-  </p>
-
-  <p>Consider the following ActiveCode example.</p>
-  <program xml:id="ch6_sec12_p1" interactive="activecode" language="python">
+  <subsection xml:id="list_traversal-and-the-for-loop-by-index">
+    <title>Traversing Lists with the <c>for</c> Loop</title>
+    
+    <p>We can also use the indices to access the items in an iterative fashion.</p>
+  <program xml:id="ch6_sec10_p2" interactive="activecode" language="python">
     <input>
-      fruit = "apple"
-      for idx in range(5):
-        currentChar = fruit[idx]
-        print(currentChar)
-    </input>
-  </program>
-  <p>
-    The index positions in <q>apple</q> are 0, 1, 2, 3, and 4.
-    This is exactly the same sequence of integers returned by <c>range(5)</c>.
-    The first time through the <c>for</c> loop, <c>idx</c> will be 0 and the <q>a</q> will be printed.
-    Then, <c>idx</c> will be reassigned to 1 and <q>p</q> will be displayed.
-    This will repeat for all the range values up to but not including 5.
-    Since <q>e</q> has index 4, this will be exactly right to show all of the characters.
-  </p>
+      fruits = ["apple", "orange", "banana", "cherry"]
 
-  <p>
-    In order to make the iteration more general, we can use the <c>len</c> function to provide the bound for <c>range</c>.
-    This is a very common pattern for traversing any sequence by position.
-    Make sure you understand why the range function behaves correctly when using <c>len</c> of the string as its parameter value.
-  </p>
-  <program xml:id="ch6_sec12_p2" interactive="activecode" language="python">
-    <input>
-      fruit = "apple"
-      for idx in range(len(fruit)):
-        print(fruit[idx])
+      for position in range(len(fruits)):     # by index
+        print(fruits[position])
     </input>
   </program>
 
   <p>
-    You may also note that iteration by position allows the programmer to control the direction of the traversal by changing the sequence of index values.
-    Recall that we can create ranges that count down as well as up so the following code will print the characters from right to left.
+    In this example, in each iteration through the loop, the variable <c>position</c> is used as an index into the list, printing the <c>position</c>-eth element.
+    Note that we used <c>len(fruits)</c> as the upper bound on the range so that we can iterate correctly no matter how many items are in the list.
   </p>
-  <program xml:id="ch6_sec12_p3" interactive="activecode" language="python">
+
+  <p>
+    Since lists are mutable, it is often desirable to traverse a list, modifying each of its elements as you go.
+    The following code squares all the numbers from <c>1</c> to <c>5</c> using iteration by position.
+  </p>
+  <program xml:id="ch6_sec10_p4" interactive="activecode" language="python">
     <input>
-      fruit = "apple"
-      for idx in range(len(fruit)-1, -1, -1):
-        print(fruit[idx])
+      numbers = [1, 2, 3, 4, 5]
+      print(numbers)
+
+      for i in range(len(numbers)):
+        numbers[i] = numbers[i] ** 2
+
+      print(numbers)
     </input>
   </program>
   <p>
-    Trace the values of <c>idx</c> and satisfy yourself that they are correct.
-    In particular, note the start and end of the range.
+    Take a moment to think about <c>range(len(numbers))</c> until you understand how it works.
+    We are interested here in both the <em>value</em> and its <em>index</em> within the list, so that we can assign a new value to it.
   </p>
+    
+  </subsection>
+
+  <subsection xml:id="string_traversal-and-the-for-loop-by-index">
+    <title>Traversing Strings with the <c>for</c> Loop</title>
+    <p>
+      It is also possible to use the <c>range</c> function to systematically generate the indices of the characters.
+      The <c>for</c> loop can then be used to iterate over these positions.
+      These positions can be used together with the indexing operator to access the individual characters in the string.
+    </p>
+  
+    <p>Consider the following ActiveCode example.</p>
+    <program xml:id="ch6_sec12_p1" interactive="activecode" language="python">
+      <input>
+        fruit = "apple"
+        for idx in range(5):
+          currentChar = fruit[idx]
+          print(currentChar)
+      </input>
+    </program>
+    <p>
+      The index positions in <q>apple</q> are 0, 1, 2, 3, and 4.
+      This is exactly the same sequence of integers returned by <c>range(5)</c>.
+      The first time through the <c>for</c> loop, <c>idx</c> will be 0 and the <q>a</q> will be printed.
+      Then, <c>idx</c> will be reassigned to 1 and <q>p</q> will be displayed.
+      This will repeat for all the range values up to but not including 5.
+      Since <q>e</q> has index 4, this will be exactly right to show all of the characters.
+    </p>
+  
+    <p>
+      In order to make the iteration more general, we can use the <c>len</c> function to provide the bound for <c>range</c>.
+      This is a very common pattern for traversing any sequence by position.
+      Make sure you understand why the range function behaves correctly when using <c>len</c> of the string as its parameter value.
+    </p>
+    <program xml:id="ch6_sec12_p2" interactive="activecode" language="python">
+      <input>
+        fruit = "apple"
+        for idx in range(len(fruit)):
+          print(fruit[idx])
+      </input>
+    </program>
+  
+    <p>
+      You may also note that iteration by position allows the programmer to control the direction of the traversal by changing the sequence of index values.
+      Recall that we can create ranges that count down as well as up so the following code will print the characters from right to left.
+    </p>
+    <program xml:id="ch6_sec12_p3" interactive="activecode" language="python">
+      <input>
+        fruit = "apple"
+        for idx in range(len(fruit)-1, -1, -1):
+          print(fruit[idx])
+      </input>
+    </program>
+    <p>
+      Trace the values of <c>idx</c> and satisfy yourself that they are correct.
+      In particular, note the start and end of the range.
+    </p>
+  </subsection>
+  
 
   <p><term>Check your understanding</term></p>
   <exercise label="ch6_sec12_q1">

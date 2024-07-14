@@ -1,0 +1,5 @@
+file:/C:/Users/alabi/OneDrive%20-%20University%20of%20North%20Carolina%20at%20Charlotte/Personal%20Projects/uncc_cs1/pretext/uncc_cs1.ptx:9:0:ERROR:RELAXNGV:RELAXNG_ERR_NOELEM: Expecting an element author, got nothing
+file:/C:/Users/alabi/OneDrive%20-%20University%20of%20North%20Carolina%20at%20Charlotte/Personal%20Projects/uncc_cs1/pretext/uncc_cs1.ptx:7:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element subtitle there
+file:/C:/Users/alabi/OneDrive%20-%20University%20of%20North%20Carolina%20at%20Charlotte/Personal%20Projects/uncc_cs1/pretext/uncc_cs1.ptx:5:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+file:/C:/Users/alabi/OneDrive%20-%20University%20of%20North%20Carolina%20at%20Charlotte/Personal%20Projects/uncc_cs1/pretext/uncc_cs1.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext
+file:/C:/Users/alabi/OneDrive%20-%20University%20of%20North%20Carolina%20at%20Charlotte/Personal%20Projects/uncc_cs1/pretext/uncc_cs1.ptx:2:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element pretext there
