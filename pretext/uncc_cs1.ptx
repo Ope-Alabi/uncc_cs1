@@ -3,7 +3,7 @@
     <xi:include href="./bookinfo.ptx"/>
 
     <book xml:id="thinkcspy" permid="tcs">
-        <title>Computer Science for STEM</title>
+        <title>Introduction to CS 1</title>
         <subtitle>The PreTeXt Interactive Edition</subtitle>
         <frontmatter>
         <titlepage>
