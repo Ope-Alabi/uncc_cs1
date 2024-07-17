@@ -16,6 +16,7 @@
 
 4<xi:include href="./Glossary.ptx"/>
 4<xi:include href="./Exercises.ptx"/>
-<!-- 4<xi:include href="./Glossary.ptx"/> -->
+
+<!-- 4<xi:include href="./video-simpledata.ptx"/> -->
 
 </chapter>
