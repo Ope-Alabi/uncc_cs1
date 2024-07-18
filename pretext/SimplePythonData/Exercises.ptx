@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <exercises xml:id="simple-python-data_exercises">
-  <title>Exercises</title>
+  <title>Practice Zone</title>
   <exercise label="ch02_ex1">
     <statement>
       <p>Evaluate the following numerical expressions in your head, then use
