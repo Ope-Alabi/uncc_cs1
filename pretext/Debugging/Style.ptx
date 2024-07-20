@@ -1,5 +1,36 @@
 <?xml version="1.0"?>
 <section id="code_style">
     <title>Code Style</title>
-    
+    <p>Good coding style is crucial to maintain elegant code and to not confuse yourself. For example,
+    using non-descriptive variable names such as x, y, or z or using multiple variables of similar names will make
+    the code harder to read and understand for others, and may confuse you in the process. As the programs you write
+    become larger and larger, this becomes even more important. Take this example:</p>
+    <program xml:id="code_style_ex1" language="python" interactive="activecode">
+        <input>
+        x = input("Enter your first name: ")
+        y = input("Enter your last name: ")
+
+        z = x + " " + y # add space between first and last name
+        print(z)
+        </input>
+    </program>
+    <p>Here, the program runs and works properly, but the style could use some attention. The variable names are
+    x, y, and z. They are not very descriptive of what values the variables are holding, more suitable variable names
+    could be first_name, last_name, and full_name. These variable names are more descriptive and accurately relay what values the variables
+    are holding. </p>
+    <program xml:id="code_style_ex2" language="python" interactive="activecode">
+        <input>
+        first_name = input("Enter your first name: ")
+        last_name = input("Enter your last name: ")
+
+        full_name = first_name + " " + last_name # add space between first and last name
+        print(full_name)
+        </input>
+    </program>
+    <p>Now the variable names make more sense. It's clear to others what values the variable names have. If the program
+    were more complex with tens of variables and a lot going on, it would still be clear what they are. This concept of 
+    code style does not only apply to variables though, it applies to each and every part. For example, if the lines that
+    retrieved user input were blank (i.e., input() instead of input("Enter first name: ")), only the programmer would know
+    what to enter. As you code and your programs become more complex, this will be crucial to maintaining readable code that others
+    can easily interpret.</p>
 </section>
