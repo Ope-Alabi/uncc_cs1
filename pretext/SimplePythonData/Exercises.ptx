@@ -126,7 +126,7 @@ print(5 ** 2)
     </statement>
     <program xml:id="ex_2_2_editor" interactive="activecode" language="python">
       <input>
-2 + (3 - 1) * 10 / 5 * (2 + 3)
+          2 + (3 - 1) * 10 / 5 * (2 + 3)
         </input>
     </program>
   </exercise>
@@ -178,6 +178,36 @@ print(timeofday)
         </input>
     </program>
   </exercise>
+    <query label="practice_feedback">
+      <statement>
+        <p>Which of the following best describes your experience with the preceding problem?</p>
+      </statement>
+      <choices>
+        <choice>
+            <p>I did not understand the problem.</p>
+            <p>or did not know how to begin solving it</p>
+        </choice>
+        <choice>
+            <p>I was able to begin solving the problem but got stuck.</p>
+        </choice>
+        <choice>
+            <p>I was able to complete the problem but struggled greatly.</p>
+        </choice>
+        <choice>
+            <p>I was able to solve the problem with a little difficulty.</p>
+        </choice>
+
+        <choice>
+          <statement>
+            <p>I was able to solve the problem with no difficulty.</p>
+          </statement>
+          <feedback>
+                  </feedback>
+        </choice>
+      </choices>
+    </query>
+
+
   <exercise label="ex_2_5">
     <statement>
       <p>Take the sentence: <em>All work and no play makes Jack a dull boy.</em>
