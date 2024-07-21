@@ -5,5 +5,7 @@
 4<xi:include href="./HowtoAvoidDebugging.ptx"/>
 4<xi:include href="./BeginningtipsforDebugging.ptx"/>
 4<xi:include href="./KnowyourerrorMessages.ptx"/>
-4<xi:include href="./Summary.ptx"/>
+<!--4<xi:include href="./Summary.ptx"/> -->
+4<xi:include href="./GrowthMindset.ptx"/>
+
 </chapter>
