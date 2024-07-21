@@ -5,3 +5,12 @@
         <directories external="../assets" generated="../generated-assets"/>
     </source>
 </publication>
+
+
+  <!-- 
+<publication>
+    <html>
+      <platform host="runestone"/>
+    </html>
+  </publication>
+  -->
