@@ -14,7 +14,7 @@
   <program xml:id="ch7_sec8_p1" interactive="activecode" language="python">
     <input>
       for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-        print(f"Hi {name}! Please come to my party on Saturday!")
+        print("Hi, " + name + "! Please come to my party on Saturday!")
     </input>
   </program>
 
