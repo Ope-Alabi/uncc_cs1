@@ -10,6 +10,7 @@
 4<xi:include href="./traversingsequenceswiththeforloop.ptx"/>
 4<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
 4<xi:include href="./TherangeFunction.ptx"/>
+4<xi:include href="./TheAccumulatorPatternwithLists.ptx"/>
 
 
 <!-- 4<xi:include href="./BreakAndContinue.ptx"/>
