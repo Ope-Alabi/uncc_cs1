@@ -4,10 +4,38 @@
   <p>If problem solving is a central part of computer science, then the solutions that you create through
             the problem solving process are also important.  In computer science, we refer to these solutions
             as <term>algorithms</term>.  An algorithm is a step by step list of instructions that if followed exactly will solve the problem under consideration.</p>
-  <p>Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution.  Once we have such a solution, we can use our computer to automate the execution.  As noted
-            above, programming is a skill that allows a computer scientist to take an algorithm and represent it in
-            a notation (a program) that can be followed by a computer.  These programs are written in <term>programming languages</term>.</p>
+  
+            <p><term>Computational thinking</term> is a problem-solving process that involves various techniques and skills used to tackle complex problems and design solutions. 
+              A complex problem is one that, at first glance, lacks an obvious solution. Computational thinking involves breaking down this complex problem into smaller, more manageable parts (decomposition). 
+              Each of these smaller parts is then examined individually, considering how similar problems have been previously solved (pattern recognition) and focusing only on the essential details while ignoring irrelevant information (abstraction). 
+              Next, simple steps or rules are created to solve each of these smaller problems (algorithms).
+              
+              Finally, these steps or rules are used to program a computer to solve the complex problem in the most efficient way possible.
+              </p>
+  
+  
+      
+
+
+  
   <p>
+
+  Our goal in computer science is to take a problem and develop an algorithm that can serve as a general solution. 
+  Once we have such a solution, we can use our computer to automate the execution. 
+  As noted above, programming is a skill that allows a computer scientist to take an algorithm and represent it in a notation (a program) 
+  that can be followed by a computer. 
+  These programs are written in <term>programming languages</term>. 
+  This process of translating algorithms into computer programs is essential because it enables 
+  the automated and efficient solving of complex problems, making computational thinking a practical and powerful
+   approach to problem-solving.
+
+</p>
+<p>
+  "Thinking like a computer scientist means more than being able to
+program a computer. It requires thinking at multiple levels of abstraction. " (Jeannette M. Wing, 2006)
+</p>
+Jeannette M. Wing. 2006. Computational thinking. Commun. ACM 49, 3 (March 2006), 33–35. https://doi.org/10.1145/1118178.1118215
+<p>
     <term>Check your understanding</term>
   </p>
   <exercise label="ch1_sec2_q1">
