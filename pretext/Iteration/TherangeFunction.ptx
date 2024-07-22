@@ -65,6 +65,16 @@
     </p>
   </note>
 
+
+  <program xml:id="ch6_sec10_p3" interactive="activecode" language="python">
+    <input>
+      print(range(4))
+      print(type(range(4)))
+      print(list(range(1, 5)))
+      
+    </input>
+  </program>
+
   <note>
     <p>
       The <c>range</c> function is <em>lazy</em>:
