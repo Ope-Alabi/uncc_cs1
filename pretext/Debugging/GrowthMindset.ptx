@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<section xml:id="growth_mindset">
+  <title>Embracing the Journey</title>
+  <p>
+  As we wrap up this section that deals with handling errors and verifying our solutions work it is important to know that learning to code can be hard at times and sometimes frustrating. However, the feeling you get when your code works is incredible! And your brain grows as you problem solve and debug your programs. Embrace those moments. Pause and think of why things actually went from problematic to working and doing what you what it to do.
+  
+<p>Watch this short video about Growing your Mind:
+<video xml:id="growth_mindset_video" youtube="WtKJrB5rOKs"/>
+
+</p>
+
+<p>To practice using a growth mindset, if you find yourself saying or thinking what’s in the left column, try substituting what’s in the right column instead:
+   
+<table>
+  <title>A simple table</title>
+  <tabular halign="center">
+    <row header="yes" bottom="minor" >
+      <cell>Instead of: </cell>
+      <cell>Try Thinking/Saying:</cell>
+    </row>
+    <row>
+      <cell> I’m not good at this. </cell>
+      <cell> I can learn to do this. </cell>
+    </row>
+    <row>
+      <cell> I’m awesome at this. </cell>
+      <cell> I’m on the right track. </cell>
+    </row>
+    <row>
+        <cell> I give up </cell>
+      <cell> I’ll use a different learning strategy </cell>
+    </row>
+    <row>
+      <cell>This is too hard.  </cell>
+      <cell> This may take some time and effort. </cell>
+    </row>
+    <row>
+      <cell> I can’t make this any better.</cell>
+      <cell> I can improve it! </cell>
+    </row>
+    <row>
+      <cell>  I just can’t do programming.</cell>
+      <cell> I’m going to train my brain to do this. </cell>
+    </row>
+
+    <row>
+      <cell> Plan A didn’t work.</cell>
+      <cell> Let’s try something else. </cell>
+      </row>
+      <row>
+        <cell>It’s good enough. </cell>
+      <cell> How can I improve this? </cell>
+    </row>
+    <row header="yes" bottom="minor" >
+      <cell> </cell>
+      <cell>  </cell>
+    </row>
+
+  </tabular>
+
+</table>
+</p>
+<p>
+<query label="growth_mindset_poll">
+  <statement>
+    <p>How much do your agree with this statement: </p>
+     <p> <term>  Your	intelligence is something very basic about you that you can’t change	very	much.</term></p>
+  </statement>
+  <choices>
+    <choice>
+        <p>Strongly Agree.</p>
+    </choice>
+    <choice>
+        <p>Agree</p>
+    </choice>
+    <choice>
+        <p>Disagree</p>
+    </choice>
+    <choice>
+        <p>I was able to solve the problem with a little difficulty.</p>
+    </choice>
+
+    <choice>
+      <statement>
+        <p>Strongly Disagree</p>
+      </statement>
+      
+    </choice>
+  </choices>
+</query>
+</p>
+</p>
+ 
+<subsection xml:id="debugging_tips">
+  <title>Debugging Tips</title>
+
+<p>
+  Here are some practical tips to help you effectively debug your code, avoid and overcome errors:
+  <ul>
+    <li>
+      <p>Make sure you take the time to understand error messages. They can help you a lot.</p>
+    </li>
+    <li>
+      <p><c>print</c> statements are your friends.  Use them to help you uncover what is <term>really</term> happening in your code.</p>
+    </li>
+    <li>
+      <p>Work backward from the error.  Many times an error message is caused by something that has happened before it in the program.  Always remember that python evaluates a program top to bottom.</p>
+    </li>
+
+    <li>Simplify complex problems by breaking them into smaller, more manageable parts.</li>
+    <li>Don’t hesitate to ask for help from peers, online communities, or mentors. A fresh perspective can often spot issues you might overlook.</li>
+    <li>Take breaks if you feel frustrated. A clear mind can make problem-solving much easier.</li>
+    <li>Each error is an opportunity to learn. Take note of what caused the error and how you resolved it for future reference. </li>
+  
+  
+  
+  
+  </ul>
+</p>
+</subsection>
+</section>
