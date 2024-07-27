@@ -250,7 +250,7 @@ print(final_time_int)
     <p>Usually ParseErrors can be traced back to missing punctuation characters, such as parentheses, quotation marks, or commas. Remember that in Python commas are used to separate values, such as when defining a list or giving multiple values to a function call.  Parentheses must be balanced, or else Python thinks that you are trying to include everything that follows as a parameter to some function.</p>
     <p>Here are a couple examples of Parse errors in the example program we have been using.  See if you can figure out what caused them.</p>
 
-<exercise>
+    <exercise label="ch6_sec4_q1">
 
         <program xml:id="db_ex2" interactive="activecode" language="python">
 <input>
