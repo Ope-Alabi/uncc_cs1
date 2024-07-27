@@ -1,6 +1,21 @@
 <?xml version="1.0"?>
 <section xml:id="files_working-with-data-files">
-  <title>Working with Data Files</title>
+  <title>Text Processing and Working with Data Files</title>
+  <p>
+  </p>
+  <p>
+    In the realm of computer science, strings are sequences of characters that form the backbone of text data. 
+    From simple words to complex paragraphs, strings are fundamental units that allow us to store, manipulate, and analyze textual information. 
+    Text processing, a crucial aspect of data science, machine learning, and software development, involves a series of techniques used to handle and transform these strings. 
+    Whether it's extracting meaningful insights from a body of text, automating tasks such as spell-checking and text summarization, or building intelligent chatbots, 
+    mastering the manipulation of strings is a key skill. 
+    
+    Throughout the first chapters of this book we have used strings to represent words or 
+    phrases that we wanted to print out. Our definition was simple: a string is simply some characters inside quotes. 
+    In this chapter we explore strings in much more detail.
+
+  </p>Similarly, lists are sequences of elements that can hold various types of data, including numbers, strings, and even other lists. 
+  Understanding how to work with lists is essential because they allow you to organize and manipulate collections of data in a structured way. In this chapter we will also learn how to manipulate and transform a list of elements.</p>
   <video xml:id="string-vid" youtube="zASE-UA2YKg" width="auto"/>
   <p>So far, the data we have used in this book have all been either coded right into the program, or have been entered by the user.  In real life, data reside in files.</p>  
   <p>For example, web pages, word processing documents, and all data that live in files.  In this chapter we will introduce the Python concepts necessary to use data from files in our programs.</p>
@@ -59,10 +74,13 @@
   <subsection xml:id="subsec-Learning-Goals">
       <title>Learning Goals</title>
       <ul>
+          <li><p>Apply techniques for searching, replacing, and splitting strings</p></li>
+          <li><p>Perform basic list operations such as adding, removing, and accessing elements</p></li>
           <li><p>To understand the structure of file systems</p></li>
           <li><p>To understand opening files with different modes</p></li>
           <li><p>To introduce files as another kind of sequence that one can iterate over</p></li>
           <li><p>To introduce the read, transform, and write pattern</p></li>
+          <li><p>To apply string and list operations to process textual data </p></li>
           <li><p>To introduce parallel assignment to two or three variables</p></li>
       </ul> 
       <!-- <subsubsection xml:id="subsub-sect">
@@ -73,6 +91,7 @@
   <subsection xml:id="subsec-Objectives">
       <title>Objectives</title>
       <ul>
+          <li><p>Illustrate common operations performed on sequences           </p></li>
           <li><p>Demonstrate that you can read a single value from each line in a file</p></li>
           <li><p>Convert the line to the appropriate value</p></li>
           <li><p>Read a line and convert it into multiple values using split and assignment to multiple variables</p></li>

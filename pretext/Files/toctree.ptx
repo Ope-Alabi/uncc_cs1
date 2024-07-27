@@ -2,6 +2,8 @@
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
 4<title>Files</title>
 4<xi:include href="./intro-WorkingwithDataFiles.ptx"/>
+4<xi:include href="./StringMethods.ptx"/>
+4<xi:include href="./ListMethods.ptx"/>
 4<xi:include href="./ReadingaFile.ptx"/>
 4<xi:include href="./AlternativeFileReadingMethods.ptx"/>
 4<xi:include href="./Iteratingoverlinesinafile.ptx"/>
@@ -13,10 +15,7 @@
 4<xi:include href="./ReadingCSV.ptx"/>
 4<xi:include href="./WritingCSV.ptx"/>
 4<xi:include href="./tips_on_handling_files.ptx"/>
-4<xi:include href="./StringMethods.ptx"/>
-4<xi:include href="./ListMethods.ptx"/>
 4<xi:include href="./fStrings.ptx"/>
 4<xi:include href="./StringMethods_optional.ptx"/>
 4<xi:include href="./Glossary.ptx"/>
-4<xi:include href="./video-files.ptx"/>
 </chapter>
