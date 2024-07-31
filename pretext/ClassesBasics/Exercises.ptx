@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <exercises xml:id="classes-basics_exercises">
-  <title>Exercises</title>
+  <title>Practice Zone</title>
   <exercise label="classes_q1">
     <statement>
       <p>Add a <c>distanceFromPoint</c> method that works similar to <c>distanceFromOrigin</c> except that it

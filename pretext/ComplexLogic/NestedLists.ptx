@@ -1,23 +1,48 @@
 <?xml version="1.0"?>
 <section xml:id="complex-logic_nested-lists">
   <title>Nested Lists</title>
-  <p>A nested list is a list that appears as an element in another list. In this
-            list, the element with index 3 is a nested list.
-            If we print(<c>nested[3]</c>), we get <c>[10, 20]</c>. To extract an element from the
-            nested list, we can proceed in two steps.  First, extract the nested list, then extract the item
-            of interest.  It is also possible to combine those steps using bracket operators that evaluate from
-            left to right.</p>
+  <p>
+    A nested list is a list that appears as an element in another list.
+    Nested lists in Python are lists that contain other lists as their elements.
+    They are useful for representing structured data like tables, grids, and trees.
+  </p>
+  <p>
+    When you have a nested list, each list within the main list can be accessed using an index. 
+    To access elements within those nested lists, you chain multiple indices together. 
+  </p>
+    <p>
+    In this list, the element with index 3 is a nested list. If we print(<c>nested[3]</c>), we get 
+    <c>[10, 20]</c>. To extract an element from the nested list, we can proceed in two steps. First, extract
+    the nested list, then extract the item of interest. </p>
+
+
   <program xml:id="ch10_sec2_p1" interactive="activecode" language="python">
     <input>
-nested = ["hello", 2.0, 5, [10, 20]]
-innerlist = nested[3]
-print(innerlist)
-item = innerlist[1]
-print(item)
-
-print(nested[3][1])
-        </input>
+      nested = ["hello", 2.0, 5, [10, 20]]
+      innerlist = nested[3] # access the fourth element
+      print(innerlist)
+      item = innerlist[1] # access the first element
+      print(item)
+    </input>
   </program>
+  <p>
+    It is also possible to combine those steps using bracket operators that evaluate from
+    left to right.
+  </p>
+  <program xml:id="ch10_sec2_p2" interactive="activecode" language="python">
+    <input>
+      nested = ["hello", 2.0, 5, [10, 20]]
+      print(nested[3][1])
+    </input>
+  </program>
+
+  <p> To understand the code above does, let's to analyze the indices used: <ul>
+      <li>nested[3]: This accesses the fourth element of the nested list, which is <c>[10, 20]</c>.</li>
+      <li> [1]: This accesses the second element of the list <c>[10, 20]</c>, which is 20. </li>
+    </ul>
+    Putting it all together, <c>nested[3][1]</c> first accesses <c>[10, 20]</c> and then accesses 20 </p>
+
+
   <p xml:id="complex-logic_index-0">
     <term>Check your understanding</term>
   </p>
@@ -26,11 +51,11 @@ print(nested[3][1])
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [ [4, [True, False], 6, 8], [888, 999] ]
-if alist[0][1][0]:
-   print(alist[1][0])
-else:
-   print(alist[1][1])
+          alist = [ [4, [True, False], 6, 8], [888, 999] ]
+          if alist[0][1][0]:
+          print(alist[1][0])
+          else:
+          print(alist[1][1])
 </input>
       </program>
     </statement>
@@ -40,32 +65,32 @@ else:
           <p>6</p>
         </statement>
         <feedback>
-                    6 is in the wrong list.  alist[1] refers to the second item in alist, namely [888,999].
-                </feedback>
+          6 is in the wrong list. alist[1] refers to the second item in alist, namely [888,999].
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>8</p>
         </statement>
         <feedback>
-                    8 is in the wrong list.  alist[1] refers to the second item in alist, namely [888,999].
-                </feedback>
+          8 is in the wrong list. alist[1] refers to the second item in alist, namely [888,999].
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>888</p>
         </statement>
         <feedback>
-                    Yes, alist[0][1][0] is True and alist[1] is the second list, the first item is 888.
-                </feedback>
+          Yes, alist[0][1][0] is True and alist[1] is the second list, the first item is 888.
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>999</p>
         </statement>
         <feedback>
-                    alist[0][1][0] is True.  Take another look at the if statement.
-                </feedback>
+          alist[0][1][0] is True. Take another look at the if statement.
+        </feedback>
       </choice>
     </choices>
   </exercise>

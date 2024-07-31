@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-4<title>Iteration</title>
-4<xi:include href="./intro-Iteration.ptx"/>
-4<xi:include href="./ThewhileStatement.ptx"/>
-4<xi:include href="./FlowofExecutionofthewhileLoop.ptx"/>
-4<xi:include href="./TraversalandthewhileLoop.ptx"/>
-4<xi:include href="./TheforLoop.ptx"/>
-4<xi:include href="./SentinelValuesAndValidation.ptx"/>
-4<xi:include href="./traversingsequenceswiththeforloop.ptx"/>
-4<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
-4<xi:include href="./TherangeFunction.ptx"/>
-4<xi:include href="./TheAccumulatorPatternwithLists.ptx"/>
+<title>Iteration</title>
+<xi:include href="./intro-Iteration.ptx"/>
+<xi:include href="./ThewhileStatement.ptx"/>
+<xi:include href="./FlowofExecutionofthewhileLoop.ptx"/>
+<xi:include href="./TraversalandthewhileLoop.ptx"/>
+<xi:include href="./TheforLoop.ptx"/>
+<xi:include href="./SentinelValuesAndValidation.ptx"/>
+<xi:include href="./traversingsequenceswiththeforloop.ptx"/>
+<xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
+<xi:include href="./TherangeFunction.ptx"/>
+<xi:include href="./TheAccumulatorPatternwithLists.ptx"/>
 
 
 <!-- 4<xi:include href="./BreakAndContinue.ptx"/>
@@ -21,5 +21,7 @@
 4<xi:include href="./TraversalandtheforLoopByItem.ptx"/>
 
 4<xi:include href="./video-for.ptx"/> -->
-4<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
+
 </chapter>

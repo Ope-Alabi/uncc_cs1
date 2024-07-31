@@ -47,4 +47,34 @@ print(find("Compsci", "x"))
                 soon as we find what we are looking for, we can cry Eureka!  and stop looking.  The way
                 we stop looking is by setting <c>found</c> to True which causes the condition to fail.</p>
   </note>
+<p>
+
+    We can actually simplify this function like this:
+</p>
+  <program xml:id="ch10_sec4_p2" interactive="activecode" language="python">
+    <input>
+def find(astring, achar):
+    """
+    Find and return the index of achar in astring.
+    Return -1 if achar does not occur in astring.
+    """
+    ix = 0
+    found = False
+    while ix &lt; len(astring):
+        if astring[ix] == achar:
+            return ix # found what we are looking for
+
+        ix = ix + 1
+    
+    return -1 # not found
+
+print(find("Compsci", "p"))
+print(find("Compsci", "C"))
+print(find("Compsci", "i"))
+print(find("Compsci", "x"))
+        </input>
+  </program>
+  <p>
+    Here the <c>find</c> function uses a simpler <c>while</c> loop to iterate through each character in <c>astring</c>, checking if the current character matches <c>achar</c>. If a match is found, the function immediately returns the index of the character. If the loop completes without finding a match, the function returns <c>-1</c>, indicating that <c>achar</c> does not occur in <c>astring</c>. This approach efficiently identifies the position of the character or confirms its absence by traversing the string once.
+  </p>
 </section>
