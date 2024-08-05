@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<publication>
+  <!-- directories are relative to the main source PreTeXt file -->
+  <source>
+    <directories external="../assets" generated="../generated-assets"/>
+  </source>
+
+  <metadata>
+    <title>Intro to CS1 (Python)</title>
+    <author>UNCC CS</author>
+    <publisher>PreTeXt Publishing</publisher>
+    <pub-date>2024-08-15</pub-date>
+  </metadata>
+
+  <html>
+    <platform host="runestone"/>
+    <index-page ref="thinkcspy"/>
+  </html>
+
+  <pdf>
+    <index-page ref="thinkcspy"/>
+  </pdf>
+</publication>

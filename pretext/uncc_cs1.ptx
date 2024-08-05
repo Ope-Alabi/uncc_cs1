@@ -3,6 +3,20 @@
     <xi:include href="./bookinfo.ptx"/>
 
     <book xml:id="thinkcspy" permid="tcs">
+        <docinfo>
+            <title>Introduction to CS 1</title>
+            <author>
+                <name>UNCC CS</name>
+                <email>itsc1212@charlotte.edu</email>
+            </author>
+            <publisher>PreTeXt Publishing</publisher>
+            <document-id>uncc_cs1</document-id>
+            <pub-date>2024-08-15</pub-date>
+            <blurb shelf="Intro to Computer Science">
+                This book provides an in-depth exploration of programming concepts using Python, aimed at both beginners and seasoned developers looking to deepen their understanding of coding principles.
+            </blurb>
+        </docinfo>
+        
         <title>Introduction to CS 1</title>
         <subtitle>The PreTeXt Interactive Edition</subtitle>
         <frontmatter>
