@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<section xml:id="debugging_summary">
+  <title>Glossary</title>
+  <glossary sorted="False">
+    <gi>
+      <title>bug</title>
+      <p>An error in a program.</p>
+    </gi>
+
+    <gi>
+      <title> debugging </title>
+      <p> The process of finding and correcting errors. </p>
+    </gi>
+    <gi>
+      <title>testing </title>
+      <p> The process of executing a program with various inputs to ensure it behaves as expected
+        and correctly handles all possible scenarios. </p>
+    </gi>
+    <gi>
+      <title>error messages </title>
+      <p> Notifications provided by the programming language or development environment that
+        indicate something went wrong. They often include information about the type of error and
+        its location in the code. </p>
+    </gi>
+    <gi>
+      <title>syntax error </title>
+      <p> An error in a program that makes it impossible to parse (and therefore impossible to
+        interpret). </p>
+    </gi>
+    <gi>
+      <title>exception </title>
+      <p> An error that is detected while the program is running. </p>
+    </gi>
+    <gi>
+      <title> semantic error </title>
+      <p> An error in a program that makes it do something other than what the
+        programmer intended </p>
+    </gi>
+    <gi>
+      <title>runtime error</title>
+      <p>An error that does not occur until the program has started to execute
+                            but that prevents the program from continuing.</p>
+    </gi>
+
+  </glossary>
+</section>

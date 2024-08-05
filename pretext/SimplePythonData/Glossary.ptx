@@ -2,6 +2,7 @@
 <section xml:id="simple-python-data_glossary">
   <title>Glossary</title>
   <glossary sorted="False">
+    
     <gi>
       <title>assignment statement</title>
       <p>A statement that assigns a value to a name (variable). To the left of
@@ -106,6 +107,11 @@ n = n + 1
       <title>operator</title>
       <p>A special symbol that represents a simple computation like addition,
                             multiplication, or string concatenation.</p>
+    </gi>
+    <gi>
+      <title>print function</title>
+      <p>A function used in a program or script that causes the Python
+                            interpreter to display a value on its output device.</p>
     </gi>
     <gi>
       <title>prompt string</title>

@@ -19,10 +19,10 @@
   <subsection xml:id="subsec-Learning-Goals">
       <title>Learning Goals</title>
       <ul>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
+          <li><p>Understand the Basics of Object-Oriented Programming (OOP)</p></li>
+          <li><p>Recognize the differences between procedural programming and OOP.</p></li>
+          <li><p>Understand the syntax and semantics of class and object creation.</p></li>
+          <li><p>Understand how OOP helps manage the complexity of large software systems.</p></li>
       </ul> 
       <!-- <subsubsection xml:id="subsub-sect">
       <title>Test Title</title> 
@@ -32,9 +32,11 @@
   <subsection xml:id="subsec-Objectives">
       <title>Objectives</title>
       <ul>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
+          <li><p>Define and Explain Key OOP Concepts</p></li>
+          <li><p>Create and Use Classes and Objects in Python</p></li>
+          <li><p>Differentiate Between Procedural and Object-Oriented Programming:
+
+          </p></li>
           <li><p>Template Text</p></li>
       </ul>
   </subsection>    

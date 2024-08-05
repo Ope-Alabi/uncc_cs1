@@ -1,7 +1,14 @@
 <?xml version="1.0"?>
 <exercises xml:id="simple-python-data_exercises">
   <title>Practice Zone</title>
-  <exercise label="pz_simplePythonData_1">
+  <p>
+    This section is designed to reinforce your understanding and help you gain confidence in writing code. 
+    Whether you're a beginner or looking to brush up on the basics, these exercises will cover basic topics such as variables, data types, statements and expressions.
+
+  </p><p>Take your time with each exercise, and don't hesitate to experiment with different approaches. Programming is all about solving problems creatively, so feel free to explore and make mistakes—it's all part of the learning process.
+    
+      </p>
+  <exercise label="ex_basics-1">
     <statement>
       <p>Evaluate the following numerical expressions in your head, then use
                         the active code window to check your results:</p>
@@ -70,7 +77,7 @@
         </ol>
       </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ch02_ex1_editor">
+    <program interactive="activecode" language="python" xml:id="ex_basics-1_editor">
       <input>
 
 
@@ -124,7 +131,7 @@ print(5 ** 2)
     <statement>
       <p>What is the order of the arithmetic operations in the following expression.  Evaluate the expression by hand and then check your work.</p>
     </statement>
-    <program xml:id="ex_2_2_editor" interactive="activecode" language="python">
+    <program xml:id="ex_basics-2_editor" interactive="activecode" language="python">
       <input>
 2 + (3 - 1) * 10 / 5 * (2 + 3)
         </input>
@@ -138,13 +145,13 @@ print(5 ** 2)
                         Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm.
                         Your program should output what the time will be on the clock when the alarm goes off.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_2_3_editor">
+    <program interactive="activecode" language="python" xml:id="ex_basics-3_editor">
       <input>
 
         </input>
     </program>
     <solution>
-      <program xml:id="spd_q3_answer" language="python">
+      <program xml:id="ex_basics-3_answer" language="python">
         <input>
 ## question 3 solution ##
 
@@ -170,7 +177,7 @@ print(timeofday)
                 Write a general version of the program which asks for the starting day number, and
                 the length of your stay, and it will tell you the number of day of the week you will return on.</p>
     </statement>
-    <program xml:id="ex_2_4_editor" interactive="activecode" language="python">
+    <program xml:id="ex_basics-4_editor" interactive="activecode" language="python">
       <input>
 
  # Problem 4
@@ -178,48 +185,19 @@ print(timeofday)
         </input>
     </program>
   </exercise>
-
-  <query label="poll_simplePythonData_1">
-    <statement>
-      <p>Which of the following best describes your experience with the preceding problem?</p>
-    </statement>
-    <choices>
-      <choice>
-          <p>I did not understand the problem.</p>
-          <p>or did not know how to begin solving it</p>
-      </choice>
-      <choice>
-          <p>I was able to begin solving the problem but got stuck.</p>
-      </choice>
-      <choice>
-          <p>I was able to complete the problem but struggled greatly.</p>
-      </choice>
-      <choice>
-          <p>I was able to solve the problem with a little difficulty.</p>
-      </choice>
-
-      <choice>
-        <statement>
-          <p>I was able to solve the problem with no difficulty.</p>
-        </statement>
-        <feedback>
-                </feedback>
-      </choice>
-    </choices>
-  </query>
   <exercise label="pz_simplePythonData_5">
     <statement>
       <p>Take the sentence: <em>All work and no play makes Jack a dull boy.</em>
                         Store each word in a separate variable, then print out the sentence on
                         one line using <c>print</c>.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_2_5_editor">
+    <program interactive="activecode" language="python" xml:id="ex_basics-5_editor">
       <input>
 
         </input>
     </program>
     <solution>
-      <program xml:id="spd_q5_answer" language="python">
+      <program xml:id="ex_basics-5_answer" language="python">
         <input>
 ## question 5 solution ##
 
@@ -244,7 +222,7 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
       <p>Add parenthesis to the expression <c>6 * 1 - 2</c> to change its value
                 from 4 to -6.</p>
     </statement>
-    <program xml:id="ex_2_6_editor" interactive="activecode" language="python">
+    <program xml:id="ex_basics-6_editor" interactive="activecode" language="python">
       <input>
 
         </input>
@@ -261,13 +239,13 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
                         t, that the money will be compounded for.  Calculate and print the final
                         amount after t years.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_2_7_editor">
+    <program interactive="activecode" language="python" xml:id="ex_basics-7_editor">
       <input>
 
         </input>
     </program>
     <solution>
-      <program xml:id="spd_q7_answer" language="python">
+      <program xml:id="ex_basics-7_answer" language="python">
         <input>
 ## question 7 solution ##
 
@@ -289,7 +267,7 @@ print ("The final amount after", t, "years is", final)
       <p>Write a program that will compute the area of a circle.  Prompt the user to enter the radius and print a nice message
                 back to the user with the answer.</p>
     </statement>
-    <program xml:id="ex_2_8_editor" interactive="activecode" language="python">
+    <program xml:id="ex_basics-8_editor" interactive="activecode" language="python">
       <input>
 
         </input>
@@ -300,13 +278,13 @@ print ("The final amount after", t, "years is", final)
       <p>Write a program that will compute the area of a rectangle.  Prompt the user to enter the width and height of the rectangle.
                         Print a nice message with the answer.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_2_9_editor">
+    <program interactive="activecode" language="python" xml:id="ex_basics-9_editor">
       <input>
 
         </input>
     </program>
     <solution>
-      <program xml:id="spd_q9_answer" language="python">
+      <program xml:id="ex_basics-9_answer" language="python">
         <input>
 ## question 9 solution
 
@@ -325,7 +303,7 @@ print("The area of the rectangle is", area)
       <p>Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
                 gallons used.  Print a nice message with the answer.</p>
     </statement>
-    <program xml:id="ex_2_10_editor" interactive="activecode" language="python">
+    <program xml:id="ex_basics-10_editor" interactive="activecode" language="python">
       <input>
 
         </input>
@@ -335,13 +313,13 @@ print("The area of the rectangle is", area)
     <statement>
       <p>Write a program that will convert degrees celsius to degrees fahrenheit.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_2_11_editor">
+    <program interactive="activecode" language="python" xml:id="ex_basics-11_editor">
       <input>
 
         </input>
     </program>
     <solution>
-      <program xml:id="spd_q11_answer" language="python">
+      <program xml:id="ex_basics-11_answer" language="python">
         <input>
 ## question 11 solution ##
 
@@ -359,10 +337,37 @@ print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
     <statement>
       <p>Write a program that will convert degrees fahrenheit to degrees celsius.</p>
     </statement>
-    <program xml:id="ex_2_12_editor" interactive="activecode" language="python">
+    <program xml:id="ex_basics-12_editor" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
+
+  <query label="practice_feedback">
+    <statement>
+      <p>Which of the following best describes your experience with these problems?</p>
+    </statement>
+    <choices>
+      <choice>
+          <p>I found the problems very confusing and didn't know where to start.</p>
+      </choice>
+      <choice>
+          <p>I started solving the problems but encountered significant difficulties.</p>
+      </choice>
+      <choice>
+          <p>I managed to solve the problems, but it was very challenging.</p>
+      </choice>
+      <choice>
+          <p>I solved the problems with some minor difficulties.</p>
+      </choice>
+      <choice>
+        <statement>
+          <p>I found the problems straightforward and solved them easily.</p>
+        </statement>
+        <feedback>
+                </feedback>
+      </choice>
+    </choices>
+  </query>
 </exercises>

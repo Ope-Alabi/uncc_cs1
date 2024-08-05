@@ -18,7 +18,7 @@
             H<subscript>2</subscript>O is a syntactically correct chemical name, but <subscript>2</subscript>Zz is
             not.</p>
   <p>Syntax rules come in two flavors, pertaining to <term>tokens</term> and structure.
-            Tokens are the basic elements of the language, such as words, numbers, and
+            Tokens are the basic elements (building blocks) of the language, such as words, numbers, and
             chemical elements. One of the problems with <c>3=+6$</c> is that <c>$</c> is not a
             legal token in mathematics (at least as far as we know). Similarly,
     <subscript>2</subscript>Zz is not legal because there is no element with the abbreviation
@@ -65,12 +65,10 @@
                                 knows!</p>
       </note>
     </gi>
-  </glossary>
   <p>People who grow up speaking a natural language&#x2014;everyone&#x2014;often have a hard
             time adjusting to formal languages. In some ways, the difference between formal
             and natural language is like the difference between poetry and prose, but more
             so:</p>
-  <glossary sorted="False">
     <gi>
       <title>poetry</title>
       <p>Words are used for their sounds as well as for their meaning, and the

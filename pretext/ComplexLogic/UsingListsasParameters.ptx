@@ -28,17 +28,6 @@ print(things)
   <p>Since the list object is shared by two references, there is only one copy.
             If a function modifies the elements of a list parameter, the caller sees the change since the change
             is occurring to the original.</p>
-  <p>This can be easily seen in codelens.  Note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
-  <program xml:id="ac_usingListsAsParaneters_2" label="ac_usingListsAsParaneters_2" interactive="activecode" language="python">
-    <input>
-def doubleStuff(aList):
-    """ Overwrite each element in aList with double its value. """
-    for position in range(len(aList)):
-        aList[position] = 2 * aList[position]
-
-things = [2, 5, 9]
-
-doubleStuff(things)
-    </input>
-  </program>
+  <p>
+    Reply the same example in codelens an note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
 </section>
