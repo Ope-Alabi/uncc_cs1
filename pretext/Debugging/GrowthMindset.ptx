@@ -17,36 +17,36 @@
       <cell>Try Thinking/Saying:</cell>
     </row>
     <row>
-      <cell> I’m not good at this. </cell>
+      <cell> I'm not good at this. </cell>
       <cell> I can learn to do this. </cell>
     </row>
     <row>
-      <cell> I’m awesome at this. </cell>
-      <cell> I’m on the right track. </cell>
+      <cell> I'm awesome at this. </cell>
+      <cell> I'm on the right track. </cell>
     </row>
     <row>
         <cell> I give up </cell>
-      <cell> I’ll use a different learning strategy </cell>
+      <cell> I'll use a different learning strategy </cell>
     </row>
     <row>
       <cell>This is too hard.  </cell>
       <cell> This may take some time and effort. </cell>
     </row>
     <row>
-      <cell> I can’t make this any better.</cell>
+      <cell> I can't make this any better.</cell>
       <cell> I can improve it! </cell>
     </row>
     <row>
-      <cell>  I just can’t do programming.</cell>
-      <cell> I’m going to train my brain to do this. </cell>
+      <cell>  I just can't do programming.</cell>
+      <cell> I'm going to train my brain to do this. </cell>
     </row>
 
     <row>
-      <cell> Plan A didn’t work.</cell>
-      <cell> Let’s try something else. </cell>
+      <cell> Plan A didn't work.</cell>
+      <cell> Let's try something else. </cell>
       </row>
       <row>
-        <cell>It’s good enough. </cell>
+        <cell>It's good enough. </cell>
       <cell> How can I improve this? </cell>
     </row>
     <row header="yes" bottom="minor" >
@@ -62,7 +62,7 @@
 <query label="poll_growthMindset_1">
   <statement>
     <p>How much do your agree with this statement: </p>
-     <p> <term>  Your	intelligence is something very basic about you that you can’t change	very	much.</term></p>
+     <p> <term>  Your	intelligence is something very basic about you that you can't change	very	much.</term></p>
   </statement>
   <choices>
     <choice>
@@ -112,7 +112,7 @@
     </li>
 
     <li>Simplify complex problems by breaking them into smaller, more manageable parts.</li>
-    <li>Don’t hesitate to ask for help from peers, online communities, or mentors. A fresh perspective can often spot issues you might overlook.</li>
+    <li>Don't hesitate to ask for help from peers, online communities, or mentors. A fresh perspective can often spot issues you might overlook.</li>
     <li>Take breaks if you feel frustrated. A clear mind can make problem-solving much easier.</li>
     <li>Each error is an opportunity to learn. Take note of what caused the error and how you resolved it for future reference. </li>
   
