@@ -15,5 +15,5 @@
 <xi:include href="./PrecedenceofOperators.ptx"/>
 <!-- <xi:include href="./Pseudocode.ptx"/> -->
 <xi:include href="./Glossary.ptx"/>
-<xi:include href="./video-logic.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

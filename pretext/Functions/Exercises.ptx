@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <exercises xml:id="functions_exercises">
-  <title>Exercises</title>
+  <title>Practice Zone</title>
   <exercise label="ex_5_1">
     <statement>
       <p>Write a fruitful function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
