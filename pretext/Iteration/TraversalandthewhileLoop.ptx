@@ -8,7 +8,7 @@
     and making sure that something changes inside the body to guarantee that the condition will eventually fail or that there is a <c>break</c> present.
   </p>
 
-  <program xml:id="ch6_sec5_p1" interactive="activecode" language="python">
+  <program xml:id="ac_traversingWithTheWhileLoop_1" label="ac_traversingWithTheWhileLoop_1" interactive="activecode" language="python">
     <input>
       fruit = "apple"
 
@@ -25,7 +25,7 @@
   </p>
 
   <p><term>Check your understanding</term></p>
-  <exercise label="ch6_sec5_q1">
+  <exercise label="mc_traversingWithTheWhileLoop_1">
     <statement>
       <p>How many times is the letter o printed by the following statements?</p>
       <program language="python">
@@ -59,7 +59,7 @@
 
   <note>
     <p>This workspace is provided for your convenience.  You can use this ActiveCode window to try out anything you like.</p>
-    <program xml:id="scratch_10" interactive="activecode" language="python">
+    <program xml:id="ac_traversingWithTheWhileLoop_2_scratch" label="ac_traversingWithTheWhileLoop_2_scratch" interactive="activecode" language="python">
       <input>
 
 

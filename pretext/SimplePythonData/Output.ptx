@@ -14,7 +14,7 @@
   </program>
 
   <p>Interestingly, the <c>+</c> operator does work with strings, but for strings, the <c>+</c> operator represents <term>concatenation</term>, not addition. Concatenation means joining the two operands by linking them end-to-end. For example:</p>
-  <program xml:id="ch2_sec7_p1" interactive="activecode" language="python">
+  <program xml:id="ac_output_1" label="ac_output_1" interactive="activecode" language="python">
     <input>
         fruit = "banana"
         bakedgood = " nut bread"
@@ -25,7 +25,7 @@
 
   <p>The <c>*</c> operator also works on strings. It performs repetition. For example, <c>'Fun'*3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the other has to be an integer.</p>
 
-            <program xml:id="ch2_sec7_p2" interactive="activecode" language="python">
+            <program xml:id="ac_output_2" label="ac_output_2" interactive="activecode" language="python">
               <input>
                 print("Go" * 6)
 

@@ -17,7 +17,7 @@
       </program>
   </p>
 
-  <program xml:id="ch11_sec11_p1" interactive="activecode" language="python">
+  <program xml:id="ac_writingDataToACSVFile_1" label="ac_writingDataToACSVFile_1" interactive="activecode" language="python">
     <input>
       n = [0] * 12
       for i in range(1,13):
@@ -35,7 +35,7 @@
   <p>Here is a more complex example, where we a have a list of tuples, each representing one Olympian, a subset of the rows and columns from the file we have been reading from.</p>
 
 
-  <program xml:id="ch11_sec11_p2" interactive="activecode" language="python" datafile="reduced_olympics.csv">
+  <program xml:id="ac_writingDataToACSVFile_2" label="ac_writingDataToACSVFile_2" interactive="activecode" language="python" datafile="reduced_olympics.csv">
     <input>
       olympians = [("John Aalberg", 31, "Cross Country Skiing"),
              ("Minna Maarit Aalto", 30, "Sailing"),
@@ -67,7 +67,7 @@
   <p>As described previously, if one or more columns contain text, and that text could contain commas, we need to do something to distinguish a comma in the text from a comma that is separating different values (cells in the table). If we want to enclose each value in double quotes, it can start to get a little tricky, because we will need to have the double quote character inside the string output. But it is doable. Indeed, one reason Python allows strings to be delimited with either single quotes or double quotes is so that one can be used to delimit the string and the other can be a character in the string. If you get to the point where you need to quote all of the values, we recommend learning to use python’s csv module.</p>
 
 
-  <program xml:id="ch11_sec11_p3" interactive="activecode" language="python" datafile="reduced_olympics2.csv">
+  <program xml:id="ac_writingDataToACSVFile_3" label="ac_writingDataToACSVFile_3" interactive="activecode" language="python" datafile="reduced_olympics2.csv">
     <input>
       olympians = [("John Aalberg", 31, "Cross Country Skiing, 15KM"),
              ("Minna Maarit Aalto", 30, "Sailing"),

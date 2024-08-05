@@ -19,7 +19,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch1_sec7_q1">
+  <exercise label="mc_typesOfErrors_1">
     <statement>
       <p>Which of the following is a syntax error?</p>
     </statement>
@@ -50,7 +50,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch1_sec7_q2">
+  <exercise label="mc_typesOfErrors_2">
     <statement>
       <p>Who or what typically finds syntax errors?</p>
     </statement>
@@ -103,7 +103,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch1_sec8_q1">
+  <exercise label="mc_typesOfErrors_3">
     <statement>
       <p>Which of the following is a run-time error?</p>
     </statement>
@@ -134,7 +134,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch1_sec8_q2">
+  <exercise label="mc_typesOfErrors_4">
     <statement>
       <p>Who or what typically finds runtime errors?</p>
     </statement>
@@ -188,7 +188,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch1_sec9_q1">
+  <exercise label="mc_typesOfErrors_5">
     <statement>
       <p>Which of the following is a semantic error?</p>
     </statement>
@@ -219,7 +219,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch1_sec9_q2">
+  <exercise label="mc_typesOfErrors_6">
     <statement>
       <p>Who or what typically finds semantic errors?</p>
     </statement>

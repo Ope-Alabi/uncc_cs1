@@ -6,7 +6,7 @@
   <p>As we have mentioned previously, it is legal to make more than one assignment to the
             same variable. A new assignment makes an existing variable refer to a new value
             (and stop referring to the old value).</p>
-  <program xml:id="ch2_sec10_p1" interactive="activecode" language="python">
+  <program xml:id="ac_reassignment_1" label="ac_reassignment_1" interactive="activecode" language="python">
     <input>
 bruce = 5
 print(bruce)
@@ -23,7 +23,7 @@ print(bruce)
             now, then <c>a will always equal to b</c>. In Python, an assignment statement can make
             two variables refer to the same object and therefore have the same value.  They appear to be equal.  However, because of the possibility of reassignment,
             they don't have to stay that way:</p>
-  <program xml:id="ch2_sec10_p2" interactive="activecode" language="python">
+  <program xml:id="ac_reassignment_2" label="ac_reassignment_2" interactive="activecode" language="python">
     <input>
 a = 5
 b = a    # after executing this line, a and b are now equal
@@ -51,7 +51,7 @@ print(a, b)
     <p>
       <term>Check your understanding</term>
     </p>
-    <exercise label="ch2_sec10_q1">
+    <exercise label="mc_reassignment_1">
       <statement>
         <p>After the following statements, what are the values of x and y?</p>
         <program language="python">
@@ -115,7 +115,7 @@ x = x + 1
             resulting object.  The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment
             statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
   <exercise runestone="se_updatevar1"/>
-  <program xml:id="ch2_sec11_p1" interactive="activecode" language="python">
+  <program xml:id="ac_reassignment_3" label="ac_reassignment_3" interactive="activecode" language="python">
     <input>
 x = 6        # initialize x
 print(x)
@@ -154,7 +154,7 @@ print(x)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch2_sec11_q1">
+  <exercise label="mc_reassignment_2">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -200,7 +200,7 @@ print(x)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch2_sec11_q2">
+  <exercise label="mc_reassignment_3">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -248,7 +248,7 @@ print(x)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch2_sec11_q3" indent="show" language="python">
+  <exercise label="p_reassignment_1" indent="show" language="python">
     <statement>
       <p>Construct the code that will result in the value 134 being printed.</p>
     </statement>
@@ -262,7 +262,7 @@ print(x)
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_02" interactive="activecode" language="python">
+    <program xml:id="ac_reassignment_4_scratch" label="ac_reassignment_4_scratch" interactive="activecode" language="python">
       <input>
 
 

@@ -3,7 +3,7 @@
   <title>Sequence conditional operators</title>
   <p>Along with basic comparsion operators, Python also provides built-in operators to create boolean expressions with sequences, such as strings and lists.</p>
   <p>The <c>in</c> operator tests if one string is a substring of another:</p>
-  <program xml:id="ch5_sec6_p1" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceConditionalOperators_1" label="ac_sequenceConditionalOperators_1" interactive="activecode" language="python">
     <input>
 print('p' in 'apple')
 print('i' in 'apple')
@@ -14,7 +14,7 @@ print('pa' in 'apple')
   <p>Note that a string is a substring of itself, and the empty string is a
             substring of any other string. (Also note that computer scientists
             like to think about these edge cases quite carefully!)</p>
-  <program xml:id="ch5_sec6_p2" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceConditionalOperators_2" label="ac_sequenceConditionalOperators_2" interactive="activecode" language="python">
     <input>
 print('a' in 'a')
 print('apple' in 'apple')
@@ -23,7 +23,7 @@ print('' in 'apple')
         </input>
   </program>
   <p>The <c>not in</c> operator returns the logical opposite result of <c>in</c>.</p>
-  <program xml:id="ch5_sec6_p3" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceConditionalOperators_3" label="ac_sequenceConditionalOperators_3" interactive="activecode" language="python">
     <input>
 print('x' not in 'apple')
 print('a' not in 'apple')
@@ -33,7 +33,7 @@ print('a' not in 'apple')
     <title>List Membership</title>
   <p><c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We
             used them previously with strings and they also work here.</p>
-  <program xml:id="ch5_sec7_p1" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceConditionalOperators_4" label="ac_sequenceConditionalOperators_4" interactive="activecode" language="python">
     <input>
 fruit = ["apple", "orange", "banana", "cherry"]
 
@@ -45,7 +45,7 @@ print("watermelon" not in fruit)
 
 <p> Remember that <c>in</c> and <c>not in</c> only checks for membership in the top level of a list. </p>
 
-  <program xml:id="ch5_sec7_p2" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceConditionalOperators_5" label="ac_sequenceConditionalOperators_5" interactive="activecode" language="python">
     <input>
 my_list = ["apple", "orange", "banana", "cherry", ["pear", "kiwi"]]
 print("pear" in my_list) # prints False because "pear" is in a sublist
@@ -57,7 +57,7 @@ print("orange" not in my_list) # prints False because "orange" is a member of my
     <term>Check your understanding</term>
   </p>
 
-  <exercise label="ch5_sec7_q1">
+  <exercise label="mc_sequenceConditionalOperators_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -86,7 +86,7 @@ print(3.14 in alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch5_sec7_q2">
+  <exercise label="mc_sequenceConditionalOperators_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

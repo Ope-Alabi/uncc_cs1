@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="more-about-iteration_exercises">
   <title>Practice Zone</title>
-  <exercise label="ex_7_1">
+  <exercise label="pz_iteration_1">
     <statement>
       <p>Write code that calculates and prints the first
                 5 triangular numbers. It should
@@ -13,7 +13,7 @@
 5       15</pre>
       <p>(<em>hint: use a web search to find out what a triangular number is.</em>)</p>
     </statement>
-    <program xml:id="ex_7_1_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_iteration_1" label="ac_pz_iteration_1" interactive="activecode" language="python">
       <input># your code here
         </input>
     </program>

@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <exercises xml:id="classes-basics_exercises">
   <title>Practice Zone</title>
-  <exercise label="classes_q1">
+  <exercise label="pz_classesBasics_1">
     <statement>
       <p>Add a <c>distanceFromPoint</c> method that works similar to <c>distanceFromOrigin</c> except that it
                         takes a <c>Point</c> as a parameter and
                         computes the distance between that point and self.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="classes_q1_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_classesBasics_1" label="ac_pz_classesBasics_1">
       <input>
 
         </input>
@@ -46,19 +46,19 @@ print(p.distanceFromPoint(q))
       </program>
     </solution>
   </exercise>
-  <exercise label="ch_cl_02">
+  <exercise label="pz_classesBasics_2">
     <statement>
       <p>Add a method <c>reflect_x</c> to Point which returns a new Point, one which is the
                 reflection of the point about the x-axis.  For example,
                 <c>Point(3, 5).reflect_x()</c> is (3, -5)</p>
     </statement>
-    <program xml:id="ch_cl_02_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_classesBasics_2" label="ac_pz_classesBasics_2" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
-  <exercise label="classes_q3">
+  <exercise label="pz_classesBasics_3">
     <statement>
       <p>Add a method <c>slope_from_origin</c> which returns the slope of the line joining the origin
                         to the point.   For example,</p>
@@ -66,7 +66,7 @@ print(p.distanceFromPoint(q))
 2.5</pre>
       <p>What cases will cause your method to fail? Return None when it happens.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="classes_q3_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_classesBasics_3" label="ac_pz_classesBasics_3">
       <input>
 
         </input>
@@ -104,7 +104,7 @@ print(p.slope_from_origin())
       </program>
     </solution>
   </exercise>
-  <exercise label="ch_cl_04">
+  <exercise label="pz_classesBasics_4">
     <statement>
       <p>The equation of a straight line is  <q>y = ax + b</q>, (or perhaps <q>y = mx + c</q>).
                 The coefficients a and b completely describe the line.  Write a method in the
@@ -116,19 +116,19 @@ print(p.slope_from_origin())
       <p>This tells us that the equation of the line joining the two points is <q>y = 2x + 3</q>.
                 When will your method fail?</p>
     </statement>
-    <program xml:id="ch_cl_04_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_classesBasics_4" label="ac_pz_classesBasics_4" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
-  <exercise label="classes_q5">
+  <exercise label="pz_classesBasics_5">
     <statement>
       <p>Add a method called <c>move</c> that will take two parameters, call them <c>dx</c> and <c>dy</c>.  The method will
                         cause the point to move in the x and y direction the number of units given. (Hint: you will change the values of the
                         state of the point)</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="classes_q5_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_classesBasics_5" label="ac_pz_classesBasics_5">
       <input>
 
         </input>
@@ -169,11 +169,11 @@ print(p)
       </program>
     </solution>
   </exercise>
-  <exercise label="classes_q6">
+  <exercise label="pz_classesBasics_6">
     <statement>
       <p>Given three points that fall on the circumference of a circle, find the center and radius of the circle.</p>
     </statement>
-    <program xml:id="classes_q6_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_classesBasics_6" label="ac_pz_classesBasics_6" interactive="activecode" language="python">
       <input>
 
         </input>

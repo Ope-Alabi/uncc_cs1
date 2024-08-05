@@ -56,7 +56,7 @@
       In this program, zero is a <term>sentinel value</term>, a value used to signal the end of the loop.
       Here's the code:
     </p>
-    <program xml:id="ch7_sec6_p1" interactive="activecode" language="python">
+    <program xml:id="ac_otherUsesOfWhile_1" label="ac_otherUsesOfWhile_1" interactive="activecode" language="python">
       <input>
         total = 0
         count = 0
@@ -99,7 +99,7 @@
     </p>
 
     <p><term>Check your understanding</term></p>
-    <exercise label="ch7_sec6_q1">
+    <exercise label="mc_otherUsesOfWhile_1">
       <statement><p>True or False: A while loop will continue to iterate forever unless it meets a condition to stop.</p></statement>
       <choices>
         <choice correct="yes">
@@ -127,7 +127,7 @@
       Note that it uses the <c>upper()</c> method which is described in <xref ref="strings_string-methods"/> to convert a string to upper case.
       When you run the following code, try typing something other than Y or N to see how the code reacts:
     </p>
-    <program xml:id="ch6_sec6_p2" interactive="activecode" language="python">
+    <program xml:id="ac_otherUsesOfWhile_2" label="ac_otherUsesOfWhile_2" interactive="activecode" language="python">
       <input>
         valid_input = False
         response = input('Do you like lima beans? Y)es or N)o: ')

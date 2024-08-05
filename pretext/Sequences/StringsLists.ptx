@@ -49,7 +49,7 @@
     <p xml:id="lists_accessing_elements" names="accessing-elements">
         <term>Check your understanding</term>
     </p>
-      <exercise label="question5_2_1">
+      <exercise label="mc_stringsAndLists_1">
         <statement>
           <p>A list is only allowed to contain integer items.</p>
         </statement>

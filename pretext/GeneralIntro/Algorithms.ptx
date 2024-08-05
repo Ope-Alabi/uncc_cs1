@@ -43,7 +43,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch1_sec2_q1">
+  <exercise label="mc_algorithms_1">
     <statement>
       <p>What is the most important skill for a computer scientist?</p>
     </statement>
@@ -86,7 +86,7 @@
     </choices>
   </exercise>
   <exercise
-    label="ch1_sec2_q2">
+    label="mc_algorithms_2">
     <statement>
       <p>An algorithm is:</p>
     </statement>

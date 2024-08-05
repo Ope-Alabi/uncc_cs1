@@ -28,7 +28,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch8_sec7_q1">
+  <exercise label="mc_functionsFlowOfExecutionSummary_1">
     <statement>
       <p>Consider the following Python code. Note that line numbers are included on the left.</p>
       <program language="python">
@@ -91,7 +91,7 @@ print(result)      #11
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch8_sec7_q2">
+  <exercise label="mc_functionsFlowOfExecutionSummary_2">
     <statement>
       <p>Consider the following Python code. Note that line numbers are included on the left.</p>
       <program language="python">

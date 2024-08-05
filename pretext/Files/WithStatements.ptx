@@ -22,7 +22,7 @@
   </datafile>
 
 
-    <program xml:id="ch11_sec6_p1" interactive="activecode" codelens="no" language="python" datafile="mydata.txt">
+    <program xml:id="ac_withStatements_1" label="ac_withStatements_1" interactive="activecode" codelens="no" language="python" datafile="mydata.txt">
     <input>
       with open('mydata.txt' , 'r') as md:
           for line in md:
@@ -35,7 +35,7 @@
   
   <p>This is equivalent to code that specifically closes the file at the end, but neatly marks the set of code that can make use of the open file as an indented block, and ensures that the programmer won’t forget to include the <c>.close()</c> invocation.</p>
 
-  <program xml:id="ch11_sec6_p2" interactive="activecode" codelens="no" language="python" datafile="mydata.txt">
+  <program xml:id="ac_withStatements_2" label="ac_withStatements_2" interactive="activecode" codelens="no" language="python" datafile="mydata.txt">
     <input>
       md = open('mydata.txt', 'r')
       for line in md:

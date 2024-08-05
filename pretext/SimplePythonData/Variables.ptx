@@ -41,7 +41,7 @@ pi = 3.14159
   <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
-  <program xml:id="ch2_sec4_p1" interactive="activecode" language="python">
+  <program xml:id="ac_variables_1" label="ac_variables_1" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
 n = 17
@@ -54,7 +54,7 @@ print(pi)
   </program>
   <p>In each case the result is the value of the variable.
             To see this in even more detail, we can run the program using codelens.</p>
-  <program xml:id="ch2_sec4_c1" interactive="activecode" language="python">
+  <program xml:id="ac_variables_2" label="ac_variables_2" interactive="activecode" language="python">
     <input>
           message = "What's up, Doc?"
           n = 17
@@ -94,7 +94,7 @@ print(type(pi))
   <p>To see this, read and then run the following program.
             You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
             assignment we even give it a value that is of a different type.</p>
-  <program xml:id="ch2_sec4_p3" interactive="activecode" language="python">
+  <program xml:id="ac_variables_3" label="ac_variables_3" interactive="activecode" language="python">
     <input>
           day = "Thursday"
           print(day)
@@ -110,7 +110,7 @@ print(type(pi))
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch2_sec4_q1">
+  <exercise label="mc_variables_1">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
@@ -331,7 +331,7 @@ class = "Computer Science 101"</pre>
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch2_sec5_q1">
+  <exercise label="mc_variables_2">
     <statement>
       <p>True or False:  the following is a legal variable name in Python:   A_good_grade_is_A+</p>
     </statement>

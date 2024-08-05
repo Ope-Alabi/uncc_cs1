@@ -72,7 +72,7 @@
     </pre>
   </datafile>
 
-  <program xml:id="ch11_sec10_p1" interactive="activecode" language="python" datafile="olympics.txt">
+  <program xml:id="ac_readingInDataFromACSVFile_1" label="ac_readingInDataFromACSVFile_1" interactive="activecode" language="python" datafile="olympics.txt">
     <input>
       fileconnection = open("olympics.txt", 'r')
       lines = fileconnection.readlines()

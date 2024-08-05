@@ -100,7 +100,7 @@
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch1_sec13_q1">
+  <exercise label="mc_formalAndNaturalLanguages_1">
     <statement>
       <p>The differences between natural and formal languages include:</p>
     </statement>
@@ -139,7 +139,7 @@
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch1_sec13_q2">
+  <exercise label="mc_formalAndNaturalLanguages_2">
     <statement>
       <p>True or False:  Reading a program is like reading other kinds of text.</p>
     </statement>

@@ -68,7 +68,7 @@
     </pre>
   </datafile>
 
-  <program xml:id="ch11_sec2_p1" interactive="activecode" language="python" datafile="olympics.txt">
+  <program xml:id="ac_readingAFile_1" label="ac_readingAFile_1" interactive="activecode" language="python" datafile="olympics.txt">
     <input>
       fileref = open("olympics.txt", "r")
       print(fileref)

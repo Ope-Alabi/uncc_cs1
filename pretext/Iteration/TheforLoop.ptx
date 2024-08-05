@@ -11,7 +11,7 @@
     As a simple example, let's say we have some friends, and we'd like to send them each an email inviting them to our party.
     We don't quite know how to send email yet, so for the moment we'll just print a message for each friend.
   </p>
-  <program xml:id="ch7_sec8_p1" interactive="activecode" language="python">
+  <program xml:id="ac_theForLoop_1" label="ac_theForLoop_1" interactive="activecode" language="python">
     <input>
       for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
         print("Hi, " + name + "! Please come to my party on Saturday!")
@@ -98,7 +98,7 @@
   </p>
 
   <term>Check your understanding</term>
-  <exercise label="ch6_sec8_q1">
+  <exercise label="mc_theForLoop_1">
     <statement><p>True or False: You can rewrite any for-loop as a while-loop.</p></statement>
     <choices>
       <choice correct="yes">

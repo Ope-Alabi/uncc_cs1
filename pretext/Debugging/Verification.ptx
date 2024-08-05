@@ -6,7 +6,7 @@
      the result is correct each time. If the result is not correct each time, then there is something wrong
      within the program. Let's look at an example program and test it to ensure it's working properly. NOTE: For the
      purpose of demonstration, the initial numbers will be defined as str type instead of int in the following programs.</p>
-    <program xml:id="debugging_verify_program_0" language="python" interactive="activecode">
+    <program xml:id="ac_verifyingCode_1" label="ac_verifyingCode_1" language="python" interactive="activecode">
     <input>
         first_num = "1"
         second_num = "1"
@@ -21,7 +21,7 @@
     <p>As you can see, 1 and 1 resulted in 2. However, it's not good practice to 
     only check it with one combination of values. Let's run it a few more times with other values 
     to ensure it works properly.</p>
-    <program xml:id="debugging_verify_program_1" language="python" interactive="activecode">
+    <program xml:id="ac_verifyingCode_2" label="ac_verifyingCode_2" language="python" interactive="activecode">
         <input>
             first_num = "3"
             second_num = "5"
@@ -34,7 +34,7 @@
         </input>
     </program>
     <p>We got 8, looks like it works perfectly. Let's try it one more time with another set of values.</p>
-    <program xml:id="debugging_verify_program_2" language="python" interactive="activecode">
+    <program xml:id="ac_verifyingCode_3" label="ac_verifyingCode_3" language="python" interactive="activecode">
     <input>
         first_num = "12.5"
         second_num = "20"
@@ -49,7 +49,7 @@
     <p>Good thing we checked with a decimal! With this set of numbers, a ValueError occured because the program is trying 
     to convert the string to integer, but can't due to the decimal. To address this issue, the conversion can be changed 
     from integer to float.</p>
-    <program xml:id="debugging_verify_program_3" language="python" interactive="activecode">
+    <program xml:id="ac_verifyingCode_4" label="ac_verifyingCode_4" language="python" interactive="activecode">
     <input>
         first_num = "12.5"
         second_num = "20"

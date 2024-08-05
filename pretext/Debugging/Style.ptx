@@ -5,7 +5,7 @@
     using non-descriptive variable names such as x, y, or z or using multiple variables of similar names will make
     the code harder to read and understand for others, and may confuse you in the process. As the programs you write
     become larger and larger, this becomes even more important. Take this example:</p>
-    <program xml:id="code_style_ex1" language="python" interactive="activecode">
+    <program xml:id="ac_codeStyle_1" label="ac_codeStyle_1" language="python" interactive="activecode">
         <input>
         x = input("Enter your first name: ")
         y = input("Enter your last name: ")
@@ -18,7 +18,7 @@
     x, y, and z. They are not very descriptive of what values the variables are holding, more suitable variable names
     could be first_name, last_name, and full_name. These variable names are more descriptive and accurately relay what values the variables
     are holding. </p>
-    <program xml:id="code_style_ex2" language="python" interactive="activecode">
+    <program xml:id="ac_codeStyle_2" label="ac_codeStyle_2" language="python" interactive="activecode">
         <input>
         first_name = input("Enter your first name: ")
         last_name = input("Enter your last name: ")

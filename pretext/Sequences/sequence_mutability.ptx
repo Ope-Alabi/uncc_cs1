@@ -7,7 +7,7 @@
   <p>Unlike strings, lists are <term>mutable</term>.  This means we can change an item in a list by accessing
             it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can
             update one of the list items.</p>
-  <program xml:id="ch4_sec8_p1" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_1" label="ac_sequenceMutability_1" interactive="activecode" language="python">
     <input>
 fruit = ["banana", "apple", "cherry"]
 print(fruit)
@@ -21,7 +21,7 @@ print(fruit)
             assignment to an element of a list is called <term>item assignment</term>. Item
             assignment does not work for strings.  Recall that strings are immutable.</p>
   <p>Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.</p>
-  <program xml:id="ch4_sec8_c1" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_2" label="ac_sequenceMutability_2" interactive="activecode" language="python">
     <input>
 fruit = ["banana", "apple", "cherry"]
 
@@ -30,7 +30,7 @@ fruit[-1] = "orange"
     </input>
   </program>
   <p>By combining assignment with the slice operator we can update several elements at once.</p>
-  <program xml:id="ch4_sec8_p2" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_3" label="ac_sequenceMutability_3" interactive="activecode" language="python">
     <input>
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 alist[1:3] = ['x', 'y']
@@ -38,7 +38,7 @@ print(alist)
     </input>
   </program>
   <p>We can also remove elements from a list by assigning the empty list to them.</p>
-  <program xml:id="ch4_sec8_p3" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_4" label="ac_sequenceMutability_4" interactive="activecode" language="python">
     <input>
 alist = ['a', 'b', 'c', 'd', 'e', 'f']
 alist[1:3] = []
@@ -47,7 +47,7 @@ print(alist)
   </program>
   <p>We can even insert elements into a list by squeezing them into an empty slice at the
             desired location.</p>
-  <program xml:id="ch4_sec8_p4" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_5" label="ac_sequenceMutability_5" interactive="activecode" language="python">
     <input>
 alist = ['a', 'd', 'f']
 alist[1:1] = ['b', 'c']
@@ -63,7 +63,7 @@ print(alist)
   <p>One important thing that makes strings different from some other Python collection types is that
             you are not allowed to modify the individual characters in the collection.  It is tempting to use the <c>[]</c> operator on the left side of an assignment,
             with the intention of changing a character in a string.  For example, in the following code, we would like to change the first letter of <c>greeting</c>.</p>
-  <program xml:id="ch3_sec9_p1" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_6" label="ac_sequenceMutability_6" interactive="activecode" language="python">
     <input>
 greeting = "Hello, world!"
 greeting[0] = 'J'            # ERROR!
@@ -74,7 +74,7 @@ print(greeting)
             runtime error <c>TypeError: 'str' object does not support item assignment</c>.</p>
   <p>Strings are <term>immutable</term>, which means you cannot change an existing string. The
             best you can do is create a new string that is a variation on the original.</p>
-  <program xml:id="ch3_sec9_p2" interactive="activecode" language="python">
+  <program xml:id="ac_sequenceMutability_7" label="ac_sequenceMutability_7" interactive="activecode" language="python">
     <input>
 greeting = "Hello, world!"
 newGreeting = 'J' + greeting[1:]
@@ -92,7 +92,7 @@ print(greeting)            # same as it was
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch4_sec8_q1">
+  <exercise label="mc_sequenceMutability_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -131,7 +131,7 @@ print(alist)
     </choices>
   </exercise>
 
-  <exercise label="ch3_sec9_q1">
+  <exercise label="mc_sequenceMutability_2">
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">

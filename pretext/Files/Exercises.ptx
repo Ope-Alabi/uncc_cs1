@@ -10,7 +10,7 @@
       john 14 32 25 16 89
     </pre>
   </datafile>
-  <exercise label="ex_6_1_files">
+  <exercise label="pz_files_1">
     <statement>
       <p>The following sample file called <c>studentdata.txt</c> contains one line for each student in an imaginary class.  The
                         student's name is the first thing on each line, followed by some exam scores.
@@ -22,7 +22,7 @@
     </statement>
 
     
-    <program interactive="activecode" language="python" xml:id="ex_6_1_files_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_files_1" label="ac_pz_files_1">
       <input>
 
         </input>
@@ -42,23 +42,23 @@ f.close()
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_10_2">
+  <exercise label="pz_files_2">
     <statement>
       <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the average grade
                 for each student, and print out the student's name along with their average grade.</p>
     </statement>
-    <program xml:id="ex_10_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_files_2" label="ac_pz_files_2" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_3_files">
+  <exercise label="pz_files_3">
     <statement>
       <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the minimum and
                         maximum score for each student.  Print out their name as well.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_3_files_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_files_3" label="ac_pz_files_3">
       <input>
 
         </input>

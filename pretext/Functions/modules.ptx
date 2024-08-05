@@ -7,7 +7,7 @@
             Python as part of the <term>standard library</term>. We have already used one of these briefly,
             the <c>math</c> module.  Recall that once we import the module, we can use things
             that are defined inside.</p>
-  <program xml:id="ch9_sec1_p1" interactive="activecode" language="python">
+  <program xml:id="ac_modules_1" label="ac_modules_1" interactive="activecode" language="python">
     <input>
 import math            # allows us to use the math library
 
@@ -68,7 +68,7 @@ this as: "In the module math, access the Python element called sqrt".</p>
 
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch9_sec1_q1">
+  <exercise label="mc_modules_1">
     <statement>
       <p>In Python a module is:</p>
     </statement>
@@ -107,7 +107,7 @@ this as: "In the module math, access the Python element called sqrt".</p>
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch9_sec1_q2">
+  <exercise label="mc_modules_2">
     <statement>
       <p>To find out information on the standard modules available with Python you should:</p>
     </statement>
@@ -146,7 +146,7 @@ this as: "In the module math, access the Python element called sqrt".</p>
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch9_sec1_q3">
+  <exercise label="mc_modules_3">
     <statement>
       <p>True / False:  All standard Python modules will work in activecode.</p>
     </statement>

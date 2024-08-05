@@ -12,7 +12,7 @@
   </p>
 
   <p>Here is a simple example that counts down from 10 to 0.</p>
-  <program xml:id="ch7_sec2_p1" interactive="activecode" language="python">
+  <program xml:id="ac_theWhileStatement_1" label="ac_theWhileStatement_1" interactive="activecode" language="python">
     <input>
       count = 10
       while count > 0:
@@ -83,7 +83,7 @@
   </p>
 
   <p>Here is the summation program that uses a while statement.</p>
-  <program xml:id="ch7_sec2_p2" interactive="activecode" language="python">
+  <program xml:id="ac_theWhileStatement_2" label="ac_theWhileStatement_2" interactive="activecode" language="python">
     <input>
       """ Return the sum of 1+2+3 ... n """
       aBound = int(input("Please give a number n: "))
@@ -112,7 +112,7 @@
 
   <note>
     <p>This workspace is provided for your convenience. You can use this ActiveCode window to try out anything you like.</p>
-    <program xml:id="scratch_09" interactive="activecode" language="python">
+    <program xml:id="ac_theWhileStatement_3_scratch" label="ac_theWhileStatement_3_scratch" interactive="activecode" language="python">
       <input>
 
 
@@ -121,7 +121,7 @@
   </note>
 
   <p><term>Check your understanding</term></p>
-  <exercise label="ch7_sec2_q1">
+  <exercise label="mc_theWhileStatement_1">
     <statement><p>True or False: You can rewrite any for-loop as a while-loop.</p></statement>
 
     <choices>
@@ -137,7 +137,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch7_sec2_q2">
+  <exercise label="mc_theWhileStatement_2">
     <statement>
       <p>The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?</p>
       <program language="python">
@@ -175,7 +175,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch7_sec2_q3">
+  <exercise label="mc_theWhileStatement_3">
     <statement>
       <p>What is printed by this code?</p>
       <program language="python">
