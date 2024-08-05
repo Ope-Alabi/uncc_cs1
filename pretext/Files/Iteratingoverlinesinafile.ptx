@@ -97,7 +97,7 @@
     </pre>
   </datafile>
 
-  <program xml:id="ch11_sec4_p1" interactive="activecode" language="python" datafile="olympics.txt">
+  <program xml:id="ac_iteratingOverLinesInAFile_1" label="ac_iteratingOverLinesInAFile_1" interactive="activecode" language="python" datafile="olympics.txt">
     <input>
     olympicsfile = open("olympics.txt", "r")
 
@@ -117,7 +117,7 @@
                 are reading the final line of a file that happens to not have a newline at the end).</p>
   </note>
   <p>To make the code a little simpler, and to allow for more efficient processing, Python provides a built-in way to iterate through the contents of a file one line at a time, without first reading them all into a list. Some students find this confusing initially, so we don’t recommend doing it this way, until you get a little more comfortable with Python. But this idiom is preferred by Python programmers, so you should be prepared to read it. And when you start dealing with big files, you may notice the efficiency gains of using it.</p>
-  <program xml:id="ch11_sec4_p2" interactive="activecode" language="python" datafile="olympics.txt">
+  <program xml:id="ac_iteratingOverLinesInAFile_2" label="ac_iteratingOverLinesInAFile_2" interactive="activecode" language="python" datafile="olympics.txt">
     <input>
     olympicsfile = open("olympics.txt", "r")
 
@@ -144,11 +144,11 @@
         </input>
     </program>
 
-    <exercise label="question11_4_1">
+    <exercise label="mc_iteratingOverLinesInAFile_1">
       <statement>
         <p>1. Write code to find out how many lines are in the file <c>emotion_words.txt</c> as shown above. Save this value to the variable <c>num_lines</c>. Do not use the len method.</p>
       </statement>
-      <program xml:id="ac_11_4_1" interactive="activecode" language="python" datafile="emotion_words.txt">
+      <program xml:id="ac_iteratingOverLinesInAFile_3" label="ac_iteratingOverLinesInAFile_3" interactive="activecode" language="python" datafile="emotion_words.txt">
         <input>
             
         </input>

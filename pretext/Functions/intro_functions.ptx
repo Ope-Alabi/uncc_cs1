@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="intro_sequences">
+<section xml:id="intro_functions">
     <title>Introduction: Functions</title>
     <video xml:id="function_intro" youtube="4wKtB57J5J4" width="auto"/>
     <p>In Python, a <term>function</term> is a named sequence of statements
@@ -7,20 +7,20 @@
               organize programs into chunks that match how we think about
               the solution to the problem.</p>
     
-    <subsection xml:id="subsec-Learning-Goals">
+    <subsection xml:id="functions-Learning-Goals">
         <title>Learning Goals</title>
         <ul>
-            <li><p>Template Text</p></li>
-            <li><p>Template Text</p></li>
-            <li><p>Template Text</p></li>
-            <li><p>Template Text</p></li>
+            <li><p>Template Text 1</p></li>
+            <li><p>Template Text 2</p></li>
+            <li><p>Template Text 3</p></li>
+            <li><p>Template Text 4</p></li>
         </ul> 
         <!-- <subsubsection xml:id="subsub-sect">
         <title>Test Title</title> 
         </subsubsection> -->
     </subsection>
   
-    <subsection xml:id="subsec-Objectives">
+    <subsection xml:id="functions-Objectives">
         <title>Objectives</title>
         <ul>
             <li><p>identify formal parameters and parameter values in a code sample</p></li>

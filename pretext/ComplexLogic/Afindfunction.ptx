@@ -2,7 +2,7 @@
 <section xml:id="complex-logic_a-find-function">
   <title>A <c>find</c> function</title>
   <p>Here is an implementation for a restricted <c>find</c> method, where the target is a single character.</p>
-  <program xml:id="ch10_sec4_p1" interactive="activecode" language="python">
+  <program xml:id="ac_findFunction_1" label="ac_findFunction_1" interactive="activecode" language="python">
     <input>
 def find(astring, achar):
     """
@@ -51,7 +51,7 @@ print(find("Compsci", "x"))
 
     We can actually simplify this function like this:
 </p>
-  <program xml:id="ch10_sec4_p2" interactive="activecode" language="python">
+  <program xml:id="ac_findFunction_2" label="ac_findFunction_2" interactive="activecode" language="python">
     <input>
 def find(astring, achar):
     """

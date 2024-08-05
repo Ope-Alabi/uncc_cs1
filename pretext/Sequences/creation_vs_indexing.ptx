@@ -8,7 +8,7 @@
         You have currently encountered two instances where we have used square brackets. The first is creating lists and the second is indexing. At first glance, creating and indexing are difficult to distinguish. However, indexing requires referencing an already created list while simply creating a list does not. 
     </p>
 
-    <program xml:id="ac5_4_1" interactive="activecode" language="python">
+    <program xml:id="ac_creationVsIndexing_1" label="ac_creationVsIndexing_1" interactive="activecode" language="python">
         <input>
             new_lst = []
 
@@ -19,7 +19,7 @@
         In the code above, a new list is created using the empty brackets. Since there’s nothing in it though, we can’t index into it.
       </p>
 
-      <program xml:id="ac5_4_2" interactive="activecode" language="python">
+      <program xml:id="ac_creationVsIndexing_2" label="ac_creationVsIndexing_2" interactive="activecode" language="python">
         <input>
             new_lst = ["NFLX", "AMZN", "GOOGL", "DIS", "XOM"]
             part_of_new_lst = new_lst[0]
@@ -34,7 +34,7 @@
         Though it may be easier to distinguish in this above activecode, below may be a bit more difficult.
       </p>
 
-      <program xml:id="ac5_4_3" interactive="activecode" language="python">
+      <program xml:id="ac_creationVsIndexing_3" label="ac_creationVsIndexing_3" interactive="activecode" language="python">
         <input>
             lst = [0]
             n_lst = lst[0]
@@ -53,7 +53,7 @@
         <term>Check your understanding</term>
       </p>
 
-      <exercise label="question5_4_1">
+      <exercise label="mc_creationVsIndexing_1">
         <statement>
           <p>Which of the following correctly uses indexing? Assume that <code>a</code> is a list or string. Select as many as apply.</p>
         </statement>

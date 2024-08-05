@@ -18,7 +18,7 @@
     Notice that 4 is not included since we started with 0.
     Likewise, <c>range(10)</c> provides 10 values, 0 through 9.
   </p>
-  <program xml:id="ch6_sec10_p1" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_1" label="ac_iterationWithTheRangeFunction_1" interactive="activecode" language="python">
     <input>
       for i in range(4):
         # Executes the body with i = 0, then 1, then 2, then 3
@@ -37,7 +37,7 @@
   </note>
 
   <p>So to repeat something four times, a good Python programmer would do this:</p>
-  <program xml:id="ch6_sec10_p2" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_2" label="ac_iterationWithTheRangeFunction_2" interactive="activecode" language="python">
     <input>
       for i in range(4):
         print(i)
@@ -66,7 +66,7 @@
   </note>
 
 
-  <program xml:id="ch6_sec10_p3" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_3" label="ac_iterationWithTheRangeFunction_3" interactive="activecode" language="python">
     <input>
       print(range(4))
       print(type(range(4)))
@@ -90,7 +90,7 @@
     Here are two examples for you to run.
     Try them and then add another line below to create a sequence starting at 10 and going up to 20 (including 20).
   </p>
-  <program xml:id="ch6_sec9_p1" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_4" label="ac_iterationWithTheRangeFunction_4" interactive="activecode" language="python">
     <input>
       print(list(range(4)))
       print(list(range(1, 5)))
@@ -101,7 +101,7 @@
     CodeLens will help us to further understand the way <c>range</c> works.
     In this case, the variable <c>i</c> will take on values produced by the <c>range</c> function.
   </p>
-  <program xml:id="ch6_sec9_c1" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_5" label="ac_iterationWithTheRangeFunction_5" interactive="activecode" language="python">
     <input>
       for i in range(10):
          print(i)
@@ -117,7 +117,7 @@
     The most general form of the range is <c>range(start, beyondLast, step)</c>.
     You can also create a sequence of numbers that starts big and gets smaller by using a negative value for the step parameter.
   </p>
-  <program xml:id="ch6_sec9_p3" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_6" label="ac_iterationWithTheRangeFunction_6" interactive="activecode" language="python">
     <input>
       print(list(range(0, 19, 2)))
       print(list(range(0, 20, 2)))
@@ -129,7 +129,7 @@
     Try it in CodeLens.
     Do you see why the first two statements produce the same result?
   </p>
-  <program xml:id="ch6_sec9_c2" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_7" label="ac_iterationWithTheRangeFunction_7" interactive="activecode" language="python">
     <input>
       for i in range(0, 20, 2):
          print(i)
@@ -138,7 +138,7 @@
 
   <p><term>Check your understanding</term></p>
 
-  <exercise label="ch6_sec9_q1">
+  <exercise label="mc_iterationWithTheRangeFunction_1">
     <statement>
       <p>In the function <c>range(3, 10, 2)</c>, what does the second argument (<c>10</c>) specify?</p>
     </statement>
@@ -178,7 +178,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch6_sec9_q2">
+  <exercise label="mc_iterationWithTheRangeFunction_2">
     <statement>
       <p>What function correctly generates the sequence 2, 5, 8?</p>
     </statement>
@@ -218,7 +218,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch6_sec9_q3">
+  <exercise label="mc_iterationWithTheRangeFunction_3">
     <statement>
       <p>What happens if you give range only one argument?  For example: <c>range(4)</c></p>
     </statement>
@@ -258,7 +258,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch6_sec9_q4">
+  <exercise label="mc_iterationWithTheRangeFunction_4">
     <statement>
       <p>Which range function call will produce the sequence 20, 15, 10, 5?</p>
     </statement>
@@ -298,7 +298,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch6_sec9_q5">
+  <exercise label="mc_iterationWithTheRangeFunction_5">
     <statement>
       <p>What could the second parameter (<c>12</c>) in <c>range(2, 12, 4)</c> be replaced with and generate exactly the same sequence?</p>
     </statement>

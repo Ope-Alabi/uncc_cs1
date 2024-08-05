@@ -5,7 +5,7 @@
             job. For example, if you want to find the absolute value of a number, you have
             to indicate what the number is. Python has a built-in function for computing
             the absolute value:</p>
-  <program xml:id="ch8_sec2_p1" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_1" label="ac_functionsThatReturnValues_1" interactive="activecode" language="python">
     <input>
 print(abs(5))
 
@@ -14,7 +14,7 @@ print(abs(-5))
   </program>
   <p>In this example, the arguments to the <c>abs</c> function are 5 and -5.</p>
   <p>Some functions take more than one argument. For example the range function that we saw with <c>for</c> loops.</p>
-  <program xml:id="ch8_sec2_p2" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_2" label="ac_functionsThatReturnValues_2" interactive="activecode" language="python">
     <input>
      print(list(range(4, 8)))
      print(list(range(1, 10)))
@@ -25,7 +25,7 @@ print(abs(-5))
   </note>
   <p>Another built-in function that takes more than one argument is <c>max</c>.
   </p>
-  <program xml:id="ch8_sec2_p3" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_3" label="ac_functionsThatReturnValues_3" interactive="activecode" language="python">
     <input>
 print(max(7, 11))
 print(max(4, 1, 17, 2, 12))
@@ -55,7 +55,7 @@ print(max(3 * 11, 5 ** 3, 512 - 9, 1024 ** 0))
             as a parameter and return the result of squaring that number.  Here is the
             black-box diagram with the Python code following.</p>
   <image source="Functions/Figures/squarefun.png" width="50%"/>
-  <program xml:id="ch8_sec2_p4" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_4" label="ac_functionsThatReturnValues_4" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -93,7 +93,7 @@ print("The result of", toSquare, "squared is", result)
                 we will see later where it makes sense to have a return statement even when other statements
                 follow, and the further statements are <em>not</em> executed.</p>
   </note>
-  <program xml:id="ch8_sec2_c1" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_5" label="ac_functionsThatReturnValues_5" interactive="activecode" language="python">
     <input>
 def square(x):
     y = x * x
@@ -130,7 +130,7 @@ print("The result of", toSquare, "squared is", squareResult)
             programmers.  As you step through this example, pay very close attention to the return
             value in the local variables listing.  Then look at what is printed when the
             function returns.</p>
-  <program xml:id="ch8_sec2_c2" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_6" label="ac_functionsThatReturnValues_6" interactive="activecode" language="python">
     <input>
           def square(x):
               y = x * x
@@ -148,7 +148,7 @@ print("The result of", toSquare, "squared is", squareResult)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch8_sec2_q1">
+  <exercise label="mc_functionsThatReturnValues_1">
     <statement>
       <p>What is wrong with the following function definition:</p>
       <program language="python">
@@ -194,7 +194,7 @@ def addEm(x, y, z):
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch8_sec2_q2">
+  <exercise label="mc_functionsThatReturnValues_2">
     <statement>
       <p>What will the following function return?</p>
       <program language="python">
@@ -238,7 +238,7 @@ def addEm(x, y, z):
 				expression evaluation can be returned by a function (using the <c>return</c> statement),
 				functions can return boolean values.  This turns out to be a very convenient way to hide the details of complicated tests. For example:</p>
     </introduction>
-      <program xml:id="ch8_sec10_p1" interactive="activecode" language="python">
+      <program xml:id="ac_functionsThatReturnValues_7" label="ac_functionsThatReturnValues_7" interactive="activecode" language="python">
 	      <input>
 def isDivisible(x, y):
 	if x % y == 0:
@@ -280,7 +280,7 @@ else:
 	<c>not isDivisible(x, y)</c>). The following example shows the <c>isDivisible</c> function at work.  Notice how
 			descriptive the code is when we move the testing details into a boolean function.  Try it
 			with a few other actual parameters to see what is printed.</p>
-  <program xml:id="ch8_sec10_p2" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_8" label="ac_functionsThatReturnValues_8" interactive="activecode" language="python">
 	<input>
 def isDivisible(x, y):
 	return x % y == 0
@@ -293,7 +293,7 @@ else:
   </program>
   <p>Here is the same program in codelens.  When we evaluate the <c>if</c> statement in the main part of the program, the evaluation of
 			the boolean expression causes a call to the <c>isDivisible</c> function.  This is very easy to see in codelens.</p>
-  <program xml:id="ch8_sec10_c1" interactive="activecode" language="python">
+  <program xml:id="ac_functionsThatReturnValues_9" label="ac_functionsThatReturnValues_9" interactive="activecode" language="python">
 	<input>
 		  def isDivisible(x, y):
 			  return x % y == 0
@@ -307,7 +307,7 @@ else:
   <p>
 	<term>Check your understanding</term>
   </p>
-  <exercise label="ch8_sec10_q1">
+  <exercise label="mc_functionsThatReturnValues_3">
 	<statement>
 	  <p>What is a Boolean function?</p>
 	</statement>
@@ -338,7 +338,7 @@ else:
 	  </choice>
 	</choices>
   </exercise>
-  <exercise label="ch8_sec10_q2">
+  <exercise label="mc_functionsThatReturnValues_4">
 	<statement>
 	  <p>Is the following statement legal in a Python function (assuming x, y and z are defined to be numbers)?</p>
 	  <program language="python">

@@ -72,11 +72,11 @@
         </input>
     </program>
 
-    <exercise label="question11_3_1">
+    <exercise label="mc_alternativeFileReadingMethods_1">
       <statement>
         <p>1. Using the file <c>school_prompt2.txt</c>, find the number of characters in the file and assign that value to the variable <c>num_char</c>.</p>
       </statement>
-      <program xml:id="ac_11_3_1" interactive="activecode" language="python" datafile="school_prompt2.txt">
+      <program xml:id="ac_alternativeFileReadingMethods_1" label="ac_alternativeFileReadingMethods_1" interactive="activecode" language="python" datafile="school_prompt2.txt">
         <input>
             
         </input>
@@ -99,11 +99,11 @@
         </input>
   </program>
 
-  <exercise label="question11_3_2">
+  <exercise label="mc_alternativeFileReadingMethods_2">
     <statement>
       <p>2. Find the number of lines in the file, <c>travel_plans2.txt</c>, and assign it to the variable <c>num_lines</c>.</p>
     </statement>
-    <program xml:id="ac_11_3_2" interactive="activecode" language="python" datafile="travel_plans2.txt">
+    <program xml:id="ac_alternativeFileReadingMethods_2" label="ac_alternativeFileReadingMethods_2" interactive="activecode" language="python" datafile="travel_plans2.txt">
       <input>
           
       </input>
@@ -126,11 +126,11 @@
         </input>
   </program>
 
-  <exercise label="question11_3_3">
+  <exercise label="mc_alternativeFileReadingMethods_3">
     <statement>
       <p>3. Create a string called <c>first_forty</c> that is comprised of the first 40 characters of <c>emotion_words2.txt.</c></p>
     </statement>
-    <program xml:id="ac_11_3_3" interactive="activecode" language="python" datafile="emotion_words2.txt">
+    <program xml:id="ac_alternativeFileReadingMethods_3" label="ac_alternativeFileReadingMethods_3" interactive="activecode" language="python" datafile="emotion_words2.txt">
       <input>
           fileref = open("school_prompt2.txt", "r")
           for line in fileref:

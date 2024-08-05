@@ -161,7 +161,7 @@
   <p>Here are some examples on these methods. Be sure to experiment with them to gain a better understanding of what they do. You are expected to be comfortable using these methods!</p>
 
 
-  <program xml:id="ch4_sec10_p1" interactive="activecode" language="python">
+  <program xml:id="ac_listMethods_1" label="ac_listMethods_1" interactive="activecode" language="python">
     <input>
 # Let's create a list and fill it with some values
 mylist = []
@@ -175,7 +175,7 @@ print(mylist)
 
 <p> Another way to add items: </p>
 
-  <program xml:id="ch4_sec10_p2" interactive="activecode" language="python">
+  <program xml:id="ac_listMethods_2" label="ac_listMethods_2" interactive="activecode" language="python">
     <input>
 mylist = [5, 27, 3, 12]
 mylist.insert(1, 12)        # Insert 12 at pos 1, shift other items up
@@ -185,7 +185,7 @@ print(mylist)
 
 <p> Some return type methods: </p>
 
-  <program xml:id="ch4_sec10_p3" interactive="activecode" language="python">
+  <program xml:id="ac_listMethods_3" label="ac_listMethods_3" interactive="activecode" language="python">
     <input>
 mylist = [5, 27, 3, 12]
 print(mylist.count(12))     # How many times is 12 in mylist?
@@ -196,7 +196,7 @@ print(mylist) # mylist is unchanged as count and index are return type methods
 
 <p> Some mutating methods: </p>
 
-  <program xml:id="ch4_sec10_p4" interactive="activecode" language="python">
+  <program xml:id="ac_listMethods_4" label="ac_listMethods_4" interactive="activecode" language="python">
     <input>
 mylist = [5, 27, 3, 12]
 mylist.reverse()
@@ -221,7 +221,7 @@ print(my_second_list)  # It will be None
 <p> Some hybrid methods: </p>
 
 
-  <program xml:id="ch4_sec10_p5" interactive="activecode" language="python">
+  <program xml:id="ac_listMethods_5" label="ac_listMethods_5" interactive="activecode" language="python">
     <input>
 mylist = [5, 27, 3, 12]
 lastitem = mylist.pop() # Removes and returns the last item of the list
@@ -246,7 +246,7 @@ print(mylist)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch4_sec10_q1">
+  <exercise label="mc_listMethods_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -285,7 +285,7 @@ print(alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch4_sec10_q2">
+  <exercise label="mc_listMethods_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -324,7 +324,7 @@ print(alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch4_sec10_q3">
+  <exercise label="mc_listMethods_3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -363,7 +363,7 @@ print(alist)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch4_sec10_q4">
+  <exercise label="mc_listMethods_4">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -411,7 +411,7 @@ print(alist)
   </exercise>
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_06" interactive="activecode" language="python">
+    <program xml:id="ac_listMethods_6_scratch" label="ac_listMethods_6_scratch" interactive="activecode" language="python">
       <input>
 
 

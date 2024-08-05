@@ -1,12 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="growth_mindset">
   <title>Embracing the Journey</title>
-  <p>
-  As we wrap up this section that deals with handling errors and verifying our solutions work it is important to know that learning to code can be hard at times and sometimes frustrating. However, the feeling you get when your code works is incredible! And your brain grows as you problem solve and debug your programs. Embrace those moments. Pause and think of why things actually went from problematic to working and doing what you want it to do.
-  
+  <p>As we wrap up this section that deals with handling errors and verifying our solutions work it is important to know that learning to code can be hard at times and sometimes frustrating. However, the feeling you get when your code works is incredible! And your brain grows as you problem solve and debug your programs. Embrace those moments. Pause and think of why things actually went from problematic to working and doing what you want it to do.</p>
+
 <p>Watch this short video about Growing your Mind:
 <video xml:id="growth_mindset_video" youtube="WtKJrB5rOKs"/>
-
 </p>
 
 <p>To practice using a growth mindset, if you find yourself saying or thinking what’s in the left column, try substituting what’s in the right column instead:
@@ -61,34 +59,40 @@
 </table>
 </p>
 <p>
-<query label="growth_mindset_poll">
+<query label="poll_growthMindset_1">
   <statement>
     <p>How much do your agree with this statement: </p>
      <p> <term>  Your	intelligence is something very basic about you that you can’t change	very	much.</term></p>
   </statement>
   <choices>
     <choice>
+      <statement>
         <p>Strongly Agree.</p>
+      </statement>
     </choice>
     <choice>
+      <statement>
         <p>Agree</p>
+      </statement>
     </choice>
     <choice>
+      <statement>
         <p>Disagree</p>
+      </statement>
     </choice>
     <choice>
+      <statement>
         <p>I was able to solve the problem with a little difficulty.</p>
+      </statement>
     </choice>
 
     <choice>
       <statement>
         <p>Strongly Disagree</p>
       </statement>
-      
     </choice>
   </choices>
 </query>
-</p>
 </p>
  
 <subsection xml:id="debugging_tips">
@@ -111,9 +115,6 @@
     <li>Don’t hesitate to ask for help from peers, online communities, or mentors. A fresh perspective can often spot issues you might overlook.</li>
     <li>Take breaks if you feel frustrated. A clear mind can make problem-solving much easier.</li>
     <li>Each error is an opportunity to learn. Take note of what caused the error and how you resolved it for future reference. </li>
-  
-  
-  
   
   </ul>
 </p>

@@ -103,7 +103,7 @@
   </p> -->
 
   <p> <term>Check your understanding</term> </p>
-      <exercise label="question11_5_1">
+      <exercise label="mc_findingAFileOnYourFilesystem_1">
         <statement>
           <p>Say you are in a directory called Project. In it, you have a file with your Python code. 
           You would like to read in data from a file called “YearlyProjections.csv” which is in a folder called CompanyData, 
@@ -143,7 +143,7 @@
         </choices>
       </exercise>
 
-      <exercise label="question11_5_2">
+      <exercise label="mc_findingAFileOnYourFilesystem_2">
         <statement>
           <p>Which of the following paths are relative file paths?</p>
         </statement>

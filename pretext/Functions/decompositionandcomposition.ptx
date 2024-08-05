@@ -14,7 +14,7 @@
         first function called <c>square</c> simply computes the square of a given number.
         The second function called <c>sum_of_squares</c> makes use of square to compute
         the sum of three numbers that have been squared.</p>
-<program xml:id="ch8_sec5_p1" interactive="activecode" language="python">
+<program xml:id="ac_functionsDecompositionAndComposition_1" label="ac_functionsDecompositionAndComposition_1" interactive="activecode" language="python">
 <input>
       def square(x):
           y = x * x
@@ -94,7 +94,7 @@
       </input>
         </program>
         <p>Wrapping that up in a function, we get:</p>
-        <program xml:id="ch8_sec6_p1" interactive="activecode" language="python">
+        <program xml:id="ac_functionsDecompositionAndComposition_2" label="ac_functionsDecompositionAndComposition_2" interactive="activecode" language="python">
           <input>
       def distance(x1, y1, x2, y2):
               dx = x2 - x1

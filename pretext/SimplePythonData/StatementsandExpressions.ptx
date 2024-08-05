@@ -9,7 +9,7 @@
   <p xml:id="simple-python-data_index-0">An <term>expression</term> is a combination of values, variables, operators, and calls
             to functions. Expressions need to be evaluated.  If you ask Python to <c>print</c> an expression, the interpreter
             <term>evaluates</term> the expression and displays the result.</p>
-  <program xml:id="ch2_sec6_p1" interactive="activecode" language="python">
+  <program xml:id="ac_statementsAndExpressions_1" label="ac_statementsAndExpressions_1" interactive="activecode" language="python">
     <input>
 print(1 + 1)
         </input>
@@ -17,7 +17,7 @@ print(1 + 1)
   <p>The <em>evaluation of an expression</em> produces a value, which is why expressions
             can appear on the right hand side of assignment statements. A value all by
             itself is a simple expression, and so is a variable.  Evaluating a variable gives the value that the variable refers to.</p>
-  <program xml:id="ch2_sec6_p2" interactive="activecode" language="python">
+  <program xml:id="ac_statementsAndExpressions_2" label="ac_statementsAndExpressions_2" interactive="activecode" language="python">
     <input>
 y = 3.14
 print(y)
@@ -67,7 +67,7 @@ minute / 60
 
 <p> There are several other operators that we will learn in future chapters. But these are the ones that you're going to need more or less all of your assignments! </p>
 
-  <program xml:id="ch2_sec7_p1" interactive="activecode" language="python">
+  <program xml:id="ac_statementsAndExpressions_3" label="ac_statementsAndExpressions_3" interactive="activecode" language="python">
     <input>
 print(2 + 3)   # Addition operator, expected result is 5
 print(2 - 3)   # Subtraction operator, expected result is -1
@@ -87,7 +87,7 @@ These are integer division, and modulo. </p>
 <p>The <term>modulo operator</term>, <c> % </c> yields
             the remainder when the first operand is divided by the second (that's why you can also remember it as remainder operator). For example, <c> 5 % 3 </c> will result <c> 2 </c> as   <c> 5 = 3 * 1 + 2 </c>.  </p>
 
-  <program xml:id="ch2_sec7_p2" interactive="activecode" language="python">
+  <program xml:id="ac_statementsAndExpressions_4" label="ac_statementsAndExpressions_4" interactive="activecode" language="python">
     <input>
 print(5//3) # Integer division operator, expected result is 1
 print(60//7) # Integer division operator, expected result is 8
@@ -102,7 +102,7 @@ print(4%2) # Modulo operator, expected result is 0
    <p xml:id="simple-python-data_index-1">When a variable name appears in place of an operand, 
    python substitutes that variable name with its assigned value. For example, what if we wanted to convert 645 minutes into hours?
            </p>
-  <program xml:id="ch2_sec7_p3" interactive="activecode" language="python">
+  <program xml:id="ac_statementsAndExpressions_5" label="ac_statementsAndExpressions_5" interactive="activecode" language="python">
     <input>
 minutes = 645
 hours = minutes / 60
@@ -123,7 +123,7 @@ print(hours)
             to hours, minutes and seconds.
             If we start with a number of seconds, say 7684, the following program uses integer division and remainder to convert to an easier form.  Step through it to be sure you understand how the division and remainder operators are being used to
             compute the correct values.</p>
-  <program xml:id="ch2_sec7_c1" interactive="activecode" language="python">
+  <program xml:id="ac_statementsAndExpressions_6" label="ac_statementsAndExpressions_6" interactive="activecode" language="python">
     <input>
           total_secs = 7684
           hours = total_secs // 3600
@@ -137,7 +137,7 @@ print(hours)
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch2_sec7_q1">
+  <exercise label="mc_statementsAndExpressions_1">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
@@ -181,7 +181,7 @@ print(18 / 4)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch2_sec7_q2">
+  <exercise label="mc_statementsAndExpressions_2">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
@@ -225,7 +225,7 @@ print(18 // 4)
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch2_sec7_q3">
+  <exercise label="mc_statementsAndExpressions_3">
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
@@ -316,7 +316,7 @@ print(18 % 4)
                 left-associative rule is the exponentiation operator <title_reference>**</title_reference>. A useful hint
                 is to always use parentheses to force exactly the order you want when
                 exponentiation is involved:</p>
-    <program xml:id="ch2_sec9_p1" interactive="activecode" language="python">
+    <program xml:id="ac_statementsAndExpressions_7" label="ac_statementsAndExpressions_7" interactive="activecode" language="python">
       <input>
 print(2 ** 3 ** 2)     # the right-most ** operator gets done first!
 print((2 ** 3) ** 2)   # use parentheses to force the order you want!
@@ -330,7 +330,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
   <p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="ch2_sec9_q1">
+  <exercise label="mc_statementsAndExpressions_4">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">
@@ -374,7 +374,7 @@ print((2 ** 3) ** 2)   # use parentheses to force the order you want!
       </choice>
     </choices>
   </exercise>
-  <exercise label="ch2_sec9_q2">
+  <exercise label="mc_statementsAndExpressions_5">
     <statement>
       <p>What is the value of the following expression:</p>
       <program language="python">

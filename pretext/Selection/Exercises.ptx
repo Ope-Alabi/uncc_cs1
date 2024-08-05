@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="selection_exercises">
   <title>Practice Zone</title>
-  <exercise label="ex_6_1">
+  <exercise label="pz_branching_1">
     <statement>
       <p>What do these expressions evaluate to?</p>
       <p>
@@ -29,7 +29,7 @@
         </ol>
       </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_1_editor">
+    <program interactive="activecode" language="python" xml:id="pz_branching_1" label="pz_branching_1">
       <input>
 
         </input>
@@ -53,7 +53,7 @@
                     <p><ol marker="1"><li><p>True</p></li><li><p>False</p></li><li><p>False</p></li><li><p>False</p></li></ol></p>
                 </solution>
   </exercise>
-  <exercise label="ex_6_2">
+  <exercise label="pz_branching_2">
     <statement>
       <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator.</p>
       <p>
@@ -81,13 +81,13 @@
         </ol>
       </p>
     </statement>
-    <program xml:id="ex_6_2_editor" interactive="activecode" language="python">
+    <program xml:id="pz_branching_2" label="pz_branching_2" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_3">
+  <exercise label="pz_branching_3">
     <statement>
       <p>Write code that takes an exam mark and prints a string &#x2014; the grade for that mark &#x2014; according to this
                         scheme:</p>
@@ -111,7 +111,7 @@
           </row>
           <row>
             <cell>
-                                        [80-90)
+                                        [80-90]
                                     </cell>
             <cell>
                                         B
@@ -119,7 +119,7 @@
           </row>
           <row>
             <cell>
-                                        [70-80)
+                                        [70-80]
                                     </cell>
             <cell>
                                         C
@@ -127,7 +127,7 @@
           </row>
           <row>
             <cell>
-                                        [60-70)
+                                        [60-70]
                                     </cell>
             <cell>
                                         D
@@ -147,13 +147,18 @@
                         A closed interval includes the number, and open interval excludes it.   So 79.99999 gets grade C , but 80 gets grade B.</p>
       <p>Test your code by printing the mark and the grade for a number of different marks.</p>
     </statement>
+    <program xml:id="pz_branching_3" label="pz_branching_3" interactive="activecode" language="python">
+      <input>
+        # Write code here
+        </input>
+    </program>
   </exercise>
-  <exercise label="ex_6_6">
+  <exercise label="pz_branching_4">
     <statement>
       <p>Write code that will calculate the length of the hypotenuse function will be given the length of two sides of a right-angled triangle and it should return
                 the .  (Hint:  <c>x ** 0.5</c> will return the square root, or use <c>sqrt</c> from the math module)</p>
     </statement>
-    <program xml:id="ex_6_6_editor" interactive="activecode" language="python">
+    <program xml:id="pz_branching_4" label="pz_branching_4" interactive="activecode" language="python">
       <input>
 
 def findHypot(a,b):
@@ -174,22 +179,22 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_7">
+  <exercise label="pz_branching_5">
     <statement>
       <p>Write code that takes an integer and prints <c>True</c> if the integer is an <term>even number</term> and <c>False</c> if
                         it is <term>odd</term>.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_7_editor">
+    <program interactive="activecode" language="python" xml:id="pz_branching_5" label="pz_branching_5">
       <input># your code here
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_8">
+  <exercise label="pz_branching_6">
     <statement>
       <p>Now write the function <c>is_odd(n)</c> that returns <c>True</c> when <c>n</c> is odd
                 and <c>False</c> otherwise.</p>
     </statement>
-    <program xml:id="ex_6_8_editor" interactive="activecode" language="python">
+    <program xml:id="pz_branching_6" label="pz_branching_6" interactive="activecode" language="python">
       <input>
 
 def is_odd(n):
@@ -210,12 +215,12 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_9">
+  <exercise label="pz_branching_7">
     <statement>
       <p>Modify <c>is_odd</c> so that it uses a call to <c>is_even</c> to determine if its
                         argument is an odd integer.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_9_editor">
+    <program interactive="activecode" language="python" xml:id="pz_branching_7" label="pz_branching_7">
       <input>
 
 def is_odd(n):
@@ -259,7 +264,7 @@ testEqual(is_odd(0), False)
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_6_10">
+  <exercise label="pz_branching_8">
     <statement>
       <p>Write a function <c>is_rightangled</c> which, given the length of three sides of a triangle,
                 will determine whether the triangle is right-angled.  Assume that the third argument to the
@@ -276,7 +281,7 @@ if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
 </input>
       </program>
     </statement>
-    <program xml:id="ex_6_10_editor" interactive="activecode" language="python">
+    <program xml:id="pz_branching_8" label="pz_branching_8" interactive="activecode" language="python">
       <input>
 def is_rightangled(a, b, c):
     # your code here
@@ -297,11 +302,11 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_11">
+  <exercise label="pz_branching_9">
     <statement>
       <p>Extend the above program so that the sides can be given to the function in any order.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_11_editor">
+    <program interactive="activecode" language="python" xml:id="pz_branching_9" label="pz_branching_9">
       <input>
 
 def is_rightangled(a, b, c):
@@ -349,7 +354,7 @@ testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_6_12">
+  <exercise label="pz_branching_10">
     <statement>
       <p>3 criteria must be taken into account to identify leap years:</p>
       <p>The year is evenly divisible by 4;</p>
@@ -357,7 +362,7 @@ testEqual(is_rightangled(0.5, 0.4, 0.64031), True)
       <p>The year is also evenly divisible by 400. Then it is a leap year.</p>
       <p>Write a function that takes a year as a parameter and returns <c>True</c> if the year is a leap year, <c>False</c> otherwise.</p>
     </statement>
-    <program xml:id="ex_6_12_editor" interactive="activecode" language="python">
+    <program xml:id="pz_branching_10" label="pz_branching_10" interactive="activecode" language="python">
       <input>
 def isLeap(year):
     # your code here
@@ -379,7 +384,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_13">
+  <exercise label="pz_branching_11">
     <statement>
       <p>Implement the calculator for the date of Easter.</p>
       <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>
@@ -413,7 +418,7 @@ myTests().main()
                         years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
       <p>Your program should print an error message if the user provides a date that is out of range.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_13_editor">
+    <program interactive="activecode" language="python" xml:id="pz_branching_11" label="pz_branching_11">
       <input>
 
         </input>

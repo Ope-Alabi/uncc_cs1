@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <exercises xml:id="functions_exercises">
   <title>Practice Zone</title>
-  <exercise label="ex_5_1">
+  <exercise label="pz_functions_1">
     <statement>
       <p>Write a fruitful function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
                         including <title_reference>n</title_reference>.   So <c>sumTo(10)</c> would be <c>1+2+3...+10</c> which would return the value 55.  Use the
                         equation  (n * (n + 1)) / 2.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_5_1_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_functions_1" label="ac_pz_functions_1">
       <input>
 
 def sumTo(n):
@@ -45,11 +45,11 @@ print("The sum from 1 to 5 is",t)
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_5_2">
+  <exercise label="pz_functions_2">
     <statement>
       <p>Write a function <title_reference>areaOfCircle(r)</title_reference> which returns the area of a circle of radius <title_reference>r</title_reference>.  Make sure you use the math module in your solution.</p>
     </statement>
-    <program xml:id="ex_5_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_functions_2" label="ac_pz_functions_2" interactive="activecode" language="python">
       <input>
 
 def areaOfCircle(r):
@@ -69,12 +69,12 @@ myTests().main()
                     </input>
     </program>
   </exercise>
-  <exercise label="ex_5_3">
+  <exercise label="pz_functions_3">
     <statement>
       <p>Rewrite the function <c>sumTo(n)</c> that returns the sum of all integer numbers up to and
                         including <title_reference>n</title_reference>.   This time use the accumulator pattern.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_5_3_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_functions_3" label="ac_pz_functions_3">
       <input>
 
 def sumTo(n):
@@ -111,12 +111,12 @@ print("The sum from 1 to 5 is",t)
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_5_4">
+  <exercise label="pz_functions_4">
     <statement>
       <p>Write a function called <c>myPi</c> that will return an approximation of PI (3.14159&#x2026;).  Use the <url href="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80" visual="http://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80">Leibniz</url>
                                  approximation.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_5_4_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_functions_4" label="ac_pz_functions_4">
       <input>
 
  def myPi(iters):
@@ -149,12 +149,12 @@ print(pi_approx)
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_5_5">
+  <exercise label="pz_functions_5">
     <statement>
       <p>Write a function called <title_reference>myPi</title_reference> that will return an approximation of PI (3.14159&#x2026;).  Use the <url href="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama" visual="http://en.wikipedia.org/wiki/Madhava_of_Sangamagrama">Madhava</url>
                          approximation.</p>
     </statement>
-    <program xml:id="ex_5_5_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_functions_5" label="ac_pz_functions_5" interactive="activecode" language="python">
       <input>
 
 def myPi(iters):
@@ -165,11 +165,11 @@ def myPi(iters):
                     </input>
     </program>
   </exercise>
-  <exercise label="ex_mod_1">
+  <exercise label="pz_functions_6">
     <statement>
       <p>Use a <c>for</c> statement to print 10 random numbers.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_mod_1_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_functions_6" label="ac_pz_functions_6">
       <input>
 
         </input>
@@ -187,21 +187,21 @@ for counter in range(howmany):
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_mod_2">
+  <exercise label="pz_functions_7">
     <statement>
       <p>Repeat the above exercise but this time print 10 random numbers between 25 and 35, inclusive.</p>
     </statement>
-    <program xml:id="ex_mod_2_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_functions_7" label="ac_pz_functions_7" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
-  <exercise label="ex_mod_3">
+  <exercise label="pz_functions_8">
     <statement>
       <p>The <term>Pythagorean Theorem</term> tells us that the length of the hypotenuse of a right triangle is related to the lengths of the other two sides.  Look through the <c>math</c> module and see if you can find a function that will compute this relationship for you.  Once you find it, write a short program to try it out.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_mod_3_editor">
+    <program interactive="activecode" language="python" xml:id="ac_pz_functions_8" label="ac_pz_functions_8">
       <input>
 
         </input>
@@ -219,11 +219,11 @@ print(hypotenuse)
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_mod_4">
+  <exercise label="pz_functions_9">
     <statement>
       <p>Search on the internet for a way to calculate an approximation for <term>pi</term>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
     </statement>
-    <program xml:id="ex_mod_4_editor" interactive="activecode" language="python">
+    <program xml:id="ac_pz_functions_9" label="ac_pz_functions_9" interactive="activecode" language="python">
       <input>
 
         </input>

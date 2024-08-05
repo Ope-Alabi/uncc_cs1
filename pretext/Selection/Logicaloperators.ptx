@@ -14,7 +14,7 @@
   <p>Finally, the <c>not</c> operator negates a boolean expression, so <c>not  x &gt; y</c>
 			is true if <c>x &gt; y</c> is false, that is, if <c>x</c> is less than or equal to
 			<c>y</c>.</p>
-  <program xml:id="ch5_sec9_p1" interactive="activecode" language="python">
+  <program xml:id="ac_logicalOperators_1" label="ac_logicalOperators_1" interactive="activecode" language="python">
 	<input>
 x = 5
 print(x &gt; 0 and x &lt; 10)
@@ -236,7 +236,7 @@ print(n % 2 == 0 or n % 3 == 0)
   <p>
 	<term>Check your understanding</term>
   </p>
-  <exercise label="ch5_sec9_q1">
+  <exercise label="mc_logicalOperators_1">
 	<statement>
 	  <p>What is a correct Python expression for checking to see if a number stored in a variable x is between 0 and 5?</p>
 	</statement>
@@ -267,7 +267,7 @@ print(n % 2 == 0 or n % 3 == 0)
 	  </choice>
 	</choices>
   </exercise>
-  <exercise label="ch5_sec9_q2">
+  <exercise label="mc_logicalOperators_2">
 	<statement>
 	  <p>Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck.
 			If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?</p>

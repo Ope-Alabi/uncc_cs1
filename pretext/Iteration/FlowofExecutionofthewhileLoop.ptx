@@ -16,7 +16,7 @@
     You can see the value of <c>count</c> change as the loop iterates through the values from 10 to 0.
   </p>
 
-  <program xml:id="ch6_sec3_c1" interactive="activecode" language="python">
+  <program xml:id="ac_flowOfExecutionOfTheWhileLoop_1" label="ac_flowOfExecutionOfTheWhileLoop_1" interactive="activecode" language="python">
     <input>
       count = 10
       while count > 0:

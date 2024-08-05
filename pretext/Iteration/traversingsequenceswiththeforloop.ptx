@@ -7,7 +7,7 @@
 
     <p>It is possible to perform <term>list traversal</term> using iteration by item as well as iteration by index.</p>
 
-  <program xml:id="ch6_sec10_p1" interactive="activecode" language="python">
+  <program xml:id="ac_traversingSequencesWithTheForLoop_1" label="ac_traversingSequencesWithTheForLoop_1" interactive="activecode" language="python">
     <input>
       fruits = ["apple", "orange", "banana", "cherry"]
 
@@ -32,7 +32,7 @@
         </p>
       
         <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
-        <program xml:id="ch6_sec11_p1" interactive="activecode" language="python">
+        <program xml:id="ac_traversingSequencesWithTheForLoop_2" label="ac_traversingSequencesWithTheForLoop_2" interactive="activecode" language="python">
           <input>
             for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
               invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
@@ -45,7 +45,7 @@
           The body is performed once for each name.
           The same was true for the sequence of integers created by the <c>range</c> function.
         </p>
-        <program xml:id="ch6_sec11_p2" interactive="activecode" language="python">
+        <program xml:id="ac_traversingSequencesWithTheForLoop_3" label="ac_traversingSequencesWithTheForLoop_3" interactive="activecode" language="python">
           <input>
             for avalue in range(10):
               print(avalue)
@@ -53,7 +53,7 @@
         </program>
       
         <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
-        <program xml:id="ch6_sec11_p3" interactive="activecode" language="python">
+        <program xml:id="ac_traversingSequencesWithTheForLoop_4" label="ac_traversingSequencesWithTheForLoop_4" interactive="activecode" language="python">
           <input>
             for achar in "Go Spot Go":
               print(achar)
@@ -69,7 +69,7 @@
   
 
   <p><term>Check your understanding</term></p>
-  <exercise label="ch6_sec10_q1">
+  <exercise label="mc_traversingSequencesWithTheForLoop_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -122,7 +122,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch6_sec11_q1">
+  <exercise label="mc_traversingSequencesWithTheForLoop_2">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
@@ -173,7 +173,7 @@
     </choices>
   </exercise>
 
-  <exercise label="ch6_sec11_q2">
+  <exercise label="mc_traversingSequencesWithTheForLoop_3">
     <statement>
       <p>How many times is the word HELLO printed by the following statements?</p>
       <program language="python">
