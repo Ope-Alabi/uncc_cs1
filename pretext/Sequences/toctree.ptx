@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    4<title>Sequences</title>
-    4<xi:include href="./intro_sequences.ptx"/>
-    4<xi:include href="./StringsLists.ptx"/>
-    4<xi:include href="./SequenceIndexing.ptx"/>
-    4<xi:include href="./creation_vs_indexing.ptx"/>
-    4<xi:include href="./SequenceLength.ptx"/>
-    4<xi:include href="./slice_operator.ptx"/>
-    4<xi:include href="./concatenation_and_repetition.ptx"/>
-    4<xi:include href="./sequence_mutability.ptx"/>
+    <title>Sequences</title>
+    <xi:include href="./intro_sequences.ptx"/>
+    <xi:include href="./StringsLists.ptx"/>
+<xi:include href="./SequenceIndexing.ptx"/>
+    <xi:include href="./creation_vs_indexing.ptx"/>
+    <xi:include href="./SequenceLength.ptx"/>
+    <xi:include href="./slice_operator.ptx"/>
+    <xi:include href="./concatenation_and_repetition.ptx"/>
+    <xi:include href="./sequence_mutability.ptx"/>
+    <xi:include href="./Glossary.ptx"/>
+
 
 
 </chapter>

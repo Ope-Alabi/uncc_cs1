@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="more-about-iteration_exercises">
   <title>Practice Zone</title>
-  <exercise label="ex_7_1">
+  <exercise label="ex_iter-1">
     <statement>
       <p>Write code that calculates and prints the first
                 5 triangular numbers. It should
@@ -13,9 +13,69 @@
 5       15</pre>
       <p>(<em>hint: use a web search to find out what a triangular number is.</em>)</p>
     </statement>
-    <program xml:id="ex_7_1_editor" interactive="activecode" language="python">
+    <program xml:id="ex_iter-1editor" interactive="activecode" language="python">
       <input># your code here
         </input>
     </program>
   </exercise>
+  <exercise label="ex_iter-2">
+    <statement>
+      <p> Write a program that initializes a list with a set of predefined elements and then prints each element of the list on a new line.
+      </p> 
+    </statement>
+    <program xml:id="ex_iter-2_editor" interactive="activecode" language="python">
+      <input># your code here
+        </input>
+    </program>
+  </exercise>
+  <exercise label="ex_iter-4">
+    <statement>
+      <p>  Write a program that prompts the user to enter a line of text and then prints each character of the text on a new line.
+      </p> 
+    </statement>
+    <program xml:id="ex_iter-4_editor" interactive="activecode" language="python">
+      <input># your code here
+        </input>
+    </program>
+  </exercise>
+
+  <exercise label="ex_iter-3">
+    <statement>
+      <p>Write a program that repeatedly prompts the user to enter a word and checks whether the word starts with a vowel (a, e, i, o, u). The program should display a message indicating whether the word starts with a vowel or not. The user can exit the program by entering a minus sign ("-").
+     </p> 
+    </statement>
+    <program xml:id="ex_iter-3_editor" interactive="activecode" language="python">
+      <input># your code here
+        </input>
+    </program>
+  </exercise>
+
+  
+
+  <query label="practice_feedback_6">
+    <statement>
+      <p>Which of the following best describes your experience with these problems?</p>
+    </statement>
+    <choices>
+      <choice>
+          <p>I found the problems very confusing and didn't know where to start.</p>
+      </choice>
+      <choice>
+          <p>I started solving the problems but encountered significant difficulties.</p>
+      </choice>
+      <choice>
+          <p>I managed to solve the problems, but it was very challenging.</p>
+      </choice>
+      <choice>
+          <p>I solved the problems with some minor difficulties.</p>
+      </choice>
+      <choice>
+        <statement>
+          <p>I found the problems straightforward and solved them easily.</p>
+        </statement>
+        <feedback>
+                </feedback>
+      </choice>
+    </choices>
+  </query>
 </exercises>

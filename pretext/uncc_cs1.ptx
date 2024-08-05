@@ -25,10 +25,10 @@
         <xi:include href="./ClassesBasics/toctree.ptx"/>
         <!--<xi:include href="./Exceptions/toctree.ptx"/>-->
         <xi:include href="./ClassesDiggingDeeper/toctree.ptx"/>
-		<xi:include href="./AdditionalTopics/toctree.ptx"/>
+		<!-- <xi:include href="./AdditionalTopics/toctree.ptx"/>
         <xi:include href="./IntroRecursion/toctree.ptx"/>
         <xi:include href="./Lists/toctree.ptx"/>
-        <xi:include href="./Strings/toctree.ptx"/>
+        <xi:include href="./Strings/toctree.ptx"/> -->
 
 
         <!--<xi:include href="./Inheritance/toctree.ptx"/>-->

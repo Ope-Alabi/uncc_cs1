@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<section xml:id="general-intro_algo-prog">
+  <title>From Algorithms to Programs</title>
+<p>
+
+<term>Programming languages</term> are the tools that allow humans to communicate instructions to computers. 
+These languages provide a set of syntax and semantics that define how to write commands that a computer can understand and execute. 
+</p><p>
+Programmers write code in <term> high-level programming </term>languages like Python, Java, or C++. 
+These languages are designed to be readable and writable by humans, using syntax that resembles natural language and mathematical notation.
+</p>
+<p>
+The written instructions in a high-level language are called <term>source code</term>. 
+This code specifies the tasks the programmer wants the computer to perform. 
+Programmers then utilize tools to translate the source code into a format that can be exectuted on a computer.
+These tools are categoreised by two main types,compilers or interpretes. 
+</p>
+<p>
+Some programming languages, like C++ and Java, use compilers. 
+A compiler translates the entire source code into machine code, which is the low-level language consisting of binary instructions that the computer's processor can execute directly.
+Other languages, like Python and JavaScript, use interpreters which translates the source code into machine code line-by-line or statement-by-statement at runtime, executing the instructions as it goes.
+In both cases the result of compilation or interpretation is machine code. Machine code is specific to the architecture of the computer's CPU.
+
+The CPU reads and executes the machine code instructions, performing the tasks specified by the original source code. 
+This might include calculations, data manipulation, and interaction with hardware components like memory and input/output devices. By using programming languages, programmers can create software that performs complex tasks, automates processes, and interacts with users and other systems.
+</p>
+
+</section>

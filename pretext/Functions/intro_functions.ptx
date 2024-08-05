@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="intro_sequences">
+<section xml:id="intro_functions">
     <title>Introduction: Functions</title>
     <video xml:id="function_intro" youtube="4wKtB57J5J4" width="auto"/>
     <p>In Python, a <term>function</term> is a named sequence of statements
@@ -10,10 +10,9 @@
     <subsection xml:id="subsec-Learning-Goals">
         <title>Learning Goals</title>
         <ul>
-            <li><p>Template Text</p></li>
-            <li><p>Template Text</p></li>
-            <li><p>Template Text</p></li>
-            <li><p>Template Text</p></li>
+            <li><p>Understand the Concept and Purpose of Functions</p></li>
+            <li><p>Learn How to Define and Call Functions in Python</p></li>
+            <li><p>Understand concepts such as return values, scope, recursion, and lambda functions.</p></li>
         </ul> 
         <!-- <subsubsection xml:id="subsub-sect">
         <title>Test Title</title> 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="files_exercises">
   <title>Practice Zone</title>
-  <datafile label="studentdata" filename="studentdata.txt" rows="5" cols="6" editable="no" hide="yes"> 
+  <datafile label="studentdata" filename="studentdata.txt" rows="1" cols="6" editable="no" hide="yes"> 
     <pre>
       joe 10 15 20 30 40
       bill 23 16 19 22

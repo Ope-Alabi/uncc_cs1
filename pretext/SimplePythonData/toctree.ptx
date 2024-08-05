@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-<title>Simple Python Data</title>
+<title>Python Basics</title>
 <xi:include href="./intro-VariablesExpressionsandStatements.ptx"/>
+<xi:include href="./InstructionToExec.ptx"/>
+<xi:include href="./ThePythonProgrammingLanguage.ptx"/>
+<xi:include href="./SpecialWaystoExecutePythoninthisBook.ptx"/>
+<xi:include href="./ATypicalFirstProgram.ptx"/>
+<xi:include href="./Comments.ptx"/>
 <xi:include href="./ValuesandDataTypes.ptx"/>
-<!-- 4<xi:include href="./Typeconversionfunctions.ptx"/> -->
 <xi:include href="./Variables.ptx"/>
-<!-- 4<xi:include href="./VariableNamesandKeywords.ptx"/> -->
 <xi:include href="./StatementsandExpressions.ptx"/>
-<!-- 4<xi:include href="./OperatorsandOperands.ptx"/> -->
 <xi:include href="./Output.ptx"/>
 <xi:include href="./Input.ptx"/>
-<!-- 4<xi:include href="./OrderofOperations.ptx"/> -->
 <xi:include href="./Reassignment.ptx"/>
-<!-- 4<xi:include href="./UpdatingVariables.ptx"/> -->
-
 <xi:include href="./Glossary.ptx"/>
 <xi:include href="./Exercises.ptx"/>
 

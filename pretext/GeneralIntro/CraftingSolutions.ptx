@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<section xml:id="general-intro_ct">
+  <title>Crafting Solutions</title>
+<p>
+
+<term>
+</term>
+
+Computational problem solving involves breaking down complex problems into manageable steps to develop efficient solutions. 
+Flowcharts and pseudocode are two powerful tools that can greatly assist in this process. 
+</p>
+<p><term>Flowcharts</term> are visual representations of the steps involved in solving a problem.  They help us see the big picture.
+
+Think of them as maps for your mind. They let you see the entire process at a glance, helping you understand how each piece fits together. 
+Imagine being able to visualize your path to the solution—how cool is that?
+</p> <p>Flowcharts are an excellent way to communicate ideas and processes to others, even if they do not have a deep technical background.
+
+They use various symbols to denote different types of actions or steps in a process, connected by arrows that show the flow of the process.
+<image source="GeneralIntro/Figures/flowchart_symbols.png"  alt="flowchart symbols"/>
+
+
+</p><p>On the other hand, <term>pseudocode</term> is a high-level description of a solution, written in a way that resembles programming syntax but is designed for human understanding rather than machine execution.
+ </p>
+ <p>
+  It's a way to describe the steps in solving a problem without worrying about the syntax of a specific programming language.
+It allows the focus to remain on the logic of the solution rather than the specifics of a programming language. 
+This makes it easier to translate the solution into any programming language later on.
+ </p><p>
+Similar to flowcharts pseudocode serves as a form of documentation for algorithms and processes, making it easier to understand, and communicate to others.
+Here's a simple example to illustrate how pseudocode and flowcharts can work together to solve a problem.
+</p>
+<p>
+Problem: Find the largest number in a list.
+</p>
+<p>
+<em>Pseudocode</em>
+<ol>
+<li>Start</li>
+<li>Initialize the largest number as the first element of the list.</li>
+<li><p>For each number in the list:</p>
+<ol>
+   <li><p>If the current number is greater than the largest number:</p> 
+    <ol>
+   <li>
+      Update the largest number to be the current number.
+   </li>
+
+</ol>
+</li>
+</ol>
+</li>
+    <li>Display largest number</li>
+<li>End</li>
+</ol>
+</p>
+<p>
+<em>Flowchart</em>
+<image source="GeneralIntro/Figures/findMax_flowchart.png" width="30%" alt="find largest value"/>
+
+</p>
+<p>
+With flowcharts and pseudocode we can ensure that the logical flow and structure of the solution are well-defined before actual coding begins.
+</p>
+<p>
+In summary, here's why you should get excited about using these tools when creating computational solutions:
+
+<ul>
+  <li>
+    <p>
+      Starting a new coding project can feel overwhelming, but with flowcharts and pseudocode, you have a roadmap to guide you. As you see your ideas taking shape, your confidence will soar.
+    </p>
+  </li>
+  <li>
+    <p>
+      By planning ahead with these tools, you'll save time in the long run. You'll write cleaner code, spend less time debugging, and have more fun experimenting with new ideas.
+    </p>
+  </li>
+  <li>
+    <p>
+      Using flowcharts and pseudocode isn't just about solving one problem — it's about developing skills that will make you a better problem solver overall. These tools help you think critically, plan effectively, and communicate your ideas clearly.
+    </p>
+  </li>
+  
+</ul>
+
+
+</p>
+</section>
