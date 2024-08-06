@@ -30,8 +30,13 @@ Similar to flowcharts pseudocode serves as a form of documentation for algorithm
 Here's a simple example to illustrate how pseudocode and flowcharts can work together to solve a problem.
 </p>
 <p>
-Problem: Find the largest number in a list.
+Problem: Find the largest number value in a list of numbers.
 </p>
+<p>
+  <em>Flowchart</em>
+  <image source="GeneralIntro/Figures/findMax_flowchart.png" width="30%" alt="find largest value"/>
+  
+  </p>
 <p>
 <em>Pseudocode</em>
 <ol>
@@ -53,13 +58,10 @@ Problem: Find the largest number in a list.
 <li>End</li>
 </ol>
 </p>
-<p>
-<em>Flowchart</em>
-<image source="GeneralIntro/Figures/findMax_flowchart.png" width="30%" alt="find largest value"/>
 
-</p>
 <p>
-With flowcharts and pseudocode we can ensure that the logical flow and structure of the solution are well-defined before actual coding begins.
+Looking at the flowchart we can quickly tell what actions and in what order we need to take to solve the problem while reading the pseudocode gives us a desecription of each action.
+By using such tools we can ensure that the logical flow and structure of the solution are well-defined before actual coding begins.
 </p>
 <p>
 In summary, here's why you should get excited about using these tools when creating computational solutions:
