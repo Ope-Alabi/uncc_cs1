@@ -40,23 +40,18 @@
             understand the general implication of this sentence.</p>
   <p>Although formal and natural languages have many features in common &#x2014; tokens,
             structure, syntax, and semantics &#x2014; there are many differences:</p>
-  <glossary sorted="False">
-    <gi>
-      <title>ambiguity</title>
-      <p>Natural languages are full of ambiguity, which people deal with by
+  <p>
+      <term><i>ambiguity</i></term> - Natural languages are full of ambiguity, which people deal with by
                             using contextual clues and other information. Formal languages are
                             designed to be nearly or completely unambiguous, which means that any
                             statement has exactly one meaning, regardless of context.</p>
-    </gi>
-    <gi>
-      <title>redundancy</title>
-      <p>In order to make up for ambiguity and reduce misunderstandings, natural
+   
+   <p>  <term><i>redundancy</i></term> - In order to make up for ambiguity and reduce misunderstandings, natural
                             languages employ lots of redundancy. As a result, they are often
                             verbose.  Formal languages are less redundant and more concise.</p>
-    </gi>
-    <gi>
-      <title>literalness</title>
-      <p>Formal languages mean exactly what they say.  On the other hand,
+    
+    <p>
+      <term><li>literalness</li></term> - Formal languages mean exactly what they say.  On the other hand,
                             natural languages are full of idiom and metaphor. If someone says, <q>The
                             other shoe fell</q>, there is probably no shoe and nothing falling.</p>
       <note>
@@ -64,29 +59,26 @@
                                 meaning of the other shoe falling.  <em>Yahoo! Answers</em> thinks it
                                 knows!</p>
       </note>
-    </gi>
+    
+ 
+
   <p>People who grow up speaking a natural language&#x2014;everyone&#x2014;often have a hard
             time adjusting to formal languages. In some ways, the difference between formal
             and natural language is like the difference between poetry and prose, but more
             so:</p>
-    <gi>
-      <title>poetry</title>
-      <p>Words are used for their sounds as well as for their meaning, and the
+
+     <p><term><li>poetry</li></term> - Words are used for their sounds as well as for their meaning, and the
                             whole poem together creates an effect or emotional response. Ambiguity
                             is not only common but often deliberate.</p>
-    </gi>
-    <gi>
-      <title>prose</title>
-      <p>The literal meaning of words is more important, and the structure
+  
+    <p>
+      <term><li>prose</li></term> - The literal meaning of words is more important, and the structure
                             contributes more meaning. Prose is more amenable to analysis than
                             poetry but still often ambiguous.</p>
-    </gi>
-    <gi>
-      <title>program</title>
-      <p>The meaning of a computer program is unambiguous and literal, and can
+   <p>
+      <term><li>program</li></term> - The meaning of a computer program is unambiguous and literal, and can
                             be understood entirely by analysis of the tokens and structure.</p>
-    </gi>
-  </glossary>
+   
   <p>Here are some suggestions for reading programs (and other formal languages).
             First, remember that formal languages are much more dense than natural
             languages, so it takes longer to read them. Also, the structure is very
@@ -98,6 +90,8 @@
   <p>
     <term>Check your understanding</term>
   </p>
+
+
   <exercise label="mc_formalAndNaturalLanguages_1">
     <statement>
       <p>The differences between natural and formal languages include:</p>
