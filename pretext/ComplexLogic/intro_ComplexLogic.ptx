@@ -11,10 +11,10 @@
   <subsection xml:id="subsec-Learning-Goals">
       <title>Learning Goals</title>
       <ul>
-          <li><p>Gain the ability to effectively utilize nested lists in solving complex programming problems</p></li>
+          <li><p>Learn how to utilize nested lists in solving complex programming problems</p></li>
           <li><p>Understand the significance of the accumulator pattern in various programming scenarios</p></li>
-          <li><p>Understand fundamental concepts of objects and references, and their importance in memory management and program behavior.</p></li>
-          <li><p>Learn to effectively use lists as parameters in functions, understanding the implications and potential side effects.</p></li>
+          <li><p>Understand fundamental concepts of objects and references, and their importance in memory management and program behavior</p></li>
+          <li><p>Learn to effectively use lists as parameters in functions, understanding the implications and potential side effects</p></li>
       </ul> 
       <!-- <subsubsection xml:id="subsub-sect">
       <title>Test Title</title> 
