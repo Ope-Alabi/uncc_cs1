@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <publication>
   <!-- directories are relative to the main source PreTeXt file -->
+
   <source>
-    <directories external="../assets" generated="../generated-assets"/>
+    <directories external="Figures" generated="GenFigs" />
+    <version include="html"/>
   </source>
 
   <metadata>
@@ -13,11 +15,10 @@
   </metadata>
 
   <html>
-    <platform host="runestone"/>
-    <index-page ref="thinkcspy"/>
-  </html>
+    <platform host="runestone" />
+    <!-- knowled checkpoints interfere with ActiveCode problems -->
+    <knowl exercise-inline="no" example="no" listing="yes" />
+</html>
 
-  <pdf>
-    <index-page ref="thinkcspy"/>
-  </pdf>
+<stringparam key="debug.rs.services.file" value="/Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml" />
 </publication>
