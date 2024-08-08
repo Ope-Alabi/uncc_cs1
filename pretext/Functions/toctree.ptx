@@ -10,7 +10,7 @@
 <xi:include href="./modules.ptx"/>
 <!-- <xi:include href="./MoreAboutUsingModules.ptx"/> -->
 
-<!-- <xi:include href="./TheAccumulatorPattern.ptx"/> -->
+<xi:include href="./TheAccumulatorPattern.ptx"/>
 <!-- <xi:include href="./Functionscancallotherfunctions.ptx"/> -->
 <!-- <xi:include href="./Composition.ptx"/> -->
 <!-- <xi:include href="./FlowofExecutionSummary.ptx"/> -->

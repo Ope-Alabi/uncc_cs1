@@ -3,7 +3,7 @@
   <title>Reading a File</title>
   <p>As an example, suppose we have a text file called <c>olympics.txt</c> that contains the data representing about olympians across different years. The contents of the file are shown at the bottom of the page.</p>
   <p>To open this file, we would call the open function. The variable, fileref, now holds a reference to the file object returned by <c>open</c>. When we are finished with the file, we can close it by using the <c>close</c> method. After the file is closed any further attempts to use <c>fileref</c> will result in an error.</p>
-  <datafile label="olympics" filename="olympics.txt" rows="10" cols="6" editable="no" hide="no"> 
+  <datafile label="olympics_file_reading_section" filename="olympics.txt" rows="10" cols="6" editable="no" hide="no"> 
     <pre>
       Name,Sex,Age,Team,Event,Medal
       A Dijiang,M,24,China,Basketball,NA

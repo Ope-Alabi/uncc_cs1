@@ -10,7 +10,7 @@
 
 
 
-        <subsection xml:id="subsec-Learning-Goals">
+        <subsection xml:id="modules-learning-Goals">
         <title>Learning Goals</title>
         <ul>
             <li><p>Understand that Python is extensible through modules</p></li>
@@ -20,7 +20,7 @@
         </subsubsection> -->
     </subsection>
 
-    <subsection xml:id="subsec-Objectives">
+    <subsection xml:id="modules-objectives">
         <title>Objectives</title>
         <ul>
             <li><p>To import an entire module</p></li>

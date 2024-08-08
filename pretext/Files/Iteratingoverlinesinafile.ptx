@@ -32,7 +32,7 @@
             change. We can then take the values corresponding to year, global average temperature, and global emmisions to
             construct a simple sentence.</p>
 
-  <datafile label="olympics" filename="olympics.txt" rows="10" cols="6" editable="no" hide="yes"> 
+  <datafile label="olympics_file_iterating_over_lines" filename="olympics.txt" rows="10" cols="6" editable="no" hide="yes"> 
     <pre>
       Name,Sex,Age,Team,Event,Medal
       A Dijiang,M,24,China,Basketball,NA
@@ -157,7 +157,7 @@
 
 
 
-  <datafile label="emotion" filename="emotion_words2.txt" rows="10" cols="6" editable="no" hide="yes"> 
+  <datafile label="emotion_iterating_sec" filename="emotion_words2.txt" rows="10" cols="6" editable="no" hide="yes"> 
     <pre>
       Sad upset blue down melancholy somber bitter troubled
       Angry mad enraged irate irritable wrathful outraged infuriated

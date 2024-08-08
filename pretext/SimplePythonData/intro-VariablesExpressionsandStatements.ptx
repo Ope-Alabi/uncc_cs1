@@ -7,7 +7,7 @@
             The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental
             building blocks of Python.</p>
 
-    <subsection xml:id="subsec-Learning-Goals">
+    <subsection xml:id="pythonBasics-learning-goals">
         <title>Learning Goals</title>
         <ul>
             <li><p>To understand Python's storage model</p></li>
@@ -21,7 +21,7 @@
         </subsubsection> -->
     </subsection>
 
-    <subsection xml:id="subsec-Objectives">
+    <subsection xml:id="pythonBasics-bjectives">
         <title>Objectives</title>
         <ul>
             <li><p>Given some sample code identify variables that reference an object of a particular type</p></li>
