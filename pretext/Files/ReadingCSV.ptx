@@ -7,7 +7,7 @@
   
   <p>All file methods that we have mentioned - <c>read</c>, <c>readline</c>, and <c>readlines</c>, and simply iterating over the file object itself - will work on CSV files. In our examples, we will iterate over the lines. Because the values on each line are separated with commas, we can use the <c>.split()</c> method to parse each line into a collection of separate value.</p>
 
-  <datafile label="olympics" filename="olympics.txt" rows="10" cols="6" editable="no" hide="yes"> 
+  <datafile label="olympics_file_reading_csv" filename="olympics.txt" rows="10" cols="6" editable="no" hide="yes"> 
     <pre>
       Name,Sex,Age,Team,Event,Medal
       A Dijiang,M,24,China,Basketball,NA

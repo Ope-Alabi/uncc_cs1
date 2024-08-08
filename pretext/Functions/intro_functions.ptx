@@ -7,7 +7,7 @@
               organize programs into chunks that match how we think about
               the solution to the problem.</p>
     
-    <subsection xml:id="functions-Learning-Goals">
+    <subsection xml:id="functions-learning-goals">
         <title>Learning Goals</title>
         <ul>
             <li><p>Understand the Concept and Purpose of Functions</p></li>
@@ -19,7 +19,7 @@
         </subsubsection> -->
     </subsection>
   
-    <subsection xml:id="functions-Objectives">
+    <subsection xml:id="functions-objectives">
         <title>Objectives</title>
         <ul>
             <li><p>identify formal parameters and parameter values in a code sample</p></li>

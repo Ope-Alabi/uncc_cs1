@@ -8,7 +8,7 @@
   focuses on revisiting these fundamental topics and deepening our mastery of them by crafting solutions that require these concepts to work together.</p> 
 
 
-  <subsection xml:id="subsec-Learning-Goals">
+  <subsection xml:id="complexLogic-learning-goals">
       <title>Learning Goals</title>
       <ul>
           <li><p>Learn how to utilize nested lists in solving complex programming problems</p></li>
@@ -21,7 +21,7 @@
       </subsubsection> -->
   </subsection>
 
-  <subsection xml:id="subsec-Objectives">
+  <subsection xml:id="complexLogic-Objectives">
       <title>Objectives</title>
       <ul>
           <li><p>Utilize nested lists in solving complex programming problems.</p></li>

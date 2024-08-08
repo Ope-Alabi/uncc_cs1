@@ -379,7 +379,7 @@ print(time_when_alarm_go_off)
       </ol>
     </p>
     <p>Here is another one for you to try:</p>
-<exercise label="ac_knowYourErrorMessages_6">
+<exercise label="mc_knowYourErrorMessages_6">
     <program xml:id="ac_knowYourErrorMessages_6" label="ac_knowYourErrorMessages_6" interactive="activecode" language="python">
       <input>
 n = input("What time is it now (in hours)?")
@@ -399,7 +399,7 @@ print("The time is now", q)
 </exercise>
 
     <p>And one last bit of code to fix.</p>
-<exercise label="ac_knowYourErrorMessages_7">
+<exercise label="mc_knowYourErrorMessages_7">
     <program xml:id="ac_knowYourErrorMessages_7" label="ac_knowYourErrorMessages_7" interactive="activecode" language="python">
       <input>
 present_time = input("Enter the present time in hours:")
