@@ -1,32 +1,33 @@
 <?xml version="1.0"?>
 <section xml:id="complex-logic_intro">
   <title>Complex Logic Introduction</title>
-  <p>Believe it or not, in the past seven weeks we've covered nearly all of the fundamental constructs within programming. 
+  <p> 
+    Believe it or not, in the past 9 weeks we've covered nearly all of the fundamental constructs within programming. 
   While there is certainly much more to learn and discover, virtually any programming language you will see in the future offers some form
   of branching, looping, and function definition. That is not to say we have mastered these topics yet. This week of class and this chapter
-  focuses on revisiting these fundamental topics and deepening our mastery of them.</p>
+  focuses on revisiting these fundamental topics and deepening our mastery of them by crafting solutions that require these concepts to work together.</p> 
 
 
-  <subsection xml:id="subsec-Learning-Goals">
+  <subsection xml:id="complexLogic-learning-goals">
       <title>Learning Goals</title>
       <ul>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
+          <li><p>Learn how to utilize nested lists in solving complex programming problems</p></li>
+          <li><p>Understand the significance of the accumulator pattern in various programming scenarios</p></li>
+          <li><p>Understand fundamental concepts of objects and references, and their importance in memory management and program behavior</p></li>
+          <li><p>Learn to effectively use lists as parameters in functions, understanding the implications and potential side effects</p></li>
       </ul> 
       <!-- <subsubsection xml:id="subsub-sect">
       <title>Test Title</title> 
       </subsubsection> -->
   </subsection>
 
-  <subsection xml:id="subsec-Objectives">
+  <subsection xml:id="complexLogic-Objectives">
       <title>Objectives</title>
       <ul>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
-          <li><p>Template Text</p></li>
+          <li><p>Utilize nested lists in solving complex programming problems.</p></li>
+          <li><p>Apply the accumulator pattern to manipulate and process strings.</p></li>
+          <li><p>Recognize how objects and references impact the functionality of programs.</p></li>
+          <li><p>Construct data processing pipelines that combine nested lists, accumulators, and functions.</p></li>
       </ul>
   </subsection>    
 </section>

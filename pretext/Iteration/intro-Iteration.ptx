@@ -12,7 +12,7 @@
     In this chapter, we are going to look at two common forms of iteration: the <c>while</c> statement and the <c>for</c> statement.
   </p>
 
-  <subsection xml:id="subsec-Learning-Goals">
+  <subsection xml:id="iteration-learning-goals">
     <title>Learning Goals</title>
     <ul>
       <li><p>To understand iteration as a function of programming</p></li>
@@ -22,7 +22,7 @@
     </ul>
   </subsection>
 
-  <subsection xml:id="subsec-Objectives">
+  <subsection xml:id="iteration-objectives">
     <title>Objectives</title>
     <ul>
       <li><p>Read and write loop statements</p></li>

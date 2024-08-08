@@ -68,7 +68,7 @@
   </table>
 
 
-  <subsection xml:id="subsec-Learning-Goals">
+  <subsection xml:id="files-learning-goals">
       <title>Learning Goals</title>
       <ul>
           <li><p>To understand how to manipulate strings for text processing</p></li>
@@ -84,7 +84,7 @@
       </subsubsection> -->
   </subsection>
 
-  <subsection xml:id="subsec-Objectives">
+  <subsection xml:id="files-objectives">
       <title>Objectives</title>
       <ul>
         <li><p>Apply techniques for searching, replacing, and splitting strings.

@@ -29,7 +29,7 @@
         </ol>
       </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="pz_branching_1" label="pz_branching_1">
+    <program interactive="activecode" language="python" xml:id="pz_branching_1_program" label="pz_branching_1_program_1">
       <input>
 
         </input>
@@ -81,7 +81,7 @@
         </ol>
       </p>
     </statement>
-    <program xml:id="pz_branching_2" label="pz_branching_2" interactive="activecode" language="python">
+    <program xml:id="pz_branching_2" label="pz_branching_2_program_2" interactive="activecode" language="python">
       <input>
 
         </input>
@@ -154,7 +154,7 @@
       <p>Write code that takes an integer and prints <c>True</c> if the integer is an <term>even number</term> and <c>False</c> if
                         it is <term>odd</term>.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="pz_branching_4" label="pz_branching_4">
+    <program interactive="activecode" language="python" xml:id="pz_branching_4" label="pz_branching_4_program_4">
       <input># your code here
         </input>
     </program>
@@ -196,7 +196,7 @@
                         years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
       <p>Your program should print an error message if the user provides a date that is out of range.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="pz_branching_5" label="pz_branching_5">
+    <program interactive="activecode" language="python" xml:id="pz_branching_5" label="pz_branching_5_program_5">
       <input>
 
         </input>

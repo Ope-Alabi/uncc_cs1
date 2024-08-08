@@ -48,7 +48,6 @@ print(math.sqrt(100))         # prints the square root of 100
                 completely ported at this point.  If you wish to explore any
                 additional modules, you will need to also explore using a more robust development environment.</p>
   </note>
-  <p>
 
     <subsection xml:id="python-modules_more-about-using-modules">
       <title>More About Using Modules</title>
@@ -67,7 +66,6 @@ this as: "In the module math, access the Python element called sqrt".</p>
 
 
     <term>Check your understanding</term>
-  </p>
   <exercise label="mc_modules_1">
     <statement>
       <p>In Python a module is:</p>

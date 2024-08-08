@@ -16,7 +16,7 @@
             world and the functions that operate on that object correspond to the ways
             real-world objects interact.</p>
 
-  <subsection xml:id="subsec-Learning-Goals">
+  <subsection xml:id="classes-learning-goals">
       <title>Learning Goals</title>
       <ul>
           <li><p>Understand the Basics of Object-Oriented Programming (OOP)</p></li>
@@ -29,7 +29,7 @@
       </subsubsection> -->
   </subsection>
 
-  <subsection xml:id="subsec-Objectives">
+  <subsection xml:id="classes-objectives">
       <title>Objectives</title>
       <ul>
           <li><p>Define and Explain Key OOP Concepts</p></li>

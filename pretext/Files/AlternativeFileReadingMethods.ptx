@@ -139,7 +139,7 @@
     </program>
   </exercise>
 
-  <datafile label="emotion" filename="travel_plans2.txt" rows="10" cols="6" editable="no" hide="yes"> 
+  <datafile label="emotion_travel_plans2" filename="travel_plans2.txt" rows="10" cols="6" editable="no" hide="yes"> 
     <pre>
       This summer I will be travelling.
       I will go to...
@@ -170,7 +170,7 @@
     </pre>
   </datafile>
 
-  <datafile label="emotion" filename="emotion_words2.txt" rows="10" cols="6" editable="no" hide="yes"> 
+  <datafile label="emotion_words2" filename="emotion_words2.txt" rows="10" cols="6" editable="no" hide="yes"> 
     <pre>
       Sad upset blue down melancholy somber bitter troubled
       Angry mad enraged irate irritable wrathful outraged infuriated

@@ -10,7 +10,7 @@
 
     <subsection xml:id="subsec-Strings">
         <title>Strings</title>
-        <video xml:id="string-vid" youtube="T435lvYXE_w" width="auto"/>
+        <video xml:id="sequences-string-vid" youtube="T435lvYXE_w" width="auto"/>
         <p>
             Strings can be defined as sequential collections of characters. This means that the individual characters that make up a string are in a particular order from left to right.
         </p>
