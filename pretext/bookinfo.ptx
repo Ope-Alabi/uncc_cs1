@@ -30,7 +30,7 @@ along with MathBook XML.  If not, see <http://www.gnu.org/licenses/>.
     <!-- entire front matter section with more headings   -->
     <author-biographies length="short" />
 
-    <document-id edition="2">mines_csstem</document-id>
+    <document-id edition="2">uncc_cs1</document-id>
 
     <!-- Prefix to enhance Sage notebook contents -->
     <initialism>SB</initialism>
