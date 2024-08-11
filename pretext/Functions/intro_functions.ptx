@@ -10,8 +10,8 @@
     <subsection xml:id="functions-learning-goals">
         <title>Learning Goals</title>
         <ul>
-            <li><p>Understand the Concept and Purpose of Functions</p></li>
-            <li><p>Learn How to Define and Call Functions in Python</p></li>
+            <li><p>Understand the concept and purpose of functions</p></li>
+            <li><p>Learn how to define and call functions in Python</p></li>
             <li><p>Understand concepts such as return values, scope, recursion, and lambda functions.</p></li>
         </ul> 
         <!-- <subsubsection xml:id="subsub-sect">

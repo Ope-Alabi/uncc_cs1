@@ -1,12 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="selection_introduction_booleans">
-  <title>Introduction: Booleans</title>
+  <title>Decisions with Conditionals</title>
   <!--<video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="auto"/>-->
-  <p>The Python type for storing true and false values is called <c>bool</c>, named after the British mathematician, George Boole.
+  <p>Decision-making through conditionals and if statements is one of the most fundamental concepts in programming.
+    This is how programs make choices, execute different paths based on conditions, and respond dynamically to various inputs.</p>
+    <p>Programming decisions are based on <term>boolean</term> values—true or false—that drive the flow of your code.
+   
+  The Python type for storing true and false values is called <c>bool</c>, named after the British mathematician, George Boole.
     George Boole created <em>Boolean Algebra</em>, which is the basis of all modern computer arithmetic.</p>
   <p>There are only two <term>boolean values</term>.
     They are <c>True</c> and <c>False</c>.
     Capitalization is important, since <c>true</c> and <c>false</c> are not boolean values (remember Python is case sensitive).</p>
+    <p>In this chapter we'll see how Boolean expressions interact with if statements and other conditional constructs to control the execution 
+    of different code paths. </p>
 
   <subsection xml:id="selection-learning-goals">
       <title>Learning Goals</title>

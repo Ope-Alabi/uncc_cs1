@@ -2,10 +2,12 @@
 <section id="verification">
     <title>Verifying Code</title>
     <p>Once we have written the program, we need to verify that the program works. There are many, many different
-     ways to accomplish this task, but for the purposes of this textbook the will be easiest to run the program with different values and verify that 
-     the result is correct each time. If the result is not correct each time, then there is something wrong
-     within the program. Let's look at an example program and test it to ensure it's working properly. NOTE: For the
-     purpose of demonstration, the initial numbers will be defined as str type instead of int in the following programs.</p>
+     ways to accomplish this task, but for the purposes of this textbook it will be easiest to run the program with different values and verify that 
+     the result is correct each time. If at any point the result is not correct, then we know there is something wrong
+     within the program. </p>
+     <p>Let's look at an example program and test it to ensure it's working properly.
+         NOTE: In the following programs the initial numbers will be defined as str type instead of int for the
+         sake of demonstration.</p>
     <program xml:id="ac_verifyingCode_1" label="ac_verifyingCode_1" language="python" interactive="activecode">
     <input>
         first_num = "1"
