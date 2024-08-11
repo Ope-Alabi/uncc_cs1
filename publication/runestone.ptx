@@ -18,6 +18,8 @@
     <platform host="runestone" />
     <!-- knowled checkpoints interfere with ActiveCode problems -->
     <knowl exercise-inline="no" example="no" listing="yes" />
+    <css style="default" colors="green_plum" />
+    <css shell="crc" toc="crc"  banner="crc"/>
 </html>
 
 <stringparam key="debug.rs.services.file" value="/Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml" />

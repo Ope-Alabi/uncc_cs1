@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_intro">
-  <title>Introduction: Iteration</title>
+  <title>Repeating Actions</title>
 
   <p xml:id="iteration_index-1">
     Computers are often used to automate repetitive tasks.
@@ -25,7 +25,8 @@
   <subsection xml:id="iteration-objectives">
     <title>Objectives</title>
     <ul>
-      <li><p>Read and write loop statements</p></li>
+      <li><p>Trace a loop block</p></li>
+      <li><p>Define a loop block</p></li>
       <li><p>Identify the number of times a loop will iterate</p></li>
       <li><p>Traverse sequences with loops</p></li>
     </ul>

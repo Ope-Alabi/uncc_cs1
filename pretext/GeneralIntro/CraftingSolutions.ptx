@@ -13,24 +13,25 @@ Flowcharts and pseudocode are two powerful tools that can greatly assist in this
 
 Think of them as maps for your mind. They let you see the entire process at a glance, helping you understand how each piece fits together. 
 Imagine being able to visualize your path to the solution—how cool is that?
-</p> <p>Flowcharts are an excellent way to communicate ideas and processes to others, even if they do not have a deep technical background.
-
-They use various symbols to denote different types of actions or steps in a process, connected by arrows that show the flow of the process.
+</p> <p>Flowcharts use various symbols to denote different types of actions or steps in a process, connected by arrows that show the flow of the process. 
+  They are an excellent way to communicate ideas and processes to others, even if they do not have a deep technical background.
 <image source="GeneralIntro/Figures/flowchart_symbols.png"  alt="flowchart symbols"/>
 
 
-</p><p>On the other hand, <term>pseudocode</term> is a high-level description of a solution, written in a way that resembles programming syntax but is designed for human understanding rather than machine execution.
- </p>
+</p>
+ <p><term>pseudocode</term>, on the other hand, provides a detailed, step-by-step description of each action depicted in the flowchart. 
+  It uses a combination of plain language and programming-like constructs to describe the logic behind each step. 
+</p>
  <p>
   It's a way to describe the steps in solving a problem without worrying about the syntax of a specific programming language.
 It allows the focus to remain on the logic of the solution rather than the specifics of a programming language. 
 This makes it easier to translate the solution into any programming language later on.
  </p><p>
 Similar to flowcharts pseudocode serves as a form of documentation for algorithms and processes, making it easier to understand, and communicate to others.
-Here's a simple example to illustrate how pseudocode and flowcharts can work together to solve a problem.
-</p>
-<p>
-Problem: Find the largest number value in a list of numbers.
+
+Here's a simple example of a solution to a problem represented us both approaches.</p>
+<p>Problem: Find the largest number value in a list of numbers.
+
 </p>
 <p>
   <em>Flowchart</em>
@@ -59,8 +60,15 @@ Problem: Find the largest number value in a list of numbers.
 </ol>
 </p>
 
-<p>
-Looking at the flowchart we can quickly tell what actions and in what order we need to take to solve the problem while reading the pseudocode gives us a desecription of each action.
+
+  <p>
+    Using the flowchart we can check for clarity and completenes by ensuring that all steps and decision points are included and that the flow accurately represents the logic of the solution.
+    And the pseudocode we can ensure we have a clear understanding of the problem and the steps required to solve it.
+    Looking at the flowchart we can see how it shows us how to navigate through various decision points, 
+    and what actions to take based on different conditions while the pseudocode provides a detailed, step-by-step 
+    description of the logic behind each action depicted in the flowchart.  
+    In other words, flowcharts focus on the "what" and "when" of actions, pseudocode emphasizes the "how."
+
 By using such tools we can ensure that the logical flow and structure of the solution are well-defined before actual coding begins.
 </p>
 <p>

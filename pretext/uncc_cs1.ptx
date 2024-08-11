@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-    <xi:include href="./bookinfo.ptx"/>
+    <xi:include href="./bookinfo.ptx" />
 
     <book xml:id="thinkcspy" permid="tcs">
         <docinfo>
@@ -13,49 +13,63 @@
             <document-id>uncc_cs1</document-id>
             <pub-date>2024-08-15</pub-date>
             <blurb shelf="Intro to Computer Science">
-                This book provides an in-depth exploration of programming concepts using Python, aimed at both beginners and seasoned developers looking to deepen their understanding of coding principles.
+                This book provides an in-depth exploration of programming concepts using Python,
+                aimed at both beginners and seasoned developers looking to deepen their
+                understanding of coding principles.
             </blurb>
         </docinfo>
-        
-        <title>ITSC 1212: Introduction to CS 1</title>
-        <subtitle>How to Think Like a Computer - The PreTeXt Interactive Edition</subtitle>
-        <frontmatter>
-        <titlepage>
-        </titlepage>
-        <xi:include href="./FrontBackMatter/preface2e.ptx"/>
-        <xi:include href="./FrontBackMatter/prefaceinteractive.ptx"/>
-        </frontmatter>
-        <xi:include href="./GeneralIntro/toctree.ptx"/>
-        <xi:include href="./SimplePythonData/toctree.ptx"/>
-        <xi:include href="./Debugging/toctree.ptx"/>
-        <xi:include href="./Sequences/toctree.ptx"/>
-        <xi:include href="./Selection/toctree.ptx"/>
-        <xi:include href="./Iteration/toctree.ptx"/>
-        <xi:include href="./Functions/toctree.ptx"/>
-        <xi:include href="./Files/toctree.ptx"/>
-		<xi:include href="./ComplexLogic/toctree.ptx"/>
-        <xi:include href="./ClassesBasics/toctree.ptx"/>
-        <xi:include href="./ClassesDiggingDeeper/toctree.ptx"/>
-        <!--<xi:include href="./Exceptions/toctree.ptx"/>-->
-		<!-- <xi:include href="./AdditionalTopics/toctree.ptx"/>
+
+        <title>How to Think Like a Computer Scientist </title>
+        <subtitle>ITSC 1212 - Introduction to CS 1 Edition</subtitle>
+
+        <xi:include href="./GeneralIntro/toctree.ptx" />
+        <xi:include href="./SimplePythonData/toctree.ptx" />
+        <xi:include href="./Debugging/toctree.ptx" />
+        <xi:include href="./Sequences/toctree.ptx" />
+        <xi:include href="./Selection/toctree.ptx" />
+        <xi:include href="./Iteration/toctree.ptx" />
+        <xi:include href="./Functions/toctree.ptx" />
+        <xi:include href="./Files/toctree.ptx" />
+        <xi:include href="./ComplexLogic/toctree.ptx" />
+        <xi:include href="./ClassesBasics/toctree.ptx" />
+        <xi:include href="./ClassesDiggingDeeper/toctree.ptx" />
+        <!--<xi:include
+        href="./Exceptions/toctree.ptx"/>-->
+        <!-- <xi:include href="./AdditionalTopics/toctree.ptx"/>
         <xi:include href="./IntroRecursion/toctree.ptx"/>
         <xi:include href="./Lists/toctree.ptx"/>
         <xi:include href="./Strings/toctree.ptx"/> -->
 
 
-        <!--<xi:include href="./Inheritance/toctree.ptx"/>-->
-        <!--<xi:include href="./UnitTesting/toctree.ptx"/>-->
-        <!--<xi:include href="./Dictionaries/toctree.ptx"/>-->
-        <!--<xi:include href="./WebApps/toctree.ptx"/>-->
-        <!--<xi:include href="./GUIandEventDrivenProgramming/toctree.ptx"/>-->
-        <!--<xi:include href="./PythonTurtle/toctree.ptx"/>-->
-        <!--<xi:include href="./ExtraTopics/toctree.ptx"/>-->
-
+        <!--<xi:include
+        href="./Inheritance/toctree.ptx"/>-->
+        <!--<xi:include
+        href="./UnitTesting/toctree.ptx"/>-->
+        <!--<xi:include
+        href="./Dictionaries/toctree.ptx"/>-->
+        <!--<xi:include
+        href="./WebApps/toctree.ptx"/>-->
+        <!--<xi:include
+        href="./GUIandEventDrivenProgramming/toctree.ptx"/>-->
+        <!--<xi:include
+        href="./PythonTurtle/toctree.ptx"/>-->
+        <!--<xi:include
+        href="./ExtraTopics/toctree.ptx"/>-->
+        <!-- <frontmatter>
+            <titlepage>
+            </titlepage>
+            <xi:include href="./FrontBackMatter/preface2e.ptx"/>
+            <xi:include href="./FrontBackMatter/prefaceinteractive.ptx"/>
+            </frontmatter> -->
         <backmatter>
-            <xi:include href="./Appendices/PrecedenceTable.ptx"/>
+            <!-- <xi:include href="./FrontBackMatter/preface.ptx" />
+            <xi:include href="./FrontBackMatter/preface2e.ptx" />
+            <xi:include href="./FrontBackMatter/prefaceinteractive.ptx" /> -->
+            <xi:include href="./FrontBackMatter/About.ptx"/>
+            <xi:include href="./Appendices/PrecedenceTable.ptx" />
             <!-- <xi:include href="./Appendices/errorsAndDebug.ptx"/> -->
             <index>
-                <index-list/>
+                <index-list />
             </index>
         </backmatter>
     </book>

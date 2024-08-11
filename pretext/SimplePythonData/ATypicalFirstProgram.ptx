@@ -12,7 +12,7 @@ print("Hello, World!")
   <p>This is an example of using the <term>print function</term>, which doesn't actually
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
-  <p>Here is the example in activecode.  Give it a try!</p>
+  <p>In the context of this book, we will use the print function to perform the output step in the algorithms we work with. </p><p>Here is the example in activecode.  Give it a try!</p>
   <program xml:id="ac_aTypicalFirstProgram_1" label="ac_aTypicalFirstProgram_1" interactive="activecode" language="python">
     <input>
 print("Hello, World!")

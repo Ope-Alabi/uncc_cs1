@@ -31,6 +31,10 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
         <platform host="web" />
         <!-- knowled checkpoints interfere with ActiveCode problems -->
         <knowl exercise-inline="no" example="no" listing="yes" />
+            <css style="default" colors="green_plum" />
+            <css shell="crc" toc="crc"  banner="crc"/>
+            <!-- <css toc="crc" banner="crc" navbar="crc" shell="crc"/> -->
+
     </html>
 
     <stringparam key="debug.rs.services.file" value="/Users/bmiller/Runestone/RunestoneComponents/runestone/dist/webpack_static_imports.xml" />
