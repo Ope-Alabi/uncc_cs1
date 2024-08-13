@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
-<title>Debugging</title>
+<title>Problematic Solutions</title>
 <xi:include href="./intro-HowtobeaSuccessfulProgrammer.ptx"/>
 <xi:include href="./WhatisDebugging.ptx"/>
 <xi:include href="./Errors.ptx"/>
