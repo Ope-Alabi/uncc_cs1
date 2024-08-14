@@ -1,6 +1,25 @@
 <?xml version="1.0"?>
 <section xml:id="debugging_how-to-be-a-successful-programmer">
   <title>How to be a Successful Programmer</title>
+<p>
+   <q>The art of debugging is figuring out what you really told your program to do rather than what you thought you told it to do. — Andrew Singer</q> 
+</p>
+<p>This chapter will spend some time talking about what happens when errors occur as well as how to fix the errors that you will inevitably come across.
+
+Before computers became digital, debugging could mean looking for insects impeding the functioning of physical relays as in this somewhat apocryphal tale about Admiral Grace Hopper, a pioneer of computer programming.
+
+Nowadays, debugging doesn't involve bug guts all over your computer but it can still be just as frustrating. 
+
+</p><p>To cope with this frustration, this chapter will present some strategies to help you understand why the program you wrote does not behave as intended.
+
+Many people think debugging is some kind of punishment for not being smart enough to write code correctly the first time. But nobody does that, failure in programming is part of the deal. Here’s a fun video to keep in mind as you learn to program.
+</p>
+
+<p>
+    
+    <video xml:id="debugging_video" youtube="c0bsKc4tiuY"/>
+    CC BY–NC–ND 4.0 International Ted.com
+    </p>
   <p>One of the most important skills you need to acquire to complete this book successfully is the ability to debug your programs.  Debugging might be the most under-appreciated, and under-taught skill in introductory computer science.  For that reason we are including this <q>debugging interlude.</q>  Debugging is a skill that you need to master over time, and some of the tips and tricks are specific to different aspects of Python programming.</p>
   <p>Programming is an odd thing in a way.  Here is why.  As programmers we spend 99% of our time trying to get our program to work.  We struggle, we stress, we spend hours deep in frustration trying to get our program to execute correctly.  Then when we do get it going we celebrate, hand it in, and move on to the next homework assignment or programming task.  But here is the secret, when you are successful, you are happy, your brain releases a bit of chemical that makes you feel good.  You need to organize your programming so that you have lots of little successess.  It turns out your brain doesn't care all that much if you have successfully written hello world, or a fast fourier transform (trust me its hard) you still get that little release that makes you happy.  When you are happy you want to go on and solve the next little problem.  Essentially I'm telling you once again, start small, get something small working, and then add to it.</p>
 
@@ -18,8 +37,10 @@
   <subsection xml:id="debugging-objectives">
       <title>Objectives</title>
       <ul>
-          <li><p>Given a piece of code identify the Syntax errors based on error messages</p></li>
-          <li><p>Given a piece of code find the (ValueError, TypeError, SyntaxError, ParseError, NameError)</p></li>
+          <li><p>Recognize good programming strategies that would avoid errors</p></li>
+          <li><p>Identify Syntax errors based on error messages</p></li>
+          <li><p>Explain common kinds of exceptions and their likely causes (ValueError, TypeError, SyntaxError, ParseError, NameError)</p></li>
+          <li><p>Verify the correctness and reliability of a solution</p></li> 
       </ul>
   </subsection>    
 
