@@ -27,7 +27,7 @@
     <subsection xml:id="sequences-learning-goals">
         <title>Learning Goals</title>
         <ul>
-            <li><p>To understand different operations that can be performed on strings, lists, and tuples </p></li>
+            <li><p>To understand different operations that can be performed on strings, and lists </p></li>
             <li><p>To distinguish between different uses of [] in Python</p></li>
         </ul> 
         <!-- <subsubsection xml:id="subsub-sect">
