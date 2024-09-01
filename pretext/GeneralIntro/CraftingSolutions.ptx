@@ -60,16 +60,15 @@ Here's a simple example of a solution to a problem represented in both approache
 
 
   <p>
-    Looking at the flowchart we can see how it shows us how to navigate through various decision points,
+    Looking at both representation of the solution we can see that the flowchart shows how to navigate through various action points,
     and what actions to take based on different conditions while the pseudocode provides a detailed, step-by-step
-    description of the logic behind each action depicted in the flowchart. 
-  </p>
-  <p>
- 
- Using the flowchart we can check that the solution is clear and complete by making sure that all steps and decision points are included and t
+    description of the logic behind each action depicted in the flowchart. Using the flowchart we can check that the solution is clear and complete by making sure that all steps and decision points are included and t
  hat the flow accurately represents the logic for the solution. 
  The pseudocode ensures we have a clear understanding of the problem and the steps required to solve it.    
- In other words, flowcharts focus on the "what" and "when" of actions, pseudocode emphasizes the "how."
+
+</p>
+<p>
+In other words, flowcharts focus on the "what" and "when" of actions, pseudocode emphasizes the "how."
  
 These tools are important because we can use them to ensure that the logical flow and structure of the solution are well-defined before actual coding begins.
 </p>
