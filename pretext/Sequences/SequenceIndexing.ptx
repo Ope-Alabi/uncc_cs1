@@ -159,23 +159,56 @@
           </choice>
         </choices>
       </exercise>
-
+      <exercise label = "sequenceIndexing_4">
+        <statement>
+      <p>
+        Assign the value of the 34th element of <code>lst</code> to the variable <code>output</code>. Note that the l in lst is a letter, not a number; variable names can’t start with a number.
+    </p>
+  </statement>
 
       <program xml:id="ac_sequenceIndexing_4" label="ac_sequenceIndexing_4" interactive="activecode" language="python">
-        <p>
-            Assign the value of the 34th element of <code>lst</code> to the variable <code>output</code>. Note that the l in lst is a letter, not a number; variable names can’t start with a number.
-        </p>
+    
         <input>
-            lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
-        </input>
-      </program>
+lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
 
-      <program xml:id="ac_sequenceIndexing_5" label="ac_sequenceIndexing_5" interactive="activecode" language="python">
-        <p>
-            Assign the value of the 34th element of <code>lst</code> to the variable <code>output</code>. Do this so that the length of lst doesn’t matter.
-        </p>
-        <input>
-            lst = "Every chess or checkers game begins from the same position and has a finite number of moves that can be played. While the number of possible scenarios and moves is quite large, it is still possible for computers to calculate that number and even be programmed to respond well against a human player..."
-        </input>
+====
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+     def testOne(self):
+         self.assertTrue('lst[33]' in self.getEditorText(), "Testing that you are using the correct index for the 34th element.")
+         self.assertTrue('output' in self.getEditorText(), "Testing that you are using the correct variable name.")
+
+MyTests().main()
+        </input>          
+       
       </program>
+      </exercise>
+
+
+      <exercise label = "sequenceIndexing_5">
+        <statement>
+      <p>
+        Assign the value of the 34th element of <code>lst</code> to the variable <code>output</code>.
+    </p>
+  </statement>
+      <program xml:id="ac_sequenceIndexing_5" label="ac_sequenceIndexing_5" interactive="activecode" language="python">
+      
+        <input>
+          lst = "Every chess or checkers game begins from the same position and has a finite number of moves that can be played. While the number of possible scenarios and moves is quite large, it is still possible for computers to calculate that number and even be programmed to respond well against a human player..."
+          ====
+          from unittest.gui import TestCaseGui
+          
+          class MyTests(TestCaseGui):
+               def testOne(self):
+                   self.assertTrue('lst[33]' in self.getEditorText(), "Testing that you are using the correct index for the 34th element.")
+                   self.assertTrue('output' in self.getEditorText(), "Testing that you are using the correct variable name.")
+
+          MyTests().main()
+        </input>        
+      </program>
+    </exercise>
+
+    
+
 </section>

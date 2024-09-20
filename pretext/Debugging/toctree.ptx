@@ -11,4 +11,5 @@
 <xi:include href="./Style.ptx"/>
 <xi:include href="./GrowthMindset.ptx"/>
 <xi:include href="./Glossary.ptx"/>
+<xi:include href="./Exercises.ptx"/>
 </chapter>

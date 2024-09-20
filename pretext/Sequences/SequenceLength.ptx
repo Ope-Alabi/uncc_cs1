@@ -136,14 +136,31 @@
         </choices>
     </exercise>
 
+
+
+    <exercise label = "sequenceLength_5">
+    <statement>
+        Assign the number of elements in <code>lst</code> to the variable <code>output</code>.
+    </statement>
     <program xml:id="ac_sequenceLength_5" label="ac_sequenceLength_5" interactive="activecode" language="python">
-        <p>
-            Assign the number of elements in <code>lst</code> to the variable <code>output</code>.
-        </p>
+      
         <input>
             lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
 
         </input>
+        <tests>
+            
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+     def testOne(self):
+        self.assertTrue('len' in self.getEditorText(), "Testing that you are using the correct function for list length.")
+        self.assertTrue('len(lst)' in self.getEditorText(), "Testing that you are using the correct function parameter.")
+        self.assertTrue('output' in self.getEditorText(), "Testing that you are using the correct variable name.")
+
+MyTests().main()
+        </tests>
       </program>
+    </exercise>
 
 </section>
