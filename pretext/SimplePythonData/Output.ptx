@@ -18,7 +18,7 @@
     <input>
         fruit = "banana"
         bakedgood = " nut bread"
-        print(fruit + bakedGood)
+        print(fruit + bakedgood)
         </input>
   </program>
   <p>The output of this program is <c>banana nut bread</c>. The space before the word <c>nut</c> is part of the string and is necessary to produce the space between the concatenated strings. Take out the space and run it again. </p>

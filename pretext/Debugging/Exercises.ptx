@@ -1,5 +1,62 @@
 <?xml version="1.0"?>
 <exercises xml:id="debugging_exercises">
-  <title>Exercises</title>
-  <p>This page is intentionally blank (for now)</p>
+  <title>Practice Zone</title>
+
+
+  <exercise label="clickable-error">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="yes">name = input('Enter your name")</area></cline>
+      <cline><area correct="yes">print("Nice to meet you,",name</area></cline>
+    </areas>
+    <feedback>
+      <p>
+        Remember, proper formatting and syntax rules.
+      </p>
+    </feedback>
+  </exercise>
+
+
+  <exercise label="clickable-error2">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="yes">first name =  input("Enter your name")</area></cline>
+      <cline><area correct="no">print("Nice to meet you,", name)</area></cline>
+    </areas>
+    <feedback>
+      <p>
+        Remember, proper formatting and syntax rules.
+      </p>
+    </feedback>
+  </exercise>
+
+  <exercise label="clickable-error3">
+    <statement>
+      <p>
+        Identify the problematic statements in this Python code.
+      </p>
+    </statement>
+    <areas language="python">
+      <cline><area correct="no">bill = float(input('Enter your bill amount"))</area></cline>
+      <cline><area correct="no">tax = float(input('Enter your tax percentage"))</area></cline>
+      <cline><area correct="no">tip = float(input('Enter your tip percentage"))</area></cline>
+      <cline><area correct="yes">total = bill * tax * tip</area></cline>
+
+      <cline><area correct="no">print("your total amount is " + "$" + str(total)) </area></cline>
+
+    </areas>
+    <feedback>
+      <p>
+        Remember, proper that the program will do what we tell it to do whether it is logical or not. 
+      </p>
+    </feedback>
+  </exercise>
 </exercises>

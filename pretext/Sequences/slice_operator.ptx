@@ -36,7 +36,7 @@
         </input>
     </program>
 
-    <p>What do you think <c>fruit[:]</c> means?</p>
+    <p>What do you think <c>fruit[:]</c> means? </p>
 
     <subsection xml:id="subsec-list_slices">
         <title>List Slices</title>
@@ -60,9 +60,11 @@
         <term>Check your understanding</term>
     </p>
 
+
     <exercise label="mc_sliceOperator_1">
         <statement>
             <p>What is printed by the following statements?</p>
+        </statement>
             <program language="python">
                 <input>
                     s = "python rocks"
@@ -70,7 +72,6 @@
 
                 </input>
             </program>
-        </statement>
         <choices>
             <choice>
                 <statement>
@@ -107,9 +108,11 @@
         </choices>
     </exercise>
 
+
     <exercise label="mc_sliceOperator_2">
         <statement>
             <p>What is printed by the following statements?</p>
+        </statement>
             <program language="python">
                 <input>
                     s = "python rocks"
@@ -117,7 +120,6 @@
 
                 </input>
             </program>
-        </statement>
         <choices>
             <choice correct="yes">
                 <statement>
@@ -240,13 +242,29 @@
         </choices>
     </exercise>
 
+
+
+<exercise label="sliceOperator_4">
+     
+    <statement>
+            Create a new list using the 9th through 12th elements (four items in all) of <code>my_lst</code> and assign it to the variable <code>sub_lst</code>. You must use slicing to accomplish this.
+    </statement>
     <program xml:id="ac_sliceOperator_4" label="ac_sliceOperator_4" interactive="activecode" language="python">
-        <p>
-            Create a new list using the 9th through 12th elements (four items in all) of <code>new_lst</code> and assign it to the variable <code>sub_lst</code>.
-        </p>
+   
         <input>
-            lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
+            my_lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
 
         </input>
+        <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+     def testOne(self):
+        self.assertTrue('my_lst[' in self.getEditorText(), "Testing that you are referencing the list correctly.")
+        self.assertTrue('[8:12]' in self.getEditorText(), "Testing that you are slicing the list correctly.")
+        self.assertTrue('sub_lst' in self.getEditorText(), "Testing that you are using the correct variable name.")
+MyTests().main()
+        </tests>
     </program>
+    </exercise>
 </section>

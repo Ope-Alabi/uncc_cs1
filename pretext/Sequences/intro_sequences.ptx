@@ -24,23 +24,15 @@
         In this chapter we will examine operations that can be performed on sequences, such as picking out individual elements or subsequences (called slices) or computing their length. In addition, we’ll examine some special functions that are defined only for strings, and we’ll find out one importance difference between strings and lists, that lists can be changed (or mutated) while strings are immutable.
     </p>
     
-    <subsection xml:id="sequences-learning-goals">
-        <title>Learning Goals</title>
-        <ul>
-            <li><p>To understand different operations that can be performed on strings, and lists </p></li>
-            <li><p>To distinguish between different uses of [] in Python</p></li>
-        </ul> 
-        <!-- <subsubsection xml:id="subsub-sect">
-        <title>Test Title</title> 
-        </subsubsection> -->
-    </subsection>
+    
 
     <subsection xml:id="sequences-objectives">
-        <title>Objectives</title>
+        <title>Learning Objectives</title>
         <ul>
-            <li><p>Predict the output of split and join operations </p></li>
-            <li><p>Read and write expressions that use slices</p></li>
-            <li><p>Read and write expressions that use concatenation and repetition</p></li>
+            <li><p>Create lists and strings</p></li>
+            <li><p>Use functions to check the length of sequences</p></li>
+            <li><p>Apply operations like indexing, slicing, and concatenation</p></li>
+            <li><p>Explain the difference between mutable (lists) and immutable (strings) sequences</p></li>
         </ul>
     </subsection>
 
