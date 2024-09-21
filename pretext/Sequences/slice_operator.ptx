@@ -64,14 +64,15 @@
     <exercise label="mc_sliceOperator_1">
         <statement>
             <p>What is printed by the following statements?</p>
-        </statement>
-            <program language="python">
+        
+            <program label = "sliceOperator_1" language="python">
                 <input>
                     s = "python rocks"
                     print(s[3:8])
 
                 </input>
             </program>
+        </statement>
         <choices>
             <choice>
                 <statement>
@@ -112,14 +113,15 @@
     <exercise label="mc_sliceOperator_2">
         <statement>
             <p>What is printed by the following statements?</p>
-        </statement>
-            <program language="python">
+       
+            <program label= "sliceOperator_2" language="python">
                 <input>
                     s = "python rocks"
                     print(s[7:11] * 3)
 
                 </input>
             </program>
+        </statement>
         <choices>
             <choice correct="yes">
                 <statement>
@@ -159,7 +161,7 @@
     <exercise label="mc_sliceOperator_3">
         <statement>
             <p>What is printed by the following statements?</p>
-            <program language="python">
+            <program label="sliceOperator_3" language="python">
                 <input>
                     alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
                     print(alist[4:])
@@ -198,11 +200,10 @@
     <exercise label="mc_sliceOperator_4">
         <statement>
             <p>What is printed by the following statements?</p>
-            <program language="python">
+            <program label = "sliceOperator_4" language="python">
                 <input>
                     L = [0.34, '6', 'SI106', 'Python', -2]
                     print(len(L[1:-1]))
-
                 </input>
             </program>
         </statement>
@@ -244,12 +245,12 @@
 
 
 
-<exercise label="sliceOperator_4">
+<exercise label="sliceOperator_5">
      
     <statement>
             Create a new list using the 9th through 12th elements (four items in all) of <code>my_lst</code> and assign it to the variable <code>sub_lst</code>. You must use slicing to accomplish this.
     </statement>
-    <program xml:id="ac_sliceOperator_4" label="ac_sliceOperator_4" interactive="activecode" language="python">
+    <program xml:id="ac_sliceOperator_5" label="ac_sliceOperator_5" interactive="activecode" language="python">
    
         <input>
             my_lst = ["hi", "morning", "dog", "506", "caterpillar", "balloons", 106, "yo-yo", "python", "moon", "water", "sleepy", "daffy", 45, "donald", "whiteboard", "glasses", "markers", "couches", "butterfly", "100", "magazine", "door", "picture", "window", ["Olympics", "handle"], "chair", "pages", "readings", "burger", "juggle", "craft", ["store", "poster", "board"], "laptop", "computer", "plates", "hotdog", "salad", "backpack", "zipper", "ring", "watch", "finger", "bags", "boxes", "pods", "peas", "apples", "horse", "guinea pig", "bowl", "EECS"]
