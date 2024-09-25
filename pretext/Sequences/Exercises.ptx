@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<exercises xml:id="sequ_exercises">
+  <title>Practice Zone</title>
+  <p>
+    This section is designed to reinforce your understanding and help you gain confidence in writing
+    code.
+    Whether you're a beginner or looking to brush up on the basics, these exercises will cover basic
+    topics such as variables, data types, statements and expressions.
+
+  </p>
+  <p>Take your time with each exercise, and don't hesitate to experiment with different approaches.
+    Programming is all about solving problems creatively, so feel free to explore and make
+    mistakes—it's all part of the learning process.
+
+  </p>
+  <exercise label="ex_seq-1">
+   <statement>
+    Declare a list called <code>my_lst</code> that includes at least 4 elements (values).
+   </statement> 
+  
+  <program xml:id="ac_seq_1" label="ac_sec_1" interactive="activecode" language="python">
+    <input>
+       
+
+    </input>
+    <tests>
+      from unittest.gui import TestCaseGui
+
+      class MyTests(TestCaseGui):
+        def testOne(self):
+          self.assertTrue('my_lst' in self.getEditorText(), "Testing that you are using the specefied list name.")
+          self.assertTrue(len(my_lst) >= 4, "The length of the list should be at least 4")
+      
+      MyTests().main()
+    </tests>
+  </program>
+  </exercise>
+
+  <exercise label="ex_seq-2">
+    <statement>
+     Display the length of the list <code>my_stuff</code>.
+    </statement> 
+   
+   <program xml:id="ac_seq_2" label="ac_sec_2" interactive="activecode" language="python">
+     <input>
+      my_stuff = ["computer", "desk", "chair", "xbox, play station, switch"]
+ 
+     </input>
+     <tests>
+      from unittest.gui import TestCaseGui
+
+      class MyTests(TestCaseGui):
+        def testOne(self):
+          self.assertTrue('len(my_stuff)' in self.getEditorText(), "Testing that you are using the correct function and parameter to check the list length.")
+          self.assertTrue(self.getOutput().strip() == "4","The expected length of the list is 4")
+      
+      MyTests().main()
+
+     </tests>
+   
+   </program>
+
+</exercise>
+
+<exercise label="ex_seq-3">
+  <statement>
+   Display the last element in the list <code>my_stuff</code>.
+  </statement> 
+ 
+ <program xml:id="ac_seq_3" label="ac_sec_3" interactive="activecode" language="python">
+   <input>
+    my_stuff = ["computer", "desk", "chair", "xbox, play station, switch"]
+
+   </input>
+   <tests>
+    from unittest.gui import TestCaseGui
+
+    class MyTests(TestCaseGui):
+      def testOne(self):
+        self.assertTrue('my_stuff[-1]' in self.getEditorText() or 'len(my_stuff)-1' in self.getEditorText() , "Testing that you are referencing the last element correctly.")
+        self.assertTrue(self.getOutput().strip() == "xbox, play station, switch","The expected output is the value of the last element in the provided list.")
+    
+    MyTests().main()
+
+   </tests>
+ 
+ </program>
+
+</exercise>
+
+<exercise label="ex_seq-4">
+  <statement>
+   Change the value of the first element in the list <code>my_stuff</code> to a value other than "computer".
+  </statement> 
+ 
+ <program xml:id="ac_seq_4" label="ac_sec_4" interactive="activecode" language="python">
+   <input>
+    my_stuff = ["computer", "desk", "chair", "xbox, play station, switch"]
+
+   </input>
+   <tests>
+    from unittest.gui import TestCaseGui
+
+    class MyTests(TestCaseGui):
+      def testOne(self):
+        self.assertTrue(my_stuff[0] != 'computer' , "Testing that the value of the first element is not equal to 'computer'.")
+    MyTests().main()
+   </tests>
+ 
+ </program>
+
+</exercise>
+
+<exercise label="ex_seq-5">
+  <statement>
+  Complete this program so that it first asks the user to enter a number value between 1 and the length of the list <code>drinks</code>
+  then it asks the user to enter a number that represents the desired quantity.  
+  Using that input, the program retrieves and displays the corresponding drink information and the total price.
+  For example, if the user enters 2 and 3 the output would include "chai latte" and 13.68
+  </statement> 
+ 
+ <program xml:id="ac_seq_5" label="ac_sec_5" interactive="activecode" language="python">
+   <input>
+    drinks = ["tea","chai latte", "latte", "coffee","soda", "berry lemonade"]
+    prices = [2.49, 4.56, 3.75, 2.99, 1.99, 3.49]
+
+   </input>
+  
+  </program>
+
+<solution>
+   <program xml:id="ac_seq_5_answer" language="python">
+    <input>
+      ## question 5 solution ##
+      drinks = ["tea","chai latte", "latte", "coffee", "soda", "berry lemonade"]
+      prices = [2.49, 4.56, 3.75, 2.99, 1.99, 3.49]
+
+      order = input("Enter a number value between 1 and " + str(len(drinks)) + ": ")
+      quantity = input("How many " + drinks[int(order) - 1] + "s would you like? ")
+
+      total = prices[int(order) - 1] * int(quantity)
+
+      print("Your total is","$"+str(total)+".","Your",drinks[int(order) - 1],"will be ready shortly.")
+    </input>
+  </program>
+</solution>
+ 
+
+</exercise>
+  <query label="practice_feedback_seq">
+    <statement>
+      <p>Which of the following best describes your experience with these problems?</p>
+    </statement>
+    <choices>
+      <choice>
+        <p>I found the problems very confusing and didn't know where to start.</p>
+      </choice>
+      <choice>
+        <p>I started solving the problems but encountered significant difficulties.</p>
+      </choice>
+      <choice>
+        <p>I managed to solve the problems, but it was very challenging.</p>
+      </choice>
+      <choice>
+        <p>I solved the problems with some minor difficulties.</p>
+      </choice>
+      <choice>
+        <statement>
+          <p>I found the problems straightforward and solved them easily.</p>
+        </statement>
+        <feedback>
+        </feedback>
+      </choice>
+    </choices>
+  </query>
+</exercises>
