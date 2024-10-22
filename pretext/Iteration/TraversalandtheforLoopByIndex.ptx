@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="iteration_traversal-and-the-for-loop-by-index">
+<section xml:id="iteration_traversal-and-the-for-loop-by-ind">
   <title>Traversing Sequences with the <c>for</c> Loop: By Index</title>
 
-  <subsection xml:id="list_traversal-and-the-for-loop-by-index">
+  <subsection xml:id="list_traversal-and-the-for-loop-by-ind">
     <title>Traversing Lists with the <c>for</c> Loop</title>
     
     <p>We can also use the indices to access the items in an iterative fashion.</p>
