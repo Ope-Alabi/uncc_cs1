@@ -36,12 +36,10 @@ squareResult = square(toSquare)
 print("The result of", toSquare, "squared is", squareResult)
     </input>
   </program>
-  <p>In the program above, notice that the variable <c>runningtotal</c> starts out with a value of 0.  Next, the iteration is performed <c>x</c> times.  Inside the for loop, the update occurs. <c>runningtotal</c> is reassigned a new value which is the old value plus the value of <c>x</c>.
+  <p>In the program above, notice that the variable <c>runningtotal</c> starts out with a value of 0.  Next, the iteration is performed <c>x</c> times.  
+    Inside the for loop, the update occurs. <c>runningtotal</c> is reassigned a new value which is the old value plus the value of <c>x</c>.
   </p>
-  <p>This pattern of iterating the updating of a variable is commonly
-            referred to as the <term>accumulator pattern</term>.  We refer to the variable as the <term>accumulator</term>.  This pattern will come up over and over again.  Remember that the key
-            to making it work successfully is to be sure to initialize the variable before you start the iteration.
-            Once inside the iteration, it is required that you update the accumulator.</p>
+
   <note>
     <p>What would happen if we put the assignment <c>runningTotal = 0</c> inside
                 the for statement?  Not sure? Try it and find out.</p>

@@ -92,8 +92,7 @@
 
         <li><p>
           This program doesn't display the amounts to two decimal places.
-          Thankfully, you already know how to fix this issue. 
-          Recall how you learned to format floats to a specific number of decimal points in <xref ref="strings_f-strings"/>.
+          You will learn how to format floats to a specific number of decimal points in <xref ref="strings_f-strings"/>.
         </p></li>
       </ul>
     </p>
