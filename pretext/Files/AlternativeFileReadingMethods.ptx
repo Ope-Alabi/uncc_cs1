@@ -51,9 +51,9 @@
 </table>
 
   <p>In this course, we will generally either iterate through the lines returned by <c>readlines()</c> with a for loop, or use <c>read()</c> to get all of the contents as a single string.</p>
-  <p>In other programming languages, where they don’t have the convenient for loop method of going through the lines of the file one by one, they use a different pattern which requires a different kind of loop, the <c>while</c> loop. Fortunately, you don’t need to learn this other pattern, and we will put off consideration of <c>while</c> loops until later in this course. We don’t need them for handling data from files.</p>
+  <p>In other programming languages, where they don't have the convenient for loop method of going through the lines of the file one by one, they use a different pattern which requires a different kind of loop, the <c>while</c> loop. Fortunately, you don't need to learn this other pattern, and we will put off consideration of <c>while</c> loops until later in this course. We don’t need them for handling data from files.</p>
   
-  <note>A common error that novice programmers make is not realizing that all these ways of reading the file contents, <term>use up the file</term>. After you call readlines(), if you call it again you’ll get an empty list.</note>
+  <note>A common error that novice programmers make is not realizing that all these ways of reading the file contents, <term>use up the file</term>. After you call readlines(), if you call it again you'll get an empty list.</note>
 
 <p><term>Check your Understanding</term></p>
 
@@ -80,6 +80,16 @@
         <input>
             
         </input>
+         <tests>
+    from unittest.gui import TestCaseGui
+
+    class MyTests(TestCaseGui):
+      def testOne(self):
+        self.assertTrue('num_char' in self.getEditorText(), "Testing that you are using the specefied variable name 'num_chars'.")
+        self.assertTrue(num_char == 537 , "testing the value of the num_char is correct .")
+    MyTests().main()
+    
+   </tests>
       </program>
     </exercise>
 
@@ -105,8 +115,18 @@
     </statement>
     <program xml:id="ac_alternativeFileReadingMethods_2" label="ac_alternativeFileReadingMethods_2" interactive="activecode" language="python" datafile="travel_plans2.txt">
       <input>
-          
+  
       </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue('num_lines' in self.getEditorText(), "Testing that you are using the specefied variable name 'num_lines'.")
+    self.assertTrue(num_lines == 11 , "testing the value of the num_lines is correct .")
+MyTests().main()
+        
+       </tests>
     </program>
   </exercise>
 
@@ -132,10 +152,20 @@
     </statement>
     <program xml:id="ac_alternativeFileReadingMethods_3" label="ac_alternativeFileReadingMethods_3" interactive="activecode" language="python" datafile="emotion_words2.txt">
       <input>
-          fileref = open("school_prompt2.txt", "r")
-          for line in fileref:
-              print(line)
+       
       </input>
+       <tests>
+from unittest.gui import TestCaseGui
+      
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue('first_forty' in self.getEditorText(), "Testing that you are using the specefied variable name 'first_forty'.")
+    self.assertTrue(len(first_forty) == 40 , "testing the length of first_forty is correct .")
+    self.assertTrue('[0:40]' in self.getEditorText() or '[:40]' in self.getEditorText()  , "Testing that you are using slicing.")
+MyTests().main()
+          
+         </tests>
+      
     </program>
   </exercise>
 
