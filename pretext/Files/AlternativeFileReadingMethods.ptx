@@ -115,16 +115,16 @@
     </statement>
     <program xml:id="ac_alternativeFileReadingMethods_2" label="ac_alternativeFileReadingMethods_2" interactive="activecode" language="python" datafile="travel_plans2.txt">
       <input>
-          
+  
       </input>
       <tests>
-        from unittest.gui import TestCaseGui
-    
-        class MyTests(TestCaseGui):
-          def testOne(self):
-            self.assertTrue('num_lines' in self.getEditorText(), "Testing that you are using the specefied variable name 'num_lines'.")
-            self.assertTrue(num_lines == 11 , "testing the value of the num_lines is correct .")
-        MyTests().main()
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue('num_lines' in self.getEditorText(), "Testing that you are using the specefied variable name 'num_lines'.")
+    self.assertTrue(num_lines == 11 , "testing the value of the num_lines is correct .")
+MyTests().main()
         
        </tests>
     </program>
@@ -152,20 +152,19 @@
     </statement>
     <program xml:id="ac_alternativeFileReadingMethods_3" label="ac_alternativeFileReadingMethods_3" interactive="activecode" language="python" datafile="emotion_words2.txt">
       <input>
-        <tests>
-          from unittest.gui import TestCaseGui
+       
+      </input>
+       <tests>
+from unittest.gui import TestCaseGui
       
-          class MyTests(TestCaseGui):
-            def testOne(self):
-              self.assertTrue('first_forty' in self.getEditorText(), "Testing that you are using the specefied variable name 'first_forty'.")
-              self.assertTrue(len(first_forty) == 4 , "testing the length of first_forty is correct .")
-              self.assertTrue('[0:40]' in self.getEditorText() or '[:40]' in self.getEditorText()  , "Testing that you are using slicing.")
-
-          MyTests().main()
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue('first_forty' in self.getEditorText(), "Testing that you are using the specefied variable name 'first_forty'.")
+    self.assertTrue(len(first_forty) == 40 , "testing the length of first_forty is correct .")
+    self.assertTrue('[0:40]' in self.getEditorText() or '[:40]' in self.getEditorText()  , "Testing that you are using slicing.")
+MyTests().main()
           
          </tests>
-      </input>
-      
       
     </program>
   </exercise>
