@@ -90,55 +90,11 @@ print(my_new_str)
                             Returns the leftmost index where the substring item is found, or error if not found
                         </cell>
       </row>
-      <row>
-        <cell>
-                            strip
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-          Returns a string with the leading and trailing whitespace (e.g.,space, tab, new line) removed 
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            lstrip
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            Returns a string with the leading whitespace removed
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            rstrip
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            Returns a string with the trailing whitespace removed
-                        </cell>
-      </row>
-      <row>
-        <cell>
-                            split
-                        </cell>
-        <cell>
-                            optional string as seperator
-                        </cell>
-        <cell>
-          Breaks up the string into a list of individual words/strings </cell>
-      </row>
     </tabular>
   </table>
-
   <p>You should experiment with these
             methods so that you understand what they do.  Note once again that the methods that return strings do <em>not</em>
-            change the original. You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url> for a more comprehensive list of string methods and their descriptions. </p>
+            change the original. </p>
   <program xml:id="ac_stringMethods_2" label="ac_stringMethods_2" interactive="activecode" language="python">
     <input>
 ss = "Hello, World"
@@ -242,109 +198,4 @@ print(s[1] * s.index("n"))
       </choice>
     </choices>
   </exercise>
-
-  <p>
-    Two of the most useful methods on strings involve lists of strings. 
-    The split method breaks a string into a list of words. 
-    By default, any number of whitespace characters is considered a word boundary.
-    <image source="Files/Figures/split.png" width="40%" alt="splitting a string using the default word boundry (space)"/>
-
-    
-  </p>
-  <program xml:id="ac_stringMethods_split_1" label="ac_stringMethods_split_1" interactive="activecode" language="python">
-    <input>
-      song = "The rain in Spain..."
-      wds = song.split()
-      print(wds)
-  </input>
-  </program>
-  <p>
-    An optional argument called a delimiter can be used to specify which characters to use as word boundaries.
-    <image source="Files/Figures/split2.png" width="40%" alt="splitting a string using a custom word boundry"/>
-
-  </p>
-  <program xml:id="ac_stringMethods_split_2" label="ac_stringMethods_split_2" interactive="activecode" language="python">
-    <input>
-      song = "The rain in Spain..."
-      wds = song.split('ai')
-      print(wds)
-  </input>
-  </program>
-  <p>
-    Notice that the delimiter doesn't appear in the result.
-The inverse of the split method is join. 
-You choose a desired separator string, (often called the glue) and join the list with the glue between each of the elements.
-<image source="Files/Figures/join.png" width="40%" alt="joining list elements into a string"/>
-  
-</p>
-<program xml:id="ac_stringMethods_join_1" label="ac_stringMethods_join_1" interactive="activecode" language="python">
-  <input>
-    wds = ["red", "blue", "green"]
-    glue = ';'
-    s = glue.join(wds) 
-    print(s)
-    print(wds)
-    
-    print("***".join(wds))
-    print("".join(wds))
-    
-</input>
-</program>
-<p>
-  The list that you glue together (wds in this example) is not modified. Also, you can use empty glue or multi-character strings as glue.
-
-Check your understanding
-</p>
-
-<exercise label="ca_stringMethods1">
-  <statement>
-    <p>1. 
-
-
-
-      Create a variable <code>output</code> and assign to it a list whose elements are the words in the string str1.
-    </p>
-  </statement>
-  <program xml:id="ac_stringMethods1" label="ac_stringMethods1" interactive="activecode" language="python">
-    <input>
-      str1 = "OH THE PLACES YOU'LL GO"
-    </input>
-     <tests>
-from unittest.gui import TestCaseGui
-    
-class MyTests(TestCaseGui):
-  def testOne(self):
-    self.assertTrue('output' in self.getEditorText(), "Testing that you are using the specefied variable name 'output'.")
-    self.assertTrue(len(output) == 5 , "testing the length of the list is correct .")
-    self.assertTrue('str1.split()' in self.getEditorText()  , "Testing that you are using split method.")
-MyTests().main()
-        
-       </tests>
-    
-  </program>
-</exercise>
-<exercise label="ca_stringMethods2">
-  <statement>
-    <p>2. Create a variable <code>output</code> and assign to it a list whose elements are the words in the string str1.
-    </p>
-  </statement>
-<program xml:id="ac_stringMethods2" label="ac_stringMethods2" interactive="activecode" language="python" >
-  <input>
-    str1 = "excited,eager,thrilled,delighted"
-
-  </input>
-   <tests>
-from unittest.gui import TestCaseGui
-  
-class MyTests(TestCaseGui):
-  def testOne(self):
-    self.assertTrue('output' in self.getEditorText(), "Testing that you are using the specefied variable name 'output'.")
-    self.assertTrue(len(output) == 4 , "testing the length of the list is correct .")
-    self.assertTrue('str1.split(",")' in self.getEditorText() or "str1.split(',')" in self.getEditorText()  , "Testing that you are using split method.")
-MyTests().main()
-      
-     </tests>
-  
-</program>
-</exercise>
 </section>

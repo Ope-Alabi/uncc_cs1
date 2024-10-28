@@ -146,7 +146,7 @@
 
     <exercise label="mc_iteratingOverLinesInAFile_1">
       <statement>
-        <p>1. Write code to find out how many lines are in the file <c>emotion_words2.txt</c> as shown above. Save this value to the variable <c>num_lines</c>. Do not use the len method.</p>
+        <p>1. Write code to find out how many lines are in the file <c>emotion_words.txt</c> as shown above. Save this value to the variable <c>num_lines</c>. Do not use the len method.</p>
       </statement>
       <program xml:id="ac_iteratingOverLinesInAFile_3" label="ac_iteratingOverLinesInAFile_3" interactive="activecode" language="python" datafile="emotion_words.txt">
         <input>
