@@ -27,14 +27,14 @@
 
             <program xml:id="ac_output_2" label="ac_output_2" interactive="activecode" language="python">
               <input>
-                print("Go" * 6)
+                print("Go" * 6) # Expected output - GoGoGoGoGoGo
 
                 name = "Packers"
-                print(name * 3)
+                print(name * 3) # Expected output - PackersPackersPackers
 
-                print(name + "Go" * 3)
+                print(name + "Go" * 3) # Expected output - PackersGoGoGo
 
-                print((name + "Go") * 3)
+                print((name + "Go") * 3) # Expected output - PackersGoPackersGoPackersGo
 
               </input>
             </program>

@@ -10,7 +10,5 @@
     <xi:include href="./concatenation_and_repetition.ptx"/>
     <xi:include href="./sequence_mutability.ptx"/>
     <xi:include href="./Glossary.ptx"/>
-
-
-
+    <xi:include href="./Exercises.ptx"/>
 </chapter>
