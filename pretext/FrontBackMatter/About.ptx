@@ -5,15 +5,14 @@
 <subsection xml:id="">
 <title>Preface to the ITSC 1212 Introduction to CS 1 Edition</title>
   <p>by Nadia Najjar</p>
-  <p>This edition of the book is a subset of the original textbook, specifically tailored to match the topics covered in the
-    ITSC 1212 - Introduction to Computer Science 1 course at the University of North Carolina at Charlotte.
-  </p>
   <p>
     This edition of the book is a tailored subset of the original textbook, specifically designed to align with the topics covered in the 
     ITSC 1212 - Introduction to Computer Science 1 course at the University of North Carolina at Charlotte. 
-  </p><p>Our aim is to provide an integrated 
-    learning experience that supports the course objectives. Built off of the ineteractive edition, the modifications we made are to ensure that the material is accessible to students with no prior experience in computer science, 
-     clearly defining terms and avoiding assumptions of previous knowledge. Sections have been rearranged and new content related to computational thinking, solution sketching and verification were added.
+  </p><p>Our aim is to provide an integrated learning experience that supports the course objectives. 
+    Built off of the interactive edition, the modifications we made focus on increasing the accessibility to students with no prior experience in computer science, 
+    clearly defining terms and avoiding assumptions of previous knowledge. 
+    Sections have been rearranged and new content related to computational thinking, solution sketching and verification were added.
+    
      
   </p>
   <p>This edition, released for the Fall 2024 semester, will continue to evolve in later semesters to better highlight the interconnections between computational thinking and programming concepts.
