@@ -128,7 +128,7 @@ print(my_new_str)
                             split
                         </cell>
         <cell>
-                            optional string as seperator
+                            optional string as separator
                         </cell>
         <cell>
           Breaks up the string into a list of individual words/strings </cell>
@@ -338,7 +338,7 @@ from unittest.gui import TestCaseGui
   
 class MyTests(TestCaseGui):
   def testOne(self):
-    self.assertTrue('output' in self.getEditorText(), "Testing that you are using the specefied variable name 'output'.")
+    self.assertTrue('output' in self.getEditorText(), "Testing that you are using the specified variable name 'output'.")
     self.assertTrue(len(output) == 4 , "testing the length of the list is correct .")
     self.assertTrue('str1.split(",")' in self.getEditorText() or "str1.split(',')" in self.getEditorText()  , "Testing that you are using split method.")
 MyTests().main()
