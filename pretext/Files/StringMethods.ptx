@@ -298,11 +298,7 @@ Check your understanding
 
 <exercise label="ca_stringMethods1">
   <statement>
-    <p>1. 
-
-
-
-      Create a variable <code>output</code> and assign to it a list whose elements are the words in the string str1.
+   <p>Create a variable called <c>words</c> and assign to it a list whose elements are the words in the string <c>str1</c>.
     </p>
   </statement>
   <program xml:id="ac_stringMethods1" label="ac_stringMethods1" interactive="activecode" language="python">
@@ -314,8 +310,8 @@ from unittest.gui import TestCaseGui
     
 class MyTests(TestCaseGui):
   def testOne(self):
-    self.assertTrue('output' in self.getEditorText(), "Testing that you are using the specefied variable name 'output'.")
-    self.assertTrue(len(output) == 5 , "testing the length of the list is correct .")
+    self.assertTrue('words' in self.getEditorText(), "Testing that you are using the specified variable name 'words'.")
+    self.assertTrue(len(words) == 5 , "testing the length of the list is correct .")
     self.assertTrue('str1.split()' in self.getEditorText()  , "Testing that you are using split method.")
 MyTests().main()
         
@@ -325,7 +321,7 @@ MyTests().main()
 </exercise>
 <exercise label="ca_stringMethods2">
   <statement>
-    <p>2. Create a variable <code>output</code> and assign to it a list whose elements are the words in the string str1.
+    <p>Create a variable called <c>emotions</c> and assign to it a list whose elements are the words in the string <c>str1</c>.
     </p>
   </statement>
 <program xml:id="ac_stringMethods2" label="ac_stringMethods2" interactive="activecode" language="python" >
@@ -338,8 +334,8 @@ from unittest.gui import TestCaseGui
   
 class MyTests(TestCaseGui):
   def testOne(self):
-    self.assertTrue('output' in self.getEditorText(), "Testing that you are using the specified variable name 'output'.")
-    self.assertTrue(len(output) == 4 , "testing the length of the list is correct .")
+    self.assertTrue('emotions' in self.getEditorText(), "Testing that you are using the specified variable name 'emotions'.")
+    self.assertTrue(len(emotions) == 4 , "testing the length of the list is correct .")
     self.assertTrue('str1.split(",")' in self.getEditorText() or "str1.split(',')" in self.getEditorText()  , "Testing that you are using split method.")
 MyTests().main()
       

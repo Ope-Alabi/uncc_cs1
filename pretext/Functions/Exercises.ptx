@@ -68,18 +68,23 @@ def is_odd(n):
 
 ====
 from unittest.gui import TestCaseGui
+def is_even(n):
+  if n % 2 == 0:
+    return True
+  return False
 
 class myTests(TestCaseGui):
-     def testOne(self):
-         self.assertEqual(is_odd(10),False,"Tested is_odd on input of 10")
-         self.assertEqual(is_odd(5),True,"Tested is_odd on input of 5")
-         self.assertEqual(is_odd(1),True,"Tested is_odd on input of 1")
-         self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
+  def testOne(self):
+    self.assertTrue('is_even(n' in self.getEditorText(), "Testing that you are calling the is_even function.")
+    self.assertEqual(is_odd(10),False,"Tested is_odd on input of 10")
+    self.assertEqual(is_odd(5),True,"Tested is_odd on input of 5")
+    self.assertEqual(is_odd(1),True,"Tested is_odd on input of 1")
+    self.assertEqual(is_odd(0),False,"Tested is_odd on input of 0")
 
 myTests().main()
         </input>
     </program>
-    <solution>
+    <!-- <solution>
       <program xml:id="q9_answer" language="python">
         <input>
 from test import testEqual
@@ -102,7 +107,7 @@ testEqual(is_odd(1), True)
 testEqual(is_odd(0), False)
         </input>
       </program>
-    </solution>
+    </solution> -->
   </exercise>
 
 
@@ -445,7 +450,7 @@ print(hypotenuse)
       </program>
     </solution>
   </exercise>
-  <exercise label="pz_functions_15">
+  <!-- <exercise label="pz_functions_15">
     <statement>
       <p>Search on the internet for a way to calculate an approximation for <term>pi</term>.  There are many that use simple arithmetic.  Write a program to compute the approximation and then print that value as well as the value of <c>math.pi</c> from the math module.</p>
     </statement>
@@ -454,5 +459,5 @@ print(hypotenuse)
 
         </input>
     </program>
-  </exercise>
+  </exercise> -->
 </exercises>
