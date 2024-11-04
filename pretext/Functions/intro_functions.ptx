@@ -12,7 +12,7 @@
         <ul>
             <li><p>Understand the concept and purpose of functions</p></li>
             <li><p>Learn how to define and call functions in Python</p></li>
-            <li><p>Understand concepts such as return values, scope, recursion, and lambda functions.</p></li>
+            <li><p>Understand the concept of modules and how they are used in Python.</p></li>
         </ul> 
         <!-- <subsubsection xml:id="subsub-sect">
         <title>Test Title</title> 
@@ -25,8 +25,10 @@
             <li><p>identify formal parameters and parameter values in a code sample</p></li>
             <li><p>predict the return value of a function given sample parameter values</p></li>
             <li><p>define functions with appropriate names for formal parameter</p></li>
-            <li><p>avoid the use of global variables in function definitions by creating formal parameters for all values that are needed</p></li>
-            <li><p>identify whether a function has any side effects</p></li>
+            <li><p>apply the accumulator pattern inside of a function</p></li>
+            <li><p>explain the purpose of packages and modules in programming </p></li>
+            <li><p>utilize existing modules from the Python Standard Library </p></li>
+            <li><p>identify whether a function is a modifier and has side effects</p></li>
         </ul>
     </subsection>    
 
