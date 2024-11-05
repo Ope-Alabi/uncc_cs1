@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="python-modules_modules-and-getting-help">
   <title>Modules</title>
-  <!-- <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto" label="modules_vid"/> -->
+  <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto" label="modules_vid"/>
   <p>A <term>module</term> is a file containing Python definitions and statements intended
             for use in other Python programs. There are many Python modules that come with
             Python as part of the <term>standard library</term>. 
@@ -82,7 +82,7 @@ then the python interpreter will look for a file called <c>morecode.py</c>, exce
   it will import your file rather than the standard library module. That's not usually what you want, so be careful about how you name your python files!
   </p></note>
   <subsection xml:id="python-modules_modules-syntax">
-    <title></title>
+    <title>Syntax for Importing Modules and Functionality</title>
     When you see imported modules in a Python program, there are a few variations that have slightly different consequences.
 
 <ol><li><p>The most common is <c>import morecode</c>. That imports everything in morecode.py.
