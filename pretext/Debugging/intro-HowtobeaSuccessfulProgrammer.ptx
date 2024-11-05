@@ -17,7 +17,7 @@ Many people think debugging is some kind of punishment for not being smart enoug
 
 <p>
     
-    <video xml:id="debugging_video" youtube="c0bsKc4tiuY"/>
+    <video xml:id="debugging_video" youtube="c0bsKc4tiuY" label="debugging_vid"/>
     CC BY–NC–ND 4.0 International Ted.com
     </p>
   <p>One of the most important skills you need to acquire to complete this book successfully is the ability to debug your programs.  Debugging might be the most under-appreciated, and under-taught skill in introductory computer science.  For that reason we are including this <q>debugging interlude.</q>  Debugging is a skill that you need to master over time, and some of the tips and tricks are specific to different aspects of Python programming.</p>
