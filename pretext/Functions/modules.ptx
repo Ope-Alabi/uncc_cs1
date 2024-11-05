@@ -4,9 +4,22 @@
   <!-- <video xml:id="vid_modules" youtube="GCLHuPBtLdQ" width="auto" label="modules_vid"/> -->
   <p>A <term>module</term> is a file containing Python definitions and statements intended
             for use in other Python programs. There are many Python modules that come with
-            Python as part of the <term>standard library</term>. We have already used one of these briefly,
-            the <c>math</c> module.  Recall that once we import the module, we can use things
+            Python as part of the <term>standard library</term>. 
+            Providing additional functionality through modules allows you to only use the functionality you need when you need it, and it keeps your code cleaner.
+            </p>
+
+            <p>
+              Functions imported as part of a module live in their own namespace. 
+              A namespace is simply a space within which all names are distinct from each other. 
+              The same name can be reused in different namespaces but two objects can't have the same name within a single namespace. 
+              One example of a namespace is the set of street names within a single city. Many cities have a street called "Main Street", 
+              but it's very confusing if two streets in the same city have that name! 
+              Another example is the folder organization of file systems. You can have a file called todo in your work folder as well as your personal folder, but you know which is which because of the folder it's in; 
+              each folder has its own namespace for files. Note that human names are not part of a namespace that enforces uniqueness; that's why governments have invented unique identifiers to assign to people, like passport numbers.
+            </p>
+            <p>Here's an example of importing the <c>math</c> module and how we can use some the things
             that are defined inside.</p>
+
   <program xml:id="ac_modules_1" label="ac_modules_1" interactive="activecode" language="python">
     <input>
 import math            # allows us to use the math library
@@ -37,17 +50,64 @@ print(math.sqrt(100))         # prints the square root of 100
   <image source="PythonModules/Figures/moduleindexmedium.png" width="50%"/>
   <p>You can see that all the math functionality that we have talked about is there.  However, there is so much more.  
     Take some time to read through and familiarize yourself with some of the other things that math can do.</p>
+  
+
+
+  <p>
+    In order to use Python modules, you have to import them into a Python program. That happens with an import statement: the word <c>import</c>, and then the name of the module. 
+    The name is case-sensitive. Roughly translated to English, an import statement says "there's some code in another file; please make its functions and variables available in this file." 
+    More technically, an import statement causes all the code in another file to be executed. 
+    Any variables that are bound during that execution (including functions that are defined) may then be referred in some way (to be discussed) in the current file.
+
+By convention, all <c>import</c> commands are put at the very top of your file. They can be put elsewhere, but that can lead to some confusions, so it's best to follow the convention.
+
+Where do these other files that you can import come from? It could be a code file that you wrote yourself, or it could be code that someone else wrote and you copied on to your computer.
+
+For example, if you have a file <c>myprog.py</c> in directory <c>~/Desktop/mycode/</c>, and <c>myprog.py</c> contains a line of code <c>import morecode</c>, 
+then the python interpreter will look for a file called <c>morecode.py</c>, excecute its code, and make its object bindings available for reference in the rest of the code in <c>myprog.py</c>.
+
+  </p><p>Note that it is <c>import morecode</c>, not <c>import morecode.py</c>, but the other file has to be called <c>morecode.py</c>.</p>
+
+<p>The tests you see in your problem sets are also using a Python module that's in the standard library, called <c>unittest</c>. 
+  Right now, you can't see the code that causes those tests to run, because we have hidden it from you, as you progress in learning how to program, you will learn how to write your own Unit Tests for code, 
+  and to do so, you will need to write an import statement at the beginning of your programs. Even before you learn how to write your own tests, you will see code for Unit Tests in your problem set files.
+  </p>
+
   <note>
-    <title>Note: Python modules and limitations with activecode</title>
-    <p>Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
-                We mentioned in the first chapter that programming is normally done using some type of development
-                environment and that the
-                activecode used here was strictly to help us learn.  It is not the way we write production programs.</p>
-    <p>To that end, it is necessary to mention that many of the  modules available in standard Python
-                will <term>not</term> work in the activecode environment.  In fact, only math and random have been
-                completely ported at this point.  If you wish to explore any
-                additional modules, you will need to also explore using a more robust development environment.</p>
-  </note>
+
+    <title>Don't overwrite standard library modules!</title>
+
+<p>Given the order of search for external Python modules that is described in the list above, it is possible to overwrite a standard library. 
+  For example, if you create a file <c>random.py</c> in the same directory where <c>myprog.py</c> lives, and then <c>myprog.py</c> invokes <c>import random</c>, 
+  it will import your file rather than the standard library module. That's not usually what you want, so be careful about how you name your python files!
+  </p></note>
+  <subsection xml:id="python-modules_modules-syntax">
+    <title></title>
+    When you see imported modules in a Python program, there are a few variations that have slightly different consequences.
+
+<ol><li><p>The most common is <c>import morecode</c>. That imports everything in morecode.py.
+   To invoke a function <c>f1</c> that is defined in <c>morecode.py</c>, you would write <c>morecode.f1()</c>. 
+   Note that you have to explicitly mention morecode again, to specify that you want the f1 function from the morecode namespace. 
+   If you just write <c>f1()</c>, python will look for an f1 that was defined in the current file, rather than in <c>morecode.py</c>.</p></li>
+
+<li><p>You can also give the imported module an alias (a different name, just for when you use it in your program). For example, after executing <c>import morecode as mc</c>, you would invoke <c>f1</c> as <c>mc.f1()</c>. 
+  You have now given the morecode module the alias mc. Programmers often do this to make code easier to type.</p></li>
+
+<li><p>A third possibility for importing occurs when you only want to import SOME of the functionality from a module, and you want to make those objects be part of the current module's namespace. 
+  For example, you could write <c>from morecode import f1</c>. Then you could invoke f1 without referencing morecode again: <c>f1()</c>.</p></li>
+</ol>
+</subsection>
+<note>
+  <title>Note: Python modules and limitations with activecode</title>
+  <p>Throughout the chapters of this book, activecode windows allow you to practice the Python that you are learning.
+              We mentioned in the first chapter that programming is normally done using some type of development
+              environment and that the
+              activecode used here was strictly to help us learn.  It is not the way we write production programs.</p>
+  <p>To that end, it is necessary to mention that many of the  modules available in standard Python
+              will <term>not</term> work in the activecode environment.  In fact, only math and random have been
+              completely ported at this point.  If you wish to explore any
+              additional modules, you will need to also explore using a more robust development environment.</p>
+</note>
 
     <subsection xml:id="python-modules_more-about-using-modules">
       <title>More About Using Modules</title>

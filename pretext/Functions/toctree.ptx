@@ -8,6 +8,8 @@
 <xi:include href="./decompositionandcomposition.ptx"/>
 <xi:include href="./FlowofExecutionSummary.ptx"/>
 <xi:include href="./modules.ptx"/>
+<xi:include href="./Therandommodule.ptx"/>
+
 <!-- <xi:include href="./MoreAboutUsingModules.ptx"/> -->
 
 <xi:include href="./TheAccumulatorPattern.ptx"/>
@@ -20,7 +22,6 @@
 <!-- 4<xi:include href="./ProgramDevelopment.ptx"/> -->
 
 
-<!-- <xi:include href="./Therandommodule.ptx"/> -->
 <xi:include href="./Glossary.ptx"/>
 <!-- <xi:include href="./video-functions.ptx"/> -->
 <xi:include href="./Exercises.ptx"/>
