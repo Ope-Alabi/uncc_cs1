@@ -126,6 +126,17 @@
                             Like rfind except causes a runtime error if item is not found
                         </cell>
       </row>
+      <row>
+        <cell>
+                            split
+                        </cell>
+        <cell>
+                            optional string as seperator
+                        </cell>
+        <cell>
+          Breaks up the string into a list of individual words/strings. Breaks up the string using whitespaces or the seperator string if one is provided. 
+                        </cell>
+      </row>
     </tabular>
   </table>
   <p>You should experiment with these
@@ -144,14 +155,26 @@ print("***" + ss.rstrip() + "***")
     <input>
 food = "banana bread"
 print(food.capitalize())
-
+</input>
+</program>
+<program xml:id="ac_someExtraStringMethodsOptional_3" label="ac_someExtraStringMethodsOptional_3" interactive="activecode" language="python">
+  <input>
+food = "banana bread"
 print("*" + food.center(25) + "*")
 print("*" + food.ljust(25) + "*")     # stars added to show bounds
 print("*" + food.rjust(25) + "*")
-
+</input>
+</program>
+<program xml:id="ac_someExtraStringMethodsOptional_4" label="ac_someExtraStringMethodsOptional_4" interactive="activecode" language="python">
+  <input>
+food = "banana bread"
 print(food.index("e"))
 print(food.index("na"))
-
+</input>
+</program>
+<program xml:id="ac_someExtraStringMethodsOptional_5" label="ac_someExtraStringMethodsOptional_5" interactive="activecode" language="python">
+  <input>
+food = "banana bread"
 print(food.rfind("e"))
 print(food.rfind("na"))
 print(food.rfind("b"))

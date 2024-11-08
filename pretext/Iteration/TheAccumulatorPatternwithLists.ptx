@@ -151,31 +151,32 @@
 
           print("The scores are " + result)
 
-          =====
-
-          from unittest.gui import TestCaseGui
-
-          class myTests(TestCaseGui):
-
-          def testOne(self):
-          self.assertEqual(self.getOutput().rstrip('\n'), 'The scores are 85, 95, and 70.', "Output
-          should be 'The scores are 85, 95, and 70.'")
-
-          myTests().main()
         </input>
+
+        <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+
+  def testOne(self):
+    self.assertEqual(self.getOutput().rstrip('\n'), 'The scores are 85, 95, and 70.', "Output should be 'The scores are 85, 95, and 70.'")
+
+MyTests().main()
+</tests>
+       
       </program>
       <hint>
         <p>Try changing the loop so that it does not process the final score. Handle that last
           score separately, after the loop finishes.</p>
       </hint>
       <solution> This solution works by iterating over all of the scores in the list except the
-        last, and dealing with that one separately. <program xml:id="ch10_sec5_p7_sol"
+        last, and dealing with that one separately. <program xml:id="ac_accumulatorPatternWithLists_7_sol"
           language="python">
           <input>
             scores = [85, 95, 70]
             result = ''
             for score in scores[:-1]:
-            result = result + str(score) + ', '
+              result = result + str(score) + ', '
 
             # Now, append the last score
             result = result + 'and ' + str(scores[-1]) + '.'
