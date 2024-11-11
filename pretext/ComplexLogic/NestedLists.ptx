@@ -21,7 +21,7 @@
       nested = ["hello", 2.0, 5, [10, 20]]
       innerlist = nested[3] # access the fourth element
       print(innerlist)
-      item = innerlist[1] # access the first element
+      item = innerlist[1] # access the second element
       print(item)
     </input>
   </program>

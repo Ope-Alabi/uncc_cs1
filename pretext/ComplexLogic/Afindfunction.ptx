@@ -59,7 +59,6 @@ def find(astring, achar):
     Return -1 if achar does not occur in astring.
     """
     ix = 0
-    found = False
     while ix &lt; len(astring):
         if astring[ix] == achar:
             return ix # found what we are looking for

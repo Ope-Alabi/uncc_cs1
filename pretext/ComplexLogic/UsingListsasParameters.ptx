@@ -29,5 +29,5 @@ print(things)
             If a function modifies the elements of a list parameter, the caller sees the change since the change
             is occurring to the original.</p>
   <p>
-    Reply the same example in codelens an note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
+    Replay the same example in codelens and note that after the call to <c>doubleStuff</c>, the formal parameter <c>aList</c> refers to the same object as the actual parameter <c>things</c>.  There is only one copy of the list object itself.</p>
 </section>
