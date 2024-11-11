@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="complex-logic_nested-list-traversal">
   <title>Nested List Traversal</title>
-  <p>Nested lists can be traversed the say way as other lists. However, the code to do so can easily get complicated and confusing. In this section let us 
+  <p>Nested lists can be traversed the same way as other lists. However, the code to do so can easily get complicated and confusing. In this section let us 
   examine several example programs that perform this task.</p>
   
   <p>The following program concerns a list of lists of names. In some cases, we may want to take nested list data and "un-nest" it. To do this, we need to 
@@ -50,7 +50,7 @@ coord = [['_', '_', '_', '_'],
 for y in range(len(coord)):
 	for x in range(len(coord[y])):
 		if coord[y][x] == 'p':
-			print(f'p is as coordinates (x={x}, y={y})')
+			print(f'p is at coordinates (x={x}, y={y})')
         </input>
   </program>
   <p xml:id="complex-logic_index-1">
