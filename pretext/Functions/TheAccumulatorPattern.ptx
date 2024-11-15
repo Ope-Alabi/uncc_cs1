@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="functions_the-accumulator-pattern">
-  <title>The Accumulator Pattern</title>
+  <title>The Accumulator Pattern with Functions</title>
   <introduction>
   <!--<video xml:id="function_accumulator_pattern" youtube="aqhREpceEMI" width="auto"/>-->
   <p>In an earlier example, we wrote a function that computes the square of a number.  The algorithm we used

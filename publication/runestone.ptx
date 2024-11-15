@@ -14,7 +14,7 @@
     <pub-date>2024-08-15</pub-date>
   </metadata>
 
-  <html>
+  <html favicon="simple"> 
     <platform host="runestone" />
     <!-- knowled checkpoints interfere with ActiveCode problems -->
     <knowl exercise-inline="no" example="no" listing="yes" />

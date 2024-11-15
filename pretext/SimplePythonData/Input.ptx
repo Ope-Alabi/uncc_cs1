@@ -75,6 +75,11 @@ print(type(pi))
             </input>
       </program>
 
+      <p>
+        Using int() on a float removes the decimal part, essentially "rounding down" to the nearest whole number. 
+        This can be useful when you only need the integer part of a float, 
+        but remember that it doesn't round to the nearest integer—it simply drops the decimal part.
+      </p>
       <program xml:id="ac_input_5" label="ac_input_5" interactive="activecode" language="python">
         <input>
           print(3.9999)
@@ -88,14 +93,23 @@ print(type(pi))
           print(int(3.0))
             </input>
       </program>
-
+<p>
+  When using int() on a float with no decimal part other than .0 (like 3.0 ), Python simply returns the integer value without any fractional part. 
+  This conversion is straightforward because there's no rounding or truncation needed.
+</p>
+<p>Along the same lines, when converting a negative float to an integer truncation moves towards zero, so -3.999 becomes -3. 
+</p>
       <program xml:id="ac_input_7" label="ac_input_7" interactive="activecode" language="python">
         <input>
           print(-3.999)
           print(int(-3.999))        # Note that the result is closer to zero
             </input>
       </program>
-
+      
+        <p>
+         The int() function is can also be used to convert strings containing numeric characters (like "2345") into actual integers. 
+         This is essential when we want to work with numeric data that's initially in string form, such as data from user input, text files, or databases.
+        </p>
       <program xml:id="ac_input_8" label="ac_input_8" interactive="activecode" language="python">
         <input>
           print("2345")
@@ -103,24 +117,35 @@ print(type(pi))
             </input>
       </program>
 
+      <p>
+        In this example, we see the difference between a string representation of a number and an integer (int) representation of a number. Here, "2345" is a string because it's enclosed in quotation marks. Earlier we have seen that when we use print("2345"), Python outputs it as text.
+        Even though the characters are numeric, Python still considers it as text (a sequence of characters) rather than a number.
+       In the Second Line (<c>print(int("2345"))</c>), the int() function converts (or "parses") the string "2345" into an integer value. 
+          This means Python will interpret "2345" as a numeric value, rather than as text.
+          int("2345") takes the string version and produces the integer 2345, which allows us to perform arithmetic operations (calculations) with it if needed.
+          
+      </p>
+      <p>
+        When you pass an integer to int(), it will simply return the integer as it is, without any change.
+      </p>
       <program xml:id="ac_input_9" label="ac_input_9" interactive="activecode" language="python">
         <input>
           print(17)
           print(int(17))               # int even works on integers
             </input>
       </program>
-
+      <p> This last case shows that a string has to be a syntactically legal number,
+        otherwise you'll get one of those pesky runtime errors.  
+        Modify the example by deleting the
+        <c>bottles</c> and rerun the program.  You should see the integer <c>23</c>.</p>
       <program xml:id="ac_input_10" label="ac_input_10" interactive="activecode" language="python">
         <input>
     print(int("23bottles"))
             </input>
       </program>
 
-      <p>The last case shows that a string has to be a syntactically legal number,
-        otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the
-        <c>bottles</c> and rerun the program.  You should see the integer <c>23</c>.</p>
-<p>The type converter <c>float</c> can turn an integer, a float, or a syntactically
-        legal string into a float.</p>
+      <p>The type converter <c>float</c> can turn an integer, a float, or a syntactically
+        legal string into a float.</p>  
 <program xml:id="ac_input_11" label="ac_input_11" interactive="activecode" language="python">
 <input>
 print(float("123.45"))

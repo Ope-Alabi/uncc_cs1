@@ -5,9 +5,10 @@
 <xi:include href="./ThewhileStatement.ptx"/>
 <xi:include href="./FlowofExecutionofthewhileLoop.ptx"/>
 <xi:include href="./TraversalandthewhileLoop.ptx"/>
-<xi:include href="./TheforLoop.ptx"/>
-<xi:include href="./SentinelValuesAndValidation.ptx"/>
 <xi:include href="./traversingsequenceswiththeforloop.ptx"/>
+
+
+<xi:include href="./TheforLoop.ptx"/>
 <xi:include href="./TraversalandtheforLoopByIndex.ptx"/>
 <xi:include href="./TherangeFunction.ptx"/>
 <xi:include href="./TheAccumulatorPatternwithLists.ptx"/>
