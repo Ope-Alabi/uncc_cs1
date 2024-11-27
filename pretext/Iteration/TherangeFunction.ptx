@@ -69,7 +69,19 @@
   <program xml:id="ac_iterationWithTheRangeFunction_3" label="ac_iterationWithTheRangeFunction_3" interactive="activecode" language="python">
     <input>
       print(range(4))
+      print(range(1,5))
+    </input>
+  </program>
+  
+  <program xml:id="ac_iterationWithTheRangeFunction_4" label="ac_iterationWithTheRangeFunction_4" interactive="activecode" language="python">
+    <input>
       print(type(range(4)))
+      
+    </input>
+  </program>
+  
+  <program xml:id="ac_iterationWithTheRangeFunction_5" label="ac_iterationWithTheRangeFunction_5" interactive="activecode" language="python">
+    <input>
       print(list(range(1, 5)))
       
     </input>
@@ -90,7 +102,7 @@
     Here are two examples for you to run.
     Try them and then add another line below to create a sequence starting at 10 and going up to 20 (including 20).
   </p>
-  <program xml:id="ac_iterationWithTheRangeFunction_4" label="ac_iterationWithTheRangeFunction_4" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_6" label="ac_iterationWithTheRangeFunction_6" interactive="activecode" language="python">
     <input>
       print(list(range(4)))
       print(list(range(1, 5)))
@@ -99,9 +111,20 @@
 
   <p>
     CodeLens will help us to further understand the way <c>range</c> works.
-    In this case, the variable <c>i</c> will take on values produced by the <c>range</c> function.
+    Recall that the loop variable takes on each value in the sequence. In this case, the variable <c>i</c> will take on values produced by the <c>range</c> function.
+    <p>
+      Recall that the loop variable takes on each value in the sequence of names.
+      The body is performed once for each name.
+      The same was true for the sequence of integers created by the <c>range</c> function.
+    </p>
+    <program xml:id="ch6_sec11_p2" interactive="activecode" language="python">
+      <input>
+        for avalue in range(10):
+          print(avalue)
+      </input>
+    </program>
   </p>
-  <program xml:id="ac_iterationWithTheRangeFunction_5" label="ac_iterationWithTheRangeFunction_5" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_7" label="ac_iterationWithTheRangeFunction_7" interactive="activecode" language="python">
     <input>
       for i in range(10):
          print(i)
@@ -117,7 +140,7 @@
     The most general form of the range is <c>range(start, beyondLast, step)</c>.
     You can also create a sequence of numbers that starts big and gets smaller by using a negative value for the step parameter.
   </p>
-  <program xml:id="ac_iterationWithTheRangeFunction_6" label="ac_iterationWithTheRangeFunction_6" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_8" label="ac_iterationWithTheRangeFunction_8" interactive="activecode" language="python">
     <input>
       print(list(range(0, 19, 2)))
       print(list(range(0, 20, 2)))
@@ -129,7 +152,7 @@
     Try it in CodeLens.
     Do you see why the first two statements produce the same result?
   </p>
-  <program xml:id="ac_iterationWithTheRangeFunction_7" label="ac_iterationWithTheRangeFunction_7" interactive="activecode" language="python">
+  <program xml:id="ac_iterationWithTheRangeFunction_9" label="ac_iterationWithTheRangeFunction_9" interactive="activecode" language="python">
     <input>
       for i in range(0, 20, 2):
          print(i)

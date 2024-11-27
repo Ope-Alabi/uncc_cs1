@@ -11,5 +11,5 @@
 <xi:include href="./TheAccumulatorPatternwithStrings.ptx"/>
 <xi:include href="./ObjectsandReferences.ptx"/>
 <xi:include href="./UsingListsasParameters.ptx"/>
-<!-- 4<xi:include href="./video-complex.ptx"/> -->
+<xi:include href="./Exercises.ptx"/>
 </chapter>

@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<exercises xml:id="complex_exercises">
+  <title>Practice Zone</title>
+
+
+
+
+  <exercise label="complex1">
+    <statement>
+      <p>
+        Given the following list of sublists, calculate and display  the total sum of all elements.
+      </p>
+    </statement>
+    <program xml:id="ac_pz_complex1" label="ac_complex1" interactive="activecode" language="python">
+      <input>
+        my_lst = [[1, 2, 3], [4, 0, -2], [7, 3, -1]]
+        # your code here
+
+      </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue(self.getOutput().strip() == "17","expected sum is 17")
+    self.assertTrue(len(my_lst) > 1, " my_list contains more than one element")
+    self.assertTrue(len(my_lst[0]) > 1, "my_list contains a sublist")
+
+MyTests().main()
+      </tests>
+    </program>
+  </exercise>
+
+
+  <exercise label="complex2">
+    <statement>
+      <p>
+        Given the following list of sublists, find and display the minimum value across all sublists.</p><p>
+          <b>Tip:</b>  float('inf') returns a floating-point object that represents positive infinity that can be used as a placeholder for largest possible value. 
+
+
+      </p>
+    </statement>
+    <program xml:id="ac_pz_complex2" label="ac_complex2" interactive="activecode" language="python">
+
+      <input>
+        my_lst = [[1, 2, 3], [4, 0, -2], [7, 3, -1]]
+        # your code here
+
+      </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue(self.getOutput().strip() == "-2","expected minimum value is -2")
+    self.assertTrue(len(my_lst) > 1, " my_list contains more than one element")
+    self.assertTrue(len(my_lst[0]) > 1, "my_list contains a sublist")
+
+MyTests().main()
+      </tests>
+    </program>
+  </exercise>
+  <exercise label="complex3">
+    <statement>
+      <p>
+        Given the following list of sublists, find and display the sublist whose sum of elements is the largest</p><p>
+        <b>Tip:</b> float('-inf') returns a floating-point object that represents negative infinity that can be used as a placeholder for smallest possible value.
+
+      </p>
+    </statement>
+    <program xml:id="ac_pz_complex3" label="ac_complex3" interactive="activecode" language="python">
+      <input>
+        my_lst = [[1, 2, 3], [4, 0, -2], [7, 3, -1]]
+        # your code here
+
+      </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue(self.getOutput().strip() == "[4, 0, -2]","expected output [4, 0, -2]")
+    self.assertTrue(len(my_lst) > 1, " my_list contains more than one element")
+    self.assertTrue(len(my_lst[0]) > 1, "my_list contains a sublist")
+
+MyTests().main()
+      </tests>
+    </program>
+  </exercise>
+  
+  <exercise label="complex4">
+    <statement>
+      <p>
+        Given the following list of sublists, count and display how many times the number <c>1</c> appears.
+      </p>
+    </statement>
+    <program xml:id="ac_pz_complex4" label="ac_complex4" interactive="activecode" language="python">
+      <input>
+        my_lst = [[1, 2, 3], [4, 1, 5], [6, 1]]
+        # your code here
+
+      </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue(self.getOutput().strip() == "3","expected output 3")
+    self.assertTrue(len(my_lst) > 1, " my_list contains more than one element")
+    self.assertTrue(len(my_lst[0]) > 1, "my_list contains a sublist")
+
+MyTests().main()
+      </tests>
+    </program>
+  </exercise>
+  <exercise label="complex5">
+    <statement>
+      <p>
+        Given the following list of sublists, find and display the sublist with the most number of elements.
+      </p>
+    </statement>
+    <program xml:id="ac_pz_complex5" label="ac_complex5" interactive="activecode" language="python">
+      <input>
+        my_lst = [[1, 2, 3], [4, 1, 5], [4, 0, 7, 3, -1], [6, 1]]
+        # your code here
+
+      </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertTrue(self.getOutput().strip() == "[4, 0, 7, 3, -1]","expected output [4, 0, 7, 3, -1]")
+    self.assertTrue(len(my_lst) > 1, " my_list contains more than one element")
+    self.assertTrue(len(my_lst[0]) > 1, "my_list contains a sublist")
+
+MyTests().main()
+      </tests>
+    </program>
+  </exercise>
+  <exercise label="complex6">
+    <statement>
+      <p>
+       Complete the <c>get_averages</c> function that takes a list of sublists as input. 
+       Each sublist contains numeric values. The function should return a new list where each element is the average of the values in the corresponding sublist. 
+        If a sublist is empty, the average for that sublist should be 0 (zero). If the main list is empty, the function should return an empty list.
+
+
+        Example Input:
+        [[1, 2, 3], [4, 5, 6], [7, 8, 9], []]
+        
+        Example Output:
+        [2.0, 5.0, 8.0, 0]      
+      </p>
+    </statement>
+    <program xml:id="ac_pz_complex6" label="ac_complex6" interactive="activecode" language="python">
+      <input>
+       def get_averages(my_lst):
+        # your code here
+
+      </input>
+      <tests>
+from unittest.gui import TestCaseGui
+
+class MyTests(TestCaseGui):
+  def testOne(self):
+    self.assertEqual(get_averages([[1, 2, 3], [4, 5, 6], [7, 8, 9], []]),[2.0, 5.0, 8.0, 0],"Tested get_averages on input of [[1, 2, 3], [4, 5, 6], [7, 8, 9], []]")
+    self.assertEqual(get_averages([[16,22], [4, 4, 4], [2, 4, 9]]),[19.0, 4.0, 5.0],"Tested get_averages on input of [[16,22], [4, 4, 4], [2, 4, 9]]")
+    self.assertEqual(get_averages([[], [], [], []]),[0, 0, 0, 0],"Tested get_averages on input of [[], [], [], []]")
+    self.assertEqual(get_averages([]),[],"Tested get_averages on input of []")
+
+
+MyTests().main()
+      </tests>
+    </program>
+  </exercise>
+</exercises>
