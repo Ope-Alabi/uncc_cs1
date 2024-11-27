@@ -2,6 +2,8 @@
 <section xml:id="iteration_the-for-loop">
   <title>The <c>for</c> loop</title>
 
+  <!-- <video xml:id="forloop" youtube="blTBEqybQmQ" width="auto"/> -->
+
   <p>
     The <c>while</c> statement is a general-purpose tool for iteration, and is necessary for any instance of iteration where we don't know how many repetitions will be needed.
     However, if we do know how many are needed, there is a more efficient approach: the <c>for</c> statement.

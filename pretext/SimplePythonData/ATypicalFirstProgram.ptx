@@ -9,21 +9,70 @@
 print("Hello, World!")
 </input>
   </program>
+
+  <p>Some people judge the quality of a programming language by the simplicity of
+    the Hello, World! program. By this standard, Python does about as well as
+    possible.</p>
+
   <p>This is an example of using the <term>print function</term>, which doesn't actually
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
+
+  <p>The quotation marks in the program mark the beginning and end of the value.
+    They don't appear in the result.</p>
   <p>In the context of this book, we will use the print function to perform the output step in the algorithms we work with. </p><p>Here is the example in activecode.  Give it a try!</p>
   <program xml:id="ac_aTypicalFirstProgram_1" label="ac_aTypicalFirstProgram_1" interactive="activecode" language="python">
     <input>
 print("Hello, World!")
         </input>
   </program>
-  <p>The quotation marks in the program mark the beginning and end of the value.
-            They don't appear in the result.</p>
-  <p>Some people judge the quality of a programming language by the simplicity of
-            the Hello, World! program. By this standard, Python does about as well as
-            possible.</p>
+ 
+  
   <p>
+
+<p>
+
+  The <c>print("Hello, World!")</c> statement in Python outputs the text "Hello, World!" to the screen. 
+  The quotation marks (" ") within the code define the start and end of a string value, which is a sequence of characters enclosed in quotes. 
+  The quotation marks tell Python that everything inside them should be treated as text, not code.
+
+  When we run this code, Python displays only the text content between the quotation marks, so the quotes themselves aren't part of the output. 
+  This is why the result displayed on the screen is simply: <c>Hello, World!</c> 
+
+
+</p>
+<p>
+  In Python, and in most programming languages, a string is a data type used to represent text, such as words, sentences, or any <term>sequence</term> of characters. 
+  Strings are created by enclosing text within quotation marks, either single (' ') or double (" "). For example:
+  <program language="python">
+    <input>
+      "Hello, World!"      # Using double quotes
+      'Alice'             # Using single quotes
+</input>
+  </program>
+
+</p>
+<p>
+Strings are versatile and widely used, from displaying messages to handling user input. 
+  Python allows flexibility in defining strings, so single or double quotes can be used interchangeably. 
+  This flexibility is especially helpful if your string contains an apostrophe or quotation marks, as in 
+  "It's a beautiful day" or 'She said, "Hello!"'.
+
+  Here is the example in activecode. Give it a try!
+  <program xml:id="ac_aTypicalFirstProgram_2" label="ac_aTypicalFirstProgram_2" interactive="activecode" language="python">
+    <input>
+      
+      print("It's a beautiful day!")  # text includes an apostrophe
+
+      print('She said, "Hello!"') # text includes double quotes
+      </input>
+  </program>
+</p>
+
+
+
+
+
     <term>Check your understanding</term>
   </p>
   <exercise label="mc_aTypicalFirstProgram_1">
@@ -65,4 +114,45 @@ print("Hello, World!")
       </choice>
     </choices>
   </exercise>
+
+  <exercise label="mc_aTypicalFirstProgram_2">
+    <statement>
+      <p>In Python, which of the following best describes a string?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>A type of variable that stores only numeric values.</p>
+        </statement>
+        <feedback>
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p></p>
+        </statement>
+        <feedback>
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>A data structure used to store multiple items in an ordered way.</p>
+        </statement>
+        <feedback>
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p> A type of function used to perform mathematical operations.</p>
+        </statement>
+        <feedback>
+                </feedback>
+      </choice>
+    </choices>
+
+  </exercise>
+  
+  
+
+
 </section>

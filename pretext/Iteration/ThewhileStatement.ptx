@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_the-while-statement">
   <title>The <c>while</c> Statement</title>
-  <!--<video xml:id="whileloop" youtube="blTBEqybQmQ" width="auto"/>-->
+
+  <!-- <video xml:id="whileloop" youtube="blTBEqybQmQ" width="auto"/> -->
 
   <p>
     Let's look at our first Python statement that can be used to build an iteration. 

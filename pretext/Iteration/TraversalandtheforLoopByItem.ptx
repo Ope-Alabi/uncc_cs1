@@ -17,19 +17,7 @@
         print(invitation)
     </input>
   </program>
-
-  <p>
-    Recall that the loop variable takes on each value in the sequence of names.
-    The body is performed once for each name.
-    The same was true for the sequence of integers created by the <c>range</c> function.
-  </p>
-  <program xml:id="ch6_sec11_p2" interactive="activecode" language="python">
-    <input>
-      for avalue in range(10):
-        print(avalue)
-    </input>
-  </program>
-
+  
   <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
   <program xml:id="ch6_sec11_p3" interactive="activecode" language="python">
     <input>
